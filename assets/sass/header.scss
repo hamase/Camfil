@@ -1,0 +1,120 @@
+body {
+	.header_box {
+		height: 96px;
+		border-bottom: 5px solid $blue;
+		> div {
+			height: 100% !important;
+			> a {
+				> img {
+					width: auto;
+					height: 50px;
+					position: absolute;
+					left: 33px;
+					top: 23px;
+				}
+			}
+			ul.header_box_menu {
+				display: flex;
+				align-items: center;
+				li {
+					&:nth-child(4) {
+						margin-right: 29px;
+						a.btn {
+							img {
+								width: 19.8px;
+								height: 15.3px;
+							}
+						}
+					}
+					&:nth-child(3) {
+						a.btn {
+							img {
+								width: 16px;
+								height: 15px;
+							}
+						}
+					}
+					&:nth-child(2) {
+						margin-left: 90px;
+						a.btn {
+							font-family: "OpenSans-Bold";
+							font-size: 16px;
+							text-transform: none;
+							width: 127px;
+							height: 48px;
+							img {
+								width: 14px;
+								height: 14px;
+							}
+						}
+					}
+					&:first-child {
+						position: relative;
+						input {
+							width: 372px;
+							height: 48px;
+							border: none;
+							background: white;
+							padding: 0px 20px;
+							font-family: "OpenSans-SemiBold";
+							font-size: 12px;
+							color: $dark_blue;
+
+							&::placeholder {
+								font-family: "OpenSans-SemiBold";
+								font-size: 12px;
+								color: $dark_blue;
+							}
+							&:focus {
+								border: none !important;
+								box-shadow: none !important;
+							}
+						}
+						button {
+							background: $blue;
+							width: 36px;
+							height: 36px;
+							position: absolute;
+							right: 6px;
+							top: 14px;
+							border-radius: 0px;
+							display: flex;
+							justify-content: center;
+							img {
+								width: 12.6px;
+								height: 12.6px;
+								margin: auto;
+							}
+						}
+					}
+					a.btn {
+						background: rgba(128, 91, 91, 0) !important;
+						border: 1px solid white;
+						border-radius: 0px;
+						width: 48px;
+						height: 48px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						img,
+						span {
+							vertical-align: -moz-middle-with-baseline;
+							vertical-align: -webkit-baseline-middle;
+						}
+						span.badge {
+							position: absolute;
+							top: 6px;
+							right: 8px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+						span:not(.badge) {
+							margin-right: 13.7px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
