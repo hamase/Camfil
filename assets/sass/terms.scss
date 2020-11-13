@@ -1,0 +1,22 @@
+body {
+	.collapsible {
+		.collapsible-header {
+			position: relative;
+			height: 48px;
+			img:first-child {
+				width: 21.3px;
+				height: 21.3px;
+			}
+			img:last-child {
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				right: 24px;
+				top: 16px;
+			}
+			span {
+				margin-left: 13.2px;
+			}
+		}
+	}
+}

@@ -315,6 +315,21 @@ body main {
       width: 328.7px;
       height: 310.7px; }
 
+body .collapsible .collapsible-header {
+  position: relative;
+  height: 48px; }
+  body .collapsible .collapsible-header img:first-child {
+    width: 21.3px;
+    height: 21.3px; }
+  body .collapsible .collapsible-header img:last-child {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 24px;
+    top: 16px; }
+  body .collapsible .collapsible-header span {
+    margin-left: 13.2px; }
+
 nav {
   background-color: #004377 !important; }
   nav ul {
