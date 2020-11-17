@@ -1,0 +1,324 @@
+// main
+main {
+	background: $light_white;
+	.container-fluid {
+		margin-top: 6em;
+		.about_box {
+			background-color: $blue;
+			height: 66vh;
+			margin-bottom: 17em;
+			img.dot {
+				width: 9em;
+				position: absolute;
+				right: 6em;
+				top: 12em;
+			}
+			.about_box_inner {
+				flex-direction: column;
+				display: flex;
+				width: 85%;
+				margin: 70px auto;
+				position: relative;
+				h1 {
+					font-size: 48px;
+					font-family: "OpenSans-Bold";
+					color: white;
+					line-height: 1.6em;
+					margin-top: 2em;
+				}
+				div.man_img {
+					padding-left: 0;
+					p {
+						font-size: 18px;
+						font-family: "OpenSans";
+						color: white;
+						width: 412px;
+						margin: 48px 0px;
+					}
+					img {
+						height: 21.4em;
+					}
+				}
+				div.flight_img {
+					margin-top: 20px;
+					padding-right: 0;
+					img {
+						height: 33.6em;
+					}
+				}
+			}
+		}
+		.row.intro_box {
+			position: relative;
+			margin: 0 auto 12em;
+			img.dot {
+				position: absolute;
+				right: 24em;
+				top: 22.6em;
+				width: 6em;
+				transform: rotate(270deg);
+			}
+			.intro_box_inner {
+				background-color: white;
+				padding: 40px 100px;
+				h6 {
+					font-size: 14px;
+					font-family: "OpenSans";
+					color: $blue;
+				}
+				h1 {
+					color: $body_text;
+					font-family: "OpenSans-Bold";
+					font-size: 32px;
+				}
+				p {
+					color: $body_text;
+					font-family: "OpenSans";
+					font-size: 18px;
+					margin: 32px 0;
+				}
+			}
+		}
+		.field_box {
+			flex-direction: column;
+			display: flex;
+			width: 85%;
+			margin: 70px auto;
+			position: relative;
+			h6 {
+				font-size: 14px;
+				font-family: "OpenSans";
+				color: $blue;
+			}
+			h1 {
+				font-size: 32px;
+				font-family: "OpenSans-Bold";
+				color: #000000;
+				margin: 10px 0 0 0;
+				position: relative;
+				hr {
+					width: 190px;
+					position: absolute;
+					top: 1px;
+					margin-left: 423px;
+					color: $blue;
+				}
+			}
+			p {
+				color: #000000;
+				font-family: "OpenSans";
+				font-size: 18px;
+				margin: 30px 0;
+				width: 402px;
+			}
+			.row.list_box {
+				margin: 3em 0;
+				ul {
+					margin-left: 2px !important;
+					li {
+						list-style: disc;
+						color: $blue;
+						position: relative;
+						margin: 16px auto;
+						hr {
+							width: 47px;
+							position: absolute;
+							top: 11px;
+							margin: 0 2px;
+							color: $blue;
+						}
+						span {
+							margin-left: 70px;
+							color: #000000;
+						}
+					}
+				}
+				.img_field {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+			.row.last_img {
+				.img_field {
+					padding-left: 0;
+				}
+			}
+		}
+		.customer_box {
+			position: relative;
+			img.dot {
+				position: absolute;
+				right: 0em;
+				top: 0em;
+				width: 6em;
+			}
+			.customer_box_inner {
+				flex-direction: column;
+				display: flex;
+				width: 85%;
+				margin: 70px auto;
+				h6 {
+					font-size: 14px;
+					font-family: "OpenSans";
+					color: $blue;
+				}
+				h1 {
+					font-size: 32px;
+					font-family: "OpenSans-Bold";
+					color: #000000;
+					margin: 10px 0 0 0;
+					position: relative;
+					hr {
+						width: 190px;
+						position: absolute;
+						top: 1px;
+						margin-left: 470px;
+						color: $blue;
+					}
+				}
+				p {
+					color: #000000;
+					font-family: "OpenSans";
+					font-size: 18px;
+					margin: 30px 0;
+					width: 402px;
+				}
+				.row.img_box {
+					margin: 3em 0;
+					.img_customer {
+						display: flex;
+						justify-content: flex-end;
+						img {
+							width: 28em;
+						}
+					}
+				}
+			}
+		}
+		.blog_box {
+			position: relative;
+			img.dot {
+				position: absolute;
+				left: 0em;
+				top: 0em;
+				width: 3em;
+			}
+			.blog_box_inner {
+				flex-direction: column;
+				display: flex;
+				width: 85%;
+				margin: 70px auto;
+				h6 {
+					font-size: 14px;
+					font-family: "OpenSans";
+					color: $blue;
+				}
+				h1 {
+					font-size: 32px;
+					font-family: "OpenSans-Bold";
+					color: #000000;
+					margin: 10px 0 0 0;
+					position: relative;
+					hr {
+						width: 190px;
+						position: absolute;
+						top: 1px;
+						margin-left: 470px;
+						color: $blue;
+					}
+				}
+				p {
+					color: #000000;
+					font-family: "OpenSans";
+					font-size: 18px;
+					margin: 30px 0;
+					width: 402px;
+				}
+				.row {
+					width: 100%;
+					margin-top: 6em;
+					display: flex;
+					justify-content: space-between;
+					align-items: first baseline;
+					.card_box {
+						background-color: white;
+						padding: 50px 40px;
+						img.star {
+							width: 7em;
+						}
+						p {
+							color: $heading;
+							font-family: "OpenSans";
+							font-size: 18px;
+							width: 100%;
+						}
+						.avatar_box {
+							display: flex;
+							img {
+								width: 3em;
+							}
+							> div {
+								display: flex;
+								flex-direction: column;
+								margin-left: 17px;
+								justify-content: center;
+								span:first-child {
+									color: $heading;
+									font-family: "OpenSans";
+									font-size: 14px;
+								}
+								span:nth-child(2) {
+									color: #b3b6b9;
+									font-family: "OpenSans";
+									font-size: 14px;
+								}
+							}
+						}
+					}
+					.card_box:first-child {
+						margin: 0 1em 0 0;
+					}
+					.card_box:nth-child(2) {
+						margin: 0 1em 0 1em;
+					}
+					.card_box:nth-child(3) {
+						margin: 0 0 0 1em;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	body {
+		.about_box {
+			margin-bottom: 47em !important;
+		}
+		.row.intro_box {
+			img {
+				display: none;
+			}
+		}
+		.customer_box {
+			.customer_box_inner {
+				.img_box {
+					p {
+						width: auto;
+					}
+				}
+			}
+		}
+		.blog_box {
+			.blog_box_inner {
+				.row {
+					display: block !important;
+					.card_box {
+						width: 100%;
+						margin: 1em auto !important;
+					}
+				}
+			}
+		}
+	}
+}

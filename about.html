@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<title>Camfil</title>
+
+		<link
+			rel="shortcut icon"
+			href="assets/img/favicon.png"
+			type="image/x-icon"
+		/>
+
+		<!-- import node module js -->
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="node_modules/materialize-css/dist/css/materialize.min.css"
+			media="screen,projection"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="nav-extended header_box">
+						<div class="nav-wrapper">
+							<a href="#" class="brand-logo"
+								><img src="assets/img/logo-white.png" alt=""
+							/></a>
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger"
+								><i class="material-icons">menu</i></a
+							>
+							<ul
+								id="nav-mobile"
+								class="right hide-on-med-and-down header_box_menu"
+							>
+								<li>
+									<input
+										placeholder="Search by part number, brand or product"
+										id="search-input"
+										type="text"
+										class="validate"
+									/>
+									<button
+										class="btn waves-effect waves-light"
+										type="submit"
+										name="action"
+									>
+										<img src="assets/img/search.png" alt="" />
+									</button>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><span>Account</span>
+										<img src="assets/img/user-white.png" alt=""
+									/></a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/bell-white.png" alt="" />
+										<span id="notifications" class="badge red">5</span>
+									</a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/shop-white.png" alt=""
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+					<ul class="sidenav" id="mobile-demo">
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Account</span>
+								<img src="assets/img/mobile/user.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Notifications</span>
+								<img src="assets/img/mobile/bell.png" alt="" />
+								<span id="notifications" class="badge red">5</span>
+							</a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Shop</span> <img src="assets/img/mobile/shop.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<input
+								placeholder="Search by part number, brand or product"
+								id="search-input"
+								type="text"
+								class="validate"
+							/>
+							<button
+								class="btn waves-effect waves-light"
+								type="submit"
+								name="action"
+							>
+								<img src="assets/img/search.png" alt="" />
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- main page -->
+		<main>
+			<div class="container-fluid">
+				<div class="row about_box">
+					<img src="assets/img/dot-light.png" alt="" class="dot" />
+					<div class="about_box_inner">
+						<h1>
+							About <br />
+							Company
+						</h1>
+						<div class="row">
+							<div class="col s12 l6 man_img">
+								<p>
+									Camfil Group is committed to providing a full range of
+									professional procurement, and services to ensure reliability
+									from the inquiry stage to shipping your order.
+								</p>
+								<img src="assets/img/man.jpg" alt="" class="responsive-img" />
+							</div>
+							<div class="col s12 l6 flight_img">
+								<img
+									src="assets/img/flight.jpg"
+									alt=""
+									class="responsive-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row intro_box">
+					<img src="assets/img/seven-dots.png" alt="" class="dot" />
+					<div class="col s12 l10 intro_box_inner">
+						<h6>Introduction</h6>
+						<h1>Find any spare parts</h1>
+						<p>
+							At Camfil GROUP we provide a full procurement service with our
+							on-site packing/forwarding facilities to ensure full quality
+							control. Our privileged working relationship with companies has
+							required us to source or manufacture a full range of items
+							required for drilling and production operations. We are always
+							interested in searching hard to find items, or locating new, more
+							cost effective suppliers for routine requirements.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="field_box">
+						<h6>Our Fields</h6>
+						<h1>
+							Our market sectors
+							<hr />
+						</h1>
+						<p>
+							Main focus of Camfil Group is the sale and delivery of spare parts
+							for Energy, Mining, Metallurgy Metals, Oil & Gas industries.
+							Camfil Group offers sourcing of supply market sectors including:
+						</p>
+						<div class="row list_box">
+							<div class="col s12 l4">
+								<ul class="row">
+									<li>
+										<hr />
+										<span>Oil & Gas</span>
+									</li>
+									<li>
+										<hr />
+										<span>Drilling & Production</span>
+									</li>
+									<li>
+										<hr />
+										<span>Mining</span>
+									</li>
+									<li>
+										<hr />
+										<span>Petrochemicals</span>
+									</li>
+									<li>
+										<hr />
+										<span>Power Plants</span>
+									</li>
+									<li>
+										<hr />
+										<span>Metals & Metal Production</span>
+									</li>
+									<li>
+										<hr />
+										<span>Energy</span>
+									</li>
+									<li>
+										<hr />
+										<span>Ceramic Industry</span>
+									</li>
+									<li>
+										<hr />
+										<span>Welding Products & Accessories</span>
+									</li>
+								</ul>
+							</div>
+							<div class="col s12 l8 img_field">
+								<img
+									src="assets/img/field1.jpg"
+									alt=""
+									class="responsive-img"
+								/>
+							</div>
+						</div>
+						<div class="row last_img">
+							<div class="col s12 img_field">
+								<img
+									src="assets/img/field2.jpg"
+									alt=""
+									class="responsive-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row customer_box">
+					<img src="assets/img/seven-dots.png" alt="" class="dot" />
+					<div class="customer_box_inner">
+						<h6>Customer's satisfaction</h6>
+						<h1>
+							Customer Satisfaction Cycle
+							<hr />
+						</h1>
+						<div class="row img_box">
+							<div class="col s12 m6">
+								<p>
+									Compare our quotes with local suppliers and see, how much you
+									can save with us! Professional, flexible and inexpensive
+									dispatches, including customs handling, increase your profit.
+								</p>
+							</div>
+							<div class="col s12 m6 img_customer">
+								<img
+									src="assets/img/customer.png"
+									alt=""
+									class="responsive-img"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row blog_box">
+					<img src="assets/img/three-dots.png" alt="" class="dot" />
+					<div class="blog_box_inner">
+						<h6>Our blog</h6>
+						<h1>
+							What people say about us
+							<hr />
+						</h1>
+						<div class="row">
+							<div class="col s12 m3 card_box">
+								<img
+									src="assets/img/star.png"
+									alt=""
+									class="responsive-img star"
+								/>
+								<p>
+									Phone ordering was simple and fast. Matt Wheeler was very
+									helpful throughout the process. Received my item a week later,
+									great shipping!
+								</p>
+								<div class="avatar_box">
+									<img src="assets/img/avatar.png" alt="" />
+									<div>
+										<span>Peter</span>
+										<span>Croxco</span>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m3 card_box">
+								<img
+									src="assets/img/star.png"
+									alt=""
+									class="responsive-img star"
+								/>
+								<p>
+									They have a wide variety of products on their website and also
+									brands. I had an easy time ordering from their website, I am
+									pretty happy with my purchase.
+								</p>
+								<div class="avatar_box">
+									<img src="assets/img/avatar.png" alt="" />
+									<div>
+										<span>Peter</span>
+										<span>Croxco</span>
+									</div>
+								</div>
+							</div>
+							<div class="col s12 m3 card_box">
+								<img
+									src="assets/img/star.png"
+									alt=""
+									class="responsive-img star"
+								/>
+								<p>
+									Phone ordering was simple and fast. Matt Wheeler was very
+									helpful throughout the process. Received my item a week later,
+									great shipping!
+								</p>
+								<div class="avatar_box">
+									<img src="assets/img/avatar.png" alt="" />
+									<div>
+										<span>Peter</span>
+										<span>Croxco</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer_box">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col s12 offset-l1 l11 offset-xl1 xl10">
+						<div class="col s12 l2 xl2 logo">
+							<img src="assets/img/logo-blue.png" alt="" />
+							<p class="logo_desc">
+								We are your reliable source for <br />
+								spare parts, for production and <br />
+								maintenance.
+							</p>
+						</div>
+						<div class="col s12 l2 xl2 quick">
+							<ul>
+								<li><b>Quick links</b></li>
+								<li><a href="">Products</a></li>
+								<li><a href="">Ask a Question</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl2 know-us">
+							<ul>
+								<li><b>Get to know us</b></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Contact us</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 find-us">
+							<ul>
+								<li><b>Find us</b></li>
+								<li class="location">
+									<img src="assets/img/location.png" alt="" /><span
+										>Hungary<br />
+										1061 Budapest Anker <br />
+										Köz Anker Business <br />center 2-4
+									</span>
+								</li>
+								<li class="phone">
+									<img src="assets/img/phone.png" alt="" /><span
+										>+36 (1) 445 3638</span
+									>
+								</li>
+								<li><a href=""></a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 touch">
+							<ul>
+								<li><b>Get in touch</b></li>
+								<ul class="social_media">
+									<li>
+										<a href=""><img src="assets/img/linkedin.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/facebook.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/twitter.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/instagram.png" alt="" /></a>
+									</li>
+								</ul>
+								<li>
+									<button class="feedback" id="feedback">
+										<span>Leave feedback</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2020 Camfil GROUP kft. All rights reserved.
+				</div>
+			</div>
+		</footer>
+
+		<!-- import node module js -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
