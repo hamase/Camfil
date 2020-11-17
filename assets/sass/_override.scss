@@ -1,7 +1,31 @@
-nav {
+nav.header_box {
 	background-color: $dark_blue !important;
 	ul {
 		margin: revert !important;
+		a {
+			box-shadow: none !important;
+		}
+		a.btn {
+			margin-left: 4px !important;
+			margin-right: 4px !important;
+		}
+		span.badge {
+			line-height: 17px !important;
+			height: 16px !important;
+			-webkit-font-smoothing: auto;
+			width: 16px;
+			min-width: 16px !important;
+			color: white;
+			font-size: 12px;
+			border-radius: 50%;
+			text-align: center;
+		}
+	}
+}
+nav.home {
+	background-color: $light_white;
+	ul {
+		margin: 25px auto !important;
 		a {
 			box-shadow: none !important;
 		}

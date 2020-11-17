@@ -35,7 +35,7 @@
 					<nav class="nav-extended header_box">
 						<div class="nav-wrapper">
 							<a href="#" class="brand-logo"
-								><img src="assets/img/logo-header.png" alt=""
+								><img src="assets/img/logo-white.png" alt=""
 							/></a>
 							<a href="#" data-target="mobile-demo" class="sidenav-trigger"
 								><i class="material-icons">menu</i></a
@@ -47,7 +47,7 @@
 								<li>
 									<input
 										placeholder="Search by part number, brand or product"
-										id="search-header"
+										id="search-input"
 										type="text"
 										class="validate"
 									/>
@@ -62,18 +62,18 @@
 								<li>
 									<a class="waves-effect waves-light btn" href="#"
 										><span>Account</span>
-										<img src="assets/img/user-header.png" alt=""
+										<img src="assets/img/user-white.png" alt=""
 									/></a>
 								</li>
 								<li>
 									<a class="waves-effect waves-light btn" href="#"
-										><img src="assets/img/bell-header.png" alt="" />
+										><img src="assets/img/bell-white.png" alt="" />
 										<span id="notifications" class="badge red">5</span>
 									</a>
 								</li>
 								<li>
 									<a class="waves-effect waves-light btn" href="#"
-										><img src="assets/img/shop-header.png" alt=""
+										><img src="assets/img/shop-white.png" alt=""
 									/></a>
 								</li>
 							</ul>
@@ -102,7 +102,7 @@
 						<li>
 							<input
 								placeholder="Search by part number, brand or product"
-								id="search-header"
+								id="search-input"
 								type="text"
 								class="validate"
 							/>
@@ -120,7 +120,7 @@
 		</header>
 
 		<!-- main page -->
-		<main>
+		<main class="error_box">
 			<div class="container">
 				<div class="row">
 					<div class="col s12 m6 error_txt">
@@ -133,6 +133,7 @@
 							class="btn waves-effect waves-light"
 							type="reset"
 							name="action"
+							id="bak-home"
 						>
 							<img src="assets/img/arrow_left.png" alt="" />
 							<span>Back to home</span>
@@ -149,83 +150,71 @@
 		<footer class="footer_box">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col l4 s12">
-						<div class="footer_box_left">
-							<div class="col l6 s12 m6">
-								<img src="assets/img/logo-footer.png" alt="" />
-								<p class="logo_desc">
-									We are your reliable source for <br />
-									spare parts, for production and <br />
-									maintenance.
-								</p>
-							</div>
-							<div class="col l6 s12 m6">
-								<ul>
-									<li><b>Quick links</b></li>
-									<li><a href="">Products</a></li>
-									<li><a href="">Ask a Question</a></li>
-								</ul>
-							</div>
+					<div class="col s12 offset-l1 l11 offset-xl1 xl10">
+						<div class="col s12 l2 xl2 logo">
+							<img src="assets/img/logo-blue.png" alt="" />
+							<p class="logo_desc">
+								We are your reliable source for <br />
+								spare parts, for production and <br />
+								maintenance.
+							</p>
 						</div>
-					</div>
-					<div class="col l8 s12">
-						<div class="footer_box_right">
-							<div class="col l3 s12 m4">
-								<ul>
-									<li><b>Get to know us</b></li>
-									<li><a href="">About us</a></li>
-									<li><a href="">Contact us</a></li>
-									<li><a href="">Terms & Conditions</a></li>
-								</ul>
-							</div>
-							<div class="col l3 s12 m4">
-								<ul>
-									<li><b>Find us</b></li>
-									<li class="location">
-										<img src="assets/img/location.png" alt="" /><span
-											>Hungary<br />
-											1061 Budapest Anker <br />
-											Köz Anker Business <br />center 2-4
-										</span>
-									</li>
-									<li class="phone">
-										<img src="assets/img/phone.png" alt="" /><span
-											>+36 (1) 445 3638</span
-										>
-									</li>
-									<li><a href=""></a></li>
-								</ul>
-							</div>
-							<div class="col l4 s12 m4">
-								<ul>
-									<li><b>Get in touch</b></li>
-									<ul class="social_media">
-										<li>
-											<a href=""
-												><img src="assets/img/linkedin.png" alt=""
-											/></a>
-										</li>
-										<li>
-											<a href=""
-												><img src="assets/img/facebook.png" alt=""
-											/></a>
-										</li>
-										<li>
-											<a href=""><img src="assets/img/twitter.png" alt="" /></a>
-										</li>
-										<li>
-											<a href=""
-												><img src="assets/img/instagram.png" alt=""
-											/></a>
-										</li>
-									</ul>
+						<div class="col s12 l2 xl2 quick">
+							<ul>
+								<li><b>Quick links</b></li>
+								<li><a href="">Products</a></li>
+								<li><a href="">Ask a Question</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl2 know-us">
+							<ul>
+								<li><b>Get to know us</b></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Contact us</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 find-us">
+							<ul>
+								<li><b>Find us</b></li>
+								<li class="location">
+									<img src="assets/img/location.png" alt="" /><span
+										>Hungary<br />
+										1061 Budapest Anker <br />
+										Köz Anker Business <br />center 2-4
+									</span>
+								</li>
+								<li class="phone">
+									<img src="assets/img/phone.png" alt="" /><span
+										>+36 (1) 445 3638</span
+									>
+								</li>
+								<li><a href=""></a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 touch">
+							<ul>
+								<li><b>Get in touch</b></li>
+								<ul class="social_media">
 									<li>
-										<button class="feedback" id="feedback">
-											<span>Leave feedback</span>
-										</button>
+										<a href=""><img src="assets/img/linkedin.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/facebook.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/twitter.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/instagram.png" alt="" /></a>
 									</li>
 								</ul>
-							</div>
+								<li>
+									<button class="feedback" id="feedback">
+										<span>Leave feedback</span>
+									</button>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

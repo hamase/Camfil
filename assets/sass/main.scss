@@ -34,11 +34,10 @@
 
 // body & media query
 @import "./header.scss";
-@import "./header_mobile.scss";
 @import "./footer.scss";
-@import "./footer_mobile.scss";
 @import "./404.scss";
 @import "./terms.scss";
+@import "./home.scss";
 
 // override Materialize
 @import "./override.scss";
