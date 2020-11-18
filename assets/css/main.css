@@ -315,20 +315,48 @@ body main.error_box {
       width: 328.7px;
       height: 310.7px; }
 
-body .collapsible .collapsible-header {
-  position: relative;
-  height: 48px; }
-  body .collapsible .collapsible-header img:first-child {
-    width: 21.3px;
-    height: 21.3px; }
-  body .collapsible .collapsible-header img:last-child {
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    right: 24px;
-    top: 16px; }
-  body .collapsible .collapsible-header span {
-    margin-left: 13.2px; }
+body .term_box {
+  margin: 12em 4em; }
+  body .term_box h1 {
+    font-size: 24px;
+    font-family: "OpenSans-Bold";
+    color: #161719;
+    margin: 0 0 32px 12px; }
+  body .term_box ul.collapsible {
+    box-shadow: none;
+    border: none; }
+    body .term_box ul.collapsible li {
+      margin: 16px 0; }
+      body .term_box ul.collapsible li .collapsible-header {
+        position: relative;
+        height: 48px;
+        border: 1px solid #e2e2e2; }
+        body .term_box ul.collapsible li .collapsible-header img:first-child {
+          width: 21.3px;
+          height: 21.3px; }
+        body .term_box ul.collapsible li .collapsible-header img:last-child {
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          right: 24px;
+          top: 16px; }
+        body .term_box ul.collapsible li .collapsible-header span {
+          margin-left: 13.2px;
+          font-size: 14px;
+          font-family: "OpenSans-Bold";
+          color: #161719; }
+      body .term_box ul.collapsible li .collapsible-body {
+        background-color: white; }
+      body .term_box ul.collapsible li:hover {
+        box-shadow: 4px 4px 15px #ddd; }
+    body .term_box ul.collapsible li.active {
+      border: 1px solid #e2e2e2; }
+      body .term_box ul.collapsible li.active .collapsible-header {
+        border: none; }
+        body .term_box ul.collapsible li.active .collapsible-header img:last-child {
+          transform: rotate(225deg); }
+      body .term_box ul.collapsible li.active .collapsible-body {
+        border-bottom: none; }
 
 body header {
   height: 96px; }
@@ -886,233 +914,233 @@ body main {
       padding: 0px 20px; } }
 main {
   background: #f7f7f7; }
-  main .container-fluid {
+  main .about_main {
     margin-top: 6em; }
-    main .container-fluid .about_box {
+    main .about_main .about_box {
       background-color: #0086e6;
       height: 66vh;
       margin-bottom: 17em; }
-      main .container-fluid .about_box img.dot {
+      main .about_main .about_box img.dot {
         width: 9em;
         position: absolute;
         right: 6em;
         top: 12em; }
-      main .container-fluid .about_box .about_box_inner {
+      main .about_main .about_box .about_box_inner {
         flex-direction: column;
         display: flex;
         width: 85%;
         margin: 70px auto;
         position: relative; }
-        main .container-fluid .about_box .about_box_inner h1 {
+        main .about_main .about_box .about_box_inner h1 {
           font-size: 48px;
           font-family: "OpenSans-Bold";
           color: white;
           line-height: 1.6em;
           margin-top: 2em; }
-        main .container-fluid .about_box .about_box_inner div.man_img {
+        main .about_main .about_box .about_box_inner div.man_img {
           padding-left: 0; }
-          main .container-fluid .about_box .about_box_inner div.man_img p {
+          main .about_main .about_box .about_box_inner div.man_img p {
             font-size: 18px;
             font-family: "OpenSans";
             color: white;
             width: 412px;
             margin: 48px 0px; }
-          main .container-fluid .about_box .about_box_inner div.man_img img {
+          main .about_main .about_box .about_box_inner div.man_img img {
             height: 21.4em; }
-        main .container-fluid .about_box .about_box_inner div.flight_img {
+        main .about_main .about_box .about_box_inner div.flight_img {
           margin-top: 20px;
           padding-right: 0; }
-          main .container-fluid .about_box .about_box_inner div.flight_img img {
+          main .about_main .about_box .about_box_inner div.flight_img img {
             height: 33.6em; }
-    main .container-fluid .row.intro_box {
+    main .about_main .row.intro_box {
       position: relative;
       margin: 0 auto 12em; }
-      main .container-fluid .row.intro_box img.dot {
+      main .about_main .row.intro_box img.dot {
         position: absolute;
         right: 24em;
         top: 22.6em;
         width: 6em;
         transform: rotate(270deg); }
-      main .container-fluid .row.intro_box .intro_box_inner {
+      main .about_main .row.intro_box .intro_box_inner {
         background-color: white;
         padding: 40px 100px; }
-        main .container-fluid .row.intro_box .intro_box_inner h6 {
+        main .about_main .row.intro_box .intro_box_inner h6 {
           font-size: 14px;
           font-family: "OpenSans";
           color: #0086e6; }
-        main .container-fluid .row.intro_box .intro_box_inner h1 {
+        main .about_main .row.intro_box .intro_box_inner h1 {
           color: #3d3d3d;
           font-family: "OpenSans-Bold";
           font-size: 32px; }
-        main .container-fluid .row.intro_box .intro_box_inner p {
+        main .about_main .row.intro_box .intro_box_inner p {
           color: #3d3d3d;
           font-family: "OpenSans";
           font-size: 18px;
           margin: 32px 0; }
-    main .container-fluid .field_box {
+    main .about_main .field_box {
       flex-direction: column;
       display: flex;
       width: 85%;
       margin: 70px auto;
       position: relative; }
-      main .container-fluid .field_box h6 {
+      main .about_main .field_box h6 {
         font-size: 14px;
         font-family: "OpenSans";
         color: #0086e6; }
-      main .container-fluid .field_box h1 {
+      main .about_main .field_box h1 {
         font-size: 32px;
         font-family: "OpenSans-Bold";
         color: #000000;
         margin: 10px 0 0 0;
         position: relative; }
-        main .container-fluid .field_box h1 hr {
+        main .about_main .field_box h1 hr {
           width: 190px;
           position: absolute;
           top: 1px;
           margin-left: 423px;
           color: #0086e6; }
-      main .container-fluid .field_box p {
+      main .about_main .field_box p {
         color: #000000;
         font-family: "OpenSans";
         font-size: 18px;
         margin: 30px 0;
         width: 402px; }
-      main .container-fluid .field_box .row.list_box {
+      main .about_main .field_box .row.list_box {
         margin: 3em 0; }
-        main .container-fluid .field_box .row.list_box ul {
+        main .about_main .field_box .row.list_box ul {
           margin-left: 2px !important; }
-          main .container-fluid .field_box .row.list_box ul li {
+          main .about_main .field_box .row.list_box ul li {
             list-style: disc;
             color: #0086e6;
             position: relative;
             margin: 16px auto; }
-            main .container-fluid .field_box .row.list_box ul li hr {
+            main .about_main .field_box .row.list_box ul li hr {
               width: 47px;
               position: absolute;
               top: 11px;
               margin: 0 2px;
               color: #0086e6; }
-            main .container-fluid .field_box .row.list_box ul li span {
+            main .about_main .field_box .row.list_box ul li span {
               margin-left: 70px;
               color: #000000; }
-        main .container-fluid .field_box .row.list_box .img_field {
+        main .about_main .field_box .row.list_box .img_field {
           display: flex;
           justify-content: flex-end; }
-      main .container-fluid .field_box .row.last_img .img_field {
+      main .about_main .field_box .row.last_img .img_field {
         padding-left: 0; }
-    main .container-fluid .customer_box {
+    main .about_main .customer_box {
       position: relative; }
-      main .container-fluid .customer_box img.dot {
+      main .about_main .customer_box img.dot {
         position: absolute;
         right: 0em;
         top: 0em;
         width: 6em; }
-      main .container-fluid .customer_box .customer_box_inner {
+      main .about_main .customer_box .customer_box_inner {
         flex-direction: column;
         display: flex;
         width: 85%;
         margin: 70px auto; }
-        main .container-fluid .customer_box .customer_box_inner h6 {
+        main .about_main .customer_box .customer_box_inner h6 {
           font-size: 14px;
           font-family: "OpenSans";
           color: #0086e6; }
-        main .container-fluid .customer_box .customer_box_inner h1 {
+        main .about_main .customer_box .customer_box_inner h1 {
           font-size: 32px;
           font-family: "OpenSans-Bold";
           color: #000000;
           margin: 10px 0 0 0;
           position: relative; }
-          main .container-fluid .customer_box .customer_box_inner h1 hr {
+          main .about_main .customer_box .customer_box_inner h1 hr {
             width: 190px;
             position: absolute;
             top: 1px;
             margin-left: 470px;
             color: #0086e6; }
-        main .container-fluid .customer_box .customer_box_inner p {
+        main .about_main .customer_box .customer_box_inner p {
           color: #000000;
           font-family: "OpenSans";
           font-size: 18px;
           margin: 30px 0;
           width: 402px; }
-        main .container-fluid .customer_box .customer_box_inner .row.img_box {
+        main .about_main .customer_box .customer_box_inner .row.img_box {
           margin: 3em 0; }
-          main .container-fluid .customer_box .customer_box_inner .row.img_box .img_customer {
+          main .about_main .customer_box .customer_box_inner .row.img_box .img_customer {
             display: flex;
             justify-content: flex-end; }
-            main .container-fluid .customer_box .customer_box_inner .row.img_box .img_customer img {
+            main .about_main .customer_box .customer_box_inner .row.img_box .img_customer img {
               width: 28em; }
-    main .container-fluid .blog_box {
+    main .about_main .blog_box {
       position: relative; }
-      main .container-fluid .blog_box img.dot {
+      main .about_main .blog_box img.dot {
         position: absolute;
         left: 0em;
         top: 0em;
         width: 3em; }
-      main .container-fluid .blog_box .blog_box_inner {
+      main .about_main .blog_box .blog_box_inner {
         flex-direction: column;
         display: flex;
         width: 85%;
         margin: 70px auto; }
-        main .container-fluid .blog_box .blog_box_inner h6 {
+        main .about_main .blog_box .blog_box_inner h6 {
           font-size: 14px;
           font-family: "OpenSans";
           color: #0086e6; }
-        main .container-fluid .blog_box .blog_box_inner h1 {
+        main .about_main .blog_box .blog_box_inner h1 {
           font-size: 32px;
           font-family: "OpenSans-Bold";
           color: #000000;
           margin: 10px 0 0 0;
           position: relative; }
-          main .container-fluid .blog_box .blog_box_inner h1 hr {
+          main .about_main .blog_box .blog_box_inner h1 hr {
             width: 190px;
             position: absolute;
             top: 1px;
             margin-left: 470px;
             color: #0086e6; }
-        main .container-fluid .blog_box .blog_box_inner p {
+        main .about_main .blog_box .blog_box_inner p {
           color: #000000;
           font-family: "OpenSans";
           font-size: 18px;
           margin: 30px 0;
           width: 402px; }
-        main .container-fluid .blog_box .blog_box_inner .row {
+        main .about_main .blog_box .blog_box_inner .row {
           width: 100%;
           margin-top: 6em;
           display: flex;
           justify-content: space-between;
           align-items: first baseline; }
-          main .container-fluid .blog_box .blog_box_inner .row .card_box {
+          main .about_main .blog_box .blog_box_inner .row .card_box {
             background-color: white;
             padding: 50px 40px; }
-            main .container-fluid .blog_box .blog_box_inner .row .card_box img.star {
+            main .about_main .blog_box .blog_box_inner .row .card_box img.star {
               width: 7em; }
-            main .container-fluid .blog_box .blog_box_inner .row .card_box p {
+            main .about_main .blog_box .blog_box_inner .row .card_box p {
               color: #161719;
               font-family: "OpenSans";
               font-size: 18px;
               width: 100%; }
-            main .container-fluid .blog_box .blog_box_inner .row .card_box .avatar_box {
+            main .about_main .blog_box .blog_box_inner .row .card_box .avatar_box {
               display: flex; }
-              main .container-fluid .blog_box .blog_box_inner .row .card_box .avatar_box img {
+              main .about_main .blog_box .blog_box_inner .row .card_box .avatar_box img {
                 width: 3em; }
-              main .container-fluid .blog_box .blog_box_inner .row .card_box .avatar_box > div {
+              main .about_main .blog_box .blog_box_inner .row .card_box .avatar_box > div {
                 display: flex;
                 flex-direction: column;
                 margin-left: 17px;
                 justify-content: center; }
-                main .container-fluid .blog_box .blog_box_inner .row .card_box .avatar_box > div span:first-child {
+                main .about_main .blog_box .blog_box_inner .row .card_box .avatar_box > div span:first-child {
                   color: #161719;
                   font-family: "OpenSans";
                   font-size: 14px; }
-                main .container-fluid .blog_box .blog_box_inner .row .card_box .avatar_box > div span:nth-child(2) {
+                main .about_main .blog_box .blog_box_inner .row .card_box .avatar_box > div span:nth-child(2) {
                   color: #b3b6b9;
                   font-family: "OpenSans";
                   font-size: 14px; }
-          main .container-fluid .blog_box .blog_box_inner .row .card_box:first-child {
+          main .about_main .blog_box .blog_box_inner .row .card_box:first-child {
             margin: 0 1em 0 0; }
-          main .container-fluid .blog_box .blog_box_inner .row .card_box:nth-child(2) {
+          main .about_main .blog_box .blog_box_inner .row .card_box:nth-child(2) {
             margin: 0 1em 0 1em; }
-          main .container-fluid .blog_box .blog_box_inner .row .card_box:nth-child(3) {
+          main .about_main .blog_box .blog_box_inner .row .card_box:nth-child(3) {
             margin: 0 0 0 1em; }
 
 @media screen and (max-width: 992px) {
@@ -1166,5 +1194,8 @@ nav.home {
       font-size: 12px;
       border-radius: 50%;
       text-align: center; }
+
+.keyboard-focused .collapsible-header:focus {
+  background-color: white; }
 
 /*# sourceMappingURL=main.css.map */
