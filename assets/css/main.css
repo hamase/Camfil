@@ -279,10 +279,10 @@ body .footer_box {
   body .footer_box .row > div .touch {
     margin: auto; } }
 @media screen and (min-width: 993px) and (max-width: 1086px) {
-  body .footer_box .row > div .find-us ul li.location {
+  body .footer_box .row > div .find_us ul li.location {
     margin: 24px auto 54px auto; } }
 @media screen and (min-width: 1087px) and (max-width: 1163px) {
-  body .footer_box .row > div .find-us ul li.location {
+  body .footer_box .row > div .find_us ul li.location {
     margin: 24px auto 40px auto; } }
 body main.error_box {
   height: 660px;
@@ -414,30 +414,30 @@ body header {
             justify-content: center; }
           body header .home > div ul.header_box_menu li a.btn span:not(.badge) {
             margin-right: 13.7px; }
-body main {
+body main.home {
   background: #f7f7f7; }
-  body main .slider_box {
+  body main.home .slider_box {
     height: 100vh;
     background: linear-gradient(#e5f0ff, #ecf6fd);
     display: flex; }
-    body main .slider_box .slider_box_inner {
+    body main.home .slider_box .slider_box_inner {
       display: flex;
       width: 85%;
       align-items: center;
       margin: 0 auto; }
-      body main .slider_box .slider_box_inner h1 {
+      body main.home .slider_box .slider_box_inner h1 {
         color: #161719;
         font-family: "OpenSans-Bold";
         font-size: 40px; }
-      body main .slider_box .slider_box_inner p {
+      body main.home .slider_box .slider_box_inner p {
         color: #3d3d3d;
         font-family: "OpenSans";
         font-size: 18px; }
-      body main .slider_box .slider_box_inner div.search {
+      body main.home .slider_box .slider_box_inner div.search {
         position: relative;
         width: 563px;
         margin: 32px 0 36px 0; }
-        body main .slider_box .slider_box_inner div.search input {
+        body main.home .slider_box .slider_box_inner div.search input {
           width: 523px;
           height: 56px;
           position: relative;
@@ -448,14 +448,14 @@ body main {
           font-size: 12px;
           color: #004377;
           box-shadow: 5px 6px 19px #b3b3b3; }
-          body main .slider_box .slider_box_inner div.search input::placeholder {
+          body main.home .slider_box .slider_box_inner div.search input::placeholder {
             font-family: "OpenSans-SemiBold";
             font-size: 12px;
             color: #004377; }
-          body main .slider_box .slider_box_inner div.search input:focus {
+          body main.home .slider_box .slider_box_inner div.search input:focus {
             border: none !important;
             box-shadow: none !important; }
-        body main .slider_box .slider_box_inner div.search button {
+        body main.home .slider_box .slider_box_inner div.search button {
           background: #0086e6;
           width: 117px;
           height: 44px;
@@ -465,210 +465,210 @@ body main {
           border-radius: 0px;
           display: flex;
           align-items: center; }
-          body main .slider_box .slider_box_inner div.search button img {
+          body main.home .slider_box .slider_box_inner div.search button img {
             width: 16.1px;
             height: 16.1px;
             margin: 0 2px 0 4px; }
-          body main .slider_box .slider_box_inner div.search button span {
+          body main.home .slider_box .slider_box_inner div.search button span {
             font-size: 14px;
             font-family: "OpenSans-SemiBold";
             text-transform: none;
             margin: 0 auto; }
-  body main .chat_box {
+  body main.home .chat_box {
     display: flex;
     justify-content: flex-end;
     margin: 26px 33px 114px 0; }
-    body main .chat_box button.chat_btn {
+    body main.home .chat_box button.chat_btn {
       background-color: #0086e6;
       border-radius: 0px;
       border: none;
       width: 60px;
       height: 60px;
       position: relative; }
-      body main .chat_box button.chat_btn img {
+      body main.home .chat_box button.chat_btn img {
         width: 22px;
         height: 20px; }
-  body main .company_box {
+  body main.home .company_box {
     position: relative; }
-    body main .company_box img.dot {
+    body main.home .company_box img.dot {
       width: 4em;
       position: absolute;
       right: 0px;
       top: 17em; }
-    body main .company_box .company_box_inner {
+    body main.home .company_box .company_box_inner {
       flex-direction: column;
       display: flex;
       width: 85%;
       margin: 0 auto;
       position: relative; }
-      body main .company_box .company_box_inner h6 {
+      body main.home .company_box .company_box_inner h6 {
         font-size: 14px;
         font-family: "OpenSans";
         color: #0086e6; }
-      body main .company_box .company_box_inner h1 {
+      body main.home .company_box .company_box_inner h1 {
         font-size: 32px;
         font-family: "OpenSans-Bold";
         color: rgba(0, 0, 0, 0.9);
         margin: 16px 0 64px 0;
         position: relative; }
-        body main .company_box .company_box_inner h1 hr {
+        body main.home .company_box .company_box_inner h1 hr {
           width: 190px;
           position: absolute;
           top: 1px;
           margin-left: 363px;
           color: #0086e6; }
-      body main .company_box .company_box_inner ul {
+      body main.home .company_box .company_box_inner ul {
         width: 100%; }
-        body main .company_box .company_box_inner ul li .img {
+        body main.home .company_box .company_box_inner ul li .img {
           width: 79px;
           height: 101px;
           background-color: white; }
-        body main .company_box .company_box_inner ul li h4 {
+        body main.home .company_box .company_box_inner ul li h4 {
           font-size: 24px;
           font-family: "OpenSans-Bold";
           color: black;
           margin: 40px 0 16px 0; }
-        body main .company_box .company_box_inner ul li p {
+        body main.home .company_box .company_box_inner ul li p {
           font-size: 18px;
           font-family: "OpenSans";
           color: black;
           width: 302px; }
-        body main .company_box .company_box_inner ul li:first-child img {
+        body main.home .company_box .company_box_inner ul li:first-child img {
           width: 87px;
           height: 55px;
           margin: 32px 0 15px 15px; }
-        body main .company_box .company_box_inner ul li:nth-child(2) img {
+        body main.home .company_box .company_box_inner ul li:nth-child(2) img {
           width: 66px;
           height: 64px;
           margin: 23px 0 15px 35px; }
-        body main .company_box .company_box_inner ul li:nth-child(3) img {
+        body main.home .company_box .company_box_inner ul li:nth-child(3) img {
           width: 85px;
           height: 51px;
           margin: 36px 0 15px 14px; }
-  body main .value_box {
+  body main.home .value_box {
     display: flex;
     width: 85%;
     margin: 0 auto; }
-    body main .value_box > div:first-child {
+    body main.home .value_box > div:first-child {
       position: relative;
       margin-right: 55px; }
-      body main .value_box > div:first-child img:first-child {
+      body main.home .value_box > div:first-child img:first-child {
         position: absolute;
         width: 138px;
         left: 50px; }
-      body main .value_box > div:first-child img:last-child {
+      body main.home .value_box > div:first-child img:last-child {
         width: 523px;
         height: 357px;
         position: absolute;
         top: 37px; }
-    body main .value_box > div:nth-child(2) .white_box {
+    body main.home .value_box > div:nth-child(2) .white_box {
       background-color: white;
       width: 523px;
       padding: 40px 65px 48px 46px; }
-      body main .value_box > div:nth-child(2) .white_box h6 {
+      body main.home .value_box > div:nth-child(2) .white_box h6 {
         font-size: 14px;
         font-family: "OpenSans";
         color: #0086e6; }
-      body main .value_box > div:nth-child(2) .white_box h1 {
+      body main.home .value_box > div:nth-child(2) .white_box h1 {
         color: #000000;
         font-family: "OpenSans-Bold";
         font-size: 32px; }
-      body main .value_box > div:nth-child(2) .white_box p {
+      body main.home .value_box > div:nth-child(2) .white_box p {
         color: #000000;
         font-family: "OpenSans";
         font-size: 18px;
         margin: 32px 0; }
-      body main .value_box > div:nth-child(2) .white_box button {
+      body main.home .value_box > div:nth-child(2) .white_box button {
         background: #0086e6;
         width: 412px;
         height: 40px;
         border-radius: 0px;
         display: flex;
         align-items: center; }
-        body main .value_box > div:nth-child(2) .white_box button img {
+        body main.home .value_box > div:nth-child(2) .white_box button img {
           width: 16.1px;
           height: 16.1px;
           margin: 0 auto;
           position: absolute;
           left: 160px; }
-        body main .value_box > div:nth-child(2) .white_box button span {
+        body main.home .value_box > div:nth-child(2) .white_box button span {
           font-size: 14px;
           font-family: "OpenSans-SemiBold";
           text-transform: none;
           margin: 0 auto; }
-  body main .branch_box {
+  body main.home .branch_box {
     flex-direction: column;
     display: flex;
     width: 85%;
     margin: 70px auto;
     position: relative; }
-    body main .branch_box h6 {
+    body main.home .branch_box h6 {
       font-size: 14px;
       font-family: "OpenSans";
       color: #0086e6; }
-    body main .branch_box h1 {
+    body main.home .branch_box h1 {
       font-size: 32px;
       font-family: "OpenSans-Bold";
       color: #000000;
       margin: 10px 0 0 0;
       position: relative; }
-      body main .branch_box h1 hr {
+      body main.home .branch_box h1 hr {
         width: 190px;
         position: absolute;
         top: 1px;
         margin-left: 423px;
         color: #0086e6; }
-    body main .branch_box p {
+    body main.home .branch_box p {
       color: #000000;
       font-family: "OpenSans";
       font-size: 18px;
       margin: 30px 0;
       width: 402px; }
-    body main .branch_box ul {
+    body main.home .branch_box ul {
       margin-left: 2px !important; }
-      body main .branch_box ul li {
+      body main.home .branch_box ul li {
         list-style: disc;
         color: #0086e6;
         position: relative;
         margin: 16px auto; }
-        body main .branch_box ul li hr {
+        body main.home .branch_box ul li hr {
           width: 47px;
           position: absolute;
           top: 11px;
           margin: 0 2px;
           color: #0086e6; }
-        body main .branch_box ul li span {
+        body main.home .branch_box ul li span {
           margin-left: 70px;
           color: #000000; }
-  body main .product_box .product_box_title {
+  body main.home .product_box .product_box_title {
     flex-direction: column;
     display: flex;
     width: 85%;
     margin: 70px auto;
     position: relative; }
-    body main .product_box .product_box_title h6 {
+    body main.home .product_box .product_box_title h6 {
       font-size: 14px;
       font-family: "OpenSans";
       color: #0086e6; }
-    body main .product_box .product_box_title h1 {
+    body main.home .product_box .product_box_title h1 {
       font-size: 32px;
       font-family: "OpenSans-Bold";
       color: #000000;
       margin: 10px 0 0 0;
       position: relative; }
-      body main .product_box .product_box_title h1 hr {
+      body main.home .product_box .product_box_title h1 hr {
         width: 190px;
         position: absolute;
         top: 1px;
         margin-left: 180px;
         color: #0086e6; }
-  body main .product_box .product_box_list {
+  body main.home .product_box .product_box_list {
     margin: 0 auto; }
-    body main .product_box .product_box_list .row {
+    body main.home .product_box .product_box_list .row {
       display: flex;
       justify-content: center;
       margin-bottom: 0; }
-      body main .product_box .product_box_list .row > div {
+      body main.home .product_box .product_box_list .row > div {
         background-color: white;
         width: 302px;
         height: 254px;
@@ -677,55 +677,55 @@ body main {
         align-items: center;
         flex-direction: column;
         justify-content: center; }
-        body main .product_box .product_box_list .row > div img {
+        body main.home .product_box .product_box_list .row > div img {
           width: 87px;
           height: 89px; }
-        body main .product_box .product_box_list .row > div p {
+        body main.home .product_box .product_box_list .row > div p {
           text-align: center;
           font-size: 20px;
           font-family: "OpenSans-Bold";
           color: #000000;
           margin-bottom: 0; }
-      body main .product_box .product_box_list .row > div.see_all {
+      body main.home .product_box .product_box_list .row > div.see_all {
         background-color: #0086e6;
         width: 302px;
         height: 254px;
         margin: 20px; }
-        body main .product_box .product_box_list .row > div.see_all span {
+        body main.home .product_box .product_box_list .row > div.see_all span {
           text-align: center;
           font-size: 40px;
           font-family: "OpenSans-Bold";
           color: white; }
-          body main .product_box .product_box_list .row > div.see_all span img {
+          body main.home .product_box .product_box_list .row > div.see_all span img {
             width: 8px;
             height: 15px;
             margin-left: 20px;
             vertical-align: middle; }
-  body main .brand_box {
+  body main.home .brand_box {
     width: 85%;
     margin: 70px auto;
     position: relative; }
-    body main .brand_box h6 {
+    body main.home .brand_box h6 {
       font-size: 14px;
       font-family: "OpenSans";
       color: #0086e6; }
-    body main .brand_box h1 {
+    body main.home .brand_box h1 {
       font-size: 32px;
       font-family: "OpenSans-Bold";
       color: #000000;
       margin: 18px 0 49px 0;
       position: relative; }
-      body main .brand_box h1 hr {
+      body main.home .brand_box h1 hr {
         width: 190px;
         position: absolute;
         top: 1px;
         margin-left: 180px;
         color: #0086e6; }
-    body main .brand_box .row {
+    body main.home .brand_box .row {
       display: flex;
       justify-content: center;
       margin-bottom: 0; }
-      body main .brand_box .row > div:first-child {
+      body main.home .brand_box .row > div:first-child {
         background-color: #0086e6;
         width: 302px;
         height: 254px;
@@ -733,63 +733,63 @@ body main {
         display: flex;
         justify-content: center;
         align-items: center; }
-        body main .brand_box .row > div:first-child span {
+        body main.home .brand_box .row > div:first-child span {
           font-size: 48px;
           font-family: "OpenSans-Bold";
           color: white; }
-          body main .brand_box .row > div:first-child span img {
+          body main.home .brand_box .row > div:first-child span img {
             width: 8px;
             height: 15px;
             margin-left: 20px;
             vertical-align: middle; }
-      body main .brand_box .row > div:last-child {
+      body main.home .brand_box .row > div:last-child {
         background-color: white;
         height: 254px;
         margin: 20px;
         display: flex;
         align-items: center;
         flex-direction: column; }
-        body main .brand_box .row > div:last-child > div {
+        body main.home .brand_box .row > div:last-child > div {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-around;
           margin: 20px auto; }
-          body main .brand_box .row > div:last-child > div > div {
+          body main.home .brand_box .row > div:last-child > div > div {
             display: flex;
             justify-content: center; }
-            body main .brand_box .row > div:last-child > div > div img {
+            body main.home .brand_box .row > div:last-child > div > div img {
               width: 13em; }
-        body main .brand_box .row > div:last-child > div:first-child div:nth-child(2) img,
-        body main .brand_box .row > div:last-child > div:first-child div:nth-child(3) img {
+        body main.home .brand_box .row > div:last-child > div:first-child div:nth-child(2) img,
+        body main.home .brand_box .row > div:last-child > div:first-child div:nth-child(3) img {
           width: 6em; }
-  body main .row.last_search_box {
+  body main.home .row.last_search_box {
     position: relative; }
-    body main .row.last_search_box img.dot {
+    body main.home .row.last_search_box img.dot {
       width: 8em;
       position: absolute;
       right: 160px;
       top: -30px; }
-    body main .row.last_search_box .end_search_box {
+    body main.home .row.last_search_box .end_search_box {
       position: relative; }
-      body main .row.last_search_box .end_search_box > div.col > div {
+      body main.home .row.last_search_box .end_search_box > div.col > div {
         background: white; }
-        body main .row.last_search_box .end_search_box > div.col > div h1 {
+        body main.home .row.last_search_box .end_search_box > div.col > div h1 {
           color: #161719;
           font-family: "OpenSans-Bold";
           font-size: 22px;
           text-transform: uppercase;
           margin-bottom: 0;
           margin-top: 0; }
-        body main .row.last_search_box .end_search_box > div.col > div p {
+        body main.home .row.last_search_box .end_search_box > div.col > div p {
           color: #3d3d3d;
           font-family: "OpenSans";
           font-size: 16px;
           margin: 16px 0 40px 0; }
-        body main .row.last_search_box .end_search_box > div.col > div div.search {
+        body main.home .row.last_search_box .end_search_box > div.col > div div.search {
           position: relative;
           width: 563px; }
-          body main .row.last_search_box .end_search_box > div.col > div div.search input {
+          body main.home .row.last_search_box .end_search_box > div.col > div div.search input {
             width: 523px;
             height: 56px;
             position: relative;
@@ -799,14 +799,14 @@ body main {
             font-size: 12px;
             color: #004377;
             box-shadow: 5px 6px 19px #b3b3b3; }
-            body main .row.last_search_box .end_search_box > div.col > div div.search input::placeholder {
+            body main.home .row.last_search_box .end_search_box > div.col > div div.search input::placeholder {
               font-family: "OpenSans-SemiBold";
               font-size: 12px;
               color: #004377; }
-            body main .row.last_search_box .end_search_box > div.col > div div.search input:focus {
+            body main.home .row.last_search_box .end_search_box > div.col > div div.search input:focus {
               border: none !important;
               box-shadow: none !important; }
-          body main .row.last_search_box .end_search_box > div.col > div div.search button {
+          body main.home .row.last_search_box .end_search_box > div.col > div div.search button {
             background: #0086e6;
             width: 117px;
             height: 44px;
@@ -816,11 +816,11 @@ body main {
             border-radius: 0px;
             display: flex;
             align-items: center; }
-            body main .row.last_search_box .end_search_box > div.col > div div.search button img {
+            body main.home .row.last_search_box .end_search_box > div.col > div div.search button img {
               width: 16.1px;
               height: 16.1px;
               margin: 0 2px 0 4px; }
-            body main .row.last_search_box .end_search_box > div.col > div div.search button span {
+            body main.home .row.last_search_box .end_search_box > div.col > div div.search button span {
               font-size: 14px;
               font-family: "OpenSans-SemiBold";
               text-transform: none;
@@ -1155,6 +1155,145 @@ main {
     body .blog_box .blog_box_inner .row .card_box {
       width: 100%;
       margin: 1em auto !important; } }
+body main.contact {
+  background-color: white; }
+  body main.contact .contact_box {
+    margin: 16em 4em; }
+    body main.contact .contact_box .contact_box_inner h1 {
+      font-size: 24px;
+      font-family: "OpenSans-Bold";
+      color: #3d3d3d;
+      margin: 0 0 32px 12px; }
+    body main.contact .contact_box .contact_box_inner h2 {
+      font-size: 24px;
+      font-family: "OpenSans-Bold";
+      color: #161719;
+      padding-bottom: 25px; }
+    body main.contact .contact_box .contact_box_inner form.contact_form {
+      border-top: 1px solid #e2e2e2;
+      padding-top: 2em; }
+      body main.contact .contact_box .contact_box_inner form.contact_form .row {
+        margin-bottom: 0px; }
+      body main.contact .contact_box .contact_box_inner form.contact_form .row:nth-child(3) > .input-field {
+        padding-right: 0; }
+      body main.contact .contact_box .contact_box_inner form.contact_form .row:last-child {
+        display: flex; }
+        body main.contact .contact_box .contact_box_inner form.contact_form .row:last-child > div {
+          padding-right: 0; }
+          body main.contact .contact_box .contact_box_inner form.contact_form .row:last-child > div button.send_msg_btn {
+            height: 48px;
+            background: #0086e6;
+            border: none;
+            border-radius: 0; }
+            body main.contact .contact_box .contact_box_inner form.contact_form .row:last-child > div button.send_msg_btn span {
+              font-size: 16px;
+              font-family: "OpenSans-Bold";
+              color: white; }
+            body main.contact .contact_box .contact_box_inner form.contact_form .row:last-child > div button.send_msg_btn:hover {
+              cursor: pointer; }
+      body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner {
+        position: relative; }
+        body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner input,
+        body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner .select-wrapper input {
+          border: 1px solid #b3b6b9;
+          height: 48px;
+          padding-left: 10px; }
+          body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner input::placeholder,
+          body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner .select-wrapper input::placeholder {
+            font-family: "OpenSans";
+            font-size: 14px;
+            color: #b3b6b9; }
+        body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner .materialize-textarea {
+          border: 1px solid #b3b6b9;
+          height: 96px;
+          max-height: 150px;
+          padding-left: 10px; }
+        body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner i {
+          position: absolute;
+          right: 17px;
+          top: 13px;
+          width: auto;
+          display: flex; }
+          body main.contact .contact_box .contact_box_inner form.contact_form .input-field .input-field-inner i img {
+            width: 0.8em; }
+      body main.contact .contact_box .contact_box_inner form.contact_form input#email + i {
+        top: 17px; }
+      body main.contact .contact_box .contact_box_inner form.contact_form input#phone-number + i img,
+      body main.contact .contact_box .contact_box_inner form.contact_form textarea#message + i img {
+        width: 0.7em; }
+    body main.contact .contact_box .contact_box_inner .contact_adrs .find_us {
+      border-top: 1px solid #e2e2e2;
+      border-bottom: 1px solid #e2e2e2;
+      padding: 2em 0; }
+      body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.location {
+        display: flex;
+        margin: 24px auto 8px auto; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.location img {
+          width: 14.1px;
+          height: 18.7px; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.location span {
+          width: 163px;
+          height: 79px;
+          margin-left: 12.9px; }
+      body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.phone {
+        display: flex;
+        align-items: center; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.phone img {
+          width: 14.6px;
+          height: 14.6px; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.phone span {
+          margin-left: 12.9px; }
+      body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.email {
+        display: flex;
+        align-items: center; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.email img {
+          width: 18px;
+          height: 12px; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.email span {
+          margin-left: 12.9px; }
+    body main.contact .contact_box .contact_box_inner .contact_adrs .touch {
+      display: flex;
+      justify-content: flex-end; }
+      body main.contact .contact_box .contact_box_inner .contact_adrs .touch ul.social_media {
+        display: flex; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .touch ul.social_media li a img {
+          width: 31.5px;
+          height: 31.5px; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .touch ul.social_media li:first-child {
+          margin-right: 21.5px;
+          margin-bottom: 0px !important; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .touch ul.social_media li:nth-child(2) {
+          margin-right: 20.5px; }
+        body main.contact .contact_box .contact_box_inner .contact_adrs .touch ul.social_media li:nth-child(3) {
+          margin-right: 20.3px; }
+          body main.contact .contact_box .contact_box_inner .contact_adrs .touch ul.social_media li:nth-child(3) a img {
+            width: 30.7px;
+            height: 24.9px;
+            vertical-align: -moz-middle-with-baseline;
+            vertical-align: -webkit-baseline-middle; }
+
+@media screen and (max-width: 992px) {
+  body .contact_box .contact_box_inner .input-field .select-wrapper input.select-dropdown {
+    width: 97%; }
+  body .contact_box .contact_box_inner .input-field #phone-number {
+    width: 98%; }
+  body .contact_box .contact_box_inner button.send_msg_btn {
+    width: 100%; }
+  body .contact_box .contact_box_inner .social {
+    margin: 4em auto auto; } }
+@media screen and (min-width: 993px) {
+  body .contact_box .contact_box_inner .input-field input {
+    width: 97%; }
+  body .contact_box .contact_box_inner .input-field .select-wrapper input.select-dropdown {
+    width: 92%; }
+  body .contact_box .contact_box_inner .input-field #phone-number {
+    width: 90%; }
+    body .contact_box .contact_box_inner .input-field #phone-number + i {
+      right: 25px; }
+  body .contact_box .contact_box_inner .input-field #message {
+    width: 99%; }
+  body .contact_box .contact_box_inner button.send_msg_btn {
+    width: 98%; } }
 nav.header_box {
   background-color: #004377 !important; }
   nav.header_box ul {
@@ -1197,5 +1336,11 @@ nav.home {
 
 .keyboard-focused .collapsible-header:focus {
   background-color: white; }
+
+input:focus,
+textarea.materialize-textarea:focus,
+input.valid {
+  border-bottom: 1px solid #b3b6b9 !important;
+  box-shadow: none !important; }
 
 /*# sourceMappingURL=main.css.map */

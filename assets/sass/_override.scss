@@ -49,3 +49,12 @@ nav.home {
 .keyboard-focused .collapsible-header:focus {
 	background-color: white;
 }
+input:focus,
+textarea.materialize-textarea:focus,
+input.valid {
+	border-bottom: 1px solid #b3b6b9 !important;
+	box-shadow: none !important;
+}
+// select {
+// 	display: block;
+// }

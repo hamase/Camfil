@@ -14,6 +14,8 @@
 		/>
 
 		<!-- import node module js -->
+		<!-- flags -->
+
 		<link
 			type="text/css"
 			rel="stylesheet"
@@ -120,213 +122,151 @@
 		</header>
 
 		<!-- main page -->
-		<main>
-			<div class="container-fluid about_main">
-				<div class="row about_box">
-					<img src="assets/img/dot-light.png" alt="" class="dot" />
-					<div class="about_box_inner">
-						<h1>
-							About <br />
-							Company
-						</h1>
-						<div class="row">
-							<div class="col s12 l6 man_img">
-								<p>
-									Camfil Group is committed to providing a full range of
-									professional procurement, and services to ensure reliability
-									from the inquiry stage to shipping your order.
-								</p>
-								<img src="assets/img/man.jpg" alt="" class="responsive-img" />
+		<main class="contact">
+			<div class="container-fluid contact_box">
+				<div class="row contact_box_inner">
+					<h1>Contact us</h1>
+					<div class="col s12 l7">
+						<h2>Leave a message</h2>
+						<form id="contact-us" class="contact_form">
+							<div class="row">
+								<div class="input-field col s12 l6">
+									<div class="input-field-inner">
+										<input
+											id="first-name"
+											type="text"
+											class="validate"
+											placeholder="First Name"
+										/>
+										<i class="material-icons prefix"
+											><img src="assets/img/name-icon.png" alt=""
+										/></i>
+									</div>
+								</div>
+								<div class="input-field col s12 l6">
+									<div class="input-field-inner">
+										<input
+											id="last-name"
+											type="tel"
+											class="validate"
+											placeholder="Last Name"
+										/>
+										<i class="material-icons prefix"
+											><img src="assets/img/name-icon.png" alt=""
+										/></i>
+									</div>
+								</div>
 							</div>
-							<div class="col s12 l6 flight_img">
-								<img
-									src="assets/img/flight.jpg"
-									alt=""
-									class="responsive-img"
-								/>
+							<div class="row">
+								<div class="input-field col s12 l6 form-group">
+									<div class="input-field-inner">
+										<input
+											id="email"
+											type="text"
+											class="validate"
+											placeholder="Email"
+										/>
+										<i class="material-icons prefix"
+											><img src="assets/img/mail-light.png" alt=""
+										/></i>
+									</div>
+								</div>
+								<div class="input-field col s12 l6">
+									<div class="row">
+										<div class="col s5">
+											<div class="input-field-inner">
+												<select>
+													<option value="" disabled selected>
+														Choose your option
+													</option>
+													<option value="1">(+36)</option>
+													<option value="2">(+98)</option>
+													<option value="3">(+1)</option>
+												</select>
+											</div>
+										</div>
+										<div class="col s7">
+											<div class="input-field-inner">
+												<input
+													id="phone-number"
+													type="tel"
+													class="validate"
+													placeholder="Phone Number"
+												/>
+												<i class="material-icons prefix"
+													><img src="assets/img/phone-light.png" alt=""
+												/></i>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<div class="input-field-inner">
+										<textarea
+											id="message"
+											class="materialize-textarea"
+											placeholder="Write your message"
+										></textarea>
+										<i class="material-icons prefix"
+											><img src="assets/img/pencil.png" alt=""
+										/></i>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12 l6">
+									<button
+										id="msg-btn"
+										class="send_msg_btn"
+										form="contact-us"
+										type="submit"
+									>
+										<span>Send</span>
+									</button>
+								</div>
+							</div>
+						</form>
 					</div>
-				</div>
-				<div class="row intro_box">
-					<img src="assets/img/seven-dots.png" alt="" class="dot" />
-					<div class="col s12 l10 intro_box_inner">
-						<h6>Introduction</h6>
-						<h1>Find any spare parts</h1>
-						<p>
-							At Camfil GROUP we provide a full procurement service with our
-							on-site packing/forwarding facilities to ensure full quality
-							control. Our privileged working relationship with companies has
-							required us to source or manufacture a full range of items
-							required for drilling and production operations. We are always
-							interested in searching hard to find items, or locating new, more
-							cost effective suppliers for routine requirements.
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="field_box">
-						<h6>Our Fields</h6>
-						<h1>
-							Our market sectors
-							<hr />
-						</h1>
-						<p>
-							Main focus of Camfil Group is the sale and delivery of spare parts
-							for Energy, Mining, Metallurgy Metals, Oil & Gas industries.
-							Camfil Group offers sourcing of supply market sectors including:
-						</p>
-						<div class="row list_box">
-							<div class="col s12 l4">
-								<ul class="row">
-									<li>
-										<hr />
-										<span>Oil & Gas</span>
+					<div class="col s12 l5">
+						<h2 class="social">Contact / Social</h2>
+						<div class="contact_adrs">
+							<div class="col s12 find_us">
+								<ul>
+									<li class="location">
+										<img src="assets/img/location.png" alt="" /><span
+											>Hungary<br />
+											1061 Budapest Anker <br />
+											Köz Anker Business <br />center 2-4
+										</span>
 									</li>
-									<li>
-										<hr />
-										<span>Drilling & Production</span>
+									<li class="phone">
+										<img src="assets/img/phone.png" alt="" /><span
+											>+36 (1) 445 3638</span
+										>
 									</li>
-									<li>
-										<hr />
-										<span>Mining</span>
-									</li>
-									<li>
-										<hr />
-										<span>Petrochemicals</span>
-									</li>
-									<li>
-										<hr />
-										<span>Power Plants</span>
-									</li>
-									<li>
-										<hr />
-										<span>Metals & Metal Production</span>
-									</li>
-									<li>
-										<hr />
-										<span>Energy</span>
-									</li>
-									<li>
-										<hr />
-										<span>Ceramic Industry</span>
-									</li>
-									<li>
-										<hr />
-										<span>Welding Products & Accessories</span>
+									<li class="email">
+										<img src="assets/img/mail.png" alt="" />
+										<span>sales@camfilgroup.com</span>
 									</li>
 								</ul>
 							</div>
-							<div class="col s12 l8 img_field">
-								<img
-									src="assets/img/field1.jpg"
-									alt=""
-									class="responsive-img"
-								/>
-							</div>
-						</div>
-						<div class="row last_img">
-							<div class="col s12 img_field">
-								<img
-									src="assets/img/field2.jpg"
-									alt=""
-									class="responsive-img"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row customer_box">
-					<img src="assets/img/seven-dots.png" alt="" class="dot" />
-					<div class="customer_box_inner">
-						<h6>Customer's satisfaction</h6>
-						<h1>
-							Customer Satisfaction Cycle
-							<hr />
-						</h1>
-						<div class="row img_box">
-							<div class="col s12 m6">
-								<p>
-									Compare our quotes with local suppliers and see, how much you
-									can save with us! Professional, flexible and inexpensive
-									dispatches, including customs handling, increase your profit.
-								</p>
-							</div>
-							<div class="col s12 m6 img_customer">
-								<img
-									src="assets/img/customer.png"
-									alt=""
-									class="responsive-img"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row blog_box">
-					<img src="assets/img/three-dots.png" alt="" class="dot" />
-					<div class="blog_box_inner">
-						<h6>Our blog</h6>
-						<h1>
-							What people say about us
-							<hr />
-						</h1>
-						<div class="row">
-							<div class="col s12 m3 card_box">
-								<img
-									src="assets/img/star.png"
-									alt=""
-									class="responsive-img star"
-								/>
-								<p>
-									Phone ordering was simple and fast. Matt Wheeler was very
-									helpful throughout the process. Received my item a week later,
-									great shipping!
-								</p>
-								<div class="avatar_box">
-									<img src="assets/img/avatar.png" alt="" />
-									<div>
-										<span>Peter</span>
-										<span>Croxco</span>
-									</div>
-								</div>
-							</div>
-							<div class="col s12 m3 card_box">
-								<img
-									src="assets/img/star.png"
-									alt=""
-									class="responsive-img star"
-								/>
-								<p>
-									They have a wide variety of products on their website and also
-									brands. I had an easy time ordering from their website, I am
-									pretty happy with my purchase.
-								</p>
-								<div class="avatar_box">
-									<img src="assets/img/avatar.png" alt="" />
-									<div>
-										<span>Peter</span>
-										<span>Croxco</span>
-									</div>
-								</div>
-							</div>
-							<div class="col s12 m3 card_box">
-								<img
-									src="assets/img/star.png"
-									alt=""
-									class="responsive-img star"
-								/>
-								<p>
-									Phone ordering was simple and fast. Matt Wheeler was very
-									helpful throughout the process. Received my item a week later,
-									great shipping!
-								</p>
-								<div class="avatar_box">
-									<img src="assets/img/avatar.png" alt="" />
-									<div>
-										<span>Peter</span>
-										<span>Croxco</span>
-									</div>
-								</div>
+							<div class="col s12 touch">
+								<ul class="social_media">
+									<li>
+										<a href=""><img src="assets/img/linkedin.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/facebook.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/twitter.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/instagram.png" alt="" /></a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
