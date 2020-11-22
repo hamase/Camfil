@@ -414,6 +414,90 @@ body header {
             justify-content: center; }
           body header .home > div ul.header_box_menu li a.btn span:not(.badge) {
             margin-right: 13.7px; }
+  body header .modal {
+    width: 745px; }
+    body header .modal a.modal-close {
+      float: right; }
+      body header .modal a.modal-close img {
+        transform: rotate(225deg);
+        width: 12px; }
+    body header .modal h4 {
+      color: #3d3d3d;
+      font-family: "OpenSans-Bold";
+      font-size: 24px;
+      margin-bottom: 32px;
+      margin-top: 40px;
+      text-align: center; }
+    body header .modal .row {
+      margin-bottom: 0px; }
+    body header .modal .row:not(.checkbox) {
+      display: flex;
+      justify-content: center; }
+      body header .modal .row:not(.checkbox) .modal_inner {
+        position: relative; }
+        body header .modal .row:not(.checkbox) .modal_inner input {
+          border: 1px solid #b3b6b9;
+          height: 48px;
+          width: 301px;
+          padding-left: 10px;
+          margin: 0 10px 32px 10px; }
+          body header .modal .row:not(.checkbox) .modal_inner input::placeholder {
+            font-family: "OpenSans";
+            font-size: 14px;
+            color: #b3b6b9; }
+        body header .modal .row:not(.checkbox) .modal_inner i {
+          position: absolute;
+          right: 17px;
+          top: 16px;
+          width: auto;
+          display: flex; }
+          body header .modal .row:not(.checkbox) .modal_inner i img {
+            width: 0.8em; }
+        body header .modal .row:not(.checkbox) .modal_inner i.email,
+        body header .modal .row:not(.checkbox) .modal_inner i.password {
+          top: 18px; }
+        body header .modal .row:not(.checkbox) .modal_inner .country input {
+          width: 120px;
+          margin-right: 7px; }
+        body header .modal .row:not(.checkbox) .modal_inner .phone {
+          position: relative; }
+          body header .modal .row:not(.checkbox) .modal_inner .phone input {
+            width: 164px; }
+      body header .modal .row:not(.checkbox) .count-phone {
+        display: flex; }
+    body header .modal .row.register_btn {
+      text-align: center; }
+      body header .modal .row.register_btn button {
+        height: 48px;
+        background: #0086e6;
+        border: none;
+        border-radius: 0;
+        width: 301px; }
+        body header .modal .row.register_btn button span {
+          font-size: 16px;
+          font-family: "OpenSans-Bold";
+          color: white; }
+        body header .modal .row.register_btn button:hover {
+          cursor: pointer; }
+    body header .modal .row.checkbox {
+      width: 92%; }
+      body header .modal .row.checkbox label span {
+        margin-bottom: 17px;
+        color: #3d3d3d;
+        font-family: "OpenSans";
+        font-size: 12px; }
+    body header .modal .modal-footer {
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body header .modal .modal-footer span {
+        color: #545454;
+        font-family: "OpenSans";
+        font-size: 12px; }
+        body header .modal .modal-footer span a {
+          color: #0086e6;
+          font-family: "OpenSans-Bold"; }
 body main.home {
   background: #f7f7f7; }
   body main.home .slider_box {
@@ -830,23 +914,50 @@ body main.home {
   body main h1 hr {
     display: none; }
   body main .slider_box {
-    height: auto;
-    padding-bottom: 60px; }
+    height: auto !important;
+    padding-bottom: 60px !important; }
     body main .slider_box .slider_box_inner {
-      display: block; }
+      display: block;
+      margin-top: 96px !important; }
       body main .slider_box .slider_box_inner div.search {
-        width: 100%; }
+        width: 100% !important; }
         body main .slider_box .slider_box_inner div.search input {
-          width: 100%;
-          padding: 0;
-          padding-left: 5px; }
+          width: 100% !important;
+          padding: 0 !important;
+          padding-left: 5px !important; }
         body main .slider_box .slider_box_inner div.search button {
-          width: auto; }
+          width: auto !important; }
         body main .slider_box .slider_box_inner div.search span {
           display: none; }
   body main .branch_box p {
-    width: auto; } }
+    width: auto !important; }
+  body main .brand_box .row {
+    display: block !important; }
+  body main .value_box {
+    display: block !important; }
+  body main .product_box .product_box_list .row {
+    display: block !important; }
+    body main .product_box .product_box_list .row > div {
+      margin: 8px !important; } }
 @media screen and (max-width: 992px) {
+  body nav {
+    background: #f7f7f7 !important; }
+    body nav .sidenav-trigger i {
+      color: #004377; }
+  body .modal {
+    width: 95% !important; }
+    body .modal .row:not(.chechbox) {
+      display: block !important; }
+      body .modal .row:not(.chechbox) .modal_inner input {
+        width: 93% !important; }
+      body .modal .row:not(.chechbox) .count-phone {
+        display: block !important; }
+    body .modal .row.register_btn {
+      margin: 44px auto !important; }
+      body .modal .row.register_btn button {
+        width: auto !important; }
+    body .modal .row.checkbox {
+      width: 96% !important; }
   body main .slider_box {
     height: auto;
     padding-bottom: 60px; }
@@ -905,6 +1016,13 @@ body main.home {
       width: 36em !important; }
       body main .last_search_box .end_search_box > div.col > div div.search input {
         width: auto; } }
+@media screen and (min-width: 993px) {
+  .modal {
+    height: 580px !important; }
+    .modal .row:not(.checkbox) .modal_inner .phone input {
+      margin-left: 0; }
+    .modal .row:not(.checkbox) .modal_inner .country .select-wrapper .caret {
+      right: 7px !important; } }
 @media screen and (min-width: 1087px) {
   .last_search_box .end_search_box > div.col > div {
     padding: 40px 30px;

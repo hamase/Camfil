@@ -45,7 +45,9 @@
 								class="right hide-on-med-and-down header_box_menu"
 							>
 								<li>
-									<a class="waves-effect waves-light btn" href="#"
+									<a
+										class="waves-effect waves-light btn modal-trigger"
+										href="#account"
 										><span>Account</span>
 										<img src="assets/img/user-blue.png" alt=""
 									/></a>
@@ -65,9 +67,130 @@
 						</div>
 					</nav>
 
+					<!-- Modal Structure -->
+					<div id="account" class="modal modal-fixed-footer">
+						<div class="modal-content">
+							<a
+								href="#!"
+								class="modal-action modal-close waves-effect waves-green btn-flat"
+								><img src="assets/img/plus.png" alt=""
+							/></a>
+							<h4>Register</h4>
+							<div class="row">
+								<div class="modal_inner">
+									<input
+										type="text"
+										class="col s12 l6"
+										placeholder="First Name"
+									/>
+									<i class="material-icons prefix"
+										><img src="assets/img/name-icon.png" alt=""
+									/></i>
+								</div>
+								<div class="modal_inner">
+									<input
+										type="text"
+										class="col s12 l6"
+										placeholder="Last Name"
+									/>
+									<i class="material-icons prefix"
+										><img src="assets/img/name-icon.png" alt=""
+									/></i>
+								</div>
+							</div>
+							<div class="row">
+								<div class="modal_inner count-phone">
+									<div class="country">
+										<select>
+											<option value="" disabled selected>
+												Choose your option
+											</option>
+											<option value="1">(+36)</option>
+											<option value="2">(+98)</option>
+											<option value="3">(+1)</option>
+										</select>
+									</div>
+									<div class="phone">
+										<input
+											id="phone-number"
+											type="tel"
+											class="validate"
+											placeholder="Phone Number"
+										/>
+										<i class="material-icons prefix"
+											><img src="assets/img/phone-light.png" alt=""
+										/></i>
+									</div>
+								</div>
+								<div class="modal_inner">
+									<input
+										type="text"
+										class="col s12 l6"
+										placeholder="Company Name"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="modal_inner">
+									<input
+										id="email"
+										type="email"
+										class="validate col s12 l6"
+										placeholder="Email"
+									/>
+									<i class="material-icons prefix email"
+										><img src="assets/img/mail-light.png" alt=""
+									/></i>
+								</div>
+								<div class="modal_inner">
+									<input
+										id="password"
+										type="password"
+										class="validate col s12 l6"
+										placeholder="Password"
+									/>
+									<i class="material-icons prefix password"
+										><img src="assets/img/mail-light.png" alt=""
+									/></i>
+								</div>
+							</div>
+							<div class="row checkbox">
+								<label>
+									<input type="checkbox" />
+									<span
+										>I would like to receive <u>electronic messages</u> to be
+										informed about the campaigns.</span
+									>
+								</label>
+								<label>
+									<input type="checkbox" />
+									<span
+										>I accept the <u>Terms</u> of membership and the protection
+										of my personal data.</span
+									>
+								</label>
+							</div>
+							<div class="row register_btn">
+								<button
+									class="btn waves-effect waves-light"
+									id="register-btn"
+									type="submit"
+									name="action"
+								>
+									<span>Register</span>
+								</button>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<span>Already have an account? <a href="#login"> Login</a></span>
+						</div>
+					</div>
+
 					<ul class="sidenav" id="mobile-demo">
 						<li>
-							<a class="waves-effect waves-light btn" href="#"
+							<a
+								class="waves-effect waves-light btn modal-trigger"
+								href="#account"
 								><span>Account</span>
 								<img src="assets/img/mobile/user.png" alt=""
 							/></a>
@@ -99,7 +222,7 @@
 							<div class="search">
 								<input
 									placeholder="Search by part number, brand or product"
-									id="search-input"
+									id="search-input-home"
 									type="text"
 									class="validate"
 								/>
@@ -120,21 +243,35 @@
 						</div>
 						<div class="col s12 l6">
 							<div class="carousel carousel-slider center">
-								<div class="carousel-item red white-text" href="#one!">
-									<h2>First Panel</h2>
-									<p class="white-text">This is your first panel</p>
+								<div class="carousel-item white-text" href="#one!">
+									<!-- <h2>First Panel</h2>
+                            <p class="white-text">This is your first panel</p> -->
+									<!-- <img
+										src="assets/img/slide1.png"
+										alt=""
+										class="responsive-img"
+									/> -->
 								</div>
-								<div class="carousel-item amber white-text" href="#two!">
-									<h2>Second Panel</h2>
-									<p class="white-text">This is your second panel</p>
+								<div class="carousel-item white-text" href="#two!">
+									<!-- <img
+										src="assets/img/slide2.jpg"
+										alt=""
+										class="responsive-img"
+									/> -->
 								</div>
-								<div class="carousel-item green white-text" href="#three!">
-									<h2>Third Panel</h2>
-									<p class="white-text">This is your third panel</p>
+								<div class="carousel-item white-text" href="#three!">
+									<!-- <img
+										src="assets/img/slide1.jpg"
+										alt=""
+										class="responsive-img"
+									/> -->
 								</div>
-								<div class="carousel-item blue white-text" href="#four!">
-									<h2>Fourth Panel</h2>
-									<p class="white-text">This is your fourth panel</p>
+								<div class="carousel-item white-text" href="#four!">
+									<!-- <img
+										src="assets/img/slide2.jpg"
+										alt=""
+										class="responsive-img"
+									/> -->
 								</div>
 							</div>
 						</div>
@@ -392,7 +529,7 @@
 								<div class="search">
 									<input
 										placeholder="Search by part number, brand or product"
-										id="search-input"
+										id="search-input-end"
 										type="text"
 										class="validate"
 									/>

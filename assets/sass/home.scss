@@ -82,6 +82,119 @@ body {
 				}
 			}
 		}
+		.modal {
+			width: 745px;
+			a.modal-close {
+				float: right;
+				img {
+					transform: rotate(225deg);
+					width: 12px;
+				}
+			}
+			h4 {
+				color: $body_text;
+				font-family: "OpenSans-Bold";
+				font-size: 24px;
+				margin-bottom: 32px;
+				margin-top: 40px;
+				text-align: center;
+			}
+			.row {
+				margin-bottom: 0px;
+			}
+			.row:not(.checkbox) {
+				display: flex;
+				justify-content: center;
+				.modal_inner {
+					position: relative;
+					input {
+						border: 1px solid #b3b6b9;
+						height: 48px;
+						width: 301px;
+						padding-left: 10px;
+						margin: 0 10px 32px 10px;
+						&::placeholder {
+							font-family: "OpenSans";
+							font-size: 14px;
+							color: #b3b6b9;
+						}
+					}
+					i {
+						position: absolute;
+						right: 17px;
+						top: 16px;
+						width: auto;
+						display: flex;
+						img {
+							width: 0.8em;
+						}
+					}
+					i.email,
+					i.password {
+						top: 18px;
+					}
+					.country {
+						input {
+							width: 120px;
+							margin-right: 7px;
+						}
+					}
+					.phone {
+						position: relative;
+						input {
+							width: 164px;
+						}
+					}
+				}
+				.count-phone {
+					display: flex;
+				}
+			}
+			.row.register_btn {
+				text-align: center;
+				button {
+					height: 48px;
+					background: $blue;
+					border: none;
+					border-radius: 0;
+					width: 301px;
+					span {
+						font-size: 16px;
+						font-family: "OpenSans-Bold";
+						color: white;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+			.row.checkbox {
+				width: 92%;
+				label {
+					span {
+						margin-bottom: 17px;
+						color: $body_text;
+						font-family: "OpenSans";
+						font-size: 12px;
+					}
+				}
+			}
+			.modal-footer {
+				background-color: $light_white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				span {
+					color: #545454;
+					font-family: "OpenSans";
+					font-size: 12px;
+					a {
+						color: $blue;
+						font-family: "OpenSans-Bold";
+					}
+				}
+			}
+		}
 	}
 
 	// main
@@ -618,19 +731,20 @@ body {
 				}
 			}
 			.slider_box {
-				height: auto;
-				padding-bottom: 60px;
+				height: auto !important;
+				padding-bottom: 60px !important;
 				.slider_box_inner {
 					display: block;
+					margin-top: 96px !important;
 					div.search {
-						width: 100%;
+						width: 100% !important;
 						input {
-							width: 100%;
-							padding: 0;
-							padding-left: 5px;
+							width: 100% !important;
+							padding: 0 !important;
+							padding-left: 5px !important;
 						}
 						button {
-							width: auto;
+							width: auto !important;
 						}
 						span {
 							display: none;
@@ -640,7 +754,25 @@ body {
 			}
 			.branch_box {
 				p {
-					width: auto;
+					width: auto !important;
+				}
+			}
+			.brand_box {
+				.row {
+					display: block !important;
+				}
+			}
+			.value_box {
+				display: block !important;
+			}
+			.product_box {
+				.product_box_list {
+					.row {
+						display: block !important;
+						> div {
+							margin: 8px !important;
+						}
+					}
 				}
 			}
 		}
@@ -649,6 +781,42 @@ body {
 
 @media screen and (max-width: 992px) {
 	body {
+		nav {
+			background: $light_white !important;
+			.sidenav-trigger {
+				i {
+					color: $dark_blue;
+				}
+			}
+		}
+		.modal {
+			width: 95% !important;
+			.row:not(.chechbox) {
+				display: block !important;
+				.modal_inner {
+					input {
+						width: 93% !important;
+					}
+					// .country {
+					// 	input {
+					// 		width: 126px !important;
+					// 	}
+					// }
+				}
+				.count-phone {
+					display: block !important;
+				}
+			}
+			.row.register_btn {
+				margin: 44px auto !important;
+				button {
+					width: auto !important;
+				}
+			}
+			.row.checkbox {
+				width: 96% !important;
+			}
+		}
 		main {
 			.slider_box {
 				height: auto;
@@ -763,6 +931,27 @@ body {
 									width: auto;
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 993px) {
+	.modal {
+		height: 580px !important;
+		.row:not(.checkbox) {
+			.modal_inner {
+				.phone {
+					input {
+						margin-left: 0;
+					}
+				}
+				.country {
+					.select-wrapper {
+						.caret {
+							right: 7px !important;
 						}
 					}
 				}
