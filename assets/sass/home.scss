@@ -124,11 +124,6 @@ body {
 						right: 40px;
 					}
 				}
-				.login_btn {
-					button {
-						width: 313px !important;
-					}
-				}
 			}
 			&#forget {
 				width: 412px;
@@ -150,9 +145,105 @@ body {
 						right: 40px;
 					}
 				}
-				.forget_btn {
-					button {
-						width: 313px !important;
+			}
+			&#register-ok {
+				width: 410px;
+				height: 370px;
+				.register_ok {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					h4 {
+						color: $body_text;
+						font-family: "OpenSans-Bold";
+						font-size: 24px;
+						margin: 30px auto 24px auto;
+						text-align: center;
+					}
+					p {
+						color: $body_text;
+						font-family: "OpenSans";
+						font-size: 16px;
+						margin-bottom: 31px;
+						text-align: center;
+					}
+					.tick_img {
+						width: 74px;
+						height: 74px;
+						border-radius: 50%;
+						background-color: #2ec700;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-top: 20px;
+						img {
+							width: 32px;
+							height: 23px;
+						}
+					}
+				}
+			}
+			&#reset-pass {
+				width: 412px;
+				height: 500px;
+				.reset_box {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.modal_inner {
+						position: relative;
+						display: flex;
+						input {
+							margin: 0 auto 32px auto;
+						}
+						i {
+							position: absolute;
+							top: 16px;
+							width: auto;
+							display: flex;
+							right: 40px;
+							img {
+								width: 0.8em;
+							}
+						}
+					}
+					h4 {
+						color: $body_text;
+						font-family: "OpenSans-Bold";
+						font-size: 24px;
+						margin: 30px auto 24px auto;
+						text-align: center;
+					}
+					p {
+						color: $body_text;
+						font-family: "OpenSans";
+						font-size: 16px;
+						margin-bottom: 31px;
+						text-align: center;
+						width: 77%;
+					}
+				}
+			}
+			&#reset-ok {
+				width: 410px;
+				height: 370px;
+				.reset_ok {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					h4 {
+						color: $body_text;
+						font-family: "OpenSans-Bold";
+						font-size: 24px;
+						margin: 30px auto 24px auto;
+						text-align: center;
+					}
+					p {
+						color: $body_text;
+						font-family: "OpenSans";
+						font-size: 16px;
+						margin-bottom: 31px;
+						text-align: center;
 					}
 				}
 			}
@@ -214,7 +305,8 @@ body {
 			}
 			.row.register_btn,
 			.row.login_btn,
-			.row.forget_btn {
+			.row.forget_btn,
+			.row.reset_btn {
 				text-align: center;
 				button {
 					height: 48px;
@@ -1059,6 +1151,21 @@ body {
 							width: 164px;
 						}
 					}
+				}
+			}
+		}
+		&#login {
+			.login_btn {
+				button {
+					width: 313px !important;
+				}
+			}
+		}
+		&#forget,
+		&#reset-pass {
+			.forget_btn {
+				button {
+					width: 313px !important;
 				}
 			}
 		}

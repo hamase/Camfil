@@ -70,116 +70,116 @@
 					<!-- Register Modal Structure -->
 					<div id="sign-up" class="modal modal-fixed-footer">
 						<div class="modal-content register_box">
-							<a
-								href="#!"
-								class="modal-action modal-close waves-effect waves-green btn-flat"
+							<a href="#!" class="modal-action modal-close"
 								><img src="assets/img/plus.png" alt=""
 							/></a>
 							<h4>Register</h4>
-							<div class="row flex_box">
-								<div class="modal_inner">
-									<input
-										type="text"
-										class="col s12 l6"
-										placeholder="First Name"
-									/>
-									<i class="material-icons prefix"
-										><img src="assets/img/name-icon.png" alt=""
-									/></i>
-								</div>
-								<div class="modal_inner">
-									<input
-										type="text"
-										class="col s12 l6"
-										placeholder="Last Name"
-									/>
-									<i class="material-icons prefix"
-										><img src="assets/img/name-icon.png" alt=""
-									/></i>
-								</div>
-							</div>
-							<div class="row flex_box">
-								<div class="modal_inner count-phone">
-									<div class="country">
-										<select>
-											<option value="" disabled selected>
-												Choose your option
-											</option>
-											<option value="1">(+36)</option>
-											<option value="2">(+98)</option>
-											<option value="3">(+1)</option>
-										</select>
-									</div>
-									<div class="phone">
+							<form action="" method="post">
+								<div class="row flex_box">
+									<div class="modal_inner">
 										<input
-											id="phone-number"
-											type="tel"
-											class="validate"
-											placeholder="Phone Number"
+											type="text"
+											class="col s12 l6"
+											placeholder="First Name"
 										/>
 										<i class="material-icons prefix"
-											><img src="assets/img/phone-light.png" alt=""
+											><img src="assets/img/name-icon.png" alt=""
+										/></i>
+									</div>
+									<div class="modal_inner">
+										<input
+											type="text"
+											class="col s12 l6"
+											placeholder="Last Name"
+										/>
+										<i class="material-icons prefix"
+											><img src="assets/img/name-icon.png" alt=""
 										/></i>
 									</div>
 								</div>
-								<div class="modal_inner">
-									<input
-										type="text"
-										class="col s12 l6"
-										placeholder="Company Name"
-									/>
+								<div class="row flex_box">
+									<div class="modal_inner count-phone">
+										<div class="country">
+											<select>
+												<option value="" disabled selected>
+													Choose your option
+												</option>
+												<option value="1">(+36)</option>
+												<option value="2">(+98)</option>
+												<option value="3">(+1)</option>
+											</select>
+										</div>
+										<div class="phone">
+											<input
+												id="phone-number"
+												type="tel"
+												class="validate"
+												placeholder="Phone Number"
+											/>
+											<i class="material-icons prefix"
+												><img src="assets/img/phone-light.png" alt=""
+											/></i>
+										</div>
+									</div>
+									<div class="modal_inner">
+										<input
+											type="text"
+											class="col s12 l6"
+											placeholder="Company Name"
+										/>
+									</div>
 								</div>
-							</div>
-							<div class="row flex_box">
-								<div class="modal_inner">
-									<input
-										id="email"
-										type="email"
-										class="validate col s12 l6"
-										placeholder="Email"
-									/>
-									<i class="material-icons prefix email"
-										><img src="assets/img/mail-light.png" alt=""
-									/></i>
+								<div class="row flex_box">
+									<div class="modal_inner">
+										<input
+											id="email"
+											type="email"
+											class="validate col s12 l6"
+											placeholder="Email"
+										/>
+										<i class="material-icons prefix email"
+											><img src="assets/img/mail-light.png" alt=""
+										/></i>
+									</div>
+									<div class="modal_inner">
+										<input
+											id="password"
+											type="password"
+											class="validate col s12 l6"
+											placeholder="Password"
+										/>
+										<i class="material-icons prefix password"
+											><img src="assets/img/mail-light.png" alt=""
+										/></i>
+									</div>
 								</div>
-								<div class="modal_inner">
-									<input
-										id="password"
-										type="password"
-										class="validate col s12 l6"
-										placeholder="Password"
-									/>
-									<i class="material-icons prefix password"
-										><img src="assets/img/mail-light.png" alt=""
-									/></i>
+								<div class="row checkbox">
+									<label>
+										<input type="checkbox" />
+										<span
+											>I would like to receive <u>electronic messages</u> to be
+											informed about the campaigns.</span
+										>
+									</label>
+									<label>
+										<input type="checkbox" />
+										<span
+											>I accept the <u>Terms</u> of membership and the
+											protection of my personal data.</span
+										>
+									</label>
 								</div>
-							</div>
-							<div class="row checkbox">
-								<label>
-									<input type="checkbox" />
-									<span
-										>I would like to receive <u>electronic messages</u> to be
-										informed about the campaigns.</span
+								<div class="row register_btn">
+									<button
+										class="btn waves-effect waves-light"
+										id="register-submit"
+										type="submit"
+										name="action"
 									>
-								</label>
-								<label>
-									<input type="checkbox" />
-									<span
-										>I accept the <u>Terms</u> of membership and the protection
-										of my personal data.</span
-									>
-								</label>
-							</div>
-							<div class="row register_btn">
-								<button
-									class="btn waves-effect waves-light"
-									id="register-submit"
-									type="submit"
-									name="action"
-								>
-									<span>Register</span>
-								</button>
-							</div>
+										<span>Register</span>
+									</button>
+								</div>
+							</form>
 						</div>
 						<div class="modal-footer">
 							<span
@@ -189,60 +189,81 @@
 						</div>
 					</div>
 
-					<!-- Login Modal Structure -->
-					<div id="login" class="modal modal-fixed-footer">
-						<div class="modal-content login_box">
-							<a
-								href="#!"
-								class="modal-action modal-close waves-effect waves-green btn-flat"
-								><img src="assets/img/plus.png" alt=""
-							/></a>
-							<h4>Login</h4>
-							<div class="row">
-								<div class="modal_inner col s12">
-									<input
-										id="email"
-										type="email"
-										class="validate"
-										placeholder="Email"
-									/>
-									<i class="material-icons prefix email"
-										><img src="assets/img/mail-light.png" alt=""
-									/></i>
-								</div>
-								<div class="modal_inner col s12">
-									<input
-										id="password"
-										type="password"
-										class="validate"
-										placeholder="Password"
-									/>
-									<i class="material-icons prefix password"
-										><img src="assets/img/mail-light.png" alt=""
-									/></i>
-								</div>
+					<!-- confirm sign up -->
+					<div id="register-ok" class="modal">
+						<div class="modal-content register_ok">
+							<div class="tick_img">
+								<img src="assets/img/tick.png" alt="" />
 							</div>
-							<div class="row checkbox">
-								<div class="col s12 m6">
-									<label>
-										<input type="checkbox" />
-										<span>Keep me logged in</span>
-									</label>
-								</div>
-								<div class="col s12 m6">
-									<a href="#forget-pass" id="forget-pass">Forgot Password?</a>
-								</div>
-							</div>
-							<div class="row login_btn">
+							<h4>Thank you!</h4>
+							<p>You have successfully registered.</p>
+							<div class="row register_btn">
 								<button
-									class="btn waves-effect waves-light"
-									id="login-submit"
+									class="btn waves-effect waves-light modal-close"
+									id="register-done"
 									type="submit"
 									name="action"
 								>
-									<span>Login</span>
+									<span>Done</span>
 								</button>
 							</div>
+						</div>
+					</div>
+
+					<!-- Login Modal Structure -->
+					<div id="login" class="modal modal-fixed-footer">
+						<div class="modal-content login_box">
+							<a href="#!" class="modal-action modal-close"
+								><img src="assets/img/plus.png" alt=""
+							/></a>
+							<h4>Login</h4>
+							<form action="" method="post">
+								<div class="row">
+									<div class="modal_inner col s12">
+										<input
+											id="email"
+											type="email"
+											class="validate"
+											placeholder="Email"
+										/>
+										<i class="material-icons prefix email"
+											><img src="assets/img/mail-light.png" alt=""
+										/></i>
+									</div>
+									<div class="modal_inner col s12">
+										<input
+											id="password"
+											type="password"
+											class="validate"
+											placeholder="Password"
+										/>
+										<i class="material-icons prefix password"
+											><img src="assets/img/mail-light.png" alt=""
+										/></i>
+									</div>
+								</div>
+								<div class="row checkbox">
+									<div class="col s12 m6">
+										<label>
+											<input type="checkbox" />
+											<span>Keep me logged in</span>
+										</label>
+									</div>
+									<div class="col s12 m6">
+										<a href="#forget-pass" id="forget-pass">Forgot Password?</a>
+									</div>
+								</div>
+								<div class="row login_btn">
+									<button
+										class="btn waves-effect waves-light"
+										id="login-submit"
+										type="submit"
+										name="action"
+									>
+										<span>Login</span>
+									</button>
+								</div>
+							</form>
 						</div>
 						<div class="modal-footer">
 							<span
@@ -255,9 +276,7 @@
 					<!-- Forget Modal Structure -->
 					<div id="forget" class="modal modal-fixed-footer">
 						<div class="modal-content forget_box">
-							<a
-								href="#!"
-								class="modal-action modal-close waves-effect waves-green btn-flat"
+							<a href="#!" class="modal-action modal-close"
 								><img src="assets/img/plus.png" alt=""
 							/></a>
 							<h4>Reset your password</h4>
@@ -265,29 +284,114 @@
 								Please enter your email address. We'll email you a single-use
 								link to reset your password.
 							</p>
-							<div class="row">
-								<div class="modal_inner col s12">
-									<input
-										id="email"
-										type="email"
-										class="validate"
-										placeholder="Email"
-									/>
-									<i class="material-icons prefix email"
-										><img src="assets/img/mail-light.png" alt=""
-									/></i>
+							<form action="" method="post">
+								<div class="row">
+									<div class="modal_inner col s12">
+										<input
+											id="email"
+											type="email"
+											class="validate"
+											placeholder="Email"
+										/>
+										<i class="material-icons prefix email"
+											><img src="assets/img/mail-light.png" alt=""
+										/></i>
+									</div>
 								</div>
+								<div class="row forget_btn">
+									<button
+										class="btn waves-effect waves-light"
+										id="reset-pass-btn"
+										type="submit"
+										name="action"
+									>
+										<span>Send password reset email</span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div id="reset-pass" class="modal modal-fixed-footer">
+						<div class="modal-content forget_box">
+							<a href="#!" class="modal-action modal-close"
+								><img src="assets/img/plus.png" alt=""
+							/></a>
+							<div class="reset_box">
+								<h4>New password</h4>
+								<p>Please enter and confirm your new password</p>
+								<form action="" method="post">
+									<div class="row">
+										<div class="modal_inner col s12">
+											<input
+												id="password"
+												type="password"
+												class="validate"
+												placeholder="Password"
+											/>
+											<i class="material-icons prefix email"
+												><img src="assets/img/mail-light.png" alt=""
+											/></i>
+										</div>
+										<div class="modal_inner col s12">
+											<input
+												id="repassword"
+												type="password"
+												class="validate"
+												placeholder="Retype Password"
+											/>
+											<i class="material-icons prefix email"
+												><img src="assets/img/mail-light.png" alt=""
+											/></i>
+										</div>
+									</div>
+									<div class="row forget_btn">
+										<button
+											class="btn waves-effect waves-light"
+											id="reset-pass-ok"
+											type="submit"
+											name="action"
+										>
+											<span>Reset password</span>
+										</button>
+									</div>
+								</form>
 							</div>
-							<div class="row forget_btn">
+						</div>
+						<div class="modal-footer">
+							<span
+								>Don't have an account?
+								<a href="#sign-up" id="sign-up-btn-2"> Sign up</a></span
+							>
+						</div>
+					</div>
+
+					<!-- confirm reset password -->
+					<div id="reset-ok" class="modal modal-fixed-footer">
+						<div class="modal-content reset_ok">
+							<h4>You're almost there!</h4>
+							<p>
+								We have sent you an email to help you reset your password.
+								Remember to check your spam inbox if you can't find it.
+							</p>
+							<div class="row reset_btn">
 								<button
-									class="btn waves-effect waves-light"
-									id="reset-pass"
+									class="btn waves-effect waves-light modal-close"
+									id="reset-done"
 									type="submit"
 									name="action"
 								>
-									<span>Send password reset email</span>
+									<span>Done</span>
 								</button>
 							</div>
+						</div>
+						<div class="modal-footer">
+							<span
+								>Still not received this email?
+								<a href="#not-receive-email" id="not-receive-email">
+									Click here.</a
+								></span
+							>
 						</div>
 					</div>
 
@@ -353,31 +457,31 @@
 									<!-- <h2>First Panel</h2>
                             <p class="white-text">This is your first panel</p> -->
 									<!-- <img
-										src="assets/img/slide1.png"
-										alt=""
-										class="responsive-img"
-									/> -->
+                                src="assets/img/slide1.png"
+                                alt=""
+                                class="responsive-img"
+                                /> -->
 								</div>
 								<div class="carousel-item white-text" href="#two!">
 									<!-- <img
-										src="assets/img/slide2.jpg"
-										alt=""
-										class="responsive-img"
-									/> -->
+                                    src="assets/img/slide2.jpg"
+                                    alt=""
+                                    class="responsive-img"
+                                    /> -->
 								</div>
 								<div class="carousel-item white-text" href="#three!">
 									<!-- <img
-										src="assets/img/slide1.jpg"
-										alt=""
-										class="responsive-img"
-									/> -->
+                                        src="assets/img/slide1.jpg"
+                                        alt=""
+                                        class="responsive-img"
+                                        /> -->
 								</div>
 								<div class="carousel-item white-text" href="#four!">
 									<!-- <img
-										src="assets/img/slide2.jpg"
-										alt=""
-										class="responsive-img"
-									/> -->
+                                            src="assets/img/slide2.jpg"
+                                            alt=""
+                                            class="responsive-img"
+                                            /> -->
 								</div>
 							</div>
 						</div>

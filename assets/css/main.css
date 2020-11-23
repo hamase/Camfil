@@ -441,8 +441,6 @@ body header {
         margin: 0 auto 32px auto; }
       body header .modal#login .modal_inner i {
         right: 40px; }
-    body header .modal#login .login_btn button {
-      width: 313px !important; }
   body header .modal#forget {
     width: 412px;
     height: 412px; }
@@ -459,8 +457,89 @@ body header {
         margin: 0 auto 32px auto; }
       body header .modal#forget .modal_inner i {
         right: 40px; }
-    body header .modal#forget .forget_btn button {
-      width: 313px !important; }
+  body header .modal#register-ok {
+    width: 410px;
+    height: 370px; }
+    body header .modal#register-ok .register_ok {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body header .modal#register-ok .register_ok h4 {
+        color: #3d3d3d;
+        font-family: "OpenSans-Bold";
+        font-size: 24px;
+        margin: 30px auto 24px auto;
+        text-align: center; }
+      body header .modal#register-ok .register_ok p {
+        color: #3d3d3d;
+        font-family: "OpenSans";
+        font-size: 16px;
+        margin-bottom: 31px;
+        text-align: center; }
+      body header .modal#register-ok .register_ok .tick_img {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background-color: #2ec700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; }
+        body header .modal#register-ok .register_ok .tick_img img {
+          width: 32px;
+          height: 23px; }
+  body header .modal#reset-pass {
+    width: 412px;
+    height: 500px; }
+    body header .modal#reset-pass .reset_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body header .modal#reset-pass .reset_box .modal_inner {
+        position: relative;
+        display: flex; }
+        body header .modal#reset-pass .reset_box .modal_inner input {
+          margin: 0 auto 32px auto; }
+        body header .modal#reset-pass .reset_box .modal_inner i {
+          position: absolute;
+          top: 16px;
+          width: auto;
+          display: flex;
+          right: 40px; }
+          body header .modal#reset-pass .reset_box .modal_inner i img {
+            width: 0.8em; }
+      body header .modal#reset-pass .reset_box h4 {
+        color: #3d3d3d;
+        font-family: "OpenSans-Bold";
+        font-size: 24px;
+        margin: 30px auto 24px auto;
+        text-align: center; }
+      body header .modal#reset-pass .reset_box p {
+        color: #3d3d3d;
+        font-family: "OpenSans";
+        font-size: 16px;
+        margin-bottom: 31px;
+        text-align: center;
+        width: 77%; }
+  body header .modal#reset-ok {
+    width: 410px;
+    height: 370px; }
+    body header .modal#reset-ok .reset_ok {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      body header .modal#reset-ok .reset_ok h4 {
+        color: #3d3d3d;
+        font-family: "OpenSans-Bold";
+        font-size: 24px;
+        margin: 30px auto 24px auto;
+        text-align: center; }
+      body header .modal#reset-ok .reset_ok p {
+        color: #3d3d3d;
+        font-family: "OpenSans";
+        font-size: 16px;
+        margin-bottom: 31px;
+        text-align: center; }
   body header .modal a.modal-close {
     float: right;
     clear: both; }
@@ -505,11 +584,13 @@ body header {
       position: relative; }
   body header .modal .row.register_btn,
   body header .modal .row.login_btn,
-  body header .modal .row.forget_btn {
+  body header .modal .row.forget_btn,
+  body header .modal .row.reset_btn {
     text-align: center; }
     body header .modal .row.register_btn button,
     body header .modal .row.login_btn button,
-    body header .modal .row.forget_btn button {
+    body header .modal .row.forget_btn button,
+    body header .modal .row.reset_btn button {
       height: 48px;
       background: #0086e6;
       border: none;
@@ -517,13 +598,15 @@ body header {
       width: 301px; }
       body header .modal .row.register_btn button span,
       body header .modal .row.login_btn button span,
-      body header .modal .row.forget_btn button span {
+      body header .modal .row.forget_btn button span,
+      body header .modal .row.reset_btn button span {
         font-size: 16px;
         font-family: "OpenSans-Bold";
         color: white; }
       body header .modal .row.register_btn button:hover,
       body header .modal .row.login_btn button:hover,
-      body header .modal .row.forget_btn button:hover {
+      body header .modal .row.forget_btn button:hover,
+      body header .modal .row.reset_btn button:hover {
         cursor: pointer; }
   body header .modal .row.checkbox {
     width: 92%; }
@@ -1093,6 +1176,10 @@ body main.home {
       margin-right: 7px; }
     .modal#sign-up .register_box .row .phone input {
       width: 164px; }
+  .modal#login .login_btn button {
+    width: 313px !important; }
+  .modal#forget .forget_btn button, .modal#reset-pass .forget_btn button {
+    width: 313px !important; }
   .modal .row .modal_inner .phone input {
     margin-left: 0; }
   .modal .row .modal_inner .country .select-wrapper .caret {
