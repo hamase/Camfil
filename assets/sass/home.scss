@@ -115,8 +115,45 @@ body {
 						}
 					}
 				}
-				i {
-					right: 40px;
+				.modal_inner {
+					display: flex;
+					input {
+						margin: 0 auto 32px auto;
+					}
+					i {
+						right: 40px;
+					}
+				}
+				.login_btn {
+					button {
+						width: 313px !important;
+					}
+				}
+			}
+			&#forget {
+				width: 412px;
+				height: 412px;
+				p {
+					color: $body_text;
+					font-family: "OpenSans";
+					font-size: 16px;
+					margin: 24px auto;
+					width: 80%;
+					text-align: center;
+				}
+				.modal_inner {
+					display: flex;
+					input {
+						margin: 0 auto 32px auto;
+					}
+					i {
+						right: 40px;
+					}
+				}
+				.forget_btn {
+					button {
+						width: 313px !important;
+					}
 				}
 			}
 			a.modal-close {
@@ -176,7 +213,8 @@ body {
 				}
 			}
 			.row.register_btn,
-			.row.login_btn {
+			.row.login_btn,
+			.row.forget_btn {
 				text-align: center;
 				button {
 					height: 48px;
@@ -219,6 +257,9 @@ body {
 						font-family: "OpenSans-Bold";
 					}
 				}
+			}
+			button {
+				text-transform: none;
 			}
 		}
 	}
@@ -996,6 +1037,7 @@ body {
 		}
 	}
 }
+
 @media screen and (min-width: 993px) {
 	.modal {
 		&#sign-up {

@@ -18,6 +18,10 @@ $(document).ready(function () {
 		$(this).closest(".modal").modal("close");
 		$("#sign-up").modal("open");
 	});
+	$("#forget-pass").click(function () {
+		$(this).closest(".modal").modal("close");
+		$("#forget").modal("open");
+	});
 
 	$("#sign-up").modal({
 		dismissible: false,

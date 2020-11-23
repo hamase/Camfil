@@ -435,8 +435,32 @@ body header {
         body header .modal#login .checkbox > div:nth-child(2) a {
           font-family: "OpenSans-Bold";
           font-size: 12px; }
-    body header .modal#login i {
-      right: 40px; }
+    body header .modal#login .modal_inner {
+      display: flex; }
+      body header .modal#login .modal_inner input {
+        margin: 0 auto 32px auto; }
+      body header .modal#login .modal_inner i {
+        right: 40px; }
+    body header .modal#login .login_btn button {
+      width: 313px !important; }
+  body header .modal#forget {
+    width: 412px;
+    height: 412px; }
+    body header .modal#forget p {
+      color: #3d3d3d;
+      font-family: "OpenSans";
+      font-size: 16px;
+      margin: 24px auto;
+      width: 80%;
+      text-align: center; }
+    body header .modal#forget .modal_inner {
+      display: flex; }
+      body header .modal#forget .modal_inner input {
+        margin: 0 auto 32px auto; }
+      body header .modal#forget .modal_inner i {
+        right: 40px; }
+    body header .modal#forget .forget_btn button {
+      width: 313px !important; }
   body header .modal a.modal-close {
     float: right;
     clear: both; }
@@ -480,22 +504,26 @@ body header {
     body header .modal .row .count-phone .phone {
       position: relative; }
   body header .modal .row.register_btn,
-  body header .modal .row.login_btn {
+  body header .modal .row.login_btn,
+  body header .modal .row.forget_btn {
     text-align: center; }
     body header .modal .row.register_btn button,
-    body header .modal .row.login_btn button {
+    body header .modal .row.login_btn button,
+    body header .modal .row.forget_btn button {
       height: 48px;
       background: #0086e6;
       border: none;
       border-radius: 0;
       width: 301px; }
       body header .modal .row.register_btn button span,
-      body header .modal .row.login_btn button span {
+      body header .modal .row.login_btn button span,
+      body header .modal .row.forget_btn button span {
         font-size: 16px;
         font-family: "OpenSans-Bold";
         color: white; }
       body header .modal .row.register_btn button:hover,
-      body header .modal .row.login_btn button:hover {
+      body header .modal .row.login_btn button:hover,
+      body header .modal .row.forget_btn button:hover {
         cursor: pointer; }
   body header .modal .row.checkbox {
     width: 92%; }
@@ -516,6 +544,8 @@ body header {
       body header .modal .modal-footer span a {
         color: #0086e6;
         font-family: "OpenSans-Bold"; }
+  body header .modal button {
+    text-transform: none; }
 body main.home {
   background: #f7f7f7; }
   body main.home .slider_box {
