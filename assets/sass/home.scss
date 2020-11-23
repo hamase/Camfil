@@ -83,12 +83,48 @@ body {
 			}
 		}
 		.modal {
-			width: 745px;
+			&#sign-up {
+				width: 745px;
+				.row {
+					.modal_inner {
+						i {
+							right: 17px;
+						}
+					}
+				}
+			}
+			&#login {
+				width: 412px;
+				height: 475px;
+				.checkbox {
+					display: flex;
+					width: 89%;
+					> div:first-child {
+						padding-left: 0;
+						span {
+							font-family: "OpenSans-Bold";
+							font-size: 12px;
+						}
+					}
+					> div:nth-child(2) {
+						display: flex;
+						justify-content: flex-end;
+						a {
+							font-family: "OpenSans-Bold";
+							font-size: 12px;
+						}
+					}
+				}
+				i {
+					right: 40px;
+				}
+			}
 			a.modal-close {
 				float: right;
+				clear: both;
 				img {
 					transform: rotate(225deg);
-					width: 12px;
+					width: 17px;
 				}
 			}
 			h4 {
@@ -98,13 +134,12 @@ body {
 				margin-bottom: 32px;
 				margin-top: 40px;
 				text-align: center;
+				clear: both;
 			}
 			.row {
 				margin-bottom: 0px;
 			}
-			.row:not(.checkbox) {
-				display: flex;
-				justify-content: center;
+			.row {
 				.modal_inner {
 					position: relative;
 					input {
@@ -121,7 +156,6 @@ body {
 					}
 					i {
 						position: absolute;
-						right: 17px;
 						top: 16px;
 						width: auto;
 						display: flex;
@@ -133,24 +167,16 @@ body {
 					i.password {
 						top: 18px;
 					}
-					.country {
-						input {
-							width: 120px;
-							margin-right: 7px;
-						}
-					}
-					.phone {
-						position: relative;
-						input {
-							width: 164px;
-						}
-					}
 				}
 				.count-phone {
 					display: flex;
+					.phone {
+						position: relative;
+					}
 				}
 			}
-			.row.register_btn {
+			.row.register_btn,
+			.row.login_btn {
 				text-align: center;
 				button {
 					height: 48px;
@@ -776,6 +802,19 @@ body {
 				}
 			}
 		}
+		.modal {
+			&#login {
+				height: 520px !important;
+			}
+			.checkbox {
+				> div:nth-child(2) {
+					display: flex;
+					justify-content: flex-start !important;
+					margin-bottom: 25px;
+					padding-left: 0;
+				}
+			}
+		}
 	}
 }
 
@@ -791,100 +830,119 @@ body {
 		}
 		.modal {
 			width: 95% !important;
+			&#sign-up {
+				.modal_inner {
+					i {
+						right: 50px !important;
+					}
+				}
+				.row.register_btn {
+					margin-bottom: 40px;
+					margin-top: 30px;
+				}
+			}
 			.row:not(.chechbox) {
 				display: block !important;
 				.modal_inner {
 					input {
 						width: 93% !important;
 					}
-					// .country {
-					// 	input {
-					// 		width: 126px !important;
-					// 	}
-					// }
-				}
-				.count-phone {
-					display: block !important;
-				}
-			}
-			.row.register_btn {
-				margin: 44px auto !important;
-				button {
-					width: auto !important;
-				}
-			}
-			.row.checkbox {
-				width: 96% !important;
-			}
-		}
-		main {
-			.slider_box {
-				height: auto;
-				padding-bottom: 60px;
-				.slider_box_inner {
-					display: block;
-					margin-top: 165px;
-					> div:first-child {
-						margin-bottom: 50px;
-					}
-				}
-			}
-			.value_box {
-				display: block;
-				> div:nth-child(2) {
-					.white_box {
-						margin-top: 440px;
-						width: auto;
-						height: auto;
-						button {
-							width: auto;
-						}
-					}
-				}
-			}
-			.product_box {
-				.product_box_list {
-					.row {
-						display: block;
-					}
-				}
-			}
-			.brand_box {
-				.row {
-					display: block;
-					> div:first-child {
-						margin: 20px 0px;
-					}
-					> div:last-child {
-						height: auto;
-						display: flex;
-						align-items: center;
-						margin: 20px 0px;
-						> div {
-							img {
-								height: auto;
+					&.count-phone {
+						display: block !important;
+						.country {
+							.select-wrapper {
+								.caret {
+									right: 50px !important;
+								}
 							}
 						}
 					}
 				}
+				.row.register_btn {
+					margin: 44px auto !important;
+					button {
+						width: auto !important;
+					}
+				}
+				.row.login_btn {
+					margin-bottom: 40px;
+					button {
+						width: auto !important;
+					}
+				}
+				.row.checkbox {
+					width: 96% !important;
+				}
 			}
-			.last_search_box {
-				.end_search_box {
-					> div.col {
-						> div {
-							padding: 30px 10px;
-							div.search {
-								width: 100% !important;
-								input {
+			main {
+				.slider_box {
+					height: auto;
+					padding-bottom: 60px;
+					.slider_box_inner {
+						display: block;
+						margin-top: 165px;
+						> div:first-child {
+							margin-bottom: 50px;
+						}
+					}
+				}
+				.value_box {
+					display: block;
+					> div:nth-child(2) {
+						.white_box {
+							margin-top: 440px;
+							width: auto;
+							height: auto;
+							button {
+								width: auto;
+							}
+						}
+					}
+				}
+				.product_box {
+					.product_box_list {
+						.row {
+							display: block;
+						}
+					}
+				}
+				.brand_box {
+					.row {
+						display: block;
+						> div:first-child {
+							margin: 20px 0px;
+						}
+						> div:last-child {
+							height: auto;
+							display: flex;
+							align-items: center;
+							margin: 20px 0px;
+							> div {
+								img {
+									height: auto;
+								}
+							}
+						}
+					}
+				}
+				.last_search_box {
+					.end_search_box {
+						> div.col {
+							> div {
+								padding: 30px 10px;
+								div.search {
 									width: 100% !important;
-									padding: 0;
-									padding-left: 5px;
-								}
-								button {
-									width: auto !important;
-								}
-								span {
-									display: none;
+									input {
+										width: 100% !important;
+										padding: 0;
+										padding-left: 5px;
+									}
+									button {
+										width: auto !important;
+									}
+									span {
+										display: none;
+									}
 								}
 							}
 						}
@@ -940,8 +998,29 @@ body {
 }
 @media screen and (min-width: 993px) {
 	.modal {
-		height: 580px !important;
-		.row:not(.checkbox) {
+		&#sign-up {
+			height: 580px !important;
+			.register_box {
+				.row {
+					&.flex_box {
+						display: flex;
+						justify-content: center;
+					}
+					.country {
+						input {
+							width: 120px;
+							margin-right: 7px;
+						}
+					}
+					.phone {
+						input {
+							width: 164px;
+						}
+					}
+				}
+			}
+		}
+		.row {
 			.modal_inner {
 				.phone {
 					input {

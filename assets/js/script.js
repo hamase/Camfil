@@ -7,9 +7,24 @@ $(document).ready(function () {
 		fullWidth: true,
 		indicators: true,
 	});
+
 	$(".modal").modal();
-	$("#account").modal({
+	// close prev modal
+	$("#login-btn").click(function () {
+		$(this).closest(".modal").modal("close");
+		$("#login").modal("open");
+	});
+	$("#sign-up-btn").click(function () {
+		$(this).closest(".modal").modal("close");
+		$("#sign-up").modal("open");
+	});
+
+	$("#sign-up").modal({
 		dismissible: false,
 	});
+	$("#login").modal({
+		dismissible: false,
+	});
+
 	$("select").formSelect();
 });
