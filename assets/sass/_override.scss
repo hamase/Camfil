@@ -55,6 +55,11 @@ input.valid {
 	border-bottom: 1px solid #b3b6b9 !important;
 	box-shadow: none !important;
 }
-// select {
-// 	display: block;
-// }
+.carousel .indicators .indicator-item.active {
+	background-color: $blue !important;
+}
+.carousel .indicators .indicator-item {
+	background-color: $med_gray !important;
+	height: 10px;
+	width: 10px;
+}
