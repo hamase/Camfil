@@ -432,7 +432,7 @@ body {
 				div.carousel-slider {
 					img {
 						width: 100%;
-						max-width: 244px;
+						max-width: 370px;
 						height: auto;
 					}
 				}
@@ -963,7 +963,7 @@ body {
 		nav {
 			background: $light_white !important;
 			.sidenav-trigger {
-				i {
+				i.home {
 					color: $dark_blue;
 				}
 			}
@@ -1029,12 +1029,12 @@ body {
 				div.carousel-slider {
 					img {
 						width: 100% !important;
-						max-width: 275px !important;
+						max-width: 280px !important;
 						height: auto !important;
 					}
 					&.carousel {
-						height: 44em !important;
-						margin-top: 2em !important;
+						height: 30em !important;
+						margin-top: 3em !important;
 					}
 				}
 			}

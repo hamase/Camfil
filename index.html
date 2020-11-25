@@ -38,7 +38,7 @@
 								><img src="assets/img/logo-blue.png" alt=""
 							/></a>
 							<a href="#" data-target="mobile-demo" class="sidenav-trigger"
-								><i class="material-icons">menu</i></a
+								><i class="material-icons home">menu</i></a
 							>
 							<ul
 								id="nav-mobile"
@@ -81,6 +81,7 @@
 											type="text"
 											class="col s12 l6"
 											placeholder="First Name"
+											required
 										/>
 										<i class="material-icons prefix"
 											><img src="assets/img/name-icon.png" alt=""
@@ -91,6 +92,7 @@
 											type="text"
 											class="col s12 l6"
 											placeholder="Last Name"
+											required
 										/>
 										<i class="material-icons prefix"
 											><img src="assets/img/name-icon.png" alt=""
@@ -100,8 +102,8 @@
 								<div class="row flex_box">
 									<div class="modal_inner count-phone">
 										<div class="country">
-											<select>
-												<option value="" disabled selected>
+											<select required>
+												<option value="" disabled selected aria-required="true">
 													Choose your option
 												</option>
 												<option value="1">(+36)</option>
@@ -115,6 +117,7 @@
 												type="tel"
 												class="validate"
 												placeholder="Phone Number"
+												required
 											/>
 											<i class="material-icons prefix"
 												><img src="assets/img/phone-light.png" alt=""
@@ -126,6 +129,7 @@
 											type="text"
 											class="col s12 l6"
 											placeholder="Company Name"
+											required
 										/>
 									</div>
 								</div>
@@ -136,6 +140,7 @@
 											type="email"
 											class="validate col s12 l6"
 											placeholder="Email"
+											required
 										/>
 										<i class="material-icons prefix email"
 											><img src="assets/img/mail-light.png" alt=""
@@ -147,6 +152,7 @@
 											type="password"
 											class="validate col s12 l6"
 											placeholder="Password"
+											required
 										/>
 										<i class="material-icons prefix password"
 											><img src="assets/img/mail-light.png" alt=""
@@ -162,7 +168,7 @@
 										>
 									</label>
 									<label>
-										<input type="checkbox" />
+										<input type="checkbox" required />
 										<span
 											>I accept the <u>Terms</u> of membership and the
 											protection of my personal data.</span
@@ -225,6 +231,7 @@
 											type="email"
 											class="validate"
 											placeholder="Email"
+											required
 										/>
 										<i class="material-icons prefix email"
 											><img src="assets/img/mail-light.png" alt=""
@@ -236,6 +243,7 @@
 											type="password"
 											class="validate"
 											placeholder="Password"
+											required
 										/>
 										<i class="material-icons prefix password"
 											><img src="assets/img/mail-light.png" alt=""
@@ -292,6 +300,7 @@
 											type="email"
 											class="validate"
 											placeholder="Email"
+											required
 										/>
 										<i class="material-icons prefix email"
 											><img src="assets/img/mail-light.png" alt=""
@@ -312,6 +321,7 @@
 						</div>
 					</div>
 
+					<!-- Reset Password -->
 					<div id="reset-pass" class="modal modal-fixed-footer">
 						<div class="modal-content forget_box">
 							<a href="#!" class="modal-action modal-close"
@@ -328,6 +338,7 @@
 												type="password"
 												class="validate"
 												placeholder="Password"
+												required
 											/>
 											<i class="material-icons prefix email"
 												><img src="assets/img/mail-light.png" alt=""
@@ -339,6 +350,7 @@
 												type="password"
 												class="validate"
 												placeholder="Retype Password"
+												required
 											/>
 											<i class="material-icons prefix email"
 												><img src="assets/img/mail-light.png" alt=""
@@ -430,21 +442,24 @@
 						<div class="col s12 l6">
 							<h1>Find spare parts here!</h1>
 							<div class="search">
-								<input
-									placeholder="Search by part number, brand or product"
-									id="search-input-home"
-									type="text"
-									class="validate"
-								/>
-								<button
-									class="btn waves-effect waves-light"
-									id="search-btn"
-									type="submit"
-									name="action"
-								>
-									<img src="assets/img/search.png" alt="" />
-									<span>Search</span>
-								</button>
+								<form action="">
+									<input
+										placeholder="Search by part number, brand or product"
+										id="search-input-home"
+										type="text"
+										class="validate"
+										required
+									/>
+									<button
+										class="btn waves-effect waves-light"
+										id="search-btn"
+										type="submit"
+										name="action"
+									>
+										<img src="assets/img/search.png" alt="" />
+										<span>Search</span>
+									</button>
+								</form>
 							</div>
 							<p>
 								We supplied over 20,000 various industrial spare parts to more
@@ -457,28 +472,28 @@
 									<!-- <h2>First Panel</h2>
                             <p class="white-text">This is your first panel</p> -->
 									<img
-										src="assets/img/slide1.jpg"
+										src="assets/img/slide1.png"
 										alt=""
 										class="responsive-img"
 									/>
 								</div>
 								<div class="carousel-item white-text" href="#two!">
 									<img
-										src="assets/img/slide1.jpg"
+										src="assets/img/slide2.png"
 										alt=""
 										class="responsive-img"
 									/>
 								</div>
 								<div class="carousel-item white-text" href="#three!">
 									<img
-										src="assets/img/slide1.jpg"
+										src="assets/img/slide1.png"
 										alt=""
 										class="responsive-img"
 									/>
 								</div>
 								<div class="carousel-item white-text" href="#four!">
 									<img
-										src="assets/img/slide1.jpg"
+										src="assets/img/slide2.png"
 										alt=""
 										class="responsive-img"
 									/>
@@ -741,7 +756,7 @@
 										placeholder="Search by part number, brand or product"
 										id="search-input-end"
 										type="text"
-										class="validate"
+										class="validate" required
 									/>
 									<button
 										class="btn waves-effect waves-light"

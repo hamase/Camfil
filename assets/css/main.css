@@ -691,7 +691,7 @@ body main.home {
             margin: 0 auto; }
       body main.home .slider_box .slider_box_inner div.carousel-slider img {
         width: 100%;
-        max-width: 244px;
+        max-width: 370px;
         height: auto; }
   body main.home .chat_box {
     display: flex;
@@ -1084,7 +1084,7 @@ body main.home {
 @media screen and (max-width: 992px) {
   body nav {
     background: #f7f7f7 !important; }
-    body nav .sidenav-trigger i {
+    body nav .sidenav-trigger i.home {
       color: #004377; }
   body .modal {
     width: 95% !important; }
@@ -1122,11 +1122,11 @@ body main.home {
         margin-top: 7em; }
       main .slider_box .slider_box_inner div.carousel-slider img {
         width: 100% !important;
-        max-width: 275px !important;
+        max-width: 280px !important;
         height: auto !important; }
       main .slider_box .slider_box_inner div.carousel-slider.carousel {
-        height: 44em !important;
-        margin-top: 2em !important; }
+        height: 30em !important;
+        margin-top: 3em !important; }
   main .value_box {
     display: block !important; }
     main .value_box > div.col .white_box {
