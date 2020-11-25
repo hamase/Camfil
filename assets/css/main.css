@@ -443,7 +443,7 @@ body header {
         right: 40px; }
   body header .modal#forget {
     width: 412px;
-    height: 412px; }
+    height: 430px; }
     body header .modal#forget p {
       color: #3d3d3d;
       font-family: "OpenSans";
@@ -1074,13 +1074,14 @@ body main.home {
     display: block !important; }
     body main .product_box .product_box_list .row > div {
       margin: 8px !important; }
-  body .modal#login {
-    height: 520px !important; }
   body .modal .checkbox > div:nth-child(2) {
     display: flex;
     justify-content: flex-start !important;
     margin-bottom: 25px;
     padding-left: 0; } }
+@media screen and (min-width: 580px) and (max-width: 992px) {
+  .modal#sign-up .modal_inner i {
+    right: 50px !important; } }
 @media screen and (max-width: 992px) {
   body nav {
     background: #f7f7f7 !important; }
@@ -1088,11 +1089,15 @@ body main.home {
       color: #004377; }
   body .modal {
     width: 95% !important; }
-    body .modal#sign-up .modal_inner i {
-      right: 50px !important; }
     body .modal#sign-up .row.register_btn {
       margin-bottom: 40px;
       margin-top: 30px; }
+    body .modal#login, body .modal#reset-pass {
+      max-height: 100% !important;
+      height: 82% !important; }
+    body .modal#reset-ok {
+      max-height: 100% !important;
+      height: 60% !important; }
     body .modal .row:not(.chechbox) {
       display: block !important; }
       body .modal .row:not(.chechbox) .modal_inner input {

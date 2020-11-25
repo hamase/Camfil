@@ -127,7 +127,7 @@ body {
 			}
 			&#forget {
 				width: 412px;
-				height: 412px;
+				height: 430px;
 				p {
 					color: $body_text;
 					font-family: "OpenSans";
@@ -943,15 +943,24 @@ body {
 			}
 		}
 		.modal {
-			&#login {
-				height: 520px !important;
-			}
 			.checkbox {
 				> div:nth-child(2) {
 					display: flex;
 					justify-content: flex-start !important;
 					margin-bottom: 25px;
 					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 580px) and (max-width: 992px) {
+	.modal {
+		&#sign-up {
+			.modal_inner {
+				i {
+					right: 50px !important;
 				}
 			}
 		}
@@ -971,15 +980,19 @@ body {
 		.modal {
 			width: 95% !important;
 			&#sign-up {
-				.modal_inner {
-					i {
-						right: 50px !important;
-					}
-				}
 				.row.register_btn {
 					margin-bottom: 40px;
 					margin-top: 30px;
 				}
+			}
+			&#login,
+			&#reset-pass {
+				max-height: 100% !important;
+				height: 82% !important;
+			}
+			&#reset-ok {
+				max-height: 100% !important;
+				height: 60% !important;
 			}
 			.row:not(.chechbox) {
 				display: block !important;
