@@ -1230,6 +1230,13 @@ main {
         position: absolute;
         right: 6em;
         top: 12em; }
+      main .about_main .about_box nav {
+        background: rgba(0, 0, 0, 0) !important;
+        box-shadow: none !important; }
+        main .about_main .about_box nav .breadcrumb {
+          font-size: 12px !important; }
+          main .about_main .about_box nav .breadcrumb::before {
+            margin: 0 !important; }
       main .about_main .about_box .about_box_inner {
         flex-direction: column;
         display: flex;

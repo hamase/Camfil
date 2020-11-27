@@ -13,6 +13,16 @@ main {
 				right: 6em;
 				top: 12em;
 			}
+			nav {
+				background: rgba(0, 0, 0, 0) !important;
+				box-shadow: none !important;
+				.breadcrumb {
+					font-size: 12px !important;
+					&::before {
+						margin: 0 !important;
+					}
+				}
+			}
 			.about_box_inner {
 				flex-direction: column;
 				display: flex;
