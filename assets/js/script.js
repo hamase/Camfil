@@ -3,11 +3,18 @@ $(document).ready(function () {
 	$(".sidenav").sidenav();
 	$(".collapsible").collapsible();
 
+	// carousel
 	$(".carousel.carousel-slider").carousel({
 		fullWidth: true,
 		indicators: true,
 	});
+	autoplay();
+	function autoplay() {
+		$(".carousel").carousel("next");
+		setTimeout(autoplay, 5000);
+	}
 
+	// modal
 	$(".modal").modal();
 	// close prev modal
 	$("#login-btn").click(function () {
@@ -26,7 +33,6 @@ $(document).ready(function () {
 		$(this).closest(".modal").modal("close");
 		$("#forget").modal("open");
 	});
-
 	// ok modals
 	$("#register-submit").click(function () {
 		$(this).closest(".modal").modal("close");
@@ -41,7 +47,6 @@ $(document).ready(function () {
 		$(this).closest(".modal").modal("close");
 		$("#reset-ok").modal("open");
 	});
-
 	// close just by close button, not click on body
 	$("#sign-up").modal({
 		dismissible: false,
@@ -63,4 +68,22 @@ $(document).ready(function () {
 	});
 
 	$("select").formSelect();
+
+	// quantity card
+	$(".button_quantity").click(function () {
+		var button = $(this);
+		var oldValue = button.siblings("input[type=text]").val();
+
+		if (button.val() == "+") {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			// Don't allow decrementing below zero
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
+			} else {
+				newVal = 0;
+			}
+		}
+		button.parent().find("input[type=text]").val(newVal);
+	});
 });

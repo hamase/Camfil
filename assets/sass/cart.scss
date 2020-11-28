@@ -1,0 +1,318 @@
+body {
+	main {
+		background-color: $light_white;
+		height: 100vh;
+		.cart_main {
+			margin: 10em 2em auto 2em;
+			.cart_box {
+				nav {
+					background: rgba(0, 0, 0, 0) !important;
+					box-shadow: none !important;
+					.breadcrumb {
+						font-size: 12px !important;
+						&::before {
+							margin: 0 !important;
+						}
+					}
+					a:first-child {
+						color: $gray;
+					}
+					a:nth-child(2) {
+						color: $blue;
+						&::before {
+							color: $gray !important;
+							font-size: 18px !important;
+						}
+					}
+				}
+				.row {
+					.col:first-child {
+						.cart_box_inner {
+							h1 {
+								padding: 1em 2em;
+							}
+						}
+					}
+					.cart_box_inner {
+						background-color: white;
+						box-shadow: 4px 4px 15px #cccccc;
+						height: 60vh;
+						> div.title {
+							padding: 1em 2em 0;
+						}
+						h1 {
+							font-size: 20px;
+							font-family: "OpenSans-Bold";
+							color: $body_text;
+							margin: 0 !important;
+						}
+						h2 {
+							font-size: 18px;
+							font-family: "OpenSans-Bold";
+							color: $heading;
+							margin: 0 !important;
+						}
+						h5 {
+							font-size: 14px;
+							font-family: "OpenSans";
+							color: $gray;
+							margin: 4px auto 11px auto;
+						}
+						ul.cart_summary {
+							border-top: 2px solid $med_gray;
+							border-bottom: 2px solid $med_gray;
+							padding: 1em 2em;
+							li {
+								display: flex;
+								justify-content: space-between;
+								margin: 16px auto 26px auto;
+								span {
+									font-size: 14px;
+									font-family: "OpenSans";
+									color: $heading;
+								}
+							}
+						}
+						ul.cart_summary.list {
+							margin-bottom: 0;
+						}
+						ul.total {
+							border: 0;
+							margin: 0;
+							li {
+								margin: 0;
+								span:nth-child(2) {
+									font-size: 18px;
+									font-family: "OpenSans-Bold";
+									color: $blue;
+								}
+							}
+						}
+						.cart_print_box {
+							padding: 0em 6em;
+							.print {
+								display: flex;
+								justify-content: flex-end;
+								align-items: center;
+								margin-bottom: 25px;
+								i {
+									&:hover {
+										cursor: pointer;
+									}
+									img {
+										width: 20px;
+										height: 13px;
+									}
+								}
+								span {
+									margin-left: 10px;
+									font-size: 12px;
+									font-family: "OpenSans";
+									color: $blue;
+									&:hover {
+										cursor: pointer;
+									}
+								}
+							}
+							.quote {
+								button {
+									height: 48px;
+									width: 100%;
+									background: $blue;
+									border: none;
+									border-radius: 0;
+									span {
+										font-size: 16px;
+										font-family: "OpenSans-Bold";
+										color: white;
+										text-transform: none;
+									}
+									&:hover {
+										cursor: pointer;
+									}
+								}
+							}
+						}
+						table {
+							thead {
+								tr {
+									th {
+										font-size: 12px;
+										font-family: "OpenSans";
+										color: #545454;
+									}
+								}
+							}
+							.cart_table {
+								tr {
+									border-top: 2px solid $med_gray;
+									border-bottom: 2px solid $med_gray;
+									td:first-child {
+										display: flex;
+										justify-content: space-between;
+										width: 70%;
+										padding: 1em 1em 1em 3em;
+										.cart_img {
+											width: 64px;
+											height: 64px;
+											background-color: $med_gray;
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											img {
+												width: 45px;
+												height: 45px;
+											}
+										}
+										.cart_name {
+											p:first-child {
+												font-size: 14px;
+												font-family: "OpenSans";
+												color: $body_text;
+											}
+											p:nth-child(2) {
+												font-size: 12px;
+												font-family: "OpenSans";
+												color: #545454;
+											}
+										}
+									}
+									td {
+										&.cart_price {
+											font-size: 18px;
+											font-family: "OpenSans-Bold";
+											color: $blue;
+										}
+										&.cart_delete {
+											i {
+												&:hover {
+													cursor: pointer;
+												}
+												img {
+													width: 20px;
+													height: 13px;
+												}
+											}
+										}
+										.quantity_box {
+											display: flex;
+											justify-content: center;
+											input {
+												&:focus {
+													border-bottom: none !important;
+												}
+											}
+											.button_quantity,
+											.input_quantity {
+												width: 26px;
+												height: 26px;
+												border: none;
+												text-align: center;
+											}
+											.plus {
+												background-color: $blue;
+												color: white;
+												&:hover {
+													cursor: pointer;
+												}
+											}
+											.minus {
+												background-color: $med_gray;
+												color: $gray;
+												&:hover {
+													cursor: pointer;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 467px) {
+	main {
+		.cart_main {
+			.cart_box {
+				.row {
+					.cart_box_inner {
+						table {
+							display: block;
+							overflow-x: auto;
+							white-space: nowrap;
+							.cart_name {
+								margin-left: 1em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	main {
+		height: auto !important;
+		.cart_main {
+			.cart_box {
+				.row {
+					> div:first-child {
+						margin-bottom: 2em;
+					}
+					.cart_box_inner {
+						height: auto !important;
+					}
+					.col:nth-child(2) {
+						.cart_box_inner {
+							margin-top: 2em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1161px) {
+	main {
+		.cart_main {
+			.cart_box {
+				.row {
+					.cart_box_inner {
+						.cart_print_box {
+							.quote {
+								button {
+									height: auto !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	main {
+		.cart_main {
+			.cart_box {
+				.row {
+					.cart_box_inner {
+						position: relative;
+						.cart_print_box {
+							position: absolute;
+							bottom: 0px;
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
