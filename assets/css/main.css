@@ -1587,12 +1587,14 @@ body main.contact {
             vertical-align: -webkit-baseline-middle; }
 
 @media screen and (max-width: 992px) {
-  body .contact_box .contact_box_inner .input-field .row {
-    display: block !important; }
+  body .contact_box .contact_box_inner .input-field .select-wrapper input.select-dropdown {
+    width: 97%; }
+  body .contact_box .contact_box_inner .input-field #phone-number {
+    width: 98%; }
   body .contact_box .contact_box_inner button.send_msg_btn {
     width: 100%; }
   body .contact_box .contact_box_inner .social {
-    margin: 4em auto auto; } }
+    margin: 4em auto auto !important; } }
 @media screen and (min-width: 993px) {
   body .contact_box .contact_box_inner .input-field input {
     width: 97%; }

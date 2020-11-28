@@ -26,11 +26,11 @@ $(document).ready(function () {
 		$(".carousel").carousel("prev");
 	});
 
-	// autoplay();
-	// function autoplay() {
-	// 	$(".carousel").carousel("next");
-	// 	setTimeout(autoplay, 10000);
-	// }
+	autoplay();
+	function autoplay() {
+		$(".carousel").carousel("next");
+		setTimeout(autoplay, 10000);
+	}
 
 	// modal
 	$(".modal").modal();

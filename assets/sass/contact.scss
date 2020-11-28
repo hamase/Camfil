@@ -197,22 +197,22 @@ body {
 			.contact_box_inner {
 				.input-field {
 					.row {
-						display: block !important;
+						// display: block !important;
 					}
-					// .select-wrapper {
-					// 	input.select-dropdown {
-					// 		width: 97%;
-					// 	}
-					// }
-					// #phone-number {
-					// 	width: 98%;
-					// }
+					.select-wrapper {
+						input.select-dropdown {
+							width: 97%;
+						}
+					}
+					#phone-number {
+						width: 98%;
+					}
 				}
 				button.send_msg_btn {
 					width: 100%;
 				}
 				.social {
-					margin: 4em auto auto;
+					margin: 4em auto auto !important;
 				}
 			}
 		}
