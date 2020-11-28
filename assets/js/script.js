@@ -33,6 +33,9 @@ $(document).ready(function () {
 		$(this).closest(".modal").modal("close");
 		$("#forget").modal("open");
 	});
+	$(".delete_icon").click(function () {
+		$("#delete").modal("open");
+	});
 	// ok modals
 	$("#register-submit").click(function () {
 		$(this).closest(".modal").modal("close");
@@ -66,7 +69,9 @@ $(document).ready(function () {
 	$("#reset-ok").modal({
 		dismissible: false,
 	});
-
+	$("#delete").modal({
+		dismissible: false,
+	});
 	$("select").formSelect();
 
 	// quantity card

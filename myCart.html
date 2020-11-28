@@ -179,7 +179,9 @@
 												</td>
 												<td class="cart_price">$</td>
 												<td class="cart_delete">
-													<i><img src="assets/img/mail.png" alt="" /></i>
+													<i class="delete_icon"
+														><img src="assets/img/mail.png" alt=""
+													/></i>
 												</td>
 											</tr>
 											<tr>
@@ -213,11 +215,43 @@
 												</td>
 												<td class="cart_price">$</td>
 												<td class="cart_delete">
-													<i><img src="assets/img/mail.png" alt="" /></i>
+													<i class="delete_icon"
+														><img src="assets/img/mail.png" alt=""
+													/></i>
 												</td>
 											</tr>
 										</tbody>
 									</table>
+									<!-- confirm reset password -->
+									<div id="delete" class="modal">
+										<div class="modal-content delete_box">
+											<a href="#!" class="modal-action modal-close"
+												><img src="assets/img/plus.png" alt=""
+											/></a>
+											<div class="delete_box_inner">
+                                                <h4>Sure to delete the item?</h4>
+                                                <p>Part Number : 2315HLS</p>
+                                                <div class="row delete_btn">
+                                                    <button
+                                                        class="btn waves-effect waves-light modal-close"
+                                                        id="cancel-btn"
+                                                        type="submit"
+                                                        name="action"
+                                                    >
+                                                        <span>No</span>
+                                                    </button>
+                                                    <button
+                                                        class="btn waves-effect waves-light"
+                                                        id="delete-btn"
+                                                        type="submit"
+                                                        name="action"
+                                                    >
+                                                        <span>Yes</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="col s12 l4">
