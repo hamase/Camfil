@@ -1,0 +1,220 @@
+body {
+	main {
+		background-color: white;
+		height: auto;
+		.product_main {
+			margin: 6em 2em auto 2em;
+			.product_box {
+				nav {
+					background: rgba(0, 0, 0, 0) !important;
+					box-shadow: none !important;
+					.breadcrumb {
+						font-size: 12px !important;
+						&::before {
+							margin: 0 !important;
+							color: $gray !important;
+							font-size: 18px !important;
+						}
+					}
+					a:first-child,
+					a:nth-child(2) {
+						color: $gray;
+					}
+					a:last-child {
+						color: $blue;
+					}
+				}
+				.row {
+					.product_box_inner {
+						.product_img {
+							display: flex;
+							justify-content: center;
+							img {
+								width: 412px;
+								height: 412px;
+							}
+						}
+						ul.img_option {
+							display: flex;
+							justify-content: center;
+							margin-top: 47px;
+							li {
+								display: flex;
+								align-items: center;
+								i {
+									&:hover {
+										cursor: pointer;
+									}
+									img {
+										width: 15px;
+										height: 13px;
+									}
+								}
+								span {
+									margin-left: 5px;
+									font-size: 14px;
+									font-family: "OpenSans";
+									color: #1c1c1c;
+									&:hover {
+										cursor: pointer;
+									}
+								}
+								&:nth-child(2),
+								&:nth-child(3) {
+									margin-left: 2em;
+								}
+							}
+						}
+						ul.caption_option {
+							li {
+								h1 {
+									font-size: 18px;
+									font-family: "OpenSans-Bold";
+									color: $heading;
+									margin: 1em auto;
+								}
+								h6 {
+									font-size: 14px;
+									font-family: "OpenSans";
+									color: $body_text;
+								}
+								.button_box {
+									.quantity_box {
+										display: flex;
+										justify-content: flex-start;
+										input {
+											&:focus {
+												border-bottom: none !important;
+											}
+										}
+										.button_quantity,
+										.input_quantity {
+											width: 48px;
+											height: 48px;
+											border: none;
+											text-align: center;
+										}
+										.plus {
+											background-color: $blue;
+											color: white;
+											font-size: 33px;
+
+											&:hover {
+												cursor: pointer;
+											}
+										}
+										.minus {
+											background-color: $med_gray;
+											color: $gray;
+											font-size: 33px;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+									}
+									.basket {
+										display: flex;
+										flex-direction: column;
+										button {
+											width: 310px;
+											height: 48px;
+											border-radius: 0;
+											box-shadow: none;
+											span {
+												font-size: 16px;
+												font-family: "OpenSans-Bold";
+												text-transform: none;
+											}
+											&:first-child {
+												background-color: $blue;
+												margin-bottom: 16px;
+												span {
+													color: white;
+												}
+											}
+											&:nth-child(2) {
+												background-color: white;
+												border: 1px solid $blue;
+												span {
+													color: $blue;
+												}
+											}
+										}
+									}
+									&:nth-child(2) {
+										margin-top: 3.7em;
+									}
+								}
+							}
+						}
+					}
+					.slider_title {
+						display: flex;
+						justify-content: space-between;
+						h1 {
+							font-size: 24px;
+							font-family: "OpenSans-Bold";
+							color: $heading;
+							margin: 0;
+						}
+						.carousel_arrow {
+							.left {
+								margin-right: 2em;
+							}
+							a {
+								i {
+									img {
+										width: 13px;
+									}
+								}
+							}
+						}
+					}
+					.product {
+						&.carousel {
+							height: 20em !important;
+						}
+						.carousel-item {
+							display: flex;
+							justify-content: center;
+							.product_slide {
+								width: 190px;
+								height: 244px;
+								border: 1px solid black;
+								padding: 3em 1em;
+								margin: 0 1em;
+								p {
+									font-size: 14px;
+									font-family: "OpenSans";
+									color: $heading;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1108px) {
+	body {
+		main {
+			.product_main {
+				.product_box {
+					.product_box_inner {
+						ul.caption_option {
+							.button_box {
+								.basket {
+									button {
+										width: auto !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

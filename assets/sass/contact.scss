@@ -2,7 +2,7 @@ body {
 	main.contact {
 		background-color: white;
 		.contact_box {
-			margin: 16em 4em;
+			margin: 8em 4em;
 			.contact_box_inner {
 				h1 {
 					font-size: 24px;
@@ -15,6 +15,7 @@ body {
 					font-family: "OpenSans-Bold";
 					color: $heading;
 					padding-bottom: 25px;
+					margin: 0 auto;
 				}
 				form.contact_form {
 					border-top: 1px solid $med_gray;
@@ -195,14 +196,17 @@ body {
 		.contact_box {
 			.contact_box_inner {
 				.input-field {
-					.select-wrapper {
-						input.select-dropdown {
-							width: 97%;
-						}
+					.row {
+						display: block !important;
 					}
-					#phone-number {
-						width: 98%;
-					}
+					// .select-wrapper {
+					// 	input.select-dropdown {
+					// 		width: 97%;
+					// 	}
+					// }
+					// #phone-number {
+					// 	width: 98%;
+					// }
 				}
 				button.send_msg_btn {
 					width: 100%;

@@ -4,15 +4,33 @@ $(document).ready(function () {
 	$(".collapsible").collapsible();
 
 	// carousel
-	$(".carousel.carousel-slider").carousel({
+	$(".carousel.carousel-slider.home").carousel({
 		fullWidth: true,
 		indicators: true,
 	});
-	autoplay();
-	function autoplay() {
+	// move next carousel
+	$(".moveNextCarousel").click(function (e) {
+		e.preventDefault();
+		e.stopPropagation();
 		$(".carousel").carousel("next");
-		setTimeout(autoplay, 5000);
-	}
+	});
+
+	$(".carousel.carousel-slider.product").carousel({
+		fullWidth: true,
+		indicators: false,
+	});
+	// move prev carousel
+	$(".movePrevCarousel").click(function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		$(".carousel").carousel("prev");
+	});
+
+	// autoplay();
+	// function autoplay() {
+	// 	$(".carousel").carousel("next");
+	// 	setTimeout(autoplay, 10000);
+	// }
 
 	// modal
 	$(".modal").modal();

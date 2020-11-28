@@ -123,179 +123,200 @@
 
 		<!-- main page -->
 		<main>
-			<div class="container-fluid cart_main">
-				<div class="row cart_box">
+			<div class="container-fluid product_main">
+				<div class="row product_box">
 					<nav>
 						<div class="nav-wrapper">
 							<div class="col s12">
 								<a href="./index.html" class="breadcrumb">Home</a>
-								<a href="#" class="breadcrumb">My Cart</a>
+								<a href="#" class="breadcrumb">Product found</a>
+								<a href="#" class="breadcrumb">Product</a>
 							</div>
 						</div>
 					</nav>
 					<div class="row">
 						<form action="">
-							<div class="col s12 l8">
-								<div class="cart_box_inner">
-									<h1>My Cart</h1>
-									<table class="centered">
-										<thead>
-											<tr>
-												<th></th>
-												<th>quantity</th>
-												<th>Price</th>
-											</tr>
-										</thead>
-
-										<tbody class="cart_table">
-											<tr>
-												<td>
-													<div class="cart_img">
-														<img src="assets/img/slide1.png" alt="" />
-													</div>
-													<div class="cart_name">
-														<p>Parts of Liquid Drainer</p>
-														<p>Armestrang</p>
-													</div>
-												</td>
-												<td>
-													<div class="quantity_box">
-														<input
-															type="button"
-															value="-"
-															class="minus button_quantity"
-														/>
-														<input
-															type="text"
-															value="0"
-															class="input_quantity"
-														/>
-														<input
-															type="button"
-															value="+"
-															class="plus button_quantity"
-														/>
-													</div>
-												</td>
-												<td class="cart_price">$</td>
-												<td class="cart_delete">
-													<i class="delete_icon"
-														><img src="assets/img/bin.png" alt=""
-													/></i>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<div class="cart_img">
-														<img src="assets/img/slide1.png" alt="" />
-													</div>
-													<div class="cart_name">
-														<p>Parts of Liquid Drainer</p>
-														<p>Armestrang</p>
-													</div>
-												</td>
-												<td>
-													<div class="quantity_box">
-														<input
-															type="button"
-															value="-"
-															class="minus button_quantity"
-														/>
-														<input
-															type="text"
-															value="0"
-															class="input_quantity"
-														/>
-														<input
-															type="button"
-															value="+"
-															class="plus button_quantity"
-														/>
-													</div>
-												</td>
-												<td class="cart_price">$</td>
-												<td class="cart_delete">
-													<i class="delete_icon"
-														><img src="assets/img/bin.png" alt=""
-													/></i>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-									<!-- confirm reset password -->
-									<div id="delete" class="modal">
-										<div class="modal-content delete_box">
-											<a href="#!" class="modal-action modal-close"
-												><img src="assets/img/plus.png" alt=""
-											/></a>
-											<div class="delete_box_inner">
-												<h4>Sure to delete the item?</h4>
-												<p>Part Number : 2315HLS</p>
-												<div class="row delete_btn">
-													<button
-														class="btn waves-effect waves-light modal-close"
-														id="cancel-btn"
-														type="submit"
-														name="action"
-													>
-														<span>No</span>
-													</button>
-													<button
-														class="btn waves-effect waves-light"
-														id="delete-btn"
-														type="submit"
-														name="action"
-													>
-														<span>Yes</span>
-													</button>
-												</div>
-											</div>
-										</div>
+							<div class="col s12 l6">
+								<div class="product_box_inner">
+									<div class="product_img">
+										<img src="assets/img/slide1.png" alt="" />
 									</div>
+									<ul class="img_option">
+										<li>
+											<i><img src="assets/img/print.png" alt="" /></i>
+											<span>Print</span>
+										</li>
+										<li>
+											<i><img src="assets/img/share.png" alt="" /></i>
+											<span>Share</span>
+										</li>
+										<li>
+											<i><img src="assets/img/favourite.png" alt="" /></i>
+											<span>Add to Wishlist</span>
+										</li>
+									</ul>
 								</div>
 							</div>
-							<div class="col s12 l4">
-								<div class="cart_box_inner">
-									<div class="title">
-										<h2>Cart Summary</h2>
-										<h5>2 Products</h5>
-									</div>
-									<ul class="cart_summary list">
+							<div class="col s12 l6">
+								<div class="product_box_inner">
+									<ul class="caption_option">
 										<li>
-											<span>Part Number</span>
-											<span>2315HLS</span>
+											<h1>Manufacturer</h1>
+											<h6>Armstrong</h6>
 										</li>
 										<li>
-											<span>Part Number</span>
-											<span>2315HLS</span>
+											<h1>Part Number</h1>
+											<h6>2315HLS</h6>
 										</li>
-									</ul>
-									<ul class="cart_summary total">
 										<li>
-											<span>Total fee</span>
-											<span>$</span>
+											<h1>Model number</h1>
+											<h6>9730017</h6>
 										</li>
-									</ul>
-									<div class="cart_print_box">
-										<div class="print">
-											<i><img src="assets/img/print.png" alt="" /></i>
-											<span>Print card</span>
-										</div>
-										<div class="row">
-											<div class="quote col s12">
-												<button
-													class="btn waves-effect waves-light"
-													type="submit"
-													name="action"
-												>
-													<span>Request a Quote</span>
-												</button>
+										<li>
+											<h1>Discription</h1>
+											<h6>Armstrong</h6>
+											<h6>Parts of Liquid Drainer 2315HLS</h6>
+											<h6>Internal Mech. Less Float, Orifice size 3/32</h6>
+										</li>
+										<li>
+											<div class="row">
+												<div class="col s12 m4 l5 xl4 button_box">
+													<h1>Quantity</h1>
+													<div class="quantity_box">
+														<input
+															type="button"
+															value="-"
+															class="minus button_quantity"
+														/>
+														<input
+															type="text"
+															value="1"
+															class="input_quantity"
+														/>
+														<input
+															type="button"
+															value="+"
+															class="plus button_quantity"
+														/>
+													</div>
+												</div>
+												<div class="col s12 m6 l7 xl7 button_box">
+													<div class="basket">
+														<button
+															class="btn waves-effect waves-light"
+															id="add-btn"
+															type="submit"
+															name="action"
+														>
+															<span>Add to cart</span>
+														</button>
+														<button
+															class="btn waves-effect waves-light"
+															id="ask-btn"
+															type="submit"
+															name="action"
+														>
+															<span>Ask a question</span>
+														</button>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</form>
+					</div>
+					<div class="row">
+						<div class="col s12 l9 offset-l2">
+							<div class="slider_title">
+								<h1>Recently viewed</h1>
+								<div class="carousel_arrow">
+									<div class="left">
+										<a href="Previo" class="movePrevCarousel"
+											><i class=""
+												><img
+													src="assets/img/chevron_left_gray.png"
+													alt="" /></i
+										></a>
+									</div>
+									<div class="right">
+										<a href="Siguiente" class="moveNextCarousel"
+											><i class=""
+												><img
+													src="assets/img/chevron_right_blue.png"
+													alt="" /></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col l12 hide-on-med-and-down">
+							<div
+								class="carousel carousel-slider center product"
+								data-indicators="false"
+							>
+								<div class="carousel-item" href="#one!">
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+								</div>
+								<div class="carousel-item" href="#two!">
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 hide-on-large-only" style="margin-top: 2em">
+							<div
+								class="carousel carousel-slider center product"
+								data-indicators="false"
+							>
+								<div class="carousel-item" href="#one!">
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+								</div>
+								<div class="carousel-item" href="#two!">
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+								</div>
+								<div class="carousel-item" href="#three!">
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+								</div>
+								<div class="carousel-item" href="#four!">
+									<div class="product_slide">
+										<img src="assets/img/product_slide.png" alt="" />
+										<p>Pellentesque Tincidunt Tristique Neque.</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
