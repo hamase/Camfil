@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<title>Camfil</title>
+
+		<link
+			rel="shortcut icon"
+			href="assets/img/favicon.png"
+			type="image/x-icon"
+		/>
+
+		<!-- import node module js -->
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="node_modules/materialize-css/dist/css/materialize.min.css"
+			media="screen,projection"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="nav-extended header_box">
+						<div class="nav-wrapper">
+							<a href="#" class="brand-logo"
+								><img src="assets/img/logo-white.png" alt=""
+							/></a>
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger"
+								><i class="material-icons">menu</i></a
+							>
+							<ul
+								id="nav-mobile"
+								class="right hide-on-med-and-down header_box_menu"
+							>
+								<li>
+									<input
+										placeholder="Search by part number, brand or product"
+										id="search-input-header"
+										type="text"
+										class="validate"
+										required
+									/>
+									<button
+										class="btn waves-effect waves-light"
+										type="submit"
+										name="action"
+									>
+										<img src="assets/img/search.png" alt="" />
+									</button>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><span>Account</span>
+										<img src="assets/img/user-white.png" alt=""
+									/></a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/bell-white.png" alt="" />
+										<span id="notifications" class="badge red">5</span>
+									</a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/shop-white.png" alt=""
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+					<ul class="sidenav" id="mobile-demo">
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Account</span>
+								<img src="assets/img/mobile/user.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Notifications</span>
+								<img src="assets/img/mobile/bell.png" alt="" />
+								<span id="notifications" class="badge red">5</span>
+							</a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Shop</span> <img src="assets/img/mobile/shop.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<input
+								placeholder="Search by part number, brand or product"
+								id="search-input-mobile"
+								type="text"
+								class="validate"
+								required
+							/>
+							<button
+								class="btn waves-effect waves-light"
+								type="submit"
+								name="action"
+							>
+								<img src="assets/img/search.png" alt="" />
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- main page -->
+		<main class="our_products_main">
+			<div class="container-fluid">
+				<div class="row our_products_box">
+					<nav>
+						<div class="nav-wrapper">
+							<div class="col s12">
+								<a href="./index.html" class="breadcrumb">Home</a>
+								<a href="#" class="breadcrumb">Products</a>
+							</div>
+						</div>
+					</nav>
+					<div class="our_products_box_inner">
+						<div class="col s12 l6">
+							<h1>
+								Our
+								<br />
+								Products
+							</h1>
+							<p>
+								We are your reliable source for spare parts, for production and
+								maintenance; even for goods which are hard to obtain. Main focus
+								of Camfil Group is the sale and delivery of spare parts for
+								production and maintenance.
+							</p>
+							<img src="assets/img/dot.png" alt="" class="dot" />
+						</div>
+						<div class="col s12 l6">
+							<div class="back_box row">
+								<ul class="col s12">
+									<li class="back">
+										<span>Steel, Copper & Mining Plants</span>
+									</li>
+									<li class="back">
+										<span>Pump Stations</span>
+									</li>
+									<li class="back">
+										<span>Gas Refinery Plants</span>
+									</li>
+								</ul>
+								<ul class="col s12">
+									<li class="back">
+										<span>Oil Field Facility Plants</span>
+									</li>
+									<li class="back">
+										<span>Pipe Lines</span>
+									</li>
+								</ul>
+								<ul class="col s12">
+									<li class="back">
+										<span>Oil Refinery Plants</span>
+									</li>
+									<li class="back">
+										<span>Power Generation Plants</span>
+									</li>
+									<li class="back">
+										<span>Drilling Rigs</span>
+									</li>
+								</ul>
+								<ul class="col s8">
+									<li class="back blue">
+										<span>+</span>
+										<span>Requested spare part!</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="product_box">
+						<div class="product_box_title">
+							<h6>Our products</h6>
+							<h1>
+								Our Wide Range of Products
+								<hr />
+							</h1>
+						</div>
+						<div class="product_box_list">
+							<div class="row">
+								<div class="col s6 l3">
+									<img src="assets/img/electrical.png" alt="" />
+									<p>Electrical</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/compressors.png" alt="" />
+									<p>Compressors</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/pumps.png" alt="" />
+									<p>Pumps</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/heat_exchanger.png" alt="" />
+									<p>Heat Exchangers</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s6 l3">
+									<img src="assets/img/valves.png" alt="" />
+									<p>Valves</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/instrumentation.png" alt="" />
+									<p>Instrumentation</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/analyzers.png" alt="" />
+									<p>Analyzers</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/analyzers.png" alt="" />
+									<p>Laboratory Equipment</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s6 l3">
+									<img src="assets/img/valves.png" alt="" />
+									<p>Steam Turbines</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/instrumentation.png" alt="" />
+									<p>Fittings</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/analyzers.png" alt="" />
+									<p>Drives & Motors</p>
+								</div>
+								<div class="col s6 l3">
+									<img src="assets/img/analyzers.png" alt="" />
+									<p>Safety Equipment</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row policy_main">
+					<img src="assets/img/seven-dots.png" alt="" class="dot" />
+					<div class="policy_box">
+						<div class="col s12 l6">
+							<img src="assets/img/flight.jpg" alt="" class="responsive-img" />
+							<div class="white_box">
+								<h6>Our pricing policy</h6>
+								<h1>Are you ready to order?</h1>
+								<p>
+									Our focus is to provide competitive pricing through our large
+									database of suppliers and expedite your material to ensure
+									prompt delivery.
+								</p>
+								<button
+									class="btn waves-effect waves-light"
+									id="call-btn"
+									type="submit"
+									name="action"
+								>
+									<span>Find your product</span>
+								</button>
+							</div>
+						</div>
+						<div class="col s12 l6">
+							<img src="assets/img/flight.jpg" alt="" class="responsive-img" />
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="line_box">
+						<div class="line_box_title">
+							<h6>Our product line</h6>
+							<h1>
+								General Product Line
+								<hr />
+							</h1>
+						</div>
+						<div class="line_box_list">
+							<ul class="col s12 m6 l3">
+								<h1>Process Machinery</h1>
+								<li>Gas Compressors</li>
+								<li>Air Compressors</li>
+								<li>Fans</li>
+								<li>Centrifugal Blowers</li>
+								<li>Gear Box For H.D Service</li>
+								<li>Steam Turbines</li>
+								<li>Gas Turbines</li>
+								<li>Hot Gas Expanders</li>
+								<li>Cold Gas Expanders</li>
+								<li>Diesel Engines</li>
+								<li>Turbo Expander I compressor</li>
+								<li>Centrifugal Pumps</li>
+								<li>Sea Water Lift Pumps</li>
+								<li>Fire Water Lift Pumps</li>
+								<li>Reciprocating Pumps</li>
+								<li>Screw Pumps</li>
+								<li>Rotary Pumps</li>
+								<li>Metering Pumps</li>
+								<li>Liquid Ring Vacuum Pumps</li>
+								<li>Vertical Pump</li>
+								<li>Submersible Pumps</li>
+								<li>Boiler Feed Pumps</li>
+								<li>Cryogenic Pumps</li>
+								<li>Liquid Sulphur Pumps</li>
+								<li>Magnetic Drive Pump</li>
+							</ul>
+							<ul class="col s12 m6 l3">
+								<h1>Chemicals</h1>
+								<li>Anti Foam</li>
+								<li>Activated Carbon</li>
+								<li>Molecular Sieve</li>
+								<li>Water Treatment Chemicals</li>
+								<li>Couplings</li>
+								<li>Gear Type</li>
+								<li>Flexible Metallic Type</li>
+								<li>Mechanical Seal Type</li>
+								<li>Electrical Equipment</li>
+								<li>Power Distribution Control System</li>
+								<li>Generators</li>
+								<li>Electrical Motors</li>
+								<li>Electrical Cable</li>
+								<li>Fire Stop</li>
+								<li>Cable Termination & Joints</li>
+								<li>M.V. Switch Gear</li>
+								<li>L.V Switch Gear</li>
+								<li>Part For Switch Gear</li>
+								<li>Transformers</li>
+							</ul>
+							<ul class="col s12 m6 l3">
+								<h1>Instrumentation</h1>
+								<li>Control Systems</li>
+								<li>Actuated Valves</li>
+								<li>Valve Actuators</li>
+								<li>Pressure Instruments</li>
+								<li>Flow Instruments</li>
+								<li>Level Instruments</li>
+								<li>Temperature Instruments</li>
+								<li>Analyzers</li>
+								<li>Fire &Gas Instruments</li>
+								<li>Miscellaneous Items</li>
+							</ul>
+							<ul class="col s12 l3 img_box">
+								<div class="row">
+									<div class="col s12 m4 l12">
+										<img src="assets/img/dot.png" alt="" />
+									</div>
+									<div class="col s12 m4 l12">
+										<img src="assets/img/dot.png" alt="" />
+									</div>
+									<div class="col s12 m4 l12">
+										<img src="assets/img/dot.png" alt="" />
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer_box">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col s12 offset-l1 l11 offset-xl1 xl10">
+						<div class="col s12 l2 xl2 logo">
+							<img src="assets/img/logo-blue.png" alt="" />
+							<p class="logo_desc">
+								We are your reliable source for <br />
+								spare parts, for production and <br />
+								maintenance.
+							</p>
+						</div>
+						<div class="col s12 l2 xl2 quick">
+							<ul>
+								<li><b>Quick links</b></li>
+								<li><a href="">Products</a></li>
+								<li><a href="">Ask a Question</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl2 know-us">
+							<ul>
+								<li><b>Get to know us</b></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Contact us</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 find_us">
+							<ul>
+								<li><b>Find us</b></li>
+								<li class="location">
+									<img src="assets/img/location.png" alt="" /><span
+										>Hungary<br />
+										1061 Budapest Anker <br />
+										Köz Anker Business <br />center 2-4
+									</span>
+								</li>
+								<li class="phone">
+									<img src="assets/img/phone.png" alt="" /><span
+										>+36 (1) 445 3638</span
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 touch">
+							<ul>
+								<li><b>Get in touch</b></li>
+								<ul class="social_media">
+									<li>
+										<a href=""><img src="assets/img/linkedin.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/facebook.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/twitter.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/instagram.png" alt="" /></a>
+									</li>
+								</ul>
+								<li>
+									<button class="feedback" id="feedback">
+										<span>Leave feedback</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2020 Camfil GROUP kft. All rights reserved.
+				</div>
+			</div>
+		</footer>
+
+		<!-- import node module js -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
