@@ -266,6 +266,10 @@ body .footer_box {
         font-size: 14px;
         font-family: "OpenSans-Bold";
         color: #3d3d3d; }
+      body .footer_box .row > div div.touch li button.feedback:focus {
+        background-color: rgba(0, 0, 0, 0) !important; }
+      body .footer_box .row > div div.touch li button.feedback:hover {
+        cursor: pointer; }
   body .footer_box .footer-copyright {
     text-align: center; }
     body .footer_box .footer-copyright .container {
@@ -1044,6 +1048,68 @@ body main.home {
               font-family: "OpenSans-SemiBold";
               text-transform: none;
               margin: 0 auto; }
+body #feedback {
+  width: 412px;
+  height: auto; }
+  body #feedback .feedback_box a.modal-close {
+    float: right;
+    clear: both; }
+    body #feedback .feedback_box a.modal-close img {
+      transform: rotate(225deg);
+      width: 17px; }
+  body #feedback .feedback_box h4 {
+    color: #3d3d3d;
+    font-family: "OpenSans-Bold";
+    font-size: 24px;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    text-align: center;
+    clear: both; }
+  body #feedback .feedback_box p {
+    color: #3d3d3d;
+    font-family: "OpenSans";
+    font-size: 16px;
+    margin: 24px auto;
+    width: 80%;
+    text-align: center; }
+  body #feedback .feedback_box .feedback_img {
+    display: flex;
+    justify-content: space-evenly; }
+    body #feedback .feedback_box .feedback_img a img {
+      width: 40px; }
+  body #feedback .feedback_box .modal_inner {
+    display: flex;
+    justify-content: center;
+    position: relative; }
+    body #feedback .feedback_box .modal_inner .materialize-textarea {
+      border: 1px solid #b3b6b9;
+      height: 96px !important;
+      width: 301px;
+      max-height: 150px;
+      padding-left: 10px; }
+    body #feedback .feedback_box .modal_inner i {
+      position: absolute;
+      right: 40px;
+      top: 13px;
+      width: auto;
+      display: flex; }
+      body #feedback .feedback_box .modal_inner i img {
+        width: 0.8em; }
+  body #feedback .feedback_box .feedback_btn {
+    text-align: center; }
+    body #feedback .feedback_box .feedback_btn button {
+      height: 48px;
+      background: #0086e6;
+      border: none;
+      border-radius: 0;
+      width: 301px; }
+      body #feedback .feedback_box .feedback_btn button span {
+        font-size: 16px;
+        font-family: "OpenSans-Bold";
+        color: white;
+        text-transform: none; }
+      body #feedback .feedback_box .feedback_btn button:hover {
+        cursor: pointer; }
 
 @media screen and (max-width: 680px) {
   body main h1 hr {
@@ -1541,7 +1607,7 @@ body main.contact {
       padding: 2em 0; }
       body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.location {
         display: flex;
-        margin: 24px auto 8px auto; }
+        margin: 24px auto 18px auto; }
         body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.location img {
           width: 14.1px;
           height: 18.7px; }
@@ -1551,7 +1617,8 @@ body main.contact {
           margin-left: 12.9px; }
       body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.phone {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 8px; }
         body main.contact .contact_box .contact_box_inner .contact_adrs .find_us ul li.phone img {
           width: 14.6px;
           height: 14.6px; }

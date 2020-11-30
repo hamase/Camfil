@@ -887,6 +887,88 @@ body {
 			}
 		}
 	}
+
+	#feedback {
+		width: 412px;
+		height: auto;
+		.feedback_box {
+			a.modal-close {
+				float: right;
+				clear: both;
+				img {
+					transform: rotate(225deg);
+					width: 17px;
+				}
+			}
+			h4 {
+				color: $body_text;
+				font-family: "OpenSans-Bold";
+				font-size: 24px;
+				margin-bottom: 32px;
+				margin-top: 40px;
+				text-align: center;
+				clear: both;
+			}
+			p {
+				color: $body_text;
+				font-family: "OpenSans";
+				font-size: 16px;
+				margin: 24px auto;
+				width: 80%;
+				text-align: center;
+			}
+			.feedback_img {
+				display: flex;
+				justify-content: space-evenly;
+				a {
+					img {
+						width: 40px;
+					}
+				}
+			}
+			.modal_inner {
+				display: flex;
+				justify-content: center;
+				position: relative;
+				.materialize-textarea {
+					border: 1px solid #b3b6b9;
+					height: 96px !important;
+					width: 301px;
+					max-height: 150px;
+					padding-left: 10px;
+				}
+				i {
+					position: absolute;
+					right: 40px;
+					top: 13px;
+					width: auto;
+					display: flex;
+					img {
+						width: 0.8em;
+					}
+				}
+			}
+			.feedback_btn {
+				text-align: center;
+				button {
+					height: 48px;
+					background: $blue;
+					border: none;
+					border-radius: 0;
+					width: 301px;
+					span {
+						font-size: 16px;
+						font-family: "OpenSans-Bold";
+						color: white;
+						text-transform: none;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
 }
 @media screen and (max-width: 680px) {
 	body {

@@ -113,6 +113,12 @@ body {
 								font-family: "OpenSans-Bold";
 								color: $body_text;
 							}
+							&:focus {
+								background-color: rgba(0, 0, 0, 0) !important;
+							}
+							&:hover {
+								cursor: pointer;
+							}
 						}
 					}
 				}

@@ -116,7 +116,7 @@ body {
 							li {
 								&.location {
 									display: flex;
-									margin: 24px auto 8px auto;
+									margin: 24px auto 18px auto;
 									img {
 										width: 14.1px;
 										height: 18.7px;
@@ -130,6 +130,7 @@ body {
 								&.phone {
 									display: flex;
 									align-items: center;
+									margin-bottom: 8px;
 									img {
 										width: 14.6px;
 										height: 14.6px;

@@ -51,6 +51,9 @@ $(document).ready(function () {
 		$(this).closest(".modal").modal("close");
 		$("#forget").modal("open");
 	});
+	$("#feedback-btn").click(function () {
+		$("#feedback").modal("open");
+	});
 	$(".delete_icon").click(function () {
 		$("#delete").modal("open");
 	});
@@ -88,6 +91,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#delete").modal({
+		dismissible: false,
+	});
+	$("#feedback").modal({
 		dismissible: false,
 	});
 	$("select").formSelect();
