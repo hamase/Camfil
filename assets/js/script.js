@@ -52,7 +52,7 @@ $(document).ready(function () {
 		$("#forget").modal("open");
 	});
 	$("#feedback-btn").click(function () {
-		$("#feedback").modal("open");
+		$("#feedback-box").modal("open");
 	});
 	$(".delete_icon").click(function () {
 		$("#delete").modal("open");

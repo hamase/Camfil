@@ -1048,16 +1048,16 @@ body main.home {
               font-family: "OpenSans-SemiBold";
               text-transform: none;
               margin: 0 auto; }
-body #feedback {
+body #feedback-box {
   width: 412px;
   height: auto; }
-  body #feedback .feedback_box a.modal-close {
+  body #feedback-box .feedback_box a.modal-close {
     float: right;
     clear: both; }
-    body #feedback .feedback_box a.modal-close img {
+    body #feedback-box .feedback_box a.modal-close img {
       transform: rotate(225deg);
       width: 17px; }
-  body #feedback .feedback_box h4 {
+  body #feedback-box .feedback_box h4 {
     color: #3d3d3d;
     font-family: "OpenSans-Bold";
     font-size: 24px;
@@ -1065,50 +1065,50 @@ body #feedback {
     margin-top: 40px;
     text-align: center;
     clear: both; }
-  body #feedback .feedback_box p {
+  body #feedback-box .feedback_box p {
     color: #3d3d3d;
     font-family: "OpenSans";
     font-size: 16px;
     margin: 24px auto;
     width: 80%;
     text-align: center; }
-  body #feedback .feedback_box .feedback_img {
+  body #feedback-box .feedback_box .feedback_img {
     display: flex;
     justify-content: space-evenly; }
-    body #feedback .feedback_box .feedback_img a img {
+    body #feedback-box .feedback_box .feedback_img a img {
       width: 40px; }
-  body #feedback .feedback_box .modal_inner {
+  body #feedback-box .feedback_box .modal_inner {
     display: flex;
     justify-content: center;
     position: relative; }
-    body #feedback .feedback_box .modal_inner .materialize-textarea {
+    body #feedback-box .feedback_box .modal_inner .materialize-textarea {
       border: 1px solid #b3b6b9;
       height: 96px !important;
       width: 301px;
       max-height: 150px;
       padding-left: 10px; }
-    body #feedback .feedback_box .modal_inner i {
+    body #feedback-box .feedback_box .modal_inner i {
       position: absolute;
       right: 40px;
       top: 13px;
       width: auto;
       display: flex; }
-      body #feedback .feedback_box .modal_inner i img {
+      body #feedback-box .feedback_box .modal_inner i img {
         width: 0.8em; }
-  body #feedback .feedback_box .feedback_btn {
+  body #feedback-box .feedback_box .feedback_btn {
     text-align: center; }
-    body #feedback .feedback_box .feedback_btn button {
+    body #feedback-box .feedback_box .feedback_btn button {
       height: 48px;
       background: #0086e6;
       border: none;
       border-radius: 0;
       width: 301px; }
-      body #feedback .feedback_box .feedback_btn button span {
+      body #feedback-box .feedback_box .feedback_btn button span {
         font-size: 16px;
         font-family: "OpenSans-Bold";
         color: white;
         text-transform: none; }
-      body #feedback .feedback_box .feedback_btn button:hover {
+      body #feedback-box .feedback_box .feedback_btn button:hover {
         cursor: pointer; }
 
 @media screen and (max-width: 680px) {
@@ -2171,7 +2171,8 @@ main.our_products_main {
             margin-left: 20px;
             vertical-align: middle; }
   main.our_products_main .policy_main {
-    position: relative; }
+    position: relative;
+    margin-top: 7em; }
     main.our_products_main .policy_main img.dot {
       position: absolute;
       width: 95px;
@@ -2185,14 +2186,16 @@ main.our_products_main {
         display: flex;
         flex-direction: column;
         align-items: flex-end; }
+      main.our_products_main .policy_main .policy_box .col:nth-child(2) {
+        display: flex;
+        align-items: center; }
       main.our_products_main .policy_main .policy_box > div:first-child img {
-        height: 388px;
         width: 100%;
         max-height: 100%; }
       main.our_products_main .policy_main .policy_box > div:first-child .white_box {
         background-color: white;
         width: 523px;
-        margin: 2em auto;
+        margin: 2em 0 2em auto;
         z-index: 888;
         padding: 40px 65px 48px 46px; }
         main.our_products_main .policy_main .policy_box > div:first-child .white_box h6 {

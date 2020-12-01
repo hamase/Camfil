@@ -178,6 +178,7 @@ main {
 		}
 		.policy_main {
 			position: relative;
+			margin-top: 7em;
 			img.dot {
 				position: absolute;
 				width: 95px;
@@ -193,16 +194,19 @@ main {
 					flex-direction: column;
 					align-items: flex-end;
 				}
+				.col:nth-child(2) {
+					display: flex;
+					align-items: center;
+				}
 				> div:first-child {
 					img {
-						height: 388px;
 						width: 100%;
 						max-height: 100%;
 					}
 					.white_box {
 						background-color: white;
 						width: 523px;
-						margin: 2em auto;
+						margin: 2em 0 2em auto;
 						z-index: 888;
 						padding: 40px 65px 48px 46px;
 						h6 {
