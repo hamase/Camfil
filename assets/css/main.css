@@ -493,25 +493,26 @@ body header {
           width: 32px;
           height: 23px; }
   body header .modal#reset-pass {
-    width: 412px;
-    height: 500px; }
+    width: 412px; }
     body header .modal#reset-pass .reset_box {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      body header .modal#reset-pass .reset_box .modal_inner {
-        position: relative;
-        display: flex; }
-        body header .modal#reset-pass .reset_box .modal_inner input {
-          margin: 0 auto 32px auto; }
-        body header .modal#reset-pass .reset_box .modal_inner i {
-          position: absolute;
-          top: 16px;
-          width: auto;
-          display: flex;
-          right: 40px; }
-          body header .modal#reset-pass .reset_box .modal_inner i img {
-            width: 0.8em; }
+      body header .modal#reset-pass .reset_box .row {
+        margin: 0 auto 32px auto; }
+        body header .modal#reset-pass .reset_box .row .modal_inner {
+          position: relative;
+          display: flex; }
+          body header .modal#reset-pass .reset_box .row .modal_inner i {
+            position: absolute;
+            top: 16px;
+            width: auto;
+            display: flex;
+            right: 40px; }
+            body header .modal#reset-pass .reset_box .row .modal_inner i img {
+              width: 0.8em; }
+        body header .modal#reset-pass .reset_box .row .modal_inner:first-child input {
+          margin: 0 auto 10px auto; }
       body header .modal#reset-pass .reset_box h4 {
         color: #3d3d3d;
         font-family: "OpenSans-Bold";
@@ -525,6 +526,63 @@ body header {
         margin-bottom: 31px;
         text-align: center;
         width: 77%; }
+  body header .modal .error_pass {
+    display: none;
+    margin-left: 1em;
+    margin-bottom: 2em; }
+    body header .modal .error_pass i {
+      cursor: pointer; }
+      body header .modal .error_pass i img {
+        width: 20px; }
+    body header .modal .error_pass span#strengthMessage {
+      font-size: 12px;
+      color: red;
+      font-family: "OpenSans";
+      margin: 0; }
+    body header .modal .error_pass .tips {
+      position: absolute;
+      background: white;
+      color: #7d7d7d;
+      font-size: 12px;
+      padding: 5px;
+      top: calc(45% + 5px);
+      width: 35%;
+      text-align: left;
+      left: 24%;
+      margin-left: -60px;
+      border-radius: 3px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 300ms;
+      transform: translate(0, -10px);
+      z-index: 888;
+      box-shadow: 2px 4px 17px #b3b3b3; }
+      body header .modal .error_pass .tips:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent white transparent;
+        position: absolute;
+        top: -5%;
+        left: 11%;
+        margin-left: -5px; }
+      body header .modal .error_pass .tips ul {
+        padding-left: 15px; }
+        body header .modal .error_pass .tips ul li::before {
+          content: "\2022";
+          color: red;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em; }
+        body header .modal .error_pass .tips ul li:first-child::before {
+          content: "\2022";
+          color: green; }
+    body header .modal .error_pass:hover .tips {
+      opacity: 1;
+      transform: translate(0, 0); }
   body header .modal#reset-ok {
     width: 410px;
     height: 370px; }

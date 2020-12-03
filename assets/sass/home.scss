@@ -185,28 +185,35 @@ body {
 			}
 			&#reset-pass {
 				width: 412px;
-				height: 500px;
 				.reset_box {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
-					.modal_inner {
-						position: relative;
-						display: flex;
-						input {
-							margin: 0 auto 32px auto;
-						}
-						i {
-							position: absolute;
-							top: 16px;
-							width: auto;
-							display: flex;
-							right: 40px;
-							img {
-								width: 0.8em;
-							}
-						}
-					}
+                    align-items: center;
+                    .row{
+                        margin: 0 auto 32px auto;
+                        .modal_inner {
+                            position: relative;
+                            display: flex;
+                            // input {
+                            // 	margin: 0 auto 32px auto;
+                            // }
+                            i {
+                                position: absolute;
+                                top: 16px;
+                                width: auto;
+                                display: flex;
+                                right: 40px;
+                                img {
+                                    width: 0.8em;
+                                }
+                            }
+                        }
+                        .modal_inner:first-child {
+                            input {
+                                margin: 0 auto 10px auto;
+                            }
+                        }
+                    }
 					h4 {
 						color: $body_text;
 						font-family: "OpenSans-Bold";
@@ -222,6 +229,77 @@ body {
 						text-align: center;
 						width: 77%;
 					}
+				}
+			}
+			.error_pass {
+				display: none;
+				margin-left: 1em;
+				margin-bottom: 2em;
+				i {
+					cursor: pointer;
+					img {
+						width: 20px;
+					}
+				}
+				span#strengthMessage {
+					font-size: 12px;
+					color: red;
+					font-family: "OpenSans";
+					margin: 0;
+				}
+				.tips {
+					position: absolute;
+					background: white;
+					color: $gray;
+					font-size: 12px;
+					padding: 5px;
+					top: calc(45% + 5px);
+					width: 35%;
+					text-align: left;
+					left: 24%;
+					margin-left: -60px;
+					border-radius: 3px;
+					opacity: 0;
+					pointer-events: none;
+					transition: all 300ms;
+					transform: translate(0, -10px);
+					z-index: 888;
+					box-shadow: 2px 4px 17px #b3b3b3;
+					&:before {
+						content: "";
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 0 10px 10px 10px;
+						border-color: transparent transparent white transparent;
+						position: absolute;
+						top: -5%;
+						left: 11%;
+						margin-left: -5px;
+					}
+					ul {
+						padding-left: 15px;
+						li {
+							&::before {
+								content: "\2022";
+								color: red;
+								font-weight: bold;
+								display: inline-block;
+								width: 1em;
+								margin-left: -1em;
+							}
+						}
+						li:first-child {
+							&::before {
+								content: "\2022";
+								color: green;
+							}
+						}
+					}
+				}
+				&:hover .tips {
+					opacity: 1;
+					transform: translate(0, 0);
 				}
 			}
 			&#reset-ok {

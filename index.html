@@ -25,7 +25,7 @@
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.min.css" />
 	</head>
 	<body>
 		<!-- header -->
@@ -151,7 +151,7 @@
 									</div>
 									<div class="modal_inner">
 										<input
-											id="password"
+											id="password-login"
 											type="password"
 											class="validate col s12 l6"
 											placeholder="Password"
@@ -242,7 +242,7 @@
 									</div>
 									<div class="modal_inner col s12">
 										<input
-											id="password"
+											id="password-login"
 											type="password"
 											class="validate"
 											placeholder="Password"
@@ -337,28 +337,43 @@
 									<div class="row">
 										<div class="modal_inner col s12">
 											<input
-												id="password"
+												id="password-reset"
 												type="password"
 												class="validate"
 												placeholder="Password"
-												required
 											/>
 											<i class="material-icons prefix email"
 												><img src="assets/img/password.png" alt=""
 											/></i>
+										</div>
+										<div class="error_pass">
+											<i class="tooltipped"
+												><img src="assets/img/error_pass.png" alt=""
+											/></i>
+											<span id="strengthMessage"
+												>Your password is not strong</span
+											>
+											<span class="tips">
+                                                <ul>
+                                                    <li>8 - 20 characters</li>
+                                                    <li>1 number</li>
+                                                    <li>1 uppercase letter</li>
+                                                    <li>1 lowercase letter</li>
+                                                </ul>
+                                            </span>
 										</div>
 										<div class="modal_inner col s12">
 											<input
-												id="repassword"
+												id="repassword-reset"
 												type="password"
 												class="validate"
 												placeholder="Retype Password"
-												required
 											/>
 											<i class="material-icons prefix email"
 												><img src="assets/img/password.png" alt=""
 											/></i>
-										</div>
+                                        </div>
+                                        <!-- <span id='message' style="margin-left: 1em;"></span> -->
 									</div>
 									<div class="row forget_btn">
 										<button
@@ -915,6 +930,6 @@
 		<!-- import node module js -->
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-		<script src="assets/js/script.js"></script>
+		<script src="assets/js/all.min.js"></script>
 	</body>
 </html>

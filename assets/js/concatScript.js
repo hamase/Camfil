@@ -1,38 +1,5 @@
 $(document).ready(function () {
-	"use strict";
-	$(".sidenav").sidenav();
-	$(".collapsible").collapsible();
-
-	// carousel
-	$(".carousel.carousel-slider.home").carousel({
-		fullWidth: true,
-		indicators: true,
-	});
-	// move next carousel
-	$(".moveNextCarousel").click(function (e) {
-		e.preventDefault();
-		e.stopPropagation();
-		$(".carousel").carousel("next");
-	});
-
-	$(".carousel.carousel-slider.product").carousel({
-		fullWidth: true,
-		indicators: false,
-	});
-	// move prev carousel
-	$(".movePrevCarousel").click(function (e) {
-		e.preventDefault();
-		e.stopPropagation();
-		$(".carousel").carousel("prev");
-	});
-
-	autoplay();
-	function autoplay() {
-		$(".carousel").carousel("next");
-		setTimeout(autoplay, 10000);
-	}
-
-	// modal
+	$(".tooltipped").tooltip();
 	$(".modal").modal();
 	// close prev modal
 	$("#login-btn").click(function () {
@@ -93,11 +60,47 @@ $(document).ready(function () {
 	$("#delete").modal({
 		dismissible: false,
 	});
-	$("#feedback").modal({
+	$("#feedback-box").modal({
 		dismissible: false,
 	});
 	$("select").formSelect();
+});
 
+$(document).ready(function () {
+	$(".sidenav").sidenav();
+	$(".collapsible").collapsible();
+
+	// carousel
+	$(".carousel.carousel-slider.home").carousel({
+		fullWidth: true,
+		indicators: true,
+	});
+	// move next carousel
+	$(".moveNextCarousel").click(function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		$(".carousel").carousel("next");
+	});
+
+	$(".carousel.carousel-slider.product").carousel({
+		fullWidth: true,
+		indicators: false,
+	});
+	// move prev carousel
+	$(".movePrevCarousel").click(function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		$(".carousel").carousel("prev");
+	});
+
+	autoplay();
+	function autoplay() {
+		$(".carousel").carousel("next");
+		setTimeout(autoplay, 10000);
+	}
+});
+
+$(document).ready(function () {
 	// quantity card
 	$(".button_quantity").click(function () {
 		var button = $(this);
@@ -114,5 +117,36 @@ $(document).ready(function () {
 			}
 		}
 		button.parent().find("input[type=text]").val(newVal);
+	});
+});
+
+$(document).ready(function () {
+	$("#password-reset").keyup(function () {
+		checkPasswordStrength();
+	});
+
+	function checkPasswordStrength() {
+		var number = /([0-9])/;
+		var alphabets = /([a-zA-Z])/;
+		var lenght_pass = $("#password-reset").val().length;
+		if (lenght_pass < 8) {
+			$(".error_pass").css("display", "inline-flex");
+		} else if (
+			$("#password-reset").val().match(number) &&
+			$("#password-reset").val().match(alphabets) &&
+			lenght_pass < 21
+		) {
+			$(".error_pass").css("display", "none");
+		} else {
+			$(".error_pass").css("display", "inline-flex");
+		}
+	}
+
+	$("#repassword-reset").keyup(function () {
+		if ($("#password-reset").val() == $("#repassword-reset").val()) {
+			$("#repassword-reset").css("background-color", "#33e13336");
+			$("#password-reset").css("background-color", "#33e13336");
+		} else $("#repassword-reset").css("background-color", "#f269696b");
+		$("#password-reset").css("background-color", "#f269696b");
 	});
 });

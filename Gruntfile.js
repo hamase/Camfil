@@ -8,16 +8,45 @@ module.exports = function (grunt) {
 				},
 			},
 		},
-		// cssmin: {
-		//     target: {
-		//         src: ["assets/css/main.css"],
-		//         dest: "assets/css/main.min.css",
-		//     },
-		// },
+		cssmin: {
+			sitecss: {
+				options: {
+					banner: "",
+				},
+				files: {
+					"assets/css/main.min.css": ["assets/css/main.css"],
+				},
+			},
+		},
+		concat: {
+			js: {
+				src: [
+					"assets/js/modal.js",
+					"assets/js/carousel.js",
+					"assets/js/quantity.js",
+					"assets/js/strongPass.js",
+				],
+				dest: "assets/js/concatScript.js",
+			},
+		},
+		uglify: {
+			options: {
+				compress: true,
+			},
+			build: {
+				files: {
+					"assets/js/all.min.js": ["assets/js/concatScript.js"],
+				},
+			},
+		},
 		watch: {
-			css: {
-				files: "assets/**/*.scss",
-				tasks: ["sass"], //, "cssmin"
+			stylesheets: {
+				files: ["assets/**/*.css", "assets/**/*.scss"],
+				tasks: ["sass", "cssmin"],
+			},
+			scripts: {
+				files: "assets/js/*.js",
+				tasks: ["concat", "uglify"],
 			},
 		},
 		browserSync: {
@@ -44,6 +73,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-contrib-cssmin");
 	grunt.loadNpmTasks("grunt-contrib-watch");
 	grunt.loadNpmTasks("grunt-browser-sync");
+	grunt.loadNpmTasks("grunt-contrib-uglify");
+	grunt.loadNpmTasks("grunt-contrib-concat");
 
 	// Default task(s).
 	grunt.registerTask("default", ["browserSync", "watch"]);
