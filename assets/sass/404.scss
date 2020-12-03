@@ -46,24 +46,37 @@ body {
 					&.empty_txt {
 						display: flex;
 						flex-direction: column;
-                        align-items: center;
-                        h1{
-                            font-size: 24px;
-                            font-family: "OpenSans-Bold";
-                            color: $heading;
-                        }
+						align-items: center;
+						h1 {
+							font-size: 24px;
+							font-family: "OpenSans-Bold";
+							color: $heading;
+						}
 					}
 				}
 				.error_img {
 					display: flex;
 					justify-content: flex-end;
 					img {
-						width: 328.7px;
-						height: 310.7px;
+						width: auto;
+                        height: 310.7px;
+                        max-width: 100%;
 					}
 					&.empty_img {
 						justify-content: center;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 449px) {
+	main.error_box {
+		.error_txt {
+			&.no_product {
+				button#live-chat {
+					margin-top: 2em !important;
 				}
 			}
 		}

@@ -331,11 +331,15 @@ body main.error_box {
     display: flex;
     justify-content: flex-end; }
     body main.error_box .container .row .error_img img {
-      width: 328.7px;
-      height: 310.7px; }
+      width: auto;
+      height: 310.7px;
+      max-width: 100%; }
     body main.error_box .container .row .error_img.empty_img {
       justify-content: center; }
 
+@media screen and (max-width: 449px) {
+  main.error_box .error_txt.no_product button#live-chat {
+    margin-top: 2em !important; } }
 @media screen and (max-width: 992px) {
   main.error_box .error_txt {
     margin-bottom: 4em; }
