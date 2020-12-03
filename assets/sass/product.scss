@@ -192,6 +192,58 @@ body {
 						}
 					}
 				}
+				.modal {
+					width: 412px;
+					margin-top: 10em;
+					.product_box {
+						a.modal-close {
+							float: right;
+							clear: both;
+							img {
+								transform: rotate(225deg);
+								width: 17px;
+							}
+						}
+						.product_box_inner {
+							text-align: center;
+							margin-top: 2em;
+							h4 {
+								font-size: 24px;
+								font-family: "OpenSans-Bold";
+								color: #000000;
+							}
+							p {
+								font-size: 16px;
+								font-family: "OpenSans";
+								color: #000000;
+								margin: 2em auto 3em auto;
+                            }
+                            .product_btn{
+                                button {
+                                    box-shadow: none;
+                                    border-radius: 0;
+                                    width: 301px;
+                                    height: 48px;
+                                    span {
+                                        font-size: 16px;
+                                        font-family: "OpenSans-Bold";
+                                        text-transform: none;
+                                    }
+                                }
+                                button#cancel-btn {
+                                    background-color: $blue;
+                                    color: white;
+                                }
+                                button#product-btn {
+                                    background-color: white;
+                                    color: $blue;
+                                    border: 1px solid $blue;
+                                    margin-top: 2em;
+                                }
+                            }
+						}
+					}
+				}
 			}
 		}
 	}

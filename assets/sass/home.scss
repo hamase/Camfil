@@ -188,32 +188,32 @@ body {
 				.reset_box {
 					display: flex;
 					flex-direction: column;
-                    align-items: center;
-                    .row{
-                        margin: 0 auto 32px auto;
-                        .modal_inner {
-                            position: relative;
-                            display: flex;
-                            // input {
-                            // 	margin: 0 auto 32px auto;
-                            // }
-                            i {
-                                position: absolute;
-                                top: 16px;
-                                width: auto;
-                                display: flex;
-                                right: 40px;
-                                img {
-                                    width: 0.8em;
-                                }
-                            }
-                        }
-                        .modal_inner:first-child {
-                            input {
-                                margin: 0 auto 10px auto;
-                            }
-                        }
-                    }
+					align-items: center;
+					.row {
+						margin: 0 auto 32px auto;
+						.modal_inner {
+							position: relative;
+							display: flex;
+							// input {
+							// 	margin: 0 auto 32px auto;
+							// }
+							i {
+								position: absolute;
+								top: 16px;
+								width: auto;
+								display: flex;
+								right: 40px;
+								img {
+									width: 0.8em;
+								}
+							}
+						}
+						.modal_inner:first-child {
+							input {
+								margin: 0 auto 10px auto;
+							}
+						}
+					}
 					h4 {
 						color: $body_text;
 						font-family: "OpenSans-Bold";
@@ -1129,62 +1129,64 @@ body {
 
 @media screen and (max-width: 992px) {
 	body {
-		nav {
-			background: $light_white !important;
-			.sidenav-trigger {
-				i.home {
-					color: $dark_blue;
-				}
-			}
-		}
-		.modal {
-			width: 95% !important;
-			&#sign-up {
-				.row.register_btn {
-					margin-bottom: 40px;
-					margin-top: 30px;
-				}
-			}
-			&#login,
-			&#reset-pass {
-				max-height: 100% !important;
-				height: 82% !important;
-			}
-			&#reset-ok {
-				max-height: 100% !important;
-				height: 60% !important;
-			}
-			.row:not(.chechbox) {
-				display: block !important;
-				.modal_inner {
-					input {
-						width: 93% !important;
+		.home {
+			nav {
+				background: $light_white !important;
+				.sidenav-trigger {
+					i.home {
+						color: $dark_blue;
 					}
-					&.count-phone {
-						display: block !important;
-						.country {
-							.select-wrapper {
-								.caret {
-									right: 50px !important;
+				}
+			}
+			.modal {
+				width: 95% !important;
+				&#sign-up {
+					.row.register_btn {
+						margin-bottom: 40px;
+						margin-top: 30px;
+					}
+				}
+				&#login,
+				&#reset-pass {
+					max-height: 100% !important;
+					height: 82% !important;
+				}
+				&#reset-ok {
+					max-height: 100% !important;
+					height: 60% !important;
+				}
+				.row:not(.chechbox) {
+					display: block !important;
+					.modal_inner {
+						input {
+							width: 93% !important;
+						}
+						&.count-phone {
+							display: block !important;
+							.country {
+								.select-wrapper {
+									.caret {
+										right: 50px !important;
+									}
 								}
 							}
 						}
 					}
-				}
-				.row.register_btn {
-					margin: 44px auto !important;
-					button {
-						width: auto !important;
+					.row.register_btn {
+						margin: 44px auto !important;
+						button {
+							width: auto !important;
+						}
 					}
-				}
-				.row.login_btn {
-					margin-bottom: 40px;
-					button {
-						width: auto !important;
+					.row.login_btn {
+						margin-bottom: 40px;
+						button {
+							width: auto !important;
+						}
 					}
-				}
-				.row.checkbox {
-					width: 96% !important;
+					.row.checkbox {
+						width: 96% !important;
+					}
 				}
 			}
 		}
