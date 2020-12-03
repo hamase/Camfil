@@ -1,8 +1,7 @@
 body {
 	main.error_box {
-		height: 660px;
-		display: flex;
-		align-items: center;
+		margin-top: 15em;
+		margin-bottom: 15em;
 		.container {
 			.row {
 				.error_txt {
@@ -31,6 +30,29 @@ body {
 							width: 15px;
 						}
 					}
+					&.no_product {
+						button {
+							box-shadow: none;
+							span {
+								font-size: 16px;
+							}
+						}
+						button#live-chat {
+							background-color: white;
+							border: 1px solid $blue;
+							color: $blue;
+						}
+					}
+					&.empty_txt {
+						display: flex;
+						flex-direction: column;
+                        align-items: center;
+                        h1{
+                            font-size: 24px;
+                            font-family: "OpenSans-Bold";
+                            color: $heading;
+                        }
+					}
 				}
 				.error_img {
 					display: flex;
@@ -39,6 +61,45 @@ body {
 						width: 328.7px;
 						height: 310.7px;
 					}
+					&.empty_img {
+						justify-content: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	main.error_box {
+		.error_txt {
+			margin-bottom: 4em;
+		}
+		.error_img {
+			justify-content: center !important;
+		}
+	}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1157px) {
+	main.error_box {
+		.error_txt {
+			&.no_product {
+				button#live-chat {
+					margin-left: 0 !important;
+					margin-top: 2em !important;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	main.error_box {
+		.error_txt {
+			&.no_product {
+				button#live-chat {
+					margin-left: 2em;
 				}
 			}
 		}
