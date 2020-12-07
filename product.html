@@ -146,7 +146,7 @@
 											<i><img src="assets/img/print.png" alt="" /></i>
 											<span>Print</span>
 										</li>
-										<li>
+										<li id="share-btn">
 											<i><img src="assets/img/share.png" alt="" /></i>
 											<span>Share</span>
 										</li>
@@ -226,40 +226,98 @@
 								</div>
 							</div>
 						</form>
-                    </div>
+					</div>
 
-                    <!-- confirm add to cart -->
-                    <div id="product-add" class="modal">
-                        <div class="modal-content product_box">
-                            <a href="#!" class="modal-action modal-close"
-                                ><img src="assets/img/plus.png" alt=""
-                            /></a>
-                            <div class="product_box_inner">
-                                <h4>Product added to cart!</h4>
-                                <p>Armstrong <br>
-                                    Parts of Liquid Drainer 2315HLS <br>
-                                    Internal Mech. Less Float, Orifice size 3/32</p>
-                                <div class="row product_btn">
-                                    <button
-                                        class="btn waves-effect waves-light modal-close"
-                                        id="cancel-btn"
-                                        type="submit"
-                                        name="action"
-                                    >
-                                        <span>Go to Cart</span>
-                                    </button>
-                                    <button
-                                        class="btn waves-effect waves-light"
-                                        id="product-btn"
-                                        type="submit"
-                                        name="action"
-                                    >
-                                        <span>Continue shopping</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+					<!-- confirm share link -->
+					<div id="product-share" class="modal">
+						<div class="modal-content product_box">
+							<a href="#!" class="modal-action modal-close"
+								><img src="assets/img/plus.png" alt=""
+							/></a>
+							<div class="product_box_inner">
+								<h4>Share</h4>
+								<p>
+									You can copy this link into emails, text messages or post it
+									on social media.
+								</p>
+								<div class="row product_btn">
+									<div class="input_box">
+										<input
+											class="col s12"
+											type="text"
+                                            value="https://www.Camfilgroup.com/whistles-square-knit-top"
+                                            id="clipboard-val"
+										/>
+										<button
+											class="btn waves-effect waves-light col s12"
+											id="copy-btn"
+											type="submit"
+											name="action"
+										>
+											<span>Copy link</span>
+										</button>
+									</div>
+								</div>
+								<div class="row product_btn">
+									<ul class="social_media">
+										<li>
+											<a href=""
+												><img src="assets/img/linkedin.png" alt=""
+											/></a>
+										</li>
+										<li>
+											<a href=""
+												><img src="assets/img/facebook.png" alt=""
+											/></a>
+										</li>
+										<li>
+											<a href=""><img src="assets/img/twitter.png" alt="" /></a>
+										</li>
+										<li>
+											<a href=""
+												><img src="assets/img/instagram.png" alt=""
+											/></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- confirm add to cart -->
+					<div id="product-add" class="modal">
+						<div class="modal-content product_box">
+							<a href="#!" class="modal-action modal-close"
+								><img src="assets/img/plus.png" alt=""
+							/></a>
+							<div class="product_box_inner">
+								<h4>Product added to cart!</h4>
+								<p>
+									Armstrong <br />
+									Parts of Liquid Drainer 2315HLS <br />
+									Internal Mech. Less Float, Orifice size 3/32
+								</p>
+								<div class="row product_btn">
+									<button
+										class="btn waves-effect waves-light modal-close"
+										id="cancel-btn"
+										type="submit"
+										name="action"
+									>
+										<span>Go to Cart</span>
+									</button>
+									<button
+										class="btn waves-effect waves-light"
+										id="product-btn"
+										type="submit"
+										name="action"
+									>
+										<span>Continue shopping</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div class="row">
 						<div class="col s12 l9 offset-l2">

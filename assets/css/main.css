@@ -2176,7 +2176,64 @@ body main {
           color: #0086e6;
           border: 1px solid #0086e6;
           margin-top: 2em; }
+    body main .product_main .product_box #product-share {
+      width: 800px; }
+      body main .product_main .product_box #product-share .input_box {
+        margin: 32px auto;
+        position: relative; }
+        body main .product_main .product_box #product-share .input_box input {
+          width: 650px;
+          height: 48px;
+          border: 1px solid #0086e6;
+          color: #3d3d3d;
+          font-size: 16px;
+          padding-left: 10px; }
+        body main .product_main .product_box #product-share .input_box button {
+          background-color: #0086e6;
+          color: white;
+          box-shadow: none;
+          border-radius: 0;
+          width: 180px;
+          height: 50px;
+          position: absolute;
+          right: 51px; }
+          body main .product_main .product_box #product-share .input_box button span {
+            font-size: 16px;
+            font-family: "OpenSans-Bold";
+            text-transform: none; }
+      body main .product_main .product_box #product-share ul.social_media {
+        display: flex;
+        justify-content: center; }
+        body main .product_main .product_box #product-share ul.social_media li a img {
+          width: 31.5px;
+          height: 31.5px; }
+        body main .product_main .product_box #product-share ul.social_media li:first-child {
+          margin-right: 21.5px;
+          margin-bottom: 0px !important; }
+        body main .product_main .product_box #product-share ul.social_media li:nth-child(2) {
+          margin-right: 20.5px; }
+        body main .product_main .product_box #product-share ul.social_media li:nth-child(3) {
+          margin-right: 20.3px; }
+          body main .product_main .product_box #product-share ul.social_media li:nth-child(3) a img {
+            width: 30.7px;
+            height: 24.9px;
+            vertical-align: -moz-middle-with-baseline;
+            vertical-align: -webkit-baseline-middle; }
 
+@media screen and (max-width: 840px) {
+  main .product_main .product_box #product-share {
+    width: 90% !important; }
+    main .product_main .product_box #product-share .input_box {
+      display: flex;
+      flex-direction: column; }
+      main .product_main .product_box #product-share .input_box input {
+        font-size: 13px !important;
+        width: 100% !important;
+        padding-left: 0px !important; }
+      main .product_main .product_box #product-share .input_box button {
+        width: 100% !important;
+        right: auto !important;
+        position: relative !important; } }
 @media screen and (min-width: 993px) and (max-width: 1108px) {
   body main .product_main .product_box .product_box_inner ul.caption_option .button_box .basket button {
     width: auto !important; } }

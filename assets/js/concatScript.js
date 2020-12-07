@@ -40,6 +40,9 @@ $(document).ready(function () {
 	$("#add-product-btn").click(function () {
 		$("#product-add").modal("open");
 	});
+	$("#share-btn").click(function () {
+		$("#product-share").modal("open");
+	});
 	// close just by close button, not click on body
 	$("#sign-up").modal({
 		dismissible: false,
@@ -68,7 +71,21 @@ $(document).ready(function () {
 	$("#product-add").modal({
 		dismissible: false,
 	});
+	$("#product-share").modal({
+		dismissible: false,
+	});
 	$("select").formSelect();
+
+	//copy clipboard
+	$("#copy-btn").click(function () {
+		var text = $("#clipboard-val").attr("value");
+		var $temp = $("<input>");
+		$("body").append($temp);
+		$temp.val(text).select();
+		document.execCommand("copy");
+		$temp.remove();
+		$(this).find("span").html("Link copied");
+	});
 });
 
 $(document).ready(function () {
