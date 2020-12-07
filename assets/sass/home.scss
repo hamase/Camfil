@@ -969,6 +969,7 @@ body {
 	#feedback-box {
 		width: 412px;
 		height: auto;
+		top: 25% !important;
 		.feedback_box {
 			a.modal-close {
 				float: right;
@@ -998,9 +999,23 @@ body {
 			.feedback_img {
 				display: flex;
 				justify-content: space-evenly;
-				a {
+				.feedback_img_inner {
+					cursor: pointer;
+					user-select: none;
+					-webkit-user-select: none;
+					-webkit-touch-callout: none;
+					input {
+						position: absolute;
+						opacity: 0;
+						width: 0;
+						height: 0;
+					}
 					img {
 						width: 40px;
+						filter: grayscale(100%);
+					}
+					input:checked + img {
+						filter: grayscale(0%);
 					}
 				}
 			}
@@ -1048,6 +1063,20 @@ body {
 		}
 	}
 }
+
+@media screen and (max-width: 420px) {
+	#feedback-box {
+		width: 97% !important;
+		.feedback_box {
+			.feedback_btn {
+				button {
+					width: auto;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 680px) {
 	body {
 		main {

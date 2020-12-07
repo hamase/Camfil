@@ -1141,7 +1141,8 @@ body main.home {
               margin: 0 auto; }
 body #feedback-box {
   width: 412px;
-  height: auto; }
+  height: auto;
+  top: 25% !important; }
   body #feedback-box .feedback_box a.modal-close {
     float: right;
     clear: both; }
@@ -1166,8 +1167,21 @@ body #feedback-box {
   body #feedback-box .feedback_box .feedback_img {
     display: flex;
     justify-content: space-evenly; }
-    body #feedback-box .feedback_box .feedback_img a img {
-      width: 40px; }
+    body #feedback-box .feedback_box .feedback_img .feedback_img_inner {
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none; }
+      body #feedback-box .feedback_box .feedback_img .feedback_img_inner input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      body #feedback-box .feedback_box .feedback_img .feedback_img_inner img {
+        width: 40px;
+        filter: grayscale(100%); }
+      body #feedback-box .feedback_box .feedback_img .feedback_img_inner input:checked + img {
+        filter: grayscale(0%); }
   body #feedback-box .feedback_box .modal_inner {
     display: flex;
     justify-content: center;
@@ -1202,6 +1216,11 @@ body #feedback-box {
       body #feedback-box .feedback_box .feedback_btn button:hover {
         cursor: pointer; }
 
+@media screen and (max-width: 420px) {
+  #feedback-box {
+    width: 97% !important; }
+    #feedback-box .feedback_box .feedback_btn button {
+      width: auto; } }
 @media screen and (max-width: 680px) {
   body main h1 hr {
     display: none; }
