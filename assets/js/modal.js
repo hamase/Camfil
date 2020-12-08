@@ -43,6 +43,9 @@ $(document).ready(function () {
 	$("#share-btn").click(function () {
 		$("#product-share").modal("open");
 	});
+	$("#ask-btn").click(function () {
+		$("#question-box").modal("open");
+	});
 	// close just by close button, not click on body
 	$("#sign-up").modal({
 		dismissible: false,
@@ -72,6 +75,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#product-share").modal({
+		dismissible: false,
+	});
+	$("#question-box").modal({
 		dismissible: false,
 	});
 	$("select").formSelect();

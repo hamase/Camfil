@@ -2141,41 +2141,173 @@ body main {
     body main .product_main .product_box .modal {
       width: 412px;
       margin-top: 10em; }
-      body main .product_main .product_box .modal .product_box a.modal-close {
+      body main .product_main .product_box .modal .product_box a.modal-close,
+      body main .product_main .product_box .modal .question_box a.modal-close {
         float: right;
         clear: both; }
-        body main .product_main .product_box .modal .product_box a.modal-close img {
+        body main .product_main .product_box .modal .product_box a.modal-close img,
+        body main .product_main .product_box .modal .question_box a.modal-close img {
           transform: rotate(225deg);
           width: 17px; }
-      body main .product_main .product_box .modal .product_box .product_box_inner {
+      body main .product_main .product_box .modal .product_box .product_box_inner,
+      body main .product_main .product_box .modal .product_box .question_box_inner,
+      body main .product_main .product_box .modal .question_box .product_box_inner,
+      body main .product_main .product_box .modal .question_box .question_box_inner {
         text-align: center;
         margin-top: 2em; }
-        body main .product_main .product_box .modal .product_box .product_box_inner h4 {
+        body main .product_main .product_box .modal .product_box .product_box_inner h4,
+        body main .product_main .product_box .modal .product_box .question_box_inner h4,
+        body main .product_main .product_box .modal .question_box .product_box_inner h4,
+        body main .product_main .product_box .modal .question_box .question_box_inner h4 {
           font-size: 24px;
           font-family: "OpenSans-Bold";
           color: #000000; }
-        body main .product_main .product_box .modal .product_box .product_box_inner p {
+        body main .product_main .product_box .modal .product_box .product_box_inner p,
+        body main .product_main .product_box .modal .product_box .question_box_inner p,
+        body main .product_main .product_box .modal .question_box .product_box_inner p,
+        body main .product_main .product_box .modal .question_box .question_box_inner p {
           font-size: 16px;
           font-family: "OpenSans";
           color: #000000;
           margin: 2em auto 3em auto; }
-        body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button {
+        body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button,
+        body main .product_main .product_box .modal .product_box .question_box_inner .product_btn button,
+        body main .product_main .product_box .modal .question_box .product_box_inner .product_btn button,
+        body main .product_main .product_box .modal .question_box .question_box_inner .product_btn button {
           box-shadow: none;
           border-radius: 0;
           width: 301px;
           height: 48px; }
-          body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button span {
+          body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button span,
+          body main .product_main .product_box .modal .product_box .question_box_inner .product_btn button span,
+          body main .product_main .product_box .modal .question_box .product_box_inner .product_btn button span,
+          body main .product_main .product_box .modal .question_box .question_box_inner .product_btn button span {
             font-size: 16px;
             font-family: "OpenSans-Bold";
             text-transform: none; }
-        body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button#cancel-btn {
+        body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button#cancel-btn,
+        body main .product_main .product_box .modal .product_box .question_box_inner .product_btn button#cancel-btn,
+        body main .product_main .product_box .modal .question_box .product_box_inner .product_btn button#cancel-btn,
+        body main .product_main .product_box .modal .question_box .question_box_inner .product_btn button#cancel-btn {
           background-color: #0086e6;
           color: white; }
-        body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button#product-btn {
+        body main .product_main .product_box .modal .product_box .product_box_inner .product_btn button#product-btn,
+        body main .product_main .product_box .modal .product_box .question_box_inner .product_btn button#product-btn,
+        body main .product_main .product_box .modal .question_box .product_box_inner .product_btn button#product-btn,
+        body main .product_main .product_box .modal .question_box .question_box_inner .product_btn button#product-btn {
           background-color: white;
           color: #0086e6;
           border: 1px solid #0086e6;
           margin-top: 2em; }
+      body main .product_main .product_box .modal#question-box {
+        width: 800px;
+        height: 650px;
+        margin-top: 6em; }
+        body main .product_main .product_box .modal#question-box h4 {
+          margin-bottom: 2em; }
+        body main .product_main .product_box .modal#question-box .row.checkbox {
+          width: 92%;
+          display: flex;
+          margin-left: 4em; }
+          body main .product_main .product_box .modal#question-box .row.checkbox label span {
+            margin-bottom: 17px;
+            color: #3d3d3d;
+            font-family: "OpenSans";
+            font-size: 12px; }
+        body main .product_main .product_box .modal#question-box .flex_box {
+          display: flex;
+          justify-content: center; }
+          body main .product_main .product_box .modal#question-box .flex_box .modal_inner {
+            position: relative; }
+            body main .product_main .product_box .modal#question-box .flex_box .modal_inner input {
+              border: 1px solid #b3b6b9;
+              height: 48px;
+              width: 288px;
+              padding-left: 10px;
+              margin: 0 10px 0 10px; }
+              body main .product_main .product_box .modal#question-box .flex_box .modal_inner input::placeholder {
+                font-family: "OpenSans";
+                font-size: 14px;
+                color: #b3b6b9; }
+            body main .product_main .product_box .modal#question-box .flex_box .modal_inner i {
+              position: absolute;
+              top: 16px;
+              width: auto;
+              display: flex; }
+              body main .product_main .product_box .modal#question-box .flex_box .modal_inner i img {
+                width: 0.8em; }
+            body main .product_main .product_box .modal#question-box .flex_box .modal_inner i.email,
+            body main .product_main .product_box .modal#question-box .flex_box .modal_inner i.name {
+              right: 30px; }
+            body main .product_main .product_box .modal#question-box .flex_box .modal_inner.switch {
+              height: 48px;
+              border: none;
+              border-radius: 0;
+              border-radius: 0;
+              width: 322px;
+              margin: 0 10px auto 10px; }
+              body main .product_main .product_box .modal#question-box .flex_box .modal_inner.switch > div.col {
+                display: flex; }
+                body main .product_main .product_box .modal#question-box .flex_box .modal_inner.switch > div.col label {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  height: 49px;
+                  width: 153px;
+                  font-size: 14px;
+                  font-family: "OpenSans"; }
+                body main .product_main .product_box .modal#question-box .flex_box .modal_inner.switch > div.col input {
+                  margin: 0;
+                  width: auto !important; }
+                  body main .product_main .product_box .modal#question-box .flex_box .modal_inner.switch > div.col input + label {
+                    color: #0086e6;
+                    border: 1px solid #b3b6b9; }
+                  body main .product_main .product_box .modal#question-box .flex_box .modal_inner.switch > div.col input:checked + label {
+                    background-color: #0086e6;
+                    border: 1px solid #0086e6;
+                    color: white; }
+                    body main .product_main .product_box .modal#question-box .flex_box .modal_inner.switch > div.col input:checked + label:hover {
+                      cursor: pointer; }
+            body main .product_main .product_box .modal#question-box .flex_box .modal_inner .materialize-textarea {
+              border: 1px solid #b3b6b9;
+              height: 96px !important;
+              width: 88%;
+              max-height: 150px;
+              padding-left: 10px; }
+            body main .product_main .product_box .modal#question-box .flex_box .modal_inner i.textarea {
+              position: absolute;
+              right: 65px;
+              top: 13px;
+              width: auto;
+              display: flex; }
+              body main .product_main .product_box .modal#question-box .flex_box .modal_inner i.textarea img {
+                width: 0.8em; }
+        body main .product_main .product_box .modal#question-box .question_btn {
+          text-align: center; }
+          body main .product_main .product_box .modal#question-box .question_btn button {
+            height: 48px;
+            background: #0086e6;
+            border: none;
+            border-radius: 0;
+            width: 301px; }
+            body main .product_main .product_box .modal#question-box .question_btn button span {
+              font-size: 16px;
+              font-family: "OpenSans-Bold";
+              color: white;
+              text-transform: none; }
+            body main .product_main .product_box .modal#question-box .question_btn button:hover {
+              cursor: pointer; }
+        body main .product_main .product_box .modal#question-box .modal-footer {
+          background-color: #f7f7f7;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          body main .product_main .product_box .modal#question-box .modal-footer span {
+            color: #545454;
+            font-family: "OpenSans";
+            font-size: 12px; }
+            body main .product_main .product_box .modal#question-box .modal-footer span a {
+              color: #0086e6;
+              font-family: "OpenSans-Bold"; }
     body main .product_main .product_box #product-share {
       width: 800px; }
       body main .product_main .product_box #product-share .input_box {
@@ -2220,7 +2352,7 @@ body main {
             vertical-align: -moz-middle-with-baseline;
             vertical-align: -webkit-baseline-middle; }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 992px) {
   main .product_main .product_box #product-share {
     width: 90% !important; }
     main .product_main .product_box #product-share .input_box {
@@ -2233,7 +2365,35 @@ body main {
       main .product_main .product_box #product-share .input_box button {
         width: 100% !important;
         right: auto !important;
-        position: relative !important; } }
+        position: relative !important; }
+  main .product_main .product_box #question-box {
+    width: 90% !important; }
+    main .product_main .product_box #question-box .row.checkbox {
+      margin-left: 1em !important; }
+    main .product_main .product_box #question-box .question_btn button {
+      width: auto !important; }
+    main .product_main .product_box #question-box .flex_box {
+      display: block !important; }
+      main .product_main .product_box #question-box .flex_box .modal_inner > div {
+        position: relative !important; }
+      main .product_main .product_box #question-box .flex_box .modal_inner input {
+        width: 100% !important;
+        margin: 10px auto !important; }
+      main .product_main .product_box #question-box .flex_box .modal_inner.switch {
+        width: auto !important; }
+        main .product_main .product_box #question-box .flex_box .modal_inner.switch > div.col {
+          justify-content: center;
+          margin-top: 1em; }
+      main .product_main .product_box #question-box .flex_box .modal_inner .materialize-textarea {
+        width: 103% !important; }
+      main .product_main .product_box #question-box .flex_box .modal_inner i.textarea {
+        right: 16px !important; }
+      main .product_main .product_box #question-box .flex_box .modal_inner i {
+        top: 27px !important; } }
+@media screen and (max-width: 840px) {
+  main .quantity_box .row.flex_box {
+    display: flex;
+    justify-content: center; } }
 @media screen and (min-width: 993px) and (max-width: 1108px) {
   body main .product_main .product_box .product_box_inner ul.caption_option .button_box .basket button {
     width: auto !important; } }
