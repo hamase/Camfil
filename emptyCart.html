@@ -45,20 +45,23 @@
 								class="right hide-on-med-and-down header_box_menu"
 							>
 								<li>
-									<input
-										placeholder="Search by part number, brand or product"
-										id="search-input-header"
-										type="text"
-										class="validate"
-										required
-									/>
-									<button
-										class="btn waves-effect waves-light"
-										type="submit"
-										name="action"
-									>
-										<img src="assets/img/search.png" alt="" />
-									</button>
+									<form action="" class="searchBox">
+										<input
+											placeholder="Search by part number, brand or product"
+											id="search-input-header"
+											type="text"
+											class="validate"
+										/>
+										<button
+											class="btn waves-effect waves-light"
+											type="button"
+											id="search-btn"
+											name="action"
+										>
+											<img src="assets/img/search.png" alt="" />
+										</button>
+										<ul class="collection header_search"></ul>
+									</form>
 								</li>
 								<li>
 									<a class="waves-effect waves-light btn" href="#"
@@ -101,20 +104,23 @@
 							/></a>
 						</li>
 						<li>
-							<input
-								placeholder="Search by part number, brand or product"
-								id="search-input-mobile"
-								type="text"
-								class="validate"
-								required
-							/>
-							<button
-								class="btn waves-effect waves-light"
-								type="submit"
-								name="action"
-							>
-								<img src="assets/img/search.png" alt="" />
-							</button>
+							<form action="" class="searchBox">
+								<input
+									placeholder="Search by part number, brand or product"
+									id="search-input-mobile"
+									type="text"
+									class="validate"
+								/>
+								<button
+									class="btn waves-effect waves-light"
+									id="search-btn"
+									type="button"
+									name="action"
+								>
+									<img src="assets/img/search.png" alt="" />
+								</button>
+								<ul class="collection header_search mobile"></ul>
+							</form>
 						</li>
 					</ul>
 				</div>

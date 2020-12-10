@@ -1215,6 +1215,110 @@ body #feedback-box {
         text-transform: none; }
       body #feedback-box .feedback_box .feedback_btn button:hover {
         cursor: pointer; }
+body form.searchBox input {
+  margin-bottom: 0 !important; }
+body ul.collection {
+  margin-top: 0;
+  border: none;
+  box-shadow: 5px 15px 19px #b3b3b3;
+  overflow-y: scroll;
+  height: auto;
+  max-height: 233px;
+  display: none;
+  background-color: white; }
+  body ul.collection li {
+    display: flex;
+    align-items: center;
+    padding-left: 17px;
+    position: relative; }
+    body ul.collection li .collection_img {
+      background-color: #ededed;
+      width: 64px;
+      height: 64px; }
+      body ul.collection li .collection_img img {
+        width: 60px;
+        padding: 6px; }
+    body ul.collection li .collection_txt {
+      margin: 0 0 15px 15px; }
+      body ul.collection li .collection_txt p.title {
+        font-family: "OpenSans" !important;
+        color: #3d3d3d !important;
+        font-size: 12px !important;
+        margin: 0 !important; }
+      body ul.collection li .collection_txt p.title_pay {
+        font-family: "OpenSans" !important;
+        color: #3d3d3d !important;
+        font-size: 12px !important;
+        color: #0086e6 !important;
+        margin: 0 !important; }
+    body ul.collection li a.shop_search {
+      background: #0086e6 !important;
+      width: 33px;
+      height: 32px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: absolute;
+      top: 27px;
+      right: 16px;
+      border: none; }
+      body ul.collection li a.shop_search img {
+        width: 22px; }
+    body ul.collection li:nth-child(2) {
+      margin-left: 0px !important; }
+    body ul.collection li:nth-child(4) {
+      margin-right: 0px !important; }
+  body ul.collection.header_search {
+    position: absolute;
+    width: 100%; }
+    body ul.collection.header_search a.shop_search i {
+      height: auto;
+      line-height: 30px; }
+  body ul.collection.header_search.mobile a.shop_search {
+    padding: 0; }
+    body ul.collection.header_search.mobile a.shop_search i {
+      line-height: 39px !important;
+      margin: 0; }
+      body ul.collection.header_search.mobile a.shop_search i img {
+        height: 20px; }
+body .modal#shop-add {
+  width: 412px;
+  margin-top: 10em; }
+  body .modal#shop-add .shop_box a.modal-close {
+    float: right;
+    clear: both; }
+    body .modal#shop-add .shop_box a.modal-close img {
+      transform: rotate(225deg);
+      width: 17px; }
+  body .modal#shop-add .shop_box .shop_box_inner {
+    text-align: center;
+    margin-top: 2em; }
+    body .modal#shop-add .shop_box .shop_box_inner h4 {
+      font-size: 24px;
+      font-family: "OpenSans-Bold";
+      color: #000000; }
+    body .modal#shop-add .shop_box .shop_box_inner p {
+      font-size: 16px;
+      font-family: "OpenSans";
+      color: #000000;
+      margin: 2em auto 3em auto; }
+    body .modal#shop-add .shop_box .shop_box_inner .shop_btn button {
+      box-shadow: none;
+      border-radius: 0;
+      width: 301px;
+      height: 48px; }
+      body .modal#shop-add .shop_box .shop_box_inner .shop_btn button span {
+        font-size: 16px;
+        font-family: "OpenSans-Bold";
+        text-transform: none; }
+    body .modal#shop-add .shop_box .shop_box_inner .shop_btn button#cancel-btn {
+      background-color: #0086e6;
+      color: white; }
+    body .modal#shop-add .shop_box .shop_box_inner .shop_btn button#shop-btn {
+      background-color: white;
+      color: #0086e6;
+      border: 1px solid #0086e6;
+      margin-top: 2em; }
 
 @media screen and (max-width: 420px) {
   #feedback-box {
@@ -1340,7 +1444,12 @@ body #feedback-box {
       main .last_search_box .end_search_box > div.col > div div.search button {
         width: auto !important; }
       main .last_search_box .end_search_box > div.col > div div.search span {
-        display: none; } }
+        display: none; }
+
+  .modal#shop-add {
+    width: 90% !important; }
+    .modal#shop-add .shop_box .shop_box_inner .shop_btn button {
+      width: 100% !important; } }
 @media screen and (min-width: 993px) and (max-width: 1086px) {
   body main .slider_box .slider_box_inner div.search {
     width: 407px; }

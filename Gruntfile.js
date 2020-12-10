@@ -25,6 +25,7 @@ module.exports = function (grunt) {
 					"assets/js/carousel.js",
 					"assets/js/quantity.js",
 					"assets/js/strongPass.js",
+					"assets/js/search.js",
 				],
 				dest: "assets/js/concatScript.js",
 			},

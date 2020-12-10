@@ -460,23 +460,23 @@
 						<div class="col s12 l6">
 							<h1>Find spare parts here!</h1>
 							<div class="search">
-								<form action="">
+								<form action="" class="searchBox">
 									<input
 										placeholder="Search by part number, brand or product"
 										id="search-input-home"
 										type="text"
 										class="validate"
-										required
 									/>
 									<button
 										class="btn waves-effect waves-light"
 										id="search-btn"
-										type="submit"
+										type="button"
 										name="action"
 									>
 										<img src="assets/img/search.png" alt="" />
 										<span>Search</span>
 									</button>
+									<ul class="collection"></ul>
 								</form>
 							</div>
 							<p>
@@ -776,30 +776,67 @@
 							<div>
 								<h1>Quite ready to start?</h1>
 								<p>find your spare part!</p>
-								<div class="search">
-									<input
-										placeholder="Search by part number, brand or product"
-										id="search-input-end"
-										type="text"
-										class="validate"
-										required
-									/>
-									<button
-										class="btn waves-effect waves-light"
-										id="search-btn"
-										type="submit"
-										name="action"
-									>
-										<img src="assets/img/search.png" alt="" />
-										<span>Search</span>
-									</button>
-								</div>
+								<form action="" class="searchBox">
+									<div class="search">
+										<input
+											placeholder="Search by part number, brand or product"
+											id="search-input-end"
+											type="text"
+											class="validate"
+										/>
+										<button
+											class="btn waves-effect waves-light"
+											id="search-btn-end"
+											type="submit"
+											name="action"
+										>
+											<img src="assets/img/search.png" alt="" />
+											<span>Search</span>
+										</button>
+										<ul class="collection"></ul>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		<!-- confirm add to cart -->
+		<div id="shop-add" class="modal">
+			<div class="modal-content shop_box">
+				<a href="#!" class="modal-action modal-close"
+					><img src="assets/img/plus.png" alt=""
+				/></a>
+				<div class="shop_box_inner">
+					<h4>shop added to cart!</h4>
+					<p>
+						Armstrong <br />
+						Parts of Liquid Drainer 2315HLS <br />
+						Internal Mech. Less Float, Orifice size 3/32
+					</p>
+					<div class="row shop_btn">
+						<button
+							class="btn waves-effect waves-light modal-close"
+							id="cancel-btn"
+							type="submit"
+							name="action"
+						>
+							<span>Go to Cart</span>
+						</button>
+						<button
+							class="btn waves-effect waves-light"
+							id="shop-btn"
+							type="submit"
+							name="action"
+						>
+							<span>Continue shopping</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Feedback Modal -->
 		<div id="feedback-box" class="modal">

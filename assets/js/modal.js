@@ -46,6 +46,12 @@ $(document).ready(function () {
 	$("#ask-btn").click(function () {
 		$("#question-box").modal("open");
 	});
+	$(".tt").click(function () {
+		$("#shop-add").modal("open");
+	});
+	$("#shop-add").modal({
+		dismissible: false,
+	});
 	// close just by close button, not click on body
 	$("#sign-up").modal({
 		dismissible: false,

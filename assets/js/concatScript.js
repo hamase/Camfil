@@ -46,6 +46,12 @@ $(document).ready(function () {
 	$("#ask-btn").click(function () {
 		$("#question-box").modal("open");
 	});
+	$(".tt").click(function () {
+		$("#shop-add").modal("open");
+	});
+	$("#shop-add").modal({
+		dismissible: false,
+	});
 	// close just by close button, not click on body
 	$("#sign-up").modal({
 		dismissible: false,
@@ -177,4 +183,28 @@ $(document).ready(function () {
 		} else $("#repassword-reset").css("background-color", "#f269696b");
 		$("#password-reset").css("background-color", "#f269696b");
 	});
+});
+
+$(document).ready(function () {
+	$("#search-btn, #search-btn-end").click(function () {
+		$(".collection").css("display", "grid");
+		var search_val = $("#search-input-home").val();
+		var lists =
+			'<li class="collection-item">\n' +
+			'<div class="collection_img"><img src="assets/img/slide2.png" alt="" class=""></div>\n' +
+			'<div class="collection_txt"><p class="title">6es7214-1ag40-0xb0</p><p class="title_pay">$</p></div>\n' +
+			'<a href="#" id="shop-search" class="shop_search"><i class=""><img src="assets/img/shop-white-search.png" /></i></a></li>';
+		$(".collection").append(lists);
+	});
+
+	$("main , footer").click(function () {
+		$(".collection").css("display", "none");
+	});
+	// $("#shop-search").click(function () {
+	// 	alert("jk");
+	// 	$("#shop-add").modal("open");
+	// });
+	// $("#shop-add").modal({
+	// 	dismissible: false,
+	// });
 });
