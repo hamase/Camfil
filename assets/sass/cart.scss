@@ -75,6 +75,8 @@ body {
 						}
 						ul.cart_summary.list {
 							margin-bottom: 0;
+							height: 40%;
+							overflow-y: scroll;
 						}
 						ul.total {
 							border: 0;
@@ -319,9 +321,6 @@ body {
 				.row {
 					> div:first-child {
 						margin-bottom: 2em;
-					}
-					.cart_box_inner {
-						height: auto !important;
 					}
 					.col:nth-child(2) {
 						.cart_box_inner {

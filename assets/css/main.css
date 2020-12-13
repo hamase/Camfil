@@ -1949,7 +1949,9 @@ body main {
             font-family: "OpenSans";
             color: #161719; }
       body main .cart_main .cart_box .row .cart_box_inner ul.cart_summary.list {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        height: 40%;
+        overflow-y: scroll; }
       body main .cart_main .cart_box .row .cart_box_inner ul.total {
         border: 0;
         margin: 0; }
@@ -2106,8 +2108,6 @@ body main {
     height: auto !important; }
     main .cart_main .cart_box .row > div:first-child {
       margin-bottom: 2em; }
-    main .cart_main .cart_box .row .cart_box_inner {
-      height: auto !important; }
     main .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
       margin-top: 2em; }
     main .scroll_table {
