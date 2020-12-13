@@ -133,94 +133,98 @@ body {
 								}
 							}
 						}
-						table {
-							thead {
-								tr {
-									th {
-										font-size: 12px;
-										font-family: "OpenSans";
-										color: #545454;
+						.scroll_table {
+							height: 85%;
+							overflow-y: scroll;
+							table {
+								thead {
+									tr {
+										th {
+											font-size: 12px;
+											font-family: "OpenSans";
+											color: #545454;
+										}
 									}
 								}
-							}
-							.cart_table {
-								tr {
-									border-top: 2px solid $med_gray;
-									border-bottom: 2px solid $med_gray;
-									td:first-child {
-										display: flex;
-										justify-content: space-between;
-										width: 70%;
-										padding: 1em 1em 1em 3em;
-										.cart_img {
-											width: 64px;
-											height: 64px;
-											background-color: $med_gray;
+								.cart_table {
+									tr {
+										border-top: 2px solid $med_gray;
+										border-bottom: 2px solid $med_gray;
+										td:first-child {
 											display: flex;
-											justify-content: center;
-											align-items: center;
-											img {
-												width: 45px;
-												height: 45px;
-											}
-										}
-										.cart_name {
-											p:first-child {
-												font-size: 14px;
-												font-family: "OpenSans";
-												color: $body_text;
-											}
-											p:nth-child(2) {
-												font-size: 12px;
-												font-family: "OpenSans";
-												color: #545454;
-											}
-										}
-									}
-									td {
-										&.cart_price {
-											font-size: 18px;
-											font-family: "OpenSans-Bold";
-											color: $blue;
-										}
-										&.cart_delete {
-											i {
-												&:hover {
-													cursor: pointer;
-												}
-												img {
-													width: 13px;
-													height: 13px;
-												}
-											}
-										}
-										.quantity_box {
-											display: flex;
-											justify-content: center;
-											input {
-												&:focus {
-													border-bottom: none !important;
-												}
-											}
-											.button_quantity,
-											.input_quantity {
-												width: 26px;
-												height: 26px;
-												border: none;
-												text-align: center;
-											}
-											.plus {
-												background-color: $blue;
-												color: white;
-												&:hover {
-													cursor: pointer;
-												}
-											}
-											.minus {
+											justify-content: space-between;
+											width: 70%;
+											padding: 1em 1em 1em 3em;
+											.cart_img {
+												width: 64px;
+												height: 64px;
 												background-color: $med_gray;
-												color: $gray;
-												&:hover {
-													cursor: pointer;
+												display: flex;
+												justify-content: center;
+												align-items: center;
+												img {
+													width: 45px;
+													height: 45px;
+												}
+											}
+											.cart_name {
+												p:first-child {
+													font-size: 14px;
+													font-family: "OpenSans";
+													color: $body_text;
+												}
+												p:nth-child(2) {
+													font-size: 12px;
+													font-family: "OpenSans";
+													color: #545454;
+												}
+											}
+										}
+										td {
+											&.cart_price {
+												font-size: 18px;
+												font-family: "OpenSans-Bold";
+												color: $blue;
+											}
+											&.cart_delete {
+												i {
+													&:hover {
+														cursor: pointer;
+													}
+													img {
+														width: 13px;
+														height: 13px;
+													}
+												}
+											}
+											.quantity_box {
+												display: flex;
+												justify-content: center;
+												input {
+													&:focus {
+														border-bottom: none !important;
+													}
+												}
+												.button_quantity,
+												.input_quantity {
+													width: 26px;
+													height: 26px;
+													border: none;
+													text-align: center;
+												}
+												.plus {
+													background-color: $blue;
+													color: white;
+													&:hover {
+														cursor: pointer;
+													}
+												}
+												.minus {
+													background-color: $med_gray;
+													color: $gray;
+													&:hover {
+														cursor: pointer;
+													}
 												}
 											}
 										}
@@ -294,7 +298,7 @@ body {
 				.row {
 					.cart_box_inner {
 						table {
-							display: block;
+							// display: block;
 							overflow-x: auto;
 							white-space: nowrap;
 							.cart_name {
@@ -326,6 +330,9 @@ body {
 					}
 				}
 			}
+		}
+		.scroll_table {
+			height: 376px !important;
 		}
 	}
 }

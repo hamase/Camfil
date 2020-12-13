@@ -1991,66 +1991,69 @@ body main {
             text-transform: none; }
           body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
             cursor: pointer; }
-      body main .cart_main .cart_box .row .cart_box_inner table thead tr th {
-        font-size: 12px;
-        font-family: "OpenSans";
-        color: #545454; }
-      body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr {
-        border-top: 2px solid #e2e2e2;
-        border-bottom: 2px solid #e2e2e2; }
-        body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td:first-child {
-          display: flex;
-          justify-content: space-between;
-          width: 70%;
-          padding: 1em 1em 1em 3em; }
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td:first-child .cart_img {
-            width: 64px;
-            height: 64px;
-            background-color: #e2e2e2;
+      body main .cart_main .cart_box .row .cart_box_inner .scroll_table {
+        height: 85%;
+        overflow-y: scroll; }
+        body main .cart_main .cart_box .row .cart_box_inner .scroll_table table thead tr th {
+          font-size: 12px;
+          font-family: "OpenSans";
+          color: #545454; }
+        body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr {
+          border-top: 2px solid #e2e2e2;
+          border-bottom: 2px solid #e2e2e2; }
+          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child {
             display: flex;
-            justify-content: center;
-            align-items: center; }
-            body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td:first-child .cart_img img {
-              width: 45px;
-              height: 45px; }
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td:first-child .cart_name p:first-child {
-            font-size: 14px;
-            font-family: "OpenSans";
-            color: #3d3d3d; }
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td:first-child .cart_name p:nth-child(2) {
-            font-size: 12px;
-            font-family: "OpenSans";
-            color: #545454; }
-        body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td.cart_price {
-          font-size: 18px;
-          font-family: "OpenSans-Bold";
-          color: #0086e6; }
-        body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td.cart_delete i:hover {
-          cursor: pointer; }
-        body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td.cart_delete i img {
-          width: 13px;
-          height: 13px; }
-        body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box {
-          display: flex;
-          justify-content: center; }
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box input:focus {
-            border-bottom: none !important; }
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box .button_quantity,
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box .input_quantity {
-            width: 26px;
-            height: 26px;
-            border: none;
-            text-align: center; }
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box .plus {
-            background-color: #0086e6;
-            color: white; }
-            body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box .plus:hover {
-              cursor: pointer; }
-          body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box .minus {
-            background-color: #e2e2e2;
-            color: #7d7d7d; }
-            body main .cart_main .cart_box .row .cart_box_inner table .cart_table tr td .quantity_box .minus:hover {
-              cursor: pointer; }
+            justify-content: space-between;
+            width: 70%;
+            padding: 1em 1em 1em 3em; }
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img {
+              width: 64px;
+              height: 64px;
+              background-color: #e2e2e2;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img img {
+                width: 45px;
+                height: 45px; }
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:first-child {
+              font-size: 14px;
+              font-family: "OpenSans";
+              color: #3d3d3d; }
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:nth-child(2) {
+              font-size: 12px;
+              font-family: "OpenSans";
+              color: #545454; }
+          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_price {
+            font-size: 18px;
+            font-family: "OpenSans-Bold";
+            color: #0086e6; }
+          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_delete i:hover {
+            cursor: pointer; }
+          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_delete i img {
+            width: 13px;
+            height: 13px; }
+          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box {
+            display: flex;
+            justify-content: center; }
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box input:focus {
+              border-bottom: none !important; }
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .button_quantity,
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .input_quantity {
+              width: 26px;
+              height: 26px;
+              border: none;
+              text-align: center; }
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .plus {
+              background-color: #0086e6;
+              color: white; }
+              body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .plus:hover {
+                cursor: pointer; }
+            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .minus {
+              background-color: #e2e2e2;
+              color: #7d7d7d; }
+              body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .minus:hover {
+                cursor: pointer; }
       body main .cart_main .cart_box .row .cart_box_inner .modal {
         width: 412px;
         margin-top: 10em; }
@@ -2094,7 +2097,6 @@ body main {
 
 @media screen and (max-width: 467px) {
   main .cart_main .cart_box .row .cart_box_inner table {
-    display: block;
     overflow-x: auto;
     white-space: nowrap; }
     main .cart_main .cart_box .row .cart_box_inner table .cart_name {
@@ -2107,7 +2109,9 @@ body main {
     main .cart_main .cart_box .row .cart_box_inner {
       height: auto !important; }
     main .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
-      margin-top: 2em; } }
+      margin-top: 2em; }
+    main .scroll_table {
+      height: 376px !important; } }
 @media screen and (min-width: 993px) and (max-width: 1161px) {
   main .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
     height: auto !important; } }
