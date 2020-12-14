@@ -4,9 +4,8 @@ main {
 	.about_main {
 		margin-top: 6em;
 		.about_box {
-			background-color: $blue;
-			height: 66vh;
-			margin-bottom: 17em;
+			background: linear-gradient(180deg, $blue 70%, white 30%);
+			height: auto;
 			img.dot {
 				width: 9em;
 				position: absolute;
@@ -28,33 +27,34 @@ main {
 				flex-direction: column;
 				display: flex;
 				width: 85%;
-				margin: 70px auto;
+				margin: 1em auto;
 				position: relative;
 				h1 {
 					font-size: 48px;
 					font-family: "OpenSans-Bold";
 					color: white;
 					line-height: 1.6em;
-					margin-top: 2em;
 				}
-				div.man_img {
-					padding-left: 0;
-					p {
-						font-size: 18px;
-						font-family: "OpenSans";
-						color: white;
-						width: 412px;
-						margin: 48px 0px;
+				.row {
+					margin: 0;
+					div.man_img {
+						padding-left: 0;
+						p {
+							font-size: 18px;
+							font-family: "OpenSans";
+							color: white;
+							width: 412px;
+						}
+						img {
+							height: 21.4em;
+						}
 					}
-					img {
-						height: 21.4em;
-					}
-				}
-				div.flight_img {
-					margin-top: 20px;
-					padding-right: 0;
-					img {
-						height: 33.6em;
+					div.flight_img {
+						margin-top: 20px;
+						padding-right: 0;
+						img {
+							height: 33.6em;
+						}
 					}
 				}
 			}

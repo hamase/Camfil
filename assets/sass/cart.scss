@@ -1,7 +1,7 @@
 body {
-	main {
+	main.cart {
 		background-color: $light_white;
-		height: 100vh;
+		height: auto;
 		.cart_main {
 			margin: 10em 2em auto 2em;
 			.cart_box {
@@ -36,7 +36,7 @@ body {
 					.cart_box_inner {
 						background-color: white;
 						box-shadow: 4px 4px 15px #cccccc;
-						height: 60vh;
+						height: auto;
 						> div.title {
 							padding: 1em 2em 0;
 						}
@@ -75,8 +75,6 @@ body {
 						}
 						ul.cart_summary.list {
 							margin-bottom: 0;
-							height: 40%;
-							overflow-y: scroll;
 						}
 						ul.total {
 							border: 0;
@@ -136,8 +134,6 @@ body {
 							}
 						}
 						.scroll_table {
-							height: 85%;
-							overflow-y: scroll;
 							table {
 								thead {
 									tr {
@@ -151,7 +147,7 @@ body {
 								.cart_table {
 									tr {
 										border-top: 2px solid $med_gray;
-										border-bottom: 2px solid $med_gray;
+										border-bottom: none;
 										td:first-child {
 											display: flex;
 											justify-content: space-between;
@@ -300,7 +296,7 @@ body {
 				.row {
 					.cart_box_inner {
 						table {
-							// display: block;
+							display: block;
 							overflow-x: auto;
 							white-space: nowrap;
 							.cart_name {
@@ -322,6 +318,9 @@ body {
 					> div:first-child {
 						margin-bottom: 2em;
 					}
+					.cart_box_inner {
+						height: auto !important;
+					}
 					.col:nth-child(2) {
 						.cart_box_inner {
 							margin-top: 2em;
@@ -329,9 +328,6 @@ body {
 					}
 				}
 			}
-		}
-		.scroll_table {
-			height: 376px !important;
 		}
 	}
 }
@@ -364,8 +360,7 @@ body {
 					.cart_box_inner {
 						position: relative;
 						.cart_print_box {
-							position: absolute;
-							bottom: 0px;
+							padding-bottom: 1em !important;
 							width: 100%;
 						}
 					}

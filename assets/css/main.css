@@ -1507,9 +1507,8 @@ main {
   main .about_main {
     margin-top: 6em; }
     main .about_main .about_box {
-      background-color: #0086e6;
-      height: 66vh;
-      margin-bottom: 17em; }
+      background: linear-gradient(180deg, #0086e6 70%, white 30%);
+      height: auto; }
       main .about_main .about_box img.dot {
         width: 9em;
         position: absolute;
@@ -1527,29 +1526,29 @@ main {
         flex-direction: column;
         display: flex;
         width: 85%;
-        margin: 70px auto;
+        margin: 1em auto;
         position: relative; }
         main .about_main .about_box .about_box_inner h1 {
           font-size: 48px;
           font-family: "OpenSans-Bold";
           color: white;
-          line-height: 1.6em;
-          margin-top: 2em; }
-        main .about_main .about_box .about_box_inner div.man_img {
-          padding-left: 0; }
-          main .about_main .about_box .about_box_inner div.man_img p {
-            font-size: 18px;
-            font-family: "OpenSans";
-            color: white;
-            width: 412px;
-            margin: 48px 0px; }
-          main .about_main .about_box .about_box_inner div.man_img img {
-            height: 21.4em; }
-        main .about_main .about_box .about_box_inner div.flight_img {
-          margin-top: 20px;
-          padding-right: 0; }
-          main .about_main .about_box .about_box_inner div.flight_img img {
-            height: 33.6em; }
+          line-height: 1.6em; }
+        main .about_main .about_box .about_box_inner .row {
+          margin: 0; }
+          main .about_main .about_box .about_box_inner .row div.man_img {
+            padding-left: 0; }
+            main .about_main .about_box .about_box_inner .row div.man_img p {
+              font-size: 18px;
+              font-family: "OpenSans";
+              color: white;
+              width: 412px; }
+            main .about_main .about_box .about_box_inner .row div.man_img img {
+              height: 21.4em; }
+          main .about_main .about_box .about_box_inner .row div.flight_img {
+            margin-top: 20px;
+            padding-right: 0; }
+            main .about_main .about_box .about_box_inner .row div.flight_img img {
+              height: 33.6em; }
     main .about_main .row.intro_box {
       position: relative;
       margin: 0 auto 12em; }
@@ -1894,202 +1893,197 @@ body main.contact {
     width: 99%; }
   body .contact_box .contact_box_inner button.send_msg_btn {
     width: 98%; } }
-body main {
+body main.cart {
   background-color: #f7f7f7;
-  height: 100vh; }
-  body main .cart_main {
+  height: auto; }
+  body main.cart .cart_main {
     margin: 10em 2em auto 2em; }
-    body main .cart_main .cart_box nav {
+    body main.cart .cart_main .cart_box nav {
       background: rgba(0, 0, 0, 0) !important;
       box-shadow: none !important; }
-      body main .cart_main .cart_box nav .breadcrumb {
+      body main.cart .cart_main .cart_box nav .breadcrumb {
         font-size: 12px !important; }
-        body main .cart_main .cart_box nav .breadcrumb::before {
+        body main.cart .cart_main .cart_box nav .breadcrumb::before {
           margin: 0 !important; }
-      body main .cart_main .cart_box nav a:first-child {
+      body main.cart .cart_main .cart_box nav a:first-child {
         color: #7d7d7d; }
-      body main .cart_main .cart_box nav a:nth-child(2) {
+      body main.cart .cart_main .cart_box nav a:nth-child(2) {
         color: #0086e6; }
-        body main .cart_main .cart_box nav a:nth-child(2)::before {
+        body main.cart .cart_main .cart_box nav a:nth-child(2)::before {
           color: #7d7d7d !important;
           font-size: 18px !important; }
-    body main .cart_main .cart_box .row .col:first-child .cart_box_inner h1 {
+    body main.cart .cart_main .cart_box .row .col:first-child .cart_box_inner h1 {
       padding: 1em 2em; }
-    body main .cart_main .cart_box .row .cart_box_inner {
+    body main.cart .cart_main .cart_box .row .cart_box_inner {
       background-color: white;
       box-shadow: 4px 4px 15px #cccccc;
-      height: 60vh; }
-      body main .cart_main .cart_box .row .cart_box_inner > div.title {
+      height: auto; }
+      body main.cart .cart_main .cart_box .row .cart_box_inner > div.title {
         padding: 1em 2em 0; }
-      body main .cart_main .cart_box .row .cart_box_inner h1 {
+      body main.cart .cart_main .cart_box .row .cart_box_inner h1 {
         font-size: 20px;
         font-family: "OpenSans-Bold";
         color: #3d3d3d;
         margin: 0 !important; }
-      body main .cart_main .cart_box .row .cart_box_inner h2 {
+      body main.cart .cart_main .cart_box .row .cart_box_inner h2 {
         font-size: 18px;
         font-family: "OpenSans-Bold";
         color: #161719;
         margin: 0 !important; }
-      body main .cart_main .cart_box .row .cart_box_inner h5 {
+      body main.cart .cart_main .cart_box .row .cart_box_inner h5 {
         font-size: 14px;
         font-family: "OpenSans";
         color: #7d7d7d;
         margin: 4px auto 11px auto; }
-      body main .cart_main .cart_box .row .cart_box_inner ul.cart_summary {
+      body main.cart .cart_main .cart_box .row .cart_box_inner ul.cart_summary {
         border-top: 2px solid #e2e2e2;
         border-bottom: 2px solid #e2e2e2;
         padding: 1em 2em; }
-        body main .cart_main .cart_box .row .cart_box_inner ul.cart_summary li {
+        body main.cart .cart_main .cart_box .row .cart_box_inner ul.cart_summary li {
           display: flex;
           justify-content: space-between;
           margin: 16px auto 26px auto; }
-          body main .cart_main .cart_box .row .cart_box_inner ul.cart_summary li span {
+          body main.cart .cart_main .cart_box .row .cart_box_inner ul.cart_summary li span {
             font-size: 14px;
             font-family: "OpenSans";
             color: #161719; }
-      body main .cart_main .cart_box .row .cart_box_inner ul.cart_summary.list {
-        margin-bottom: 0;
-        height: 40%;
-        overflow-y: scroll; }
-      body main .cart_main .cart_box .row .cart_box_inner ul.total {
+      body main.cart .cart_main .cart_box .row .cart_box_inner ul.cart_summary.list {
+        margin-bottom: 0; }
+      body main.cart .cart_main .cart_box .row .cart_box_inner ul.total {
         border: 0;
         margin: 0; }
-        body main .cart_main .cart_box .row .cart_box_inner ul.total li {
+        body main.cart .cart_main .cart_box .row .cart_box_inner ul.total li {
           margin: 0; }
-          body main .cart_main .cart_box .row .cart_box_inner ul.total li span:nth-child(2) {
+          body main.cart .cart_main .cart_box .row .cart_box_inner ul.total li span:nth-child(2) {
             font-size: 18px;
             font-family: "OpenSans-Bold";
             color: #0086e6; }
-      body main .cart_main .cart_box .row .cart_box_inner .cart_print_box {
+      body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box {
         padding: 0em 6em; }
-        body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .print {
+        body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .print {
           display: flex;
           justify-content: flex-end;
           align-items: center;
           margin-bottom: 25px; }
-          body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i:hover {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i:hover {
             cursor: pointer; }
-          body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i img {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i img {
             width: 15px;
             height: 13px; }
-          body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span {
             margin-left: 10px;
             font-size: 12px;
             font-family: "OpenSans";
             color: #0086e6; }
-            body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span:hover {
+            body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span:hover {
               cursor: pointer; }
-        body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+        body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
           height: 48px;
           width: 100%;
           background: #0086e6;
           border: none;
           border-radius: 0; }
-          body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button span {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button span {
             font-size: 16px;
             font-family: "OpenSans-Bold";
             color: white;
             text-transform: none; }
-          body main .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
             cursor: pointer; }
-      body main .cart_main .cart_box .row .cart_box_inner .scroll_table {
-        height: 85%;
-        overflow-y: scroll; }
-        body main .cart_main .cart_box .row .cart_box_inner .scroll_table table thead tr th {
-          font-size: 12px;
-          font-family: "OpenSans";
-          color: #545454; }
-        body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr {
-          border-top: 2px solid #e2e2e2;
-          border-bottom: 2px solid #e2e2e2; }
-          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child {
+      body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table thead tr th {
+        font-size: 12px;
+        font-family: "OpenSans";
+        color: #545454; }
+      body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr {
+        border-top: 2px solid #e2e2e2;
+        border-bottom: none; }
+        body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child {
+          display: flex;
+          justify-content: space-between;
+          width: 70%;
+          padding: 1em 1em 1em 3em; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img {
+            width: 64px;
+            height: 64px;
+            background-color: #e2e2e2;
             display: flex;
-            justify-content: space-between;
-            width: 70%;
-            padding: 1em 1em 1em 3em; }
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img {
-              width: 64px;
-              height: 64px;
-              background-color: #e2e2e2;
-              display: flex;
-              justify-content: center;
-              align-items: center; }
-              body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img img {
-                width: 45px;
-                height: 45px; }
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:first-child {
-              font-size: 14px;
-              font-family: "OpenSans";
-              color: #3d3d3d; }
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:nth-child(2) {
-              font-size: 12px;
-              font-family: "OpenSans";
-              color: #545454; }
-          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_price {
-            font-size: 18px;
-            font-family: "OpenSans-Bold";
-            color: #0086e6; }
-          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_delete i:hover {
-            cursor: pointer; }
-          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_delete i img {
-            width: 13px;
-            height: 13px; }
-          body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box {
-            display: flex;
-            justify-content: center; }
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box input:focus {
-              border-bottom: none !important; }
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .button_quantity,
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .input_quantity {
-              width: 26px;
-              height: 26px;
-              border: none;
-              text-align: center; }
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .plus {
-              background-color: #0086e6;
-              color: white; }
-              body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .plus:hover {
-                cursor: pointer; }
-            body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .minus {
-              background-color: #e2e2e2;
-              color: #7d7d7d; }
-              body main .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .minus:hover {
-                cursor: pointer; }
-      body main .cart_main .cart_box .row .cart_box_inner .modal {
+            justify-content: center;
+            align-items: center; }
+            body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img img {
+              width: 45px;
+              height: 45px; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:first-child {
+            font-size: 14px;
+            font-family: "OpenSans";
+            color: #3d3d3d; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:nth-child(2) {
+            font-size: 12px;
+            font-family: "OpenSans";
+            color: #545454; }
+        body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_price {
+          font-size: 18px;
+          font-family: "OpenSans-Bold";
+          color: #0086e6; }
+        body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_delete i:hover {
+          cursor: pointer; }
+        body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_delete i img {
+          width: 13px;
+          height: 13px; }
+        body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box {
+          display: flex;
+          justify-content: center; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box input:focus {
+            border-bottom: none !important; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .button_quantity,
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .input_quantity {
+            width: 26px;
+            height: 26px;
+            border: none;
+            text-align: center; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .plus {
+            background-color: #0086e6;
+            color: white; }
+            body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .plus:hover {
+              cursor: pointer; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .minus {
+            background-color: #e2e2e2;
+            color: #7d7d7d; }
+            body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box .minus:hover {
+              cursor: pointer; }
+      body main.cart .cart_main .cart_box .row .cart_box_inner .modal {
         width: 412px;
         margin-top: 10em; }
-        body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box a.modal-close {
+        body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box a.modal-close {
           float: right;
           clear: both; }
-          body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box a.modal-close img {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box a.modal-close img {
             transform: rotate(225deg);
             width: 17px; }
-        body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner {
+        body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner {
           text-align: center;
           margin-top: 2em; }
-          body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner h4 {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner h4 {
             font-size: 24px;
             font-family: "OpenSans-Bold";
             color: #000000; }
-          body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner p {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner p {
             font-size: 16px;
             font-family: "OpenSans";
             color: #000000;
             margin: 24px auto; }
-          body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button {
             box-shadow: none;
             border-radius: 0; }
-            body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button span {
+            body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button span {
               font-size: 14px;
               font-family: "OpenSans-Bold"; }
-          body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button#cancel-btn {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button#cancel-btn {
             width: 80px;
             height: 40px;
             background-color: #0086e6;
             color: white;
             margin-right: 1em; }
-          body main .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button#delete-btn {
+          body main.cart .cart_main .cart_box .row .cart_box_inner .modal .delete_box .delete_box_inner button#delete-btn {
             width: 80px;
             height: 40px;
             background-color: white;
@@ -2099,6 +2093,7 @@ body main {
 
 @media screen and (max-width: 467px) {
   main .cart_main .cart_box .row .cart_box_inner table {
+    display: block;
     overflow-x: auto;
     white-space: nowrap; }
     main .cart_main .cart_box .row .cart_box_inner table .cart_name {
@@ -2108,10 +2103,10 @@ body main {
     height: auto !important; }
     main .cart_main .cart_box .row > div:first-child {
       margin-bottom: 2em; }
+    main .cart_main .cart_box .row .cart_box_inner {
+      height: auto !important; }
     main .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
-      margin-top: 2em; }
-    main .scroll_table {
-      height: 376px !important; } }
+      margin-top: 2em; } }
 @media screen and (min-width: 993px) and (max-width: 1161px) {
   main .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
     height: auto !important; } }
@@ -2119,8 +2114,7 @@ body main {
   main .cart_main .cart_box .row .cart_box_inner {
     position: relative; }
     main .cart_main .cart_box .row .cart_box_inner .cart_print_box {
-      position: absolute;
-      bottom: 0px;
+      padding-bottom: 1em !important;
       width: 100%; } }
 body main {
   background-color: white;
