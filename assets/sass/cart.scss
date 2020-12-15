@@ -230,58 +230,142 @@ body {
 								}
 							}
 						}
-						.modal {
-							width: 412px;
-							margin-top: 10em;
-							.delete_box {
-								a.modal-close {
-									float: right;
-									clear: both;
-									img {
-										transform: rotate(225deg);
-										width: 17px;
-									}
+					}
+				}
+			}
+		}
+
+		.modal {
+			width: 412px;
+			margin-top: 10em;
+			.delete_box,
+			.quote_box {
+				a.modal-close {
+					float: right;
+					clear: both;
+					img {
+						transform: rotate(225deg);
+						width: 17px;
+					}
+				}
+				.delete_box_inner,
+				.quote_box_inner {
+					text-align: center;
+					margin-top: 2em;
+					h4 {
+						font-size: 24px;
+						font-family: "OpenSans-Bold";
+						color: #000000;
+					}
+					p {
+						font-size: 16px;
+						font-family: "OpenSans";
+						color: #000000;
+						margin: 24px auto;
+					}
+					button {
+						box-shadow: none;
+						border-radius: 0;
+						span {
+							font-size: 14px;
+							font-family: "OpenSans-Bold";
+						}
+					}
+					button#cancel-btn {
+						width: 80px;
+						height: 40px;
+						background-color: $blue;
+						color: white;
+						margin-right: 1em;
+					}
+					button#delete-btn {
+						width: 80px;
+						height: 40px;
+						background-color: white;
+						color: $blue;
+						border: 1px solid $blue;
+						margin-left: 1em;
+					}
+					ul.quote_list {
+						li:first-child {
+							border-top: 2px solid $med_gray;
+							border-bottom: 2px solid $med_gray;
+						}
+						li:not(:first-child) {
+							border-bottom: 2px solid $med_gray;
+						}
+						li {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: space-between;
+							.quote_img {
+								width: 64px;
+								height: 64px;
+								background-color: $light_gray;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								img {
+									width: 45px;
+									height: 45px;
 								}
-								.delete_box_inner {
-									text-align: center;
-									margin-top: 2em;
-									h4 {
-										font-size: 24px;
-										font-family: "OpenSans-Bold";
-										color: #000000;
-									}
-									p {
-										font-size: 16px;
-										font-family: "OpenSans";
-										color: #000000;
-										margin: 24px auto;
-									}
-									button {
-										box-shadow: none;
-										border-radius: 0;
-										span {
-											font-size: 14px;
-											font-family: "OpenSans-Bold";
-										}
-									}
-									button#cancel-btn {
-										width: 80px;
-										height: 40px;
-										background-color: $blue;
-										color: white;
-										margin-right: 1em;
-									}
-									button#delete-btn {
-										width: 80px;
-										height: 40px;
-										background-color: white;
-										color: $blue;
-										border: 1px solid $blue;
-										margin-left: 1em;
-									}
+							}
+							.quote_desc {
+								flex: 4;
+								text-align: left;
+								margin-left: 1em;
+								p {
+									margin: 0;
+								}
+								p:first-child {
+									font-size: 14px;
+									font-family: "OpenSans";
+									color: $heading;
+								}
+								p:nth-child(2) {
+									font-size: 12px;
+									font-family: "OpenSans";
+									color: $body_text;
+								}
+							}
+							.quote_quantity {
+								span {
+									font-size: 10px;
+									font-family: "OpenSans";
+									color: $body_text;
+								}
+								span:nth-child(2) {
+									border: 1px solid #b3b6b9;
+									padding: 1px 5px;
+									color: #b3b6b9;
 								}
 							}
 						}
+					}
+					.quote_btn {
+						button {
+							width: 301px;
+							height: 48px;
+							background-color: $blue;
+							span {
+								font-size: 16px;
+								font-family: "OpenSans-Bold";
+								text-transform: none;
+							}
+						}
+					}
+				}
+			}
+			.modal-content.quote_box {
+				padding-right: 0;
+				padding-left: 0;
+				a.modal-close {
+					padding-right: 24px;
+				}
+				ul {
+					li {
+						padding: 5px 24px;
 					}
 				}
 			}
@@ -290,7 +374,7 @@ body {
 }
 
 @media screen and (max-width: 467px) {
-	main {
+	main.cart {
 		.cart_main {
 			.cart_box {
 				.row {
@@ -303,14 +387,31 @@ body {
 								margin-left: 1em;
 							}
 						}
+						.cart_print_box {
+							.quote {
+								button {
+									width: auto !important;
+									height: auto !important;
+								}
+							}
+						}
 					}
+				}
+			}
+		}
+		.modal {
+			width: 90% !important;
+			.quote_btn {
+				button {
+					width: auto !important;
+					height: auto !important;
 				}
 			}
 		}
 	}
 }
 @media screen and (max-width: 992px) {
-	main {
+	main.cart {
 		height: auto !important;
 		.cart_main {
 			.cart_box {
@@ -333,7 +434,7 @@ body {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1161px) {
-	main {
+	main.cart {
 		.cart_main {
 			.cart_box {
 				.row {
@@ -353,7 +454,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-	main {
+	main.cart {
 		.cart_main {
 			.cart_box {
 				.row {

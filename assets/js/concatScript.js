@@ -46,11 +46,8 @@ $(document).ready(function () {
 	$("#ask-btn").click(function () {
 		$("#question-box").modal("open");
 	});
-	$(".tt").click(function () {
-		$("#shop-add").modal("open");
-	});
-	$("#shop-add").modal({
-		dismissible: false,
+	$("#req-quote").click(function () {
+		$("#quote-box").modal("open");
 	});
 	// close just by close button, not click on body
 	$("#sign-up").modal({
@@ -84,6 +81,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#question-box").modal({
+		dismissible: false,
+	});
+	$("#quote-box").modal({
 		dismissible: false,
 	});
 	$("select").formSelect();
