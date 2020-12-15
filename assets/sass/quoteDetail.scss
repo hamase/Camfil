@@ -1,7 +1,7 @@
 body {
-	main.cart {
+	main.quote {
 		background-color: $light_white;
-		height: auto;
+		height: 100vh;
 		.cart_main {
 			margin: 10em 2em auto 2em;
 			.cart_box {
@@ -12,17 +12,17 @@ body {
 						font-size: 12px !important;
 						&::before {
 							margin: 0 !important;
-						}
-					}
-					a:first-child {
-						color: $gray;
-					}
-					a:nth-child(2) {
-						color: $blue;
-						&::before {
 							color: $gray !important;
 							font-size: 18px !important;
 						}
+					}
+					a:first-child,
+					a:nth-child(2),
+					a:nth-child(3) {
+						color: $gray;
+					}
+					a:last-child {
+						color: $blue;
 					}
 				}
 				.row {
@@ -36,9 +36,23 @@ body {
 					.cart_box_inner {
 						background-color: white;
 						box-shadow: 4px 4px 15px #cccccc;
-						height: auto;
-						> div.title {
+						height: 60vh;
+						div.title {
 							padding: 1em 2em 0;
+						}
+						div.expire {
+							padding: 1.2em 2em 0;
+							text-align: right;
+							h2 {
+								font-size: 12px;
+								font-family: "OpenSans";
+								color: $gray;
+							}
+							h5 {
+								font-size: 12px;
+								font-family: "OpenSans";
+								color: $blue;
+							}
 						}
 						h1 {
 							font-size: 20px;
@@ -121,6 +135,10 @@ body {
 									background: $blue;
 									border: none;
 									border-radius: 0;
+									display: flex;
+									flex-direction: row;
+									align-items: center;
+									justify-content: space-evenly;
 									span {
 										font-size: 16px;
 										font-family: "OpenSans-Bold";
@@ -129,6 +147,9 @@ body {
 									}
 									&:hover {
 										cursor: pointer;
+									}
+									img {
+										width: 10px;
 									}
 								}
 							}
@@ -147,7 +168,7 @@ body {
 								.cart_table {
 									tr {
 										border-top: 2px solid $med_gray;
-										border-bottom: none;
+										border-bottom: 2px solid $med_gray;
 										td:first-child {
 											display: flex;
 											justify-content: space-between;
@@ -168,7 +189,7 @@ body {
 											.cart_name {
 												text-align: left;
 												flex: 1;
-												margin-left: 2em;
+												margin-left: 4em;
 												p:first-child {
 													font-size: 14px;
 													font-family: "OpenSans";
@@ -187,45 +208,16 @@ body {
 												font-family: "OpenSans-Bold";
 												color: $blue;
 											}
-											&.cart_delete {
-												i {
-													&:hover {
-														cursor: pointer;
-													}
-													img {
-														width: 13px;
-														height: 13px;
-													}
-												}
-											}
 											.quantity_box {
 												display: flex;
 												justify-content: center;
-												input {
-													&:focus {
-														border-bottom: none !important;
-													}
-												}
-												.button_quantity,
-												.input_quantity {
-													width: 26px;
-													height: 26px;
-													border: none;
-													text-align: center;
-												}
-												.plus {
-													background-color: $blue;
-													color: white;
-													&:hover {
-														cursor: pointer;
-													}
-												}
-												.minus {
-													background-color: $med_gray;
-													color: $gray;
-													&:hover {
-														cursor: pointer;
-													}
+												span {
+													font-size: 14px;
+													font-family: "OpenSans";
+													color: $body_text;
+													border: 1px solid #b3b6b9;
+													padding: 1px 8px;
+													color: #b3b6b9;
 												}
 											}
 										}
@@ -237,180 +229,11 @@ body {
 				}
 			}
 		}
-
-		.modal {
-			width: 412px;
-			margin-top: 10em;
-			.delete_box,
-			.quote_box,
-			.quote_ok {
-				a.modal-close {
-					float: right;
-					clear: both;
-					img {
-						transform: rotate(225deg);
-						width: 17px;
-					}
-				}
-				.delete_box_inner,
-				.quote_box_inner,
-				.quote_ok_inner {
-					text-align: center;
-					margin-top: 2em;
-					h4 {
-						font-size: 24px;
-						font-family: "OpenSans-Bold";
-						color: #000000;
-					}
-					p {
-						font-size: 16px;
-						font-family: "OpenSans";
-						color: #000000;
-						margin: 24px auto;
-					}
-					p.number {
-						font-family: "OpenSans-SemiBold";
-					}
-					button {
-						box-shadow: none;
-						border-radius: 0;
-						span {
-							font-size: 14px;
-							font-family: "OpenSans-Bold";
-						}
-					}
-					button#cancel-btn {
-						width: 80px;
-						height: 40px;
-						background-color: $blue;
-						color: white;
-						margin-right: 1em;
-					}
-					button#delete-btn {
-						width: 80px;
-						height: 40px;
-						background-color: white;
-						color: $blue;
-						border: 1px solid $blue;
-						margin-left: 1em;
-					}
-					ul.quote_list {
-						li:first-child {
-							border-top: 2px solid $med_gray;
-							border-bottom: 2px solid $med_gray;
-						}
-						li:not(:first-child) {
-							border-bottom: 2px solid $med_gray;
-						}
-						li {
-							display: flex;
-							flex-direction: row;
-							align-items: center;
-							justify-content: space-between;
-							.quote_img {
-								width: 64px;
-								height: 64px;
-								background-color: $light_gray;
-								display: flex;
-								justify-content: center;
-								align-items: center;
-								img {
-									width: 45px;
-									height: 45px;
-								}
-							}
-							.quote_desc {
-								flex: 4;
-								text-align: left;
-								margin-left: 1em;
-								p {
-									margin: 0;
-								}
-								p:first-child {
-									font-size: 14px;
-									font-family: "OpenSans";
-									color: $heading;
-								}
-								p:nth-child(2) {
-									font-size: 12px;
-									font-family: "OpenSans";
-									color: $body_text;
-								}
-							}
-							.quote_quantity {
-								span {
-									font-size: 10px;
-									font-family: "OpenSans";
-									color: $body_text;
-								}
-								span:nth-child(2) {
-									border: 1px solid #b3b6b9;
-									padding: 1px 5px;
-									color: #b3b6b9;
-								}
-							}
-						}
-					}
-					.quote_btn {
-						button {
-							width: 301px;
-							height: 48px;
-							background-color: $blue;
-							span {
-								font-size: 16px;
-								font-family: "OpenSans-Bold";
-								text-transform: none;
-							}
-						}
-						&.btn_quote_ok {
-							display: flex;
-							justify-content: center;
-							img {
-								width: 25px;
-							}
-							button {
-								display: flex;
-								flex-direction: row;
-								align-items: center;
-								justify-content: space-evenly;
-							}
-						}
-					}
-					.tick_img {
-						width: 74px;
-						height: 74px;
-						border-radius: 50%;
-						background-color: #2ec700;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						margin-top: 20px;
-						margin: 0 auto 1em;
-						img {
-							width: 32px;
-							height: 23px;
-						}
-					}
-				}
-			}
-			.modal-content.quote_box {
-				padding-right: 0;
-				padding-left: 0;
-				a.modal-close {
-					padding-right: 24px;
-				}
-				ul {
-					li {
-						padding: 5px 24px;
-					}
-				}
-			}
-		}
 	}
 }
 
 @media screen and (max-width: 467px) {
-	main.cart {
+	main.quote {
 		.cart_main {
 			.cart_box {
 				.row {
@@ -435,18 +258,26 @@ body {
 				}
 			}
 		}
-		.modal {
-			width: 90% !important;
-			.quote_btn {
-				button {
-					width: auto !important;
-				}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main.quote {
+		div.expire {
+			padding: 1em 2em 0;
+			text-align: left !important;
+			h2 {
+				font-size: 15px !important;
+			}
+			h5 {
+				font-size: 15px !important;
 			}
 		}
 	}
 }
+
 @media screen and (max-width: 992px) {
-	main.cart {
+	main.quote {
 		height: auto !important;
 		.cart_main {
 			.cart_box {
@@ -457,7 +288,7 @@ body {
 					.cart_box_inner {
 						height: auto !important;
 						.cart_table {
-							.cart_delete {
+							.cart_price {
 								padding-right: 1em;
 							}
 						}
@@ -474,7 +305,7 @@ body {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1161px) {
-	main.cart {
+	main.quote {
 		.cart_main {
 			.cart_box {
 				.row {
@@ -494,14 +325,15 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-	main.cart {
+	main.quote {
 		.cart_main {
 			.cart_box {
 				.row {
 					.cart_box_inner {
 						position: relative;
 						.cart_print_box {
-							padding-bottom: 1em !important;
+							position: absolute;
+							bottom: 0px;
 							width: 100%;
 						}
 					}

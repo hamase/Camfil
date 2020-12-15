@@ -2012,14 +2012,18 @@ body main.cart {
             body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img img {
               width: 45px;
               height: 45px; }
-          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:first-child {
-            font-size: 14px;
-            font-family: "OpenSans";
-            color: #3d3d3d; }
-          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:nth-child(2) {
-            font-size: 12px;
-            font-family: "OpenSans";
-            color: #545454; }
+          body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name {
+            text-align: left;
+            flex: 1;
+            margin-left: 2em; }
+            body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:first-child {
+              font-size: 14px;
+              font-family: "OpenSans";
+              color: #3d3d3d; }
+            body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:nth-child(2) {
+              font-size: 12px;
+              font-family: "OpenSans";
+              color: #545454; }
         body main.cart .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_price {
           font-size: 18px;
           font-family: "OpenSans-Bold";
@@ -2054,50 +2058,92 @@ body main.cart {
     width: 412px;
     margin-top: 10em; }
     body main.cart .modal .delete_box a.modal-close,
-    body main.cart .modal .quote_box a.modal-close {
+    body main.cart .modal .quote_box a.modal-close,
+    body main.cart .modal .quote_ok a.modal-close {
       float: right;
       clear: both; }
       body main.cart .modal .delete_box a.modal-close img,
-      body main.cart .modal .quote_box a.modal-close img {
+      body main.cart .modal .quote_box a.modal-close img,
+      body main.cart .modal .quote_ok a.modal-close img {
         transform: rotate(225deg);
         width: 17px; }
     body main.cart .modal .delete_box .delete_box_inner,
     body main.cart .modal .delete_box .quote_box_inner,
+    body main.cart .modal .delete_box .quote_ok_inner,
     body main.cart .modal .quote_box .delete_box_inner,
-    body main.cart .modal .quote_box .quote_box_inner {
+    body main.cart .modal .quote_box .quote_box_inner,
+    body main.cart .modal .quote_box .quote_ok_inner,
+    body main.cart .modal .quote_ok .delete_box_inner,
+    body main.cart .modal .quote_ok .quote_box_inner,
+    body main.cart .modal .quote_ok .quote_ok_inner {
       text-align: center;
       margin-top: 2em; }
       body main.cart .modal .delete_box .delete_box_inner h4,
       body main.cart .modal .delete_box .quote_box_inner h4,
+      body main.cart .modal .delete_box .quote_ok_inner h4,
       body main.cart .modal .quote_box .delete_box_inner h4,
-      body main.cart .modal .quote_box .quote_box_inner h4 {
+      body main.cart .modal .quote_box .quote_box_inner h4,
+      body main.cart .modal .quote_box .quote_ok_inner h4,
+      body main.cart .modal .quote_ok .delete_box_inner h4,
+      body main.cart .modal .quote_ok .quote_box_inner h4,
+      body main.cart .modal .quote_ok .quote_ok_inner h4 {
         font-size: 24px;
         font-family: "OpenSans-Bold";
         color: #000000; }
       body main.cart .modal .delete_box .delete_box_inner p,
       body main.cart .modal .delete_box .quote_box_inner p,
+      body main.cart .modal .delete_box .quote_ok_inner p,
       body main.cart .modal .quote_box .delete_box_inner p,
-      body main.cart .modal .quote_box .quote_box_inner p {
+      body main.cart .modal .quote_box .quote_box_inner p,
+      body main.cart .modal .quote_box .quote_ok_inner p,
+      body main.cart .modal .quote_ok .delete_box_inner p,
+      body main.cart .modal .quote_ok .quote_box_inner p,
+      body main.cart .modal .quote_ok .quote_ok_inner p {
         font-size: 16px;
         font-family: "OpenSans";
         color: #000000;
         margin: 24px auto; }
+      body main.cart .modal .delete_box .delete_box_inner p.number,
+      body main.cart .modal .delete_box .quote_box_inner p.number,
+      body main.cart .modal .delete_box .quote_ok_inner p.number,
+      body main.cart .modal .quote_box .delete_box_inner p.number,
+      body main.cart .modal .quote_box .quote_box_inner p.number,
+      body main.cart .modal .quote_box .quote_ok_inner p.number,
+      body main.cart .modal .quote_ok .delete_box_inner p.number,
+      body main.cart .modal .quote_ok .quote_box_inner p.number,
+      body main.cart .modal .quote_ok .quote_ok_inner p.number {
+        font-family: "OpenSans-SemiBold"; }
       body main.cart .modal .delete_box .delete_box_inner button,
       body main.cart .modal .delete_box .quote_box_inner button,
+      body main.cart .modal .delete_box .quote_ok_inner button,
       body main.cart .modal .quote_box .delete_box_inner button,
-      body main.cart .modal .quote_box .quote_box_inner button {
+      body main.cart .modal .quote_box .quote_box_inner button,
+      body main.cart .modal .quote_box .quote_ok_inner button,
+      body main.cart .modal .quote_ok .delete_box_inner button,
+      body main.cart .modal .quote_ok .quote_box_inner button,
+      body main.cart .modal .quote_ok .quote_ok_inner button {
         box-shadow: none;
         border-radius: 0; }
         body main.cart .modal .delete_box .delete_box_inner button span,
         body main.cart .modal .delete_box .quote_box_inner button span,
+        body main.cart .modal .delete_box .quote_ok_inner button span,
         body main.cart .modal .quote_box .delete_box_inner button span,
-        body main.cart .modal .quote_box .quote_box_inner button span {
+        body main.cart .modal .quote_box .quote_box_inner button span,
+        body main.cart .modal .quote_box .quote_ok_inner button span,
+        body main.cart .modal .quote_ok .delete_box_inner button span,
+        body main.cart .modal .quote_ok .quote_box_inner button span,
+        body main.cart .modal .quote_ok .quote_ok_inner button span {
           font-size: 14px;
           font-family: "OpenSans-Bold"; }
       body main.cart .modal .delete_box .delete_box_inner button#cancel-btn,
       body main.cart .modal .delete_box .quote_box_inner button#cancel-btn,
+      body main.cart .modal .delete_box .quote_ok_inner button#cancel-btn,
       body main.cart .modal .quote_box .delete_box_inner button#cancel-btn,
-      body main.cart .modal .quote_box .quote_box_inner button#cancel-btn {
+      body main.cart .modal .quote_box .quote_box_inner button#cancel-btn,
+      body main.cart .modal .quote_box .quote_ok_inner button#cancel-btn,
+      body main.cart .modal .quote_ok .delete_box_inner button#cancel-btn,
+      body main.cart .modal .quote_ok .quote_box_inner button#cancel-btn,
+      body main.cart .modal .quote_ok .quote_ok_inner button#cancel-btn {
         width: 80px;
         height: 40px;
         background-color: #0086e6;
@@ -2105,8 +2151,13 @@ body main.cart {
         margin-right: 1em; }
       body main.cart .modal .delete_box .delete_box_inner button#delete-btn,
       body main.cart .modal .delete_box .quote_box_inner button#delete-btn,
+      body main.cart .modal .delete_box .quote_ok_inner button#delete-btn,
       body main.cart .modal .quote_box .delete_box_inner button#delete-btn,
-      body main.cart .modal .quote_box .quote_box_inner button#delete-btn {
+      body main.cart .modal .quote_box .quote_box_inner button#delete-btn,
+      body main.cart .modal .quote_box .quote_ok_inner button#delete-btn,
+      body main.cart .modal .quote_ok .delete_box_inner button#delete-btn,
+      body main.cart .modal .quote_ok .quote_box_inner button#delete-btn,
+      body main.cart .modal .quote_ok .quote_ok_inner button#delete-btn {
         width: 80px;
         height: 40px;
         background-color: white;
@@ -2115,27 +2166,47 @@ body main.cart {
         margin-left: 1em; }
       body main.cart .modal .delete_box .delete_box_inner ul.quote_list li:first-child,
       body main.cart .modal .delete_box .quote_box_inner ul.quote_list li:first-child,
+      body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li:first-child,
       body main.cart .modal .quote_box .delete_box_inner ul.quote_list li:first-child,
-      body main.cart .modal .quote_box .quote_box_inner ul.quote_list li:first-child {
+      body main.cart .modal .quote_box .quote_box_inner ul.quote_list li:first-child,
+      body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li:first-child,
+      body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li:first-child,
+      body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li:first-child,
+      body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li:first-child {
         border-top: 2px solid #e2e2e2;
         border-bottom: 2px solid #e2e2e2; }
       body main.cart .modal .delete_box .delete_box_inner ul.quote_list li:not(:first-child),
       body main.cart .modal .delete_box .quote_box_inner ul.quote_list li:not(:first-child),
+      body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li:not(:first-child),
       body main.cart .modal .quote_box .delete_box_inner ul.quote_list li:not(:first-child),
-      body main.cart .modal .quote_box .quote_box_inner ul.quote_list li:not(:first-child) {
+      body main.cart .modal .quote_box .quote_box_inner ul.quote_list li:not(:first-child),
+      body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li:not(:first-child),
+      body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li:not(:first-child),
+      body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li:not(:first-child),
+      body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li:not(:first-child) {
         border-bottom: 2px solid #e2e2e2; }
       body main.cart .modal .delete_box .delete_box_inner ul.quote_list li,
       body main.cart .modal .delete_box .quote_box_inner ul.quote_list li,
+      body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li,
       body main.cart .modal .quote_box .delete_box_inner ul.quote_list li,
-      body main.cart .modal .quote_box .quote_box_inner ul.quote_list li {
+      body main.cart .modal .quote_box .quote_box_inner ul.quote_list li,
+      body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li,
+      body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li,
+      body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li,
+      body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between; }
         body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_img,
         body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_img,
+        body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_img,
         body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_img,
-        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_img {
+        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_img,
+        body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_img,
+        body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_img,
+        body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_img,
+        body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_img {
           width: 64px;
           height: 64px;
           background-color: #ededed;
@@ -2144,64 +2215,172 @@ body main.cart {
           align-items: center; }
           body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_img img,
           body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_img img,
+          body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_img img,
           body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_img img,
-          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_img img {
+          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_img img,
+          body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_img img,
+          body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_img img,
+          body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_img img,
+          body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_img img {
             width: 45px;
             height: 45px; }
         body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_desc,
         body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_desc,
+        body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_desc,
         body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_desc,
-        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc {
+        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc,
+        body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_desc,
+        body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_desc,
+        body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_desc,
+        body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_desc {
           flex: 4;
           text-align: left;
           margin-left: 1em; }
           body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_desc p,
           body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_desc p,
+          body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_desc p,
           body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_desc p,
-          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc p {
+          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc p,
+          body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_desc p,
+          body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_desc p,
+          body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_desc p,
+          body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_desc p {
             margin: 0; }
           body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_desc p:first-child,
           body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_desc p:first-child,
+          body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_desc p:first-child,
           body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_desc p:first-child,
-          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc p:first-child {
+          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc p:first-child,
+          body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_desc p:first-child,
+          body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_desc p:first-child,
+          body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_desc p:first-child,
+          body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_desc p:first-child {
             font-size: 14px;
             font-family: "OpenSans";
             color: #161719; }
           body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_desc p:nth-child(2),
           body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_desc p:nth-child(2),
+          body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_desc p:nth-child(2),
           body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_desc p:nth-child(2),
-          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc p:nth-child(2) {
+          body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_desc p:nth-child(2),
+          body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_desc p:nth-child(2),
+          body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_desc p:nth-child(2),
+          body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_desc p:nth-child(2),
+          body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_desc p:nth-child(2) {
             font-size: 12px;
             font-family: "OpenSans";
             color: #3d3d3d; }
         body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_quantity span,
         body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_quantity span,
+        body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_quantity span,
         body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_quantity span,
-        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_quantity span {
+        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_quantity span,
+        body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_quantity span,
+        body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_quantity span,
+        body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_quantity span,
+        body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_quantity span {
           font-size: 10px;
           font-family: "OpenSans";
           color: #3d3d3d; }
         body main.cart .modal .delete_box .delete_box_inner ul.quote_list li .quote_quantity span:nth-child(2),
         body main.cart .modal .delete_box .quote_box_inner ul.quote_list li .quote_quantity span:nth-child(2),
+        body main.cart .modal .delete_box .quote_ok_inner ul.quote_list li .quote_quantity span:nth-child(2),
         body main.cart .modal .quote_box .delete_box_inner ul.quote_list li .quote_quantity span:nth-child(2),
-        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_quantity span:nth-child(2) {
+        body main.cart .modal .quote_box .quote_box_inner ul.quote_list li .quote_quantity span:nth-child(2),
+        body main.cart .modal .quote_box .quote_ok_inner ul.quote_list li .quote_quantity span:nth-child(2),
+        body main.cart .modal .quote_ok .delete_box_inner ul.quote_list li .quote_quantity span:nth-child(2),
+        body main.cart .modal .quote_ok .quote_box_inner ul.quote_list li .quote_quantity span:nth-child(2),
+        body main.cart .modal .quote_ok .quote_ok_inner ul.quote_list li .quote_quantity span:nth-child(2) {
           border: 1px solid #b3b6b9;
           padding: 1px 5px;
           color: #b3b6b9; }
       body main.cart .modal .delete_box .delete_box_inner .quote_btn button,
       body main.cart .modal .delete_box .quote_box_inner .quote_btn button,
+      body main.cart .modal .delete_box .quote_ok_inner .quote_btn button,
       body main.cart .modal .quote_box .delete_box_inner .quote_btn button,
-      body main.cart .modal .quote_box .quote_box_inner .quote_btn button {
+      body main.cart .modal .quote_box .quote_box_inner .quote_btn button,
+      body main.cart .modal .quote_box .quote_ok_inner .quote_btn button,
+      body main.cart .modal .quote_ok .delete_box_inner .quote_btn button,
+      body main.cart .modal .quote_ok .quote_box_inner .quote_btn button,
+      body main.cart .modal .quote_ok .quote_ok_inner .quote_btn button {
         width: 301px;
         height: 48px;
         background-color: #0086e6; }
         body main.cart .modal .delete_box .delete_box_inner .quote_btn button span,
         body main.cart .modal .delete_box .quote_box_inner .quote_btn button span,
+        body main.cart .modal .delete_box .quote_ok_inner .quote_btn button span,
         body main.cart .modal .quote_box .delete_box_inner .quote_btn button span,
-        body main.cart .modal .quote_box .quote_box_inner .quote_btn button span {
+        body main.cart .modal .quote_box .quote_box_inner .quote_btn button span,
+        body main.cart .modal .quote_box .quote_ok_inner .quote_btn button span,
+        body main.cart .modal .quote_ok .delete_box_inner .quote_btn button span,
+        body main.cart .modal .quote_ok .quote_box_inner .quote_btn button span,
+        body main.cart .modal .quote_ok .quote_ok_inner .quote_btn button span {
           font-size: 16px;
           font-family: "OpenSans-Bold";
           text-transform: none; }
+      body main.cart .modal .delete_box .delete_box_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .delete_box .quote_box_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .delete_box .quote_ok_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .quote_box .delete_box_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .quote_box .quote_box_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .quote_box .quote_ok_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .quote_ok .delete_box_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .quote_ok .quote_box_inner .quote_btn.btn_quote_ok,
+      body main.cart .modal .quote_ok .quote_ok_inner .quote_btn.btn_quote_ok {
+        display: flex;
+        justify-content: center; }
+        body main.cart .modal .delete_box .delete_box_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .delete_box .quote_box_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .delete_box .quote_ok_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .quote_box .delete_box_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .quote_box .quote_box_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .quote_box .quote_ok_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .quote_ok .delete_box_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .quote_ok .quote_box_inner .quote_btn.btn_quote_ok img,
+        body main.cart .modal .quote_ok .quote_ok_inner .quote_btn.btn_quote_ok img {
+          width: 25px; }
+        body main.cart .modal .delete_box .delete_box_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .delete_box .quote_box_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .delete_box .quote_ok_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .quote_box .delete_box_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .quote_box .quote_box_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .quote_box .quote_ok_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .quote_ok .delete_box_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .quote_ok .quote_box_inner .quote_btn.btn_quote_ok button,
+        body main.cart .modal .quote_ok .quote_ok_inner .quote_btn.btn_quote_ok button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly; }
+      body main.cart .modal .delete_box .delete_box_inner .tick_img,
+      body main.cart .modal .delete_box .quote_box_inner .tick_img,
+      body main.cart .modal .delete_box .quote_ok_inner .tick_img,
+      body main.cart .modal .quote_box .delete_box_inner .tick_img,
+      body main.cart .modal .quote_box .quote_box_inner .tick_img,
+      body main.cart .modal .quote_box .quote_ok_inner .tick_img,
+      body main.cart .modal .quote_ok .delete_box_inner .tick_img,
+      body main.cart .modal .quote_ok .quote_box_inner .tick_img,
+      body main.cart .modal .quote_ok .quote_ok_inner .tick_img {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background-color: #2ec700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin: 0 auto 1em; }
+        body main.cart .modal .delete_box .delete_box_inner .tick_img img,
+        body main.cart .modal .delete_box .quote_box_inner .tick_img img,
+        body main.cart .modal .delete_box .quote_ok_inner .tick_img img,
+        body main.cart .modal .quote_box .delete_box_inner .tick_img img,
+        body main.cart .modal .quote_box .quote_box_inner .tick_img img,
+        body main.cart .modal .quote_box .quote_ok_inner .tick_img img,
+        body main.cart .modal .quote_ok .delete_box_inner .tick_img img,
+        body main.cart .modal .quote_ok .quote_box_inner .tick_img img,
+        body main.cart .modal .quote_ok .quote_ok_inner .tick_img img {
+          width: 32px;
+          height: 23px; }
     body main.cart .modal .modal-content.quote_box {
       padding-right: 0;
       padding-left: 0; }
@@ -2223,8 +2402,7 @@ body main.cart {
   main.cart .modal {
     width: 90% !important; }
     main.cart .modal .quote_btn button {
-      width: auto !important;
-      height: auto !important; } }
+      width: auto !important; } }
 @media screen and (max-width: 992px) {
   main.cart {
     height: auto !important; }
@@ -2232,6 +2410,8 @@ body main.cart {
       margin-bottom: 2em; }
     main.cart .cart_main .cart_box .row .cart_box_inner {
       height: auto !important; }
+      main.cart .cart_main .cart_box .row .cart_box_inner .cart_table .cart_delete {
+        padding-right: 1em; }
     main.cart .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
       margin-top: 2em; } }
 @media screen and (min-width: 993px) and (max-width: 1161px) {
@@ -3063,6 +3243,209 @@ body main {
     content: "" !important; }
   main .found_product_main .found_product_box .found_product_table table.responsive-table thead {
     border-right: 0 !important; } }
+body main.quote {
+  background-color: #f7f7f7;
+  height: 100vh; }
+  body main.quote .cart_main {
+    margin: 10em 2em auto 2em; }
+    body main.quote .cart_main .cart_box nav {
+      background: rgba(0, 0, 0, 0) !important;
+      box-shadow: none !important; }
+      body main.quote .cart_main .cart_box nav .breadcrumb {
+        font-size: 12px !important; }
+        body main.quote .cart_main .cart_box nav .breadcrumb::before {
+          margin: 0 !important;
+          color: #7d7d7d !important;
+          font-size: 18px !important; }
+      body main.quote .cart_main .cart_box nav a:first-child,
+      body main.quote .cart_main .cart_box nav a:nth-child(2),
+      body main.quote .cart_main .cart_box nav a:nth-child(3) {
+        color: #7d7d7d; }
+      body main.quote .cart_main .cart_box nav a:last-child {
+        color: #0086e6; }
+    body main.quote .cart_main .cart_box .row .col:first-child .cart_box_inner h1 {
+      padding: 1em 2em; }
+    body main.quote .cart_main .cart_box .row .cart_box_inner {
+      background-color: white;
+      box-shadow: 4px 4px 15px #cccccc;
+      height: 60vh; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner div.title {
+        padding: 1em 2em 0; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner div.expire {
+        padding: 1.2em 2em 0;
+        text-align: right; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner div.expire h2 {
+          font-size: 12px;
+          font-family: "OpenSans";
+          color: #7d7d7d; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner div.expire h5 {
+          font-size: 12px;
+          font-family: "OpenSans";
+          color: #0086e6; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner h1 {
+        font-size: 20px;
+        font-family: "OpenSans-Bold";
+        color: #3d3d3d;
+        margin: 0 !important; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner h2 {
+        font-size: 18px;
+        font-family: "OpenSans-Bold";
+        color: #161719;
+        margin: 0 !important; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner h5 {
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: #7d7d7d;
+        margin: 4px auto 11px auto; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary {
+        border-top: 2px solid #e2e2e2;
+        border-bottom: 2px solid #e2e2e2;
+        padding: 1em 2em; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary li {
+          display: flex;
+          justify-content: space-between;
+          margin: 16px auto 26px auto; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary li span {
+            font-size: 14px;
+            font-family: "OpenSans";
+            color: #161719; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary.list {
+        margin-bottom: 0; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner ul.total {
+        border: 0;
+        margin: 0; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner ul.total li {
+          margin: 0; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner ul.total li span:nth-child(2) {
+            font-size: 18px;
+            font-family: "OpenSans-Bold";
+            color: #0086e6; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box {
+        padding: 0em 6em; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 25px; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i:hover {
+            cursor: pointer; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i img {
+            width: 15px;
+            height: 13px; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span {
+            margin-left: 10px;
+            font-size: 12px;
+            font-family: "OpenSans";
+            color: #0086e6; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span:hover {
+              cursor: pointer; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+          height: 48px;
+          width: 100%;
+          background: #0086e6;
+          border: none;
+          border-radius: 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button span {
+            font-size: 16px;
+            font-family: "OpenSans-Bold";
+            color: white;
+            text-transform: none; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
+            cursor: pointer; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button img {
+            width: 10px; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table thead tr th {
+        font-size: 12px;
+        font-family: "OpenSans";
+        color: #545454; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr {
+        border-top: 2px solid #e2e2e2;
+        border-bottom: 2px solid #e2e2e2; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child {
+          display: flex;
+          justify-content: space-between;
+          width: 70%;
+          padding: 1em 1em 1em 3em; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img {
+            width: 64px;
+            height: 64px;
+            background-color: #e2e2e2;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_img img {
+              width: 45px;
+              height: 45px; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name {
+            text-align: left;
+            flex: 1;
+            margin-left: 4em; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:first-child {
+              font-size: 14px;
+              font-family: "OpenSans";
+              color: #3d3d3d; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td:first-child .cart_name p:nth-child(2) {
+              font-size: 12px;
+              font-family: "OpenSans";
+              color: #545454; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td.cart_price {
+          font-size: 18px;
+          font-family: "OpenSans-Bold";
+          color: #0086e6; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box {
+          display: flex;
+          justify-content: center; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table table .cart_table tr td .quantity_box span {
+            font-size: 14px;
+            font-family: "OpenSans";
+            color: #3d3d3d;
+            border: 1px solid #b3b6b9;
+            padding: 1px 8px;
+            color: #b3b6b9; }
+
+@media screen and (max-width: 467px) {
+  main.quote .cart_main .cart_box .row .cart_box_inner table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap; }
+    main.quote .cart_main .cart_box .row .cart_box_inner table .cart_name {
+      margin-left: 1em; }
+  main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+    width: auto !important;
+    height: auto !important; } }
+@media screen and (max-width: 600px) {
+  main.quote div.expire {
+    padding: 1em 2em 0;
+    text-align: left !important; }
+    main.quote div.expire h2 {
+      font-size: 15px !important; }
+    main.quote div.expire h5 {
+      font-size: 15px !important; } }
+@media screen and (max-width: 992px) {
+  main.quote {
+    height: auto !important; }
+    main.quote .cart_main .cart_box .row > div:first-child {
+      margin-bottom: 2em; }
+    main.quote .cart_main .cart_box .row .cart_box_inner {
+      height: auto !important; }
+      main.quote .cart_main .cart_box .row .cart_box_inner .cart_table .cart_price {
+        padding-right: 1em; }
+    main.quote .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
+      margin-top: 2em; } }
+@media screen and (min-width: 993px) and (max-width: 1161px) {
+  main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+    height: auto !important; } }
+@media screen and (min-width: 992px) {
+  main.quote .cart_main .cart_box .row .cart_box_inner {
+    position: relative; }
+    main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box {
+      position: absolute;
+      bottom: 0px;
+      width: 100%; } }
 nav.header_box {
   background-color: #004377 !important; }
   nav.header_box ul {

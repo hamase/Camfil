@@ -49,6 +49,10 @@ $(document).ready(function () {
 	$("#req-quote").click(function () {
 		$("#quote-box").modal("open");
 	});
+	$("#confirm-btn").click(function () {
+		$(this).closest(".modal").modal("close");
+		$("#quote-ok").modal("open");
+	});
 	// close just by close button, not click on body
 	$("#sign-up").modal({
 		dismissible: false,
@@ -84,6 +88,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#quote-box").modal({
+		dismissible: false,
+	});
+	$("#quote-ok").modal({
 		dismissible: false,
 	});
 	$("select").formSelect();

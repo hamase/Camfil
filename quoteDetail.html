@@ -128,14 +128,16 @@
 		</header>
 
 		<!-- main page -->
-		<main class="cart">
+		<main class="quote">
 			<div class="container-fluid cart_main">
 				<div class="row cart_box">
 					<nav>
 						<div class="nav-wrapper">
 							<div class="col s12">
 								<a href="./index.html" class="breadcrumb">Home</a>
-								<a href="#" class="breadcrumb">My Cart</a>
+								<a href="#" class="breadcrumb">My Account</a>
+								<a href="#" class="breadcrumb">My Quotes</a>
+								<a href="#" class="breadcrumb">Quote Details</a>
 							</div>
 						</div>
 					</nav>
@@ -143,7 +145,7 @@
 						<form action="">
 							<div class="col s12 l8">
 								<div class="cart_box_inner">
-									<h1>My Cart</h1>
+									<h1>Quote Details</h1>
 									<div class="scroll_table">
 										<table class="centered">
 											<thead>
@@ -167,29 +169,10 @@
 													</td>
 													<td>
 														<div class="quantity_box">
-															<input
-																type="button"
-																value="-"
-																class="minus button_quantity"
-															/>
-															<input
-																type="text"
-																value="0"
-																class="input_quantity"
-															/>
-															<input
-																type="button"
-																value="+"
-																class="plus button_quantity"
-															/>
+															<span>1</span>
 														</div>
 													</td>
-													<td class="cart_price">$</td>
-													<td class="cart_delete">
-														<i class="delete_icon"
-															><img src="assets/img/bin.png" alt=""
-														/></i>
-													</td>
+													<td class="cart_price">$749</td>
 												</tr>
 												<tr>
 													<td>
@@ -203,29 +186,10 @@
 													</td>
 													<td>
 														<div class="quantity_box">
-															<input
-																type="button"
-																value="-"
-																class="minus button_quantity"
-															/>
-															<input
-																type="text"
-																value="0"
-																class="input_quantity"
-															/>
-															<input
-																type="button"
-																value="+"
-																class="plus button_quantity"
-															/>
+															<span>1</span>
 														</div>
 													</td>
-													<td class="cart_price">$</td>
-													<td class="cart_delete">
-														<i class="delete_icon"
-															><img src="assets/img/bin.png" alt=""
-														/></i>
-													</td>
+													<td class="cart_price">$749</td>
 												</tr>
 											</tbody>
 										</table>
@@ -234,10 +198,16 @@
 							</div>
 							<div class="col s12 l4">
 								<div class="cart_box_inner">
-									<div class="title">
-										<h2>Cart Summary</h2>
-										<h5>2 Products</h5>
-									</div>
+									<div class="row">
+                                        <div class="title col s12 m6">
+                                            <h2>Quote Summary</h2>
+                                            <h5>Quote Number: <span id="quote-num">#2225065</span></h5>
+                                        </div>
+                                        <div class="expire col s12 m6">
+                                            <h2>Expiry Date :</h2>
+                                            <h5><span id="quote-expire-date">29 June 2020</span></h5>
+                                        </div>
+                                    </div>
 									<ul class="cart_summary list">
 										<li>
 											<span>Part Number</span>
@@ -251,23 +221,26 @@
 									<ul class="cart_summary total">
 										<li>
 											<span>Total fee</span>
-											<span>$</span>
+											<span>$1520</span>
 										</li>
 									</ul>
 									<div class="cart_print_box">
 										<div class="print">
 											<i><img src="assets/img/print.png" alt="" /></i>
-											<span>Print card</span>
+											<span>Print invoice</span>
 										</div>
 										<div class="row">
 											<div class="quote col s12">
 												<button
 													class="btn waves-effect waves-light"
-													type="button"
-													id="req-quote"
+													type="submit"
 													name="action"
 												>
-													<span>Request a Quote</span>
+													<span>Next: Check out process</span>
+													<img
+														src="assets/img/chevron_right_white.png"
+														alt=""
+													/>
 												</button>
 											</div>
 										</div>
@@ -275,121 +248,6 @@
 								</div>
 							</div>
 						</form>
-					</div>
-				</div>
-			</div>
-
-			<!-- confirm delete -->
-			<div id="delete" class="modal">
-				<div class="modal-content delete_box">
-					<a href="#!" class="modal-action modal-close"
-						><img src="assets/img/plus.png" alt=""
-					/></a>
-					<div class="delete_box_inner">
-						<h4>Sure to delete the item?</h4>
-						<p>Part Number : 2315HLS</p>
-						<div class="row delete_btn">
-							<button
-								class="btn waves-effect waves-light modal-close"
-								id="cancel-btn"
-								type="submit"
-								name="action"
-							>
-								<span>No</span>
-							</button>
-							<button
-								class="btn waves-effect waves-light"
-								id="delete-btn"
-								type="submit"
-								name="action"
-							>
-								<span>Yes</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- request quote -->
-			<div id="quote-box" class="modal">
-				<div class="modal-content quote_box">
-					<a href="#!" class="modal-action modal-close"
-						><img src="assets/img/plus.png" alt=""
-					/></a>
-					<div class="quote_box_inner">
-						<h4>Request a quote</h4>
-						<ul class="quote_list">
-							<li>
-								<div class="quote_img">
-									<img src="assets/img/slide1.png" alt="" />
-								</div>
-								<div class="quote_desc">
-									<p>Parts of Liquid Drainer</p>
-									<p>Armestrang</p>
-								</div>
-								<div class="quote_quantity">
-									<span>Quantity</span>
-									<span>1</span>
-								</div>
-							</li>
-							<li>
-								<div class="quote_img">
-									<img src="assets/img/slide1.png" alt="" />
-								</div>
-								<div class="quote_desc">
-									<p>Parts of Liquid Drainer</p>
-									<p>Armestrang</p>
-								</div>
-								<div class="quote_quantity">
-									<span>Quantity</span>
-									<span>1</span>
-								</div>
-							</li>
-						</ul>
-						<div class="row quote_btn">
-							<button
-								class="btn waves-effect waves-light"
-								id="confirm-btn"
-								type="button"
-								name="action"
-							>
-								<span>Confirm</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- confirm request quote -->
-			<div id="quote-ok" class="modal">
-				<div class="modal-content quote_ok">
-					<div class="quote_ok_inner">
-						<a href="#!" class="modal-action modal-close"
-							><img src="assets/img/plus.png" alt=""
-						/></a>
-						<div class="tick_img">
-							<img src="assets/img/tick.png" alt="" />
-						</div>
-						<h4>Thank you for your request!</h4>
-						<p class="number">
-							Quote number: <br />
-							2225065
-						</p>
-						<p>
-							A Confirmation email will be sent to your email. If has not
-							arrived within two minutes please check your spam folder.
-						</p>
-						<div class="row quote_btn btn_quote_ok">
-							<button
-								class="btn waves-effect waves-light modal-close"
-								id="quote-done"
-								type="submit"
-								name="action"
-							>
-								<img src="assets/img/arrow_left.png" alt="" />
-								<span>Go to my quotes</span>
-							</button>
-						</div>
 					</div>
 				</div>
 			</div>
