@@ -3446,6 +3446,194 @@ body main.quote {
       position: absolute;
       bottom: 0px;
       width: 100%; } }
+body main.quote {
+  background-color: #f7f7f7;
+  height: 100vh; }
+  body main.quote .cart_main {
+    margin: 10em 2em auto 2em; }
+    body main.quote .cart_main .cart_box nav {
+      background: rgba(0, 0, 0, 0) !important;
+      box-shadow: none !important; }
+      body main.quote .cart_main .cart_box nav .breadcrumb {
+        font-size: 12px !important; }
+        body main.quote .cart_main .cart_box nav .breadcrumb::before {
+          margin: 0 !important;
+          color: #7d7d7d !important;
+          font-size: 18px !important; }
+      body main.quote .cart_main .cart_box nav a:first-child,
+      body main.quote .cart_main .cart_box nav a:nth-child(2),
+      body main.quote .cart_main .cart_box nav a:nth-child(3),
+      body main.quote .cart_main .cart_box nav a:nth-child(4) {
+        color: #7d7d7d; }
+      body main.quote .cart_main .cart_box nav a:last-child {
+        color: #0086e6; }
+    body main.quote .cart_main .cart_box .row .col:first-child .cart_box_inner h1 {
+      padding: 1em 2em; }
+    body main.quote .cart_main .cart_box .row .cart_box_inner {
+      background-color: white;
+      box-shadow: 4px 4px 15px #cccccc;
+      height: 60vh; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner div.title {
+        padding: 1em 2em 0; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner div.expire {
+        padding: 1.2em 2em 0;
+        text-align: right; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner div.expire h2 {
+          font-size: 12px;
+          font-family: "OpenSans";
+          color: #7d7d7d; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner div.expire h5 {
+          font-size: 12px;
+          font-family: "OpenSans";
+          color: #0086e6; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner h1 {
+        font-size: 20px;
+        font-family: "OpenSans-Bold";
+        color: #3d3d3d;
+        margin: 0 !important; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner h2 {
+        font-size: 18px;
+        font-family: "OpenSans-Bold";
+        color: #161719;
+        margin: 0 !important; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner h5 {
+        font-size: 14px;
+        font-family: "OpenSans";
+        color: #7d7d7d;
+        margin: 4px auto 11px auto; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary {
+        border-top: 2px solid #e2e2e2;
+        border-bottom: 2px solid #e2e2e2;
+        padding: 1em 2em; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary li {
+          display: flex;
+          justify-content: space-between;
+          margin: 16px auto 26px auto; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary li span {
+            font-size: 14px;
+            font-family: "OpenSans";
+            color: #161719; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary.list {
+        margin-bottom: 0; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner ul.total {
+        border: 0;
+        margin: 0; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner ul.total li {
+          margin: 0; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner ul.total li span:nth-child(2) {
+            font-size: 18px;
+            font-family: "OpenSans-Bold";
+            color: #0086e6; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box {
+        padding: 0em 6em; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 25px; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i:hover {
+            cursor: pointer; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i img {
+            width: 15px;
+            height: 13px; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span {
+            margin-left: 10px;
+            font-size: 12px;
+            font-family: "OpenSans";
+            color: #0086e6; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span:hover {
+              cursor: pointer; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+          height: 48px;
+          width: 100%;
+          background: #0086e6;
+          border: none;
+          border-radius: 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button span {
+            font-size: 16px;
+            font-family: "OpenSans-Bold";
+            color: white;
+            text-transform: none; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
+            cursor: pointer; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button img {
+            width: 10px; }
+      body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box {
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        height: auto; }
+        body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible {
+          box-shadow: none;
+          margin: 0;
+          border: none; }
+          body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li {
+            margin: 0 0 2em;
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: 4px 4px 15px #cccccc; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header {
+              height: 115px;
+              background: white;
+              border: none;
+              padding: 1rem 3rem;
+              display: flex;
+              justify-content: space-between; }
+              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header h2 {
+                font-size: 20px;
+                font-family: "OpenSans-Bold";
+                color: #161719; }
+              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header h4 {
+                font-size: 14px;
+                font-family: "OpenSan";
+                color: #161719; }
+              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header .img_coll {
+                display: flex;
+                align-items: center; }
+                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header .img_coll img {
+                  transform: rotate(90deg);
+                  width: 12px; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body {
+              background: white;
+              border-top: 2px solid #e2e2e2; }
+            body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li.active .collapsible-header .img_coll {
+              transform: rotate(180deg); }
+
+@media screen and (max-width: 467px) {
+  main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+    width: auto !important;
+    height: auto !important; } }
+@media screen and (max-width: 600px) {
+  main.quote div.expire {
+    padding: 1em 2em 0;
+    text-align: left !important; }
+    main.quote div.expire h2 {
+      font-size: 15px !important; }
+    main.quote div.expire h5 {
+      font-size: 15px !important; } }
+@media screen and (max-width: 992px) {
+  main.quote {
+    height: auto !important; }
+    main.quote .cart_main .cart_box .row > div:first-child {
+      margin-bottom: 2em; }
+    main.quote .cart_main .cart_box .row .cart_box_inner {
+      height: auto !important; }
+      main.quote .cart_main .cart_box .row .cart_box_inner .cart_table .cart_price {
+        padding-right: 1em; }
+    main.quote .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
+      margin-top: 2em; } }
+@media screen and (min-width: 993px) and (max-width: 1161px) {
+  main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+    height: auto !important; } }
+@media screen and (min-width: 992px) {
+  main.quote .cart_main .cart_box .row .cart_box_inner {
+    position: relative; }
+    main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box {
+      position: absolute;
+      bottom: 0px;
+      width: 100%; } }
 nav.header_box {
   background-color: #004377 !important; }
   nav.header_box ul {
