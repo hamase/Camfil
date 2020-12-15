@@ -3412,7 +3412,7 @@ body main.quote {
         width: 100%;
         height: 60px;
         background: #f7f7f7;
-        padding: 1em 2em;
+        padding: 1em 5em;
         display: flex;
         align-items: center; }
         body main.quote .cart_main .cart_box .row .cart_box_inner .scroll_table .table_footer p {
@@ -3562,17 +3562,18 @@ body main.quote {
         body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
           height: 48px;
           width: 100%;
-          background: #0086e6;
+          background: #ededed;
           border: none;
           border-radius: 0;
           display: flex;
           flex-direction: row;
           align-items: center;
-          justify-content: space-evenly; }
+          justify-content: space-between;
+          box-shadow: none; }
           body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button span {
             font-size: 16px;
             font-family: "OpenSans-Bold";
-            color: white;
+            color: #7d7d7d;
             text-transform: none; }
           body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
             cursor: pointer; }
@@ -3613,7 +3614,48 @@ body main.quote {
                   width: 12px; }
             body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body {
               background: white;
-              border-top: 2px solid #e2e2e2; }
+              border-top: 2px solid #e2e2e2;
+              padding: 0; }
+              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 2rem; }
+                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment {
+                  border: 1px solid #e2e2e2;
+                  box-shadow: none;
+                  width: 20%;
+                  height: 100px;
+                  text-align: center;
+                  padding: 1em 2em;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center; }
+                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment:hover {
+                    box-shadow: 4px 4px 15px #cccccc;
+                    cursor: pointer; }
+                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment img {
+                    width: 20px; }
+                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment p {
+                    font-size: 16px;
+                    font-family: "OpenSans";
+                    color: #161719;
+                    margin: 5px; }
+              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number {
+                display: none;
+                border-top: 2px solid #e2e2e2;
+                padding: 2rem 9rem; }
+                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number p {
+                  font-size: 16px;
+                  font-family: "OpenSans";
+                  color: #161719; }
+                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number input {
+                  width: 301px;
+                  height: 48px;
+                  border: 1px solid #e2e2e2;
+                  padding-left: 10px; }
+                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number input:focus {
+                    border-bottom: 1px solid #e2e2e2 !important; }
             body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li.active .collapsible-header .img_coll {
               transform: rotate(180deg); }
 
@@ -3638,6 +3680,17 @@ body main.quote {
       height: auto !important; }
       main.quote .cart_main .cart_box .row .cart_box_inner .cart_table .cart_price {
         padding-right: 1em; }
+      main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-header {
+        height: auto !important; }
+      main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box {
+        flex-direction: column; }
+        main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box li {
+          width: 100% !important;
+          height: auto !important; }
+      main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .code_number {
+        padding: 2rem !important; }
+        main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .code_number input {
+          width: 100% !important; }
     main.quote .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
       margin-top: 2em; } }
 @media screen and (min-width: 993px) and (max-width: 1161px) {
