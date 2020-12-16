@@ -231,4 +231,9 @@ $(document).ready(function () {
 		$(".bank").css("display", "none");
 		$(".paypal").css("display", "block");
 	});
+	$("#bank").on("click", function () {
+		$(".debit").css("display", "none");
+		$(".paypal").css("display", "none");
+		$(".bank").css("display", "block");
+	});
 });

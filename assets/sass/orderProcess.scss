@@ -323,6 +323,67 @@ body {
 												}
 											}
 										}
+										.bank {
+											display: none;
+											border-top: 2px solid $med_gray;
+											padding: 2rem 7rem;
+											p {
+												font-size: 16px;
+												font-family: "OpenSans";
+												color: $heading;
+												margin-bottom: 2em;
+											}
+											ul {
+												border: 1px solid $gray;
+												margin-bottom: 2em;
+												li {
+													box-shadow: none;
+													background-color: rgba(0, 0, 0, 0);
+													height: 40px;
+													display: flex;
+													align-items: center;
+													margin-bottom: 0;
+													div {
+														margin: 1em;
+													}
+												}
+												li:not(:last-child) {
+													border-bottom: 1px solid $med_gray;
+													div.l3 {
+														span {
+															font-size: 14px;
+															font-family: "OpenSans-Bold";
+															color: $heading;
+														}
+													}
+													div.l6 {
+														span {
+															font-size: 14px;
+															font-family: "OpenSans";
+															color: $heading;
+														}
+													}
+												}
+											}
+											.email,
+											.hint {
+												display: flex;
+												margin-bottom: 1em;
+												img {
+													width: 30px;
+													height: 30px;
+													margin-right: 1em;
+												}
+												span {
+													font-size: 14px;
+													font-family: "OpenSans";
+													color: $heading;
+													a {
+														color: $blue;
+													}
+												}
+											}
+										}
 									}
 									&.active {
 										.collapsible-header {
@@ -407,7 +468,8 @@ body {
 										}
 									}
 									.paypal,
-									.debit {
+									.debit,
+									.bank {
 										padding: 2rem !important;
 										input {
 											width: 100% !important;
@@ -428,6 +490,17 @@ body {
 													}
 												}
 											}
+										}
+									}
+									.bank {
+										ul {
+											li {
+												height: auto !important;
+											}
+										}
+										.email,
+										.hint {
+											margin-bottom: 2em !important;
 										}
 									}
 								}

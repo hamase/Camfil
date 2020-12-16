@@ -3623,7 +3623,7 @@ body main.order {
                 body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment {
                   border: 1px solid #e2e2e2;
                   box-shadow: none;
-                  width: 20%;
+                  width: 25%;
                   height: 100px;
                   text-align: center;
                   padding: 1em 2em;
@@ -3708,6 +3708,54 @@ body main.order {
                         color: #7d7d7d; }
                       body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col.expiration span {
                         margin: 0 1em; }
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank {
+                display: none;
+                border-top: 2px solid #e2e2e2;
+                padding: 2rem 7rem; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank p {
+                  font-size: 16px;
+                  font-family: "OpenSans";
+                  color: #161719;
+                  margin-bottom: 2em; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank ul {
+                  border: 1px solid #7d7d7d;
+                  margin-bottom: 2em; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank ul li {
+                    box-shadow: none;
+                    background-color: rgba(0, 0, 0, 0);
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank ul li div {
+                      margin: 1em; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank ul li:not(:last-child) {
+                    border-bottom: 1px solid #e2e2e2; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank ul li:not(:last-child) div.l3 span {
+                      font-size: 14px;
+                      font-family: "OpenSans-Bold";
+                      color: #161719; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank ul li:not(:last-child) div.l6 span {
+                      font-size: 14px;
+                      font-family: "OpenSans";
+                      color: #161719; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .email,
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .hint {
+                  display: flex;
+                  margin-bottom: 1em; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .email img,
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .hint img {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 1em; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .email span,
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .hint span {
+                    font-size: 14px;
+                    font-family: "OpenSans";
+                    color: #161719; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .email span a,
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .bank .hint span a {
+                      color: #0086e6; }
             body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li.active .collapsible-header .img_coll {
               transform: rotate(180deg); }
 
@@ -3740,10 +3788,12 @@ body main.order {
           width: 100% !important;
           height: auto !important; }
       main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .paypal,
-      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit {
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit,
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .bank {
         padding: 2rem !important; }
         main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .paypal input,
-        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit input {
+        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit input,
+        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .bank input {
           width: 100% !important; }
       main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit ul li {
         display: grid !important; }
@@ -3751,6 +3801,11 @@ body main.order {
           margin-left: 0 !important; }
         main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit ul li div.col.expiration span {
           margin: 0 1em 0 2em !important; }
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .bank ul li {
+        height: auto !important; }
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .bank .email,
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .bank .hint {
+        margin-bottom: 2em !important; }
     main.order .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
       margin-top: 2em; } }
 @media screen and (min-width: 993px) and (max-width: 1161px) {
