@@ -3462,104 +3462,104 @@ body main.quote {
       position: absolute;
       bottom: 0px;
       width: 100%; } }
-body main.quote {
+body main.order {
   background-color: #f7f7f7;
-  height: 100vh; }
-  body main.quote .cart_main {
+  height: auto; }
+  body main.order .cart_main {
     margin: 10em 2em auto 2em; }
-    body main.quote .cart_main .cart_box nav {
+    body main.order .cart_main .cart_box nav {
       background: rgba(0, 0, 0, 0) !important;
       box-shadow: none !important; }
-      body main.quote .cart_main .cart_box nav .breadcrumb {
+      body main.order .cart_main .cart_box nav .breadcrumb {
         font-size: 12px !important; }
-        body main.quote .cart_main .cart_box nav .breadcrumb::before {
+        body main.order .cart_main .cart_box nav .breadcrumb::before {
           margin: 0 !important;
           color: #7d7d7d !important;
           font-size: 18px !important; }
-      body main.quote .cart_main .cart_box nav a:first-child,
-      body main.quote .cart_main .cart_box nav a:nth-child(2),
-      body main.quote .cart_main .cart_box nav a:nth-child(3),
-      body main.quote .cart_main .cart_box nav a:nth-child(4) {
+      body main.order .cart_main .cart_box nav a:first-child,
+      body main.order .cart_main .cart_box nav a:nth-child(2),
+      body main.order .cart_main .cart_box nav a:nth-child(3),
+      body main.order .cart_main .cart_box nav a:nth-child(4) {
         color: #7d7d7d; }
-      body main.quote .cart_main .cart_box nav a:last-child {
+      body main.order .cart_main .cart_box nav a:last-child {
         color: #0086e6; }
-    body main.quote .cart_main .cart_box .row .col:first-child .cart_box_inner h1 {
+    body main.order .cart_main .cart_box .row .col:first-child .cart_box_inner h1 {
       padding: 1em 2em; }
-    body main.quote .cart_main .cart_box .row .cart_box_inner {
+    body main.order .cart_main .cart_box .row .cart_box_inner {
       background-color: white;
       box-shadow: 4px 4px 15px #cccccc;
       height: 60vh; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner div.title {
+      body main.order .cart_main .cart_box .row .cart_box_inner div.title {
         padding: 1em 2em 0; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner div.expire {
+      body main.order .cart_main .cart_box .row .cart_box_inner div.expire {
         padding: 1.2em 2em 0;
         text-align: right; }
-        body main.quote .cart_main .cart_box .row .cart_box_inner div.expire h2 {
+        body main.order .cart_main .cart_box .row .cart_box_inner div.expire h2 {
           font-size: 12px;
           font-family: "OpenSans";
           color: #7d7d7d; }
-        body main.quote .cart_main .cart_box .row .cart_box_inner div.expire h5 {
+        body main.order .cart_main .cart_box .row .cart_box_inner div.expire h5 {
           font-size: 12px;
           font-family: "OpenSans";
           color: #0086e6; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner h1 {
+      body main.order .cart_main .cart_box .row .cart_box_inner h1 {
         font-size: 20px;
         font-family: "OpenSans-Bold";
         color: #3d3d3d;
         margin: 0 !important; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner h2 {
+      body main.order .cart_main .cart_box .row .cart_box_inner h2 {
         font-size: 18px;
         font-family: "OpenSans-Bold";
         color: #161719;
         margin: 0 !important; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner h5 {
+      body main.order .cart_main .cart_box .row .cart_box_inner h5 {
         font-size: 14px;
         font-family: "OpenSans";
         color: #7d7d7d;
         margin: 4px auto 11px auto; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary {
+      body main.order .cart_main .cart_box .row .cart_box_inner ul.cart_summary {
         border-top: 2px solid #e2e2e2;
         border-bottom: 2px solid #e2e2e2;
         padding: 1em 2em; }
-        body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary li {
+        body main.order .cart_main .cart_box .row .cart_box_inner ul.cart_summary li {
           display: flex;
           justify-content: space-between;
           margin: 16px auto 26px auto; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary li span {
+          body main.order .cart_main .cart_box .row .cart_box_inner ul.cart_summary li span {
             font-size: 14px;
             font-family: "OpenSans";
             color: #161719; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner ul.cart_summary.list {
+      body main.order .cart_main .cart_box .row .cart_box_inner ul.cart_summary.list {
         margin-bottom: 0; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner ul.total {
+      body main.order .cart_main .cart_box .row .cart_box_inner ul.total {
         border: 0;
         margin: 0; }
-        body main.quote .cart_main .cart_box .row .cart_box_inner ul.total li {
+        body main.order .cart_main .cart_box .row .cart_box_inner ul.total li {
           margin: 0; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner ul.total li span:nth-child(2) {
+          body main.order .cart_main .cart_box .row .cart_box_inner ul.total li span:nth-child(2) {
             font-size: 18px;
             font-family: "OpenSans-Bold";
             color: #0086e6; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box {
+      body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box {
         padding: 0em 6em; }
-        body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print {
+        body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .print {
           display: flex;
           justify-content: flex-end;
           align-items: center;
           margin-bottom: 25px; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i:hover {
+          body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i:hover {
             cursor: pointer; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i img {
+          body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .print i img {
             width: 15px;
             height: 13px; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span {
+          body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span {
             margin-left: 10px;
             font-size: 12px;
             font-family: "OpenSans";
             color: #0086e6; }
-            body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span:hover {
+            body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .print span:hover {
               cursor: pointer; }
-        body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+        body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
           height: 48px;
           width: 100%;
           background: #ededed;
@@ -3570,57 +3570,57 @@ body main.quote {
           align-items: center;
           justify-content: space-between;
           box-shadow: none; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button span {
+          body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button span {
             font-size: 16px;
             font-family: "OpenSans-Bold";
             color: #7d7d7d;
             text-transform: none; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
+          body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button:hover {
             cursor: pointer; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button img {
+          body main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button img {
             width: 10px; }
-      body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box {
+      body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box {
         background-color: rgba(0, 0, 0, 0);
         box-shadow: none;
         height: auto; }
-        body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible {
+        body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible {
           box-shadow: none;
           margin: 0;
           border: none; }
-          body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li {
+          body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li {
             margin: 0 0 2em;
             background-color: rgba(0, 0, 0, 0);
             box-shadow: 4px 4px 15px #cccccc; }
-            body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header {
+            body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header {
               height: 115px;
               background: white;
               border: none;
               padding: 1rem 3rem;
               display: flex;
               justify-content: space-between; }
-              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header h2 {
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header h2 {
                 font-size: 20px;
                 font-family: "OpenSans-Bold";
                 color: #161719; }
-              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header h4 {
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header h4 {
                 font-size: 14px;
                 font-family: "OpenSan";
                 color: #161719; }
-              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header .img_coll {
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header .img_coll {
                 display: flex;
                 align-items: center; }
-                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header .img_coll img {
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-header .img_coll img {
                   transform: rotate(90deg);
                   width: 12px; }
-            body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body {
+            body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body {
               background: white;
               border-top: 2px solid #e2e2e2;
               padding: 0; }
-              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box {
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box {
                 display: flex;
                 justify-content: space-evenly;
                 padding: 2rem; }
-                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment {
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment {
                   border: 1px solid #e2e2e2;
                   box-shadow: none;
                   width: 20%;
@@ -3631,75 +3631,140 @@ body main.quote {
                   flex-direction: column;
                   justify-content: center;
                   align-items: center; }
-                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment:hover {
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment:hover {
                     box-shadow: 4px 4px 15px #cccccc;
                     cursor: pointer; }
-                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment img {
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment img {
                     width: 20px; }
-                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment p {
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box li.payment p {
                     font-size: 16px;
                     font-family: "OpenSans";
                     color: #161719;
                     margin: 5px; }
-              body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number {
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .paypal {
                 display: none;
                 border-top: 2px solid #e2e2e2;
                 padding: 2rem 9rem; }
-                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number p {
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .paypal p {
                   font-size: 16px;
                   font-family: "OpenSans";
                   color: #161719; }
-                body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number input {
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .paypal input {
                   width: 301px;
                   height: 48px;
                   border: 1px solid #e2e2e2;
                   padding-left: 10px; }
-                  body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .code_number input:focus {
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .paypal input:focus {
                     border-bottom: 1px solid #e2e2e2 !important; }
-            body main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li.active .collapsible-header .img_coll {
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit {
+                display: none;
+                border-top: 2px solid #e2e2e2;
+                padding: 2rem 9rem; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li {
+                  margin: 0 0 1em;
+                  background-color: rgba(0, 0, 0, 0);
+                  box-shadow: none;
+                  display: flex;
+                  align-items: baseline; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li:nth-child(3) {
+                    align-items: center; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col {
+                    margin: 0; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col span {
+                      font-size: 14px;
+                      font-family: "OpenSans-Bold";
+                      color: #161719; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col input {
+                      width: 301px;
+                      height: 48px;
+                      border: 1px solid #7d7d7d;
+                      padding-left: 10px; }
+                      body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col input:focus {
+                        border-bottom: 1px solid #7d7d7d !important; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col input.cvv2 {
+                      width: 91px; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col span.help {
+                      color: #7d7d7d;
+                      border-radius: 50%;
+                      border: 1px solid #7d7d7d;
+                      padding: 0.5em 1em;
+                      margin-left: 2em; }
+                      body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col span.help:hover {
+                        cursor: pointer; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col.expiration {
+                      display: flex;
+                      align-items: center; }
+                      body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col.expiration .select-wrapper input {
+                        height: 48px;
+                        width: 91px;
+                        padding-left: 15px; }
+                        body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col.expiration .select-wrapper input::placeholder {
+                          font-family: "OpenSans";
+                          font-size: 14px;
+                          color: #e2e2e2; }
+                      body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col.expiration .select-wrapper svg {
+                        fill: #e2e2e2 !important; }
+                      body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col.expiration .select-wrapper ul.dropdown-content li > span {
+                        color: #7d7d7d; }
+                      body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .debit ul li div.col.expiration span {
+                        margin: 0 1em; }
+            body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li.active .collapsible-header .img_coll {
               transform: rotate(180deg); }
 
 @media screen and (max-width: 467px) {
-  main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+  main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
     width: auto !important;
     height: auto !important; } }
 @media screen and (max-width: 600px) {
-  main.quote div.expire {
+  main.order div.expire {
     padding: 1em 2em 0;
     text-align: left !important; }
-    main.quote div.expire h2 {
+    main.order div.expire h2 {
       font-size: 15px !important; }
-    main.quote div.expire h5 {
+    main.order div.expire h5 {
       font-size: 15px !important; } }
 @media screen and (max-width: 992px) {
-  main.quote {
+  main.order {
     height: auto !important; }
-    main.quote .cart_main .cart_box .row > div:first-child {
+    main.order .cart_main .cart_box .row > div:first-child {
       margin-bottom: 2em; }
-    main.quote .cart_main .cart_box .row .cart_box_inner {
+    main.order .cart_main .cart_box .row .cart_box_inner {
       height: auto !important; }
-      main.quote .cart_main .cart_box .row .cart_box_inner .cart_table .cart_price {
+      main.order .cart_main .cart_box .row .cart_box_inner .cart_table .cart_price {
         padding-right: 1em; }
-      main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-header {
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-header {
         height: auto !important; }
-      main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box {
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box {
         flex-direction: column; }
-        main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box li {
+        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box li {
           width: 100% !important;
           height: auto !important; }
-      main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .code_number {
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .paypal,
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit {
         padding: 2rem !important; }
-        main.quote .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .code_number input {
+        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .paypal input,
+        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit input {
           width: 100% !important; }
-    main.quote .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit ul li {
+        display: grid !important; }
+        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit ul li div.col span.help {
+          margin-left: 0 !important; }
+        main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit ul li div.col.expiration span {
+          margin: 0 1em 0 2em !important; }
+    main.order .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
       margin-top: 2em; } }
 @media screen and (min-width: 993px) and (max-width: 1161px) {
-  main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
-    height: auto !important; } }
+  main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
+    height: auto !important; }
+  main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box li {
+    width: 30% !important; }
+  main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .paypal,
+  main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit {
+    padding: 2rem !important; } }
 @media screen and (min-width: 992px) {
-  main.quote .cart_main .cart_box .row .cart_box_inner {
+  main.order .cart_main .cart_box .row .cart_box_inner {
     position: relative; }
-    main.quote .cart_main .cart_box .row .cart_box_inner .cart_print_box {
+    main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box {
       position: absolute;
       bottom: 0px;
       width: 100%; } }

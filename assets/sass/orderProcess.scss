@@ -1,7 +1,7 @@
 body {
-	main.quote {
+	main.order {
 		background-color: $light_white;
-		height: 100vh;
+		height: auto;
 		.cart_main {
 			margin: 10em 2em auto 2em;
 			.cart_box {
@@ -205,7 +205,7 @@ body {
 											li.payment {
 												border: 1px solid $med_gray;
 												box-shadow: none;
-												width: 20%;
+												width: 25%;
 												height: 100px;
 												text-align: center;
 												padding: 1em 2em;
@@ -228,7 +228,7 @@ body {
 												}
 											}
 										}
-										.code_number {
+										.paypal {
 											display: none;
 											border-top: 2px solid $med_gray;
 											padding: 2rem 9rem;
@@ -244,6 +244,82 @@ body {
 												padding-left: 10px;
 												&:focus {
 													border-bottom: 1px solid $med_gray !important;
+												}
+											}
+										}
+										.debit {
+											display: none;
+											border-top: 2px solid $med_gray;
+											padding: 2rem 9rem;
+											ul {
+												li {
+													margin: 0 0 1em;
+													background-color: rgba(0, 0, 0, 0);
+													box-shadow: none;
+													display: flex;
+													align-items: baseline;
+													&:nth-child(3) {
+														align-items: center;
+													}
+													div.col {
+														margin: 0;
+														span {
+															font-size: 14px;
+															font-family: "OpenSans-Bold";
+															color: $heading;
+														}
+														input {
+															width: 301px;
+															height: 48px;
+															border: 1px solid $gray;
+															padding-left: 10px;
+															&:focus {
+																border-bottom: 1px solid $gray !important;
+															}
+														}
+														input.cvv2 {
+															width: 91px;
+														}
+														span.help {
+															color: $gray;
+															border-radius: 50%;
+															border: 1px solid $gray;
+															padding: 0.5em 1em;
+															margin-left: 2em;
+															&:hover {
+																cursor: pointer;
+															}
+														}
+														&.expiration {
+															display: flex;
+															align-items: center;
+															.select-wrapper {
+																input {
+																	height: 48px;
+																	width: 91px;
+																	padding-left: 15px;
+																	&::placeholder {
+																		font-family: "OpenSans";
+																		font-size: 14px;
+																		color: $med_gray;
+																	}
+																}
+																svg {
+																	fill: $med_gray !important;
+																}
+																ul.dropdown-content {
+																	li {
+																		> span {
+																			color: $gray;
+																		}
+																	}
+																}
+															}
+															span {
+																margin: 0 1em;
+															}
+														}
+													}
 												}
 											}
 										}
@@ -266,7 +342,7 @@ body {
 }
 
 @media screen and (max-width: 467px) {
-	main.quote {
+	main.order {
 		.cart_main {
 			.cart_box {
 				.row {
@@ -287,7 +363,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-	main.quote {
+	main.order {
 		div.expire {
 			padding: 1em 2em 0;
 			text-align: left !important;
@@ -302,7 +378,7 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-	main.quote {
+	main.order {
 		height: auto !important;
 		.cart_main {
 			.cart_box {
@@ -330,10 +406,28 @@ body {
 											height: auto !important;
 										}
 									}
-									.code_number {
+									.paypal,
+									.debit {
 										padding: 2rem !important;
 										input {
 											width: 100% !important;
+										}
+									}
+									.debit {
+										ul {
+											li {
+												display: grid !important;
+												div.col {
+													span.help {
+														margin-left: 0 !important;
+													}
+													&.expiration {
+														span {
+															margin: 0 1em 0 2em !important;
+														}
+													}
+												}
+											}
 										}
 									}
 								}
@@ -352,7 +446,7 @@ body {
 }
 
 @media screen and (min-width: 993px) and (max-width: 1161px) {
-	main.quote {
+	main.order {
 		.cart_main {
 			.cart_box {
 				.row {
@@ -364,6 +458,21 @@ body {
 								}
 							}
 						}
+						&.order_process_box {
+							ul.collapsible {
+								.collapsible-body {
+									ul.payment_box {
+										li {
+											width: 30% !important;
+										}
+									}
+									.paypal,
+									.debit {
+										padding: 2rem !important;
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -372,7 +481,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-	main.quote {
+	main.order {
 		.cart_main {
 			.cart_box {
 				.row {

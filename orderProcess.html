@@ -128,7 +128,7 @@
 		</header>
 
 		<!-- main page -->
-		<main class="quote">
+		<main class="order">
 			<div class="container-fluid cart_main">
 				<div class="row cart_box">
 					<nav>
@@ -173,21 +173,21 @@
 											</div>
 											<div class="collapsible-body">
 												<ul class="payment_box">
-													<li class="payment">
+													<li class="payment" id="debit">
 														<img
 															src="assets/img/chevron_left_gray.png"
 															alt=""
 														/>
 														<p>credit / Debit card</p>
 													</li>
-													<li class="payment">
+													<li class="payment" id="paypal">
 														<img
 															src="assets/img/chevron_left_gray.png"
 															alt=""
 														/>
 														<p>Paypal</p>
 													</li>
-													<li class="payment">
+													<li class="payment" id="bank">
 														<img
 															src="assets/img/chevron_left_gray.png"
 															alt=""
@@ -195,7 +195,65 @@
 														<p>Bank Transfer</p>
 													</li>
 												</ul>
-												<div class="code_number">
+												<div class="debit">
+													<ul>
+														<li class="row">
+															<div class="col s12 l2">
+																<span>Card Number</span>
+															</div>
+															<div class="col s12 l6">
+																<input type="text" />
+															</div>
+														</li>
+														<li class="row">
+															<div class="col s12 l2">
+																<span>Name on card</span>
+															</div>
+															<div class="col s12 l6">
+																<input type="text" />
+															</div>
+														</li>
+														<li class="row">
+															<div class="col s12 l2">
+																<span>Expiration date</span>
+															</div>
+															<div class="col s12 l6 expiration">
+																<select>
+																	<option value="" selected>mm</option>
+																	<option value="1">Jan</option>
+																	<option value="2">Feb</option>
+																	<option value="3">Mar</option>
+																	<option value="4">Apr</option>
+																	<option value="5">May</option>
+																	<option value="6">Jun</option>
+																	<option value="7">Jul</option>
+																	<option value="8">Aug</option>
+																	<option value="9">Sept</option>
+																	<option value="10">Oct</option>
+																	<option value="11">Nov</option>
+																	<option value="12">Dec</option>
+																</select>
+																<span>/</span>
+																<select>
+																	<option value="" selected>yyyy</option>
+																	<option value="1">2020</option>
+																	<option value="2">2021</option>
+																	<option value="3">2022</option>
+																</select>
+															</div>
+														</li>
+														<li class="row">
+															<div class="col s12 l2">
+																<span>CVV2 Number</span>
+															</div>
+															<div class="col s12 l6">
+																<input type="text" class="cvv2" />
+																<span class="help">?</span>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="paypal">
 													<p>Enter your paypal username in the box below.</p>
 													<input type="text" />
 												</div>
