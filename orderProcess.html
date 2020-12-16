@@ -144,7 +144,8 @@
 					</nav>
 					<div class="row">
 						<form action="">
-							<div class="col s12 l8">
+							<!-- when click checkout button, hide "process_order" class name (by default it is show) -->
+							<div class="col s12 l8 process_order">
 								<div class="cart_box_inner order_process_box">
 									<ul class="collapsible">
 										<li>
@@ -389,8 +390,10 @@
 														<span
 															>After transferring the payment please send the
 															payment slip to
-															<a href="mailto:billing@camfilgroup.com">billing@camfilgroup.com"</a
-														></span>
+															<a href="mailto:billing@camfilgroup.com"
+																>billing@camfilgroup.com"</a
+															></span
+														>
 													</div>
 													<div class="hint">
 														<img src="assets/img/avatar.png" alt="" />
@@ -403,6 +406,26 @@
 											</div>
 										</li>
 									</ul>
+								</div>
+							</div>
+
+							<!-- when click checkout button, show "process_done" class name (by default it is hidden) -->
+							<div class="col s12 l8 process_done">
+								<div class="cart_box_inner order_process_box_done">
+									<h4>Your order has been received.</h4>
+									<div class="process_content">
+										<div class="tick_img">
+											<img src="assets/img/tick.png" alt="" />
+										</div>
+										<p>Thank you for your order!</p>
+									</div>
+									<div class="process_footer">
+										<p>
+											A Confirmation email will be sent to you shortly on
+											user@croxco.com. If has not arrived within two minutes
+											please check your spam folder.
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col s12 l4">
@@ -441,14 +464,15 @@
 											<span>Print invoice</span>
 										</div>
 										<div class="row">
-											<div class="quote col s12">
+											<!-- for change color of button, remove class "gray_btn" and add "blue_btn" class name-->
+											<div class="quote gray_btn col s12">
 												<button
 													class="btn waves-effect waves-light"
 													type="submit"
 													name="action"
 												>
 													<span>Next: Check out</span>
-													<img src="assets/img/chevron_right_gray.png" alt="" />
+													<img src="assets/img/chevron_right_blue.png" alt="" />
 												</button>
 											</div>
 										</div>
