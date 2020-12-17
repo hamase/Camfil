@@ -221,6 +221,93 @@ body {
 										background: white;
 										border-top: 2px solid $med_gray;
 										padding: 0;
+										.billing_box {
+											margin: 2em auto 0;
+											.row {
+												div:first-child {
+													margin: 0;
+												}
+												div.col:first-child {
+													display: flex;
+													justify-content: flex-end;
+												}
+												div.col:last-child {
+													display: flex;
+													justify-content: flex-start;
+												}
+												div.col.address {
+													display: flex;
+													justify-content: center;
+												}
+												.billing_box_inner {
+													position: relative;
+													&.billing_small {
+														width: 316px;
+														input {
+															width: 301px;
+														}
+													}
+													&.billing_icon {
+														width: 316px;
+														input {
+															width: 301px;
+														}
+													}
+													&.billing_large {
+														input {
+															width: 636px;
+														}
+													}
+													input {
+														border: 1px solid #b3b6b9;
+														height: 48px;
+														padding-left: 10px;
+														&::placeholder {
+															font-family: "OpenSans";
+															font-size: 14px;
+															color: #b3b6b9;
+														}
+													}
+													i {
+														position: absolute;
+														right: 10px;
+														top: 13px;
+														img {
+															width: 22px;
+														}
+													}
+													.country {
+														input {
+															width: 83px;
+														}
+													}
+													.phone {
+														position: relative;
+														input {
+															width: 185px;
+														}
+													}
+													label {
+														position: absolute;
+														top: 15px;
+														left: 8px;
+														color: gray;
+														font-family: "OpenSans";
+														font-size: 14px;
+														color: #b3b6b9;
+													}
+													.select-wrapper {
+														ul {
+															li {
+																margin: 0;
+																background-color: white;
+																box-shadow: none;
+															}
+														}
+													}
+												}
+											}
+										}
 										ul.payment_box {
 											display: flex;
 											justify-content: space-evenly;
@@ -509,6 +596,81 @@ body {
 				font-size: 15px !important;
 			}
 		}
+		.collapsible-body {
+			.billing_box_inner {
+				.phone,
+				.country {
+					position: relative;
+					input {
+						width: auto !important;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	main.order {
+		.process_order {
+			.collapsible-body {
+				.billing_box {
+					div.col {
+						display: flex;
+						justify-content: center !important;
+						.billing_box_inner {
+							&.billing_small,
+							&.billing_icon {
+								width: auto !important;
+							}
+							input {
+								width: auto !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+	main.order {
+		.process_order {
+			.collapsible-body {
+				.billing_box {
+					div.col {
+						display: flex;
+						justify-content: center !important;
+						.billing_box_inner {
+							&.billing_small,
+							&.billing_icon {
+								width: 91% !important;
+								input {
+									width: 93% !important;
+								}
+							}
+							&.billing_large {
+								width: 95% !important;
+								input {
+									width: 97% !important;
+								}
+							}
+							.country {
+								input {
+									width: 60px !important;
+								}
+							}
+							.phone {
+								position: relative;
+								input {
+									width: 135px !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -617,6 +779,38 @@ body {
 						&.order_process_box {
 							ul.collapsible {
 								.collapsible-body {
+									.billing_box {
+										div.col {
+											display: flex;
+											justify-content: center !important;
+											.billing_box_inner {
+												&.billing_small,
+												&.billing_icon {
+													width: auto !important;
+													input {
+														width: auto !important;
+													}
+												}
+												&.billing_large {
+													width: 88% !important;
+													input {
+														width: 99% !important;
+													}
+												}
+												.country {
+													input {
+														width: 60px !important;
+													}
+												}
+												.phone {
+													position: relative;
+													input {
+														width: 158px !important;
+													}
+												}
+											}
+										}
+									}
 									ul.payment_box {
 										li {
 											width: 30% !important;

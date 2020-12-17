@@ -3628,6 +3628,63 @@ body main.order {
               background: white;
               border-top: 2px solid #e2e2e2;
               padding: 0; }
+              body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box {
+                margin: 2em auto 0; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row div:first-child {
+                  margin: 0; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row div.col:first-child {
+                  display: flex;
+                  justify-content: flex-end; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row div.col:last-child {
+                  display: flex;
+                  justify-content: flex-start; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row div.col.address {
+                  display: flex;
+                  justify-content: center; }
+                body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner {
+                  position: relative; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner.billing_small {
+                    width: 316px; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner.billing_small input {
+                      width: 301px; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner.billing_icon {
+                    width: 316px; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner.billing_icon input {
+                      width: 301px; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner.billing_large input {
+                    width: 636px; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner input {
+                    border: 1px solid #b3b6b9;
+                    height: 48px;
+                    padding-left: 10px; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner input::placeholder {
+                      font-family: "OpenSans";
+                      font-size: 14px;
+                      color: #b3b6b9; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner i {
+                    position: absolute;
+                    right: 10px;
+                    top: 13px; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner i img {
+                      width: 22px; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner .country input {
+                    width: 83px; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner .phone {
+                    position: relative; }
+                    body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner .phone input {
+                      width: 185px; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner label {
+                    position: absolute;
+                    top: 15px;
+                    left: 8px;
+                    color: gray;
+                    font-family: "OpenSans";
+                    font-size: 14px;
+                    color: #b3b6b9; }
+                  body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body .billing_box .row .billing_box_inner .select-wrapper ul li {
+                    margin: 0;
+                    background-color: white;
+                    box-shadow: none; }
               body main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible li .collapsible-body ul.payment_box {
                 display: flex;
                 justify-content: space-evenly;
@@ -3824,7 +3881,39 @@ body main.order {
     main.order div.expire h2 {
       font-size: 15px !important; }
     main.order div.expire h5 {
-      font-size: 15px !important; } }
+      font-size: 15px !important; }
+  main.order .collapsible-body .billing_box_inner .phone,
+  main.order .collapsible-body .billing_box_inner .country {
+    position: relative; }
+    main.order .collapsible-body .billing_box_inner .phone input,
+    main.order .collapsible-body .billing_box_inner .country input {
+      width: auto !important; } }
+@media screen and (max-width: 768px) {
+  main.order .process_order .collapsible-body .billing_box div.col {
+    display: flex;
+    justify-content: center !important; }
+    main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_small, main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_icon {
+      width: auto !important; }
+    main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner input {
+      width: auto !important; } }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  main.order .process_order .collapsible-body .billing_box div.col {
+    display: flex;
+    justify-content: center !important; }
+    main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_small, main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_icon {
+      width: 91% !important; }
+      main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_small input, main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_icon input {
+        width: 93% !important; }
+    main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_large {
+      width: 95% !important; }
+      main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_large input {
+        width: 97% !important; }
+    main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner .country input {
+      width: 60px !important; }
+    main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner .phone {
+      position: relative; }
+      main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner .phone input {
+        width: 135px !important; } }
 @media screen and (max-width: 992px) {
   main.order {
     height: auto !important; }
@@ -3870,6 +3959,23 @@ body main.order {
 @media screen and (min-width: 993px) and (max-width: 1161px) {
   main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
     height: auto !important; }
+  main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col {
+    display: flex;
+    justify-content: center !important; }
+    main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner.billing_small, main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner.billing_icon {
+      width: auto !important; }
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner.billing_small input, main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner.billing_icon input {
+        width: auto !important; }
+    main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner.billing_large {
+      width: 88% !important; }
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner.billing_large input {
+        width: 99% !important; }
+    main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner .country input {
+      width: 60px !important; }
+    main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner .phone {
+      position: relative; }
+      main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .billing_box div.col .billing_box_inner .phone input {
+        width: 158px !important; }
   main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body ul.payment_box li {
     width: 30% !important; }
   main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .paypal,
