@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<title>Camfil</title>
+
+		<link
+			rel="shortcut icon"
+			href="assets/img/favicon.png"
+			type="image/x-icon"
+		/>
+
+		<!-- import node module js -->
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="node_modules/materialize-css/dist/css/materialize.min.css"
+			media="screen,projection"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/main.min.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="nav-extended header_box">
+						<div class="nav-wrapper">
+							<a href="#" class="brand-logo"
+								><img src="assets/img/logo-white.png" alt=""
+							/></a>
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger"
+								><i class="material-icons">menu</i></a
+							>
+							<ul
+								id="nav-mobile"
+								class="right hide-on-med-and-down header_box_menu"
+							>
+								<li>
+									<form action="" class="searchBox">
+										<input
+											placeholder="Search by part number, brand or product"
+											id="search-input-header"
+											type="text"
+											class="validate"
+										/>
+										<button
+											class="btn waves-effect waves-light"
+											type="button"
+											id="search-btn"
+											name="action"
+										>
+											<img src="assets/img/search.png" alt="" />
+										</button>
+										<ul class="collection header_search"></ul>
+									</form>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><span>Account</span>
+										<img src="assets/img/user-white.png" alt=""
+									/></a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/bell-white.png" alt="" />
+										<span id="notifications" class="badge red">5</span>
+									</a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/shop-white.png" alt=""
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+					<ul class="sidenav" id="mobile-demo">
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Account</span>
+								<img src="assets/img/mobile/user.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Notifications</span>
+								<img src="assets/img/mobile/bell.png" alt="" />
+								<span id="notifications" class="badge red">5</span>
+							</a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Shop</span> <img src="assets/img/mobile/shop.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<form action="" class="searchBox">
+								<input
+									placeholder="Search by part number, brand or product"
+									id="search-input-mobile"
+									type="text"
+									class="validate"
+								/>
+								<button
+									class="btn waves-effect waves-light"
+									id="search-btn"
+									type="button"
+									name="action"
+								>
+									<img src="assets/img/search.png" alt="" />
+								</button>
+								<ul class="collection header_search mobile"></ul>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- main page -->
+		<main class="menu">
+			<div class="container-fluid menu_main">
+				<div class="row">
+					<div class="col s2">
+						<nav class="nav-extended">
+							<div class="nav-wrapper side_list">
+								<a href="#" data-target="side-nav" class="sidenav-trigger"
+									><i class="material-icons">more_vert</i></a
+								>
+								<div
+									id="nav-mobile"
+									class="right hide-on-med-and-down side_list_inner"
+								>
+									<div class="avatar">
+										<div class="row">
+											<div class="col s6">
+												<img src="assets/img/avatar.png" alt="" />
+											</div>
+											<div class="col s6">
+												<span id="username">Casper</span>
+											</div>
+										</div>
+									</div>
+									<div class="menu">
+										<div class="menu_box row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>My Account</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="./myOrders.html">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>My Orders</span></div>
+											</a>
+										</div>
+										<div class="menu_box row active">
+											<a href="./myQuotes.html">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>My Quotes</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Wishlist</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Address</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Settings</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="signout">
+										<div class="row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Sign out</span></div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+
+						<div class="sidenav side_list_mobile" id="side-nav">
+							<div class="avatar">
+								<div class="row">
+									<div class="col s6">
+										<img src="assets/img/avatar.png" alt="" />
+									</div>
+									<div class="col s6">
+										<span id="username">Casper</span>
+									</div>
+								</div>
+							</div>
+							<div class="menu">
+								<div class="menu_box row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>My Account</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="./myOrders.html">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>My Orders</span></div>
+									</a>
+								</div>
+								<div class="menu_box row active">
+									<a href="./myQuotes.html">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>My Quotes</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Wishlist</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Address</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Settings</span></div>
+									</a>
+								</div>
+							</div>
+							<div class="signout">
+								<div class="row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Sign out</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col s10 table_box">
+						<div class="row">
+							<div class="col s12 l4 xl6">
+								<h4>My Quotes</h4>
+								<h6><span id="quotes_num">5</span> quotes found</h6>
+							</div>
+							<div class="col s12 l8 xl6">
+								<div class="row">
+									<div class="col s12 l6">
+										<div class="search_box">
+											<div><span for="">Search</span></div>
+											<div>
+												<input type="text" class="input_box" />
+												<button type="submit" class="search_btn">
+													<i>
+														<img src="assets/img/search-gray.png" alt="" />
+													</i>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="col s12 l6">
+										<div class="order_box">
+											<div><span for="">Orders</span></div>
+											<div>
+												<select required>
+													<option value="" disabled selected>All</option>
+													<option value="1"></option>
+													<option value="2"></option>
+													<option value="3"></option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<table class="table_hover responsive-table">
+							<thead>
+								<tr>
+									<th scope="col">Quote Number</th>
+									<th scope="col">Number of Products</th>
+									<th scope="col">Quote Request Date</th>
+									<th scope="col">Quote Expiry Date</th>
+									<th scope="col">Quote Status</th>
+									<th scope="col">View Details</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>#2225065</td>
+									<td>2</td>
+									<td>12 May 2020</td>
+									<td>29 June 2020</td>
+									<td class="icon pending">
+										<i>
+											<img src="assets/img/pending.png" alt="" />
+										</i>
+										<span>Pending</span>
+									</td>
+									<td>
+										<button class="details"><span>Details</span></button>
+									</td>
+								</tr>
+								<tr>
+									<td>#2225065</td>
+									<td>1</td>
+									<td>12 May 2020</td>
+									<td>29 June 2020</td>
+									<td class="icon active">
+										<i>
+											<img src="assets/img/active.png" alt="" />
+										</i>
+										<span>Active</span>
+									</td>
+									<td>
+										<button class="details"><span>Details</span></button>
+									</td>
+								</tr>
+								<tr>
+									<td>#2225065</td>
+									<td>1</td>
+									<td>12 May 2020</td>
+									<td>29 June 2020</td>
+									<td class="icon expire">
+										<i>
+											<img src="assets/img/expired.png" alt="" />
+										</i>
+										<span>Expired</span>
+									</td>
+									<td>
+										<button class="details"><span>Details</span></button>
+									</td>
+								</tr>
+								<tr>
+									<td>#2225065</td>
+									<td>1</td>
+									<td>12 May 2020</td>
+									<td>29 June 2020</td>
+									<td class="icon expire">
+										<i>
+											<img src="assets/img/expired.png" alt="" />
+										</i>
+										<span>Expired</span>
+									</td>
+									<td>
+										<button class="details"><span>Details</span></button>
+									</td>
+								</tr>
+								<tr>
+									<td>#2225065</td>
+									<td>1</td>
+									<td>12 May 2020</td>
+									<td>29 June 2020</td>
+									<td class="icon expire">
+										<i>
+											<img src="assets/img/expired.png" alt="" />
+										</i>
+										<span>Expired</span>
+									</td>
+									<td>
+										<button class="details"><span>Details</span></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="pagination_box">
+							<div class="row">
+								<div class="col s12 l6 xl3">
+									<div class="pagination_box_per">
+										<div class="row">
+											<div class="col s5 l6">
+												<h4>Show per page</h4>
+											</div>
+											<div class="col s5 l6">
+												<select>
+													<option value="1" selected>1-10</option>
+													<option value="2">1-20</option>
+													<option value="3">1-30</option>
+													<option value="4">1-40</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col s12 l6 xl9">
+									<div class="pagination_box_pages">
+										<ul class="pagination">
+											<li class="disabled">
+												<a href="#!"
+													><i class="material-icons"
+														><img
+															src="assets/img/chevron_left_gray.png"
+															alt="" /></i
+												></a>
+											</li>
+											<li class="active"><a href="#!">1</a></li>
+											<li class="waves-effect"><a href="#!">2</a></li>
+											<li class="waves-effect"><a href="#!">3</a></li>
+											<li class="waves-effect"><a href="#!">4</a></li>
+											<li class="waves-effect"><a href="#!">5</a></li>
+											<li class="waves-effect">
+												<a href="#!"
+													><i class="material-icons"
+														><img
+															src="assets/img/chevron_right_blue.png"
+															alt="" /></i
+												></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer_box">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col s12 offset-l1 l11 offset-xl1 xl10">
+						<div class="col s12 l2 xl2 logo">
+							<img src="assets/img/logo-blue.png" alt="" />
+							<p class="logo_desc">
+								We are your reliable source for <br />
+								spare parts, for production and <br />
+								maintenance.
+							</p>
+						</div>
+						<div class="col s12 l2 xl2 quick">
+							<ul>
+								<li><b>Quick links</b></li>
+								<li><a href="">Products</a></li>
+								<li><a href="">Ask a Question</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl2 know-us">
+							<ul>
+								<li><b>Get to know us</b></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Contact us</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 find_us">
+							<ul>
+								<li><b>Find us</b></li>
+								<li class="location">
+									<img src="assets/img/location.png" alt="" /><span
+										>Hungary<br />
+										1061 Budapest Anker <br />
+										Köz Anker Business <br />center 2-4
+									</span>
+								</li>
+								<li class="phone">
+									<img src="assets/img/phone.png" alt="" /><span
+										>+36 (1) 445 3638</span
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 touch">
+							<ul>
+								<li><b>Get in touch</b></li>
+								<ul class="social_media">
+									<li>
+										<a href=""><img src="assets/img/linkedin.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/facebook.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/twitter.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/instagram.png" alt="" /></a>
+									</li>
+								</ul>
+								<li>
+									<button class="feedback" id="feedback">
+										<span>Leave feedback</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2020 Camfil GROUP kft. All rights reserved.
+				</div>
+			</div>
+		</footer>
+
+		<!-- import node module js -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+		<script src="assets/js/all.min.js"></script>
+	</body>
+</html>

@@ -316,7 +316,7 @@ body {
 												border: 1px solid $med_gray;
 												box-shadow: none;
 												width: 25%;
-												height: 100px;
+												height: 120px;
 												text-align: center;
 												padding: 1em 2em;
 												display: flex;
@@ -328,7 +328,8 @@ body {
 													cursor: pointer;
 												}
 												img {
-													width: 20px;
+													width: 35px;
+													margin-bottom: 0.5em;
 												}
 												p {
 													font-size: 16px;
