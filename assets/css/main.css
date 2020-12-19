@@ -4087,8 +4087,8 @@ main.menu {
     main.menu .menu_main .row .table_box .order_box {
       display: flex;
       justify-content: flex-end; }
-      main.menu .menu_main .row .table_box .search_box span,
-      main.menu .menu_main .row .table_box .order_box span {
+      main.menu .menu_main .row .table_box .search_box span.title,
+      main.menu .menu_main .row .table_box .order_box span.title {
         font-size: 16px;
         font-family: "OpenSans-Bold";
         color: #161719;
@@ -4176,6 +4176,19 @@ main.menu {
               font-size: 12px;
               font-family: "OpenSans-Bold";
               color: white; }
+    main.menu .menu_main .row .table_box .select-wrapper input {
+      border: 1px solid #b3b6b9;
+      height: 48px;
+      color: #b3b6b9;
+      padding-left: 15px; }
+      main.menu .menu_main .row .table_box .select-wrapper input::placeholder {
+        font-family: "OpenSans";
+        font-size: 14px;
+        color: #b3b6b9; }
+    main.menu .menu_main .row .table_box .select-wrapper svg {
+      fill: #b3b6b9 !important; }
+    main.menu .menu_main .row .table_box .select-wrapper ul.dropdown-content li > span {
+      color: #0086e6; }
     main.menu .menu_main .row .table_box .pagination_box {
       margin: 2em auto; }
       main.menu .menu_main .row .table_box .pagination_box .row .pagination_box_per h4 {
@@ -4183,19 +4196,6 @@ main.menu {
         font-family: "OpenSans-Bold";
         color: #161719;
         margin-top: 15px; }
-      main.menu .menu_main .row .table_box .pagination_box .row .pagination_box_per .select-wrapper input {
-        border: 1px solid #b3b6b9;
-        height: 48px;
-        color: #b3b6b9;
-        padding-left: 15px; }
-        main.menu .menu_main .row .table_box .pagination_box .row .pagination_box_per .select-wrapper input::placeholder {
-          font-family: "OpenSans";
-          font-size: 14px;
-          color: #b3b6b9; }
-      main.menu .menu_main .row .table_box .pagination_box .row .pagination_box_per .select-wrapper svg {
-        fill: #b3b6b9 !important; }
-      main.menu .menu_main .row .table_box .pagination_box .row .pagination_box_per .select-wrapper ul.dropdown-content li > span {
-        color: #0086e6; }
       main.menu .menu_main .row .table_box .pagination_box .row .pagination_box_pages {
         display: flex;
         justify-content: flex-end;
@@ -4330,8 +4330,8 @@ main.menu {
       justify-content: flex-start !important;
       align-items: center;
       margin-top: 2em; }
-      main.menu .menu_main .row .table_box .search_box span,
-      main.menu .menu_main .row .table_box .order_box span {
+      main.menu .menu_main .row .table_box .search_box span.title,
+      main.menu .menu_main .row .table_box .order_box span.title {
         position: relative !important;
         top: 0 !important; }
     main.menu .menu_main .row .table_box .table_hover thead th:first-child,

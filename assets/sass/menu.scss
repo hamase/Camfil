@@ -118,7 +118,7 @@ main.menu {
 				.order_box {
 					display: flex;
 					justify-content: flex-end;
-					span {
+					span.title {
 						font-size: 16px;
 						font-family: "OpenSans-Bold";
 						color: $heading;
@@ -238,6 +238,29 @@ main.menu {
 						}
 					}
 				}
+				.select-wrapper {
+					input {
+						border: 1px solid #b3b6b9;
+						height: 48px;
+						color: #b3b6b9;
+						padding-left: 15px;
+						&::placeholder {
+							font-family: "OpenSans";
+							font-size: 14px;
+							color: #b3b6b9;
+						}
+					}
+					svg {
+						fill: #b3b6b9 !important;
+					}
+					ul.dropdown-content {
+						li {
+							> span {
+								color: $blue;
+							}
+						}
+					}
+				}
 				.pagination_box {
 					margin: 2em auto;
 					.row {
@@ -247,29 +270,6 @@ main.menu {
 								font-family: "OpenSans-Bold";
 								color: $heading;
 								margin-top: 15px;
-							}
-							.select-wrapper {
-								input {
-									border: 1px solid #b3b6b9;
-									height: 48px;
-									color: #b3b6b9;
-									padding-left: 15px;
-									&::placeholder {
-										font-family: "OpenSans";
-										font-size: 14px;
-										color: #b3b6b9;
-									}
-								}
-								svg {
-									fill: #b3b6b9 !important;
-								}
-								ul.dropdown-content {
-									li {
-										> span {
-											color: $blue;
-										}
-									}
-								}
 							}
 						}
 						.pagination_box_pages {
@@ -454,7 +454,7 @@ main.menu {
 						justify-content: flex-start !important;
 						align-items: center;
 						margin-top: 2em;
-						span {
+						span.title {
 							position: relative !important;
 							top: 0 !important;
 						}
