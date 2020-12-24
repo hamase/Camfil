@@ -3,7 +3,7 @@ body {
 		background-color: white;
 		height: auto;
 		.found_product_main {
-			margin: 6em 3em auto 2em;
+			margin: 2em;
 			.found_product_box {
 				nav {
 					background: rgba(0, 0, 0, 0) !important;
@@ -229,6 +229,27 @@ body {
 						justify-content: flex-start !important;
 					}
 				}
+				.found_product_table {
+					table {
+						tbody:before {
+							content: "" !important;
+						}
+						&.responsive-table {
+							thead {
+								border-right: 0 !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	main {
+		.found_product_main {
+			.found_product_box {
 				.found_product_table {
 					table {
 						tbody:before {

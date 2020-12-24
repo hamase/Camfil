@@ -194,7 +194,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 	$("#search-btn, #search-btn-end").click(function () {
-		$(".collection").css("display", "grid");
+		$(".collection_box").css("display", "grid");
 		var search_val = $("#search-input-home").val();
 		var lists =
 			'<li class="collection-item">\n' +
@@ -204,7 +204,7 @@ $(document).ready(function () {
 		$(".collection").append(lists);
 	});
 
-	$("main , footer").click(function () {
+	$("footer").click(function () {
 		$(".collection").css("display", "none");
 	});
 	// $("#shop-search").click(function () {

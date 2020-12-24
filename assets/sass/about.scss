@@ -2,7 +2,6 @@
 main {
 	background: $light_white;
 	.about_main {
-		margin-top: 6em;
 		.about_box {
 			background: linear-gradient(180deg, $blue 70%, white 30%);
 			height: auto;
@@ -304,11 +303,14 @@ main {
 @media screen and (max-width: 992px) {
 	body {
 		.about_box {
-			margin-bottom: 47em !important;
+			margin-bottom: 4em !important;
 		}
 		.row.intro_box {
-			img {
-				display: none;
+			.intro_box_inner {
+				padding: 40px 60px !important;
+				img {
+					display: none;
+				}
 			}
 		}
 		.customer_box {

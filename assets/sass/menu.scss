@@ -3,7 +3,7 @@ header {
 }
 main.menu {
 	background-color: white;
-	height: 90vh;
+	height: auto;
 	.menu_main {
 		h4 {
 			font-size: 20px;
@@ -17,6 +17,7 @@ main.menu {
 			color: $gray;
 		}
 		.row {
+			margin-bottom: 0;
 			.col.s2 {
 				padding-left: 0;
 				nav {
@@ -262,7 +263,7 @@ main.menu {
 					}
 				}
 				.pagination_box {
-					margin: 2em auto;
+					margin: 1em auto 0;
 					.row {
 						.pagination_box_per {
 							h4 {
@@ -344,7 +345,6 @@ main.menu {
 
 @media screen and (max-width: 992px) {
 	main.menu {
-		height: auto !important;
 		.menu_main {
 			.row {
 				.col.s2 {
