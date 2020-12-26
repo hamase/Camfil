@@ -664,8 +664,12 @@ main.menu {
 	.modal {
 		width: 412px;
 		margin-top: 10em;
+		&#save {
+			width: 500px;
+		}
 		.delete_box,
-		.save_box {
+		.save_box,
+		.signout_box {
 			a.modal-close {
 				float: right;
 				clear: both;
@@ -675,7 +679,8 @@ main.menu {
 				}
 			}
 			.delete_box_inner,
-			.save_box_inner {
+			.save_box_inner,
+			.signout_box_inner {
 				text-align: center;
 				margin-top: 2em;
 				h4 {
@@ -698,7 +703,8 @@ main.menu {
 						text-transform: none;
 					}
 				}
-				button#cancel-btn {
+				button#cancel-btn,
+				button#signout-cancel {
 					width: 80px;
 					height: 40px;
 					background-color: $blue;
@@ -706,13 +712,30 @@ main.menu {
 					margin-right: 1em;
 				}
 				button#delete-btn,
-				button#save-btn {
+				button#save-btn,
+				button#signout-ok {
 					width: 80px;
 					height: 40px;
 					background-color: white;
 					color: $blue;
 					border: 1px solid $blue;
 					margin-left: 1em;
+				}
+				button#save-ok,
+				button#save-cancel {
+					width: 191px;
+					height: 40px;
+					margin-left: 1em;
+				}
+				button#save-cancel {
+					background-color: white;
+					color: $blue;
+					border: 1px solid $blue;
+				}
+				button#save-ok {
+					background-color: $blue;
+					color: white;
+					border: 1px solid $blue;
 				}
 			}
 		}

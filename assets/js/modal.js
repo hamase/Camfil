@@ -56,6 +56,10 @@ $(document).ready(function () {
 	$("#save-changes").click(function () {
 		$("#save").modal("open");
 	});
+	$("#save-ok").click(function () {
+		$(this).closest(".modal").modal("close");
+		$("#signout").modal("open");
+	});
 
 	// close just by close button, not click on body
 	$("#sign-up").modal({
@@ -98,6 +102,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#save").modal({
+		dismissible: false,
+	});
+	$("#signout").modal({
 		dismissible: false,
 	});
 	$("select").formSelect();

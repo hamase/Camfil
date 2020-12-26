@@ -4510,52 +4510,95 @@ main.menu {
   main.menu .modal {
     width: 412px;
     margin-top: 10em; }
+    main.menu .modal#save {
+      width: 500px; }
     main.menu .modal .delete_box a.modal-close,
-    main.menu .modal .save_box a.modal-close {
+    main.menu .modal .save_box a.modal-close,
+    main.menu .modal .signout_box a.modal-close {
       float: right;
       clear: both; }
       main.menu .modal .delete_box a.modal-close img,
-      main.menu .modal .save_box a.modal-close img {
+      main.menu .modal .save_box a.modal-close img,
+      main.menu .modal .signout_box a.modal-close img {
         transform: rotate(225deg);
         width: 17px; }
     main.menu .modal .delete_box .delete_box_inner,
     main.menu .modal .delete_box .save_box_inner,
+    main.menu .modal .delete_box .signout_box_inner,
     main.menu .modal .save_box .delete_box_inner,
-    main.menu .modal .save_box .save_box_inner {
+    main.menu .modal .save_box .save_box_inner,
+    main.menu .modal .save_box .signout_box_inner,
+    main.menu .modal .signout_box .delete_box_inner,
+    main.menu .modal .signout_box .save_box_inner,
+    main.menu .modal .signout_box .signout_box_inner {
       text-align: center;
       margin-top: 2em; }
       main.menu .modal .delete_box .delete_box_inner h4,
       main.menu .modal .delete_box .save_box_inner h4,
+      main.menu .modal .delete_box .signout_box_inner h4,
       main.menu .modal .save_box .delete_box_inner h4,
-      main.menu .modal .save_box .save_box_inner h4 {
+      main.menu .modal .save_box .save_box_inner h4,
+      main.menu .modal .save_box .signout_box_inner h4,
+      main.menu .modal .signout_box .delete_box_inner h4,
+      main.menu .modal .signout_box .save_box_inner h4,
+      main.menu .modal .signout_box .signout_box_inner h4 {
         font-size: 24px;
         font-family: "OpenSans-Bold";
         color: #000000; }
       main.menu .modal .delete_box .delete_box_inner p,
       main.menu .modal .delete_box .save_box_inner p,
+      main.menu .modal .delete_box .signout_box_inner p,
       main.menu .modal .save_box .delete_box_inner p,
-      main.menu .modal .save_box .save_box_inner p {
+      main.menu .modal .save_box .save_box_inner p,
+      main.menu .modal .save_box .signout_box_inner p,
+      main.menu .modal .signout_box .delete_box_inner p,
+      main.menu .modal .signout_box .save_box_inner p,
+      main.menu .modal .signout_box .signout_box_inner p {
         font-size: 16px;
         font-family: "OpenSans";
         color: #000000;
         margin: 24px auto; }
       main.menu .modal .delete_box .delete_box_inner button,
       main.menu .modal .delete_box .save_box_inner button,
+      main.menu .modal .delete_box .signout_box_inner button,
       main.menu .modal .save_box .delete_box_inner button,
-      main.menu .modal .save_box .save_box_inner button {
+      main.menu .modal .save_box .save_box_inner button,
+      main.menu .modal .save_box .signout_box_inner button,
+      main.menu .modal .signout_box .delete_box_inner button,
+      main.menu .modal .signout_box .save_box_inner button,
+      main.menu .modal .signout_box .signout_box_inner button {
         box-shadow: none;
         border-radius: 0; }
         main.menu .modal .delete_box .delete_box_inner button span,
         main.menu .modal .delete_box .save_box_inner button span,
+        main.menu .modal .delete_box .signout_box_inner button span,
         main.menu .modal .save_box .delete_box_inner button span,
-        main.menu .modal .save_box .save_box_inner button span {
+        main.menu .modal .save_box .save_box_inner button span,
+        main.menu .modal .save_box .signout_box_inner button span,
+        main.menu .modal .signout_box .delete_box_inner button span,
+        main.menu .modal .signout_box .save_box_inner button span,
+        main.menu .modal .signout_box .signout_box_inner button span {
           font-size: 14px;
           font-family: "OpenSans-Bold";
           text-transform: none; }
       main.menu .modal .delete_box .delete_box_inner button#cancel-btn,
+      main.menu .modal .delete_box .delete_box_inner button#signout-cancel,
       main.menu .modal .delete_box .save_box_inner button#cancel-btn,
+      main.menu .modal .delete_box .save_box_inner button#signout-cancel,
+      main.menu .modal .delete_box .signout_box_inner button#cancel-btn,
+      main.menu .modal .delete_box .signout_box_inner button#signout-cancel,
       main.menu .modal .save_box .delete_box_inner button#cancel-btn,
-      main.menu .modal .save_box .save_box_inner button#cancel-btn {
+      main.menu .modal .save_box .delete_box_inner button#signout-cancel,
+      main.menu .modal .save_box .save_box_inner button#cancel-btn,
+      main.menu .modal .save_box .save_box_inner button#signout-cancel,
+      main.menu .modal .save_box .signout_box_inner button#cancel-btn,
+      main.menu .modal .save_box .signout_box_inner button#signout-cancel,
+      main.menu .modal .signout_box .delete_box_inner button#cancel-btn,
+      main.menu .modal .signout_box .delete_box_inner button#signout-cancel,
+      main.menu .modal .signout_box .save_box_inner button#cancel-btn,
+      main.menu .modal .signout_box .save_box_inner button#signout-cancel,
+      main.menu .modal .signout_box .signout_box_inner button#cancel-btn,
+      main.menu .modal .signout_box .signout_box_inner button#signout-cancel {
         width: 80px;
         height: 40px;
         background-color: #0086e6;
@@ -4563,18 +4606,82 @@ main.menu {
         margin-right: 1em; }
       main.menu .modal .delete_box .delete_box_inner button#delete-btn,
       main.menu .modal .delete_box .delete_box_inner button#save-btn,
+      main.menu .modal .delete_box .delete_box_inner button#signout-ok,
       main.menu .modal .delete_box .save_box_inner button#delete-btn,
       main.menu .modal .delete_box .save_box_inner button#save-btn,
+      main.menu .modal .delete_box .save_box_inner button#signout-ok,
+      main.menu .modal .delete_box .signout_box_inner button#delete-btn,
+      main.menu .modal .delete_box .signout_box_inner button#save-btn,
+      main.menu .modal .delete_box .signout_box_inner button#signout-ok,
       main.menu .modal .save_box .delete_box_inner button#delete-btn,
       main.menu .modal .save_box .delete_box_inner button#save-btn,
+      main.menu .modal .save_box .delete_box_inner button#signout-ok,
       main.menu .modal .save_box .save_box_inner button#delete-btn,
-      main.menu .modal .save_box .save_box_inner button#save-btn {
+      main.menu .modal .save_box .save_box_inner button#save-btn,
+      main.menu .modal .save_box .save_box_inner button#signout-ok,
+      main.menu .modal .save_box .signout_box_inner button#delete-btn,
+      main.menu .modal .save_box .signout_box_inner button#save-btn,
+      main.menu .modal .save_box .signout_box_inner button#signout-ok,
+      main.menu .modal .signout_box .delete_box_inner button#delete-btn,
+      main.menu .modal .signout_box .delete_box_inner button#save-btn,
+      main.menu .modal .signout_box .delete_box_inner button#signout-ok,
+      main.menu .modal .signout_box .save_box_inner button#delete-btn,
+      main.menu .modal .signout_box .save_box_inner button#save-btn,
+      main.menu .modal .signout_box .save_box_inner button#signout-ok,
+      main.menu .modal .signout_box .signout_box_inner button#delete-btn,
+      main.menu .modal .signout_box .signout_box_inner button#save-btn,
+      main.menu .modal .signout_box .signout_box_inner button#signout-ok {
         width: 80px;
         height: 40px;
         background-color: white;
         color: #0086e6;
         border: 1px solid #0086e6;
         margin-left: 1em; }
+      main.menu .modal .delete_box .delete_box_inner button#save-ok,
+      main.menu .modal .delete_box .delete_box_inner button#save-cancel,
+      main.menu .modal .delete_box .save_box_inner button#save-ok,
+      main.menu .modal .delete_box .save_box_inner button#save-cancel,
+      main.menu .modal .delete_box .signout_box_inner button#save-ok,
+      main.menu .modal .delete_box .signout_box_inner button#save-cancel,
+      main.menu .modal .save_box .delete_box_inner button#save-ok,
+      main.menu .modal .save_box .delete_box_inner button#save-cancel,
+      main.menu .modal .save_box .save_box_inner button#save-ok,
+      main.menu .modal .save_box .save_box_inner button#save-cancel,
+      main.menu .modal .save_box .signout_box_inner button#save-ok,
+      main.menu .modal .save_box .signout_box_inner button#save-cancel,
+      main.menu .modal .signout_box .delete_box_inner button#save-ok,
+      main.menu .modal .signout_box .delete_box_inner button#save-cancel,
+      main.menu .modal .signout_box .save_box_inner button#save-ok,
+      main.menu .modal .signout_box .save_box_inner button#save-cancel,
+      main.menu .modal .signout_box .signout_box_inner button#save-ok,
+      main.menu .modal .signout_box .signout_box_inner button#save-cancel {
+        width: 191px;
+        height: 40px;
+        margin-left: 1em; }
+      main.menu .modal .delete_box .delete_box_inner button#save-cancel,
+      main.menu .modal .delete_box .save_box_inner button#save-cancel,
+      main.menu .modal .delete_box .signout_box_inner button#save-cancel,
+      main.menu .modal .save_box .delete_box_inner button#save-cancel,
+      main.menu .modal .save_box .save_box_inner button#save-cancel,
+      main.menu .modal .save_box .signout_box_inner button#save-cancel,
+      main.menu .modal .signout_box .delete_box_inner button#save-cancel,
+      main.menu .modal .signout_box .save_box_inner button#save-cancel,
+      main.menu .modal .signout_box .signout_box_inner button#save-cancel {
+        background-color: white;
+        color: #0086e6;
+        border: 1px solid #0086e6; }
+      main.menu .modal .delete_box .delete_box_inner button#save-ok,
+      main.menu .modal .delete_box .save_box_inner button#save-ok,
+      main.menu .modal .delete_box .signout_box_inner button#save-ok,
+      main.menu .modal .save_box .delete_box_inner button#save-ok,
+      main.menu .modal .save_box .save_box_inner button#save-ok,
+      main.menu .modal .save_box .signout_box_inner button#save-ok,
+      main.menu .modal .signout_box .delete_box_inner button#save-ok,
+      main.menu .modal .signout_box .save_box_inner button#save-ok,
+      main.menu .modal .signout_box .signout_box_inner button#save-ok {
+        background-color: #0086e6;
+        color: white;
+        border: 1px solid #0086e6; }
 
 @media screen and (max-width: 467px) {
   main.quote .cart_main .cart_box .row .cart_box_inner ul {

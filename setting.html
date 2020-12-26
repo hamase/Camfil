@@ -390,15 +390,12 @@
 						><img src="assets/img/plus.png" alt=""
 					/></a>
 					<div class="save_box_inner">
-						<h4>Sure to sign out?</h4>
-						<p>
-							You will be immediately sign out of your account. You may need to
-							log in again when needed.
-						</p>
+						<h4>Save changes</h4>
+						<p>Are you sure you want to save changes?</p>
 						<div class="row save_btn">
 							<button
 								class="btn waves-effect waves-light modal-close"
-								id="cancel-btn"
+								id="save-cancel"
 								type="submit"
 								name="action"
 							>
@@ -406,7 +403,41 @@
 							</button>
 							<button
 								class="btn waves-effect waves-light"
-								id="save-btn"
+								id="save-ok"
+								type="submit"
+								name="action"
+							>
+								<span>Yes</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- confirm signout -->
+			<div id="signout" class="modal">
+				<div class="modal-content signout_box">
+					<a href="#!" class="modal-action modal-close"
+						><img src="assets/img/plus.png" alt=""
+					/></a>
+					<div class="signout_box_inner">
+						<h4>Sure to sign out?</h4>
+						<p>
+							You will be immediately sign out of your account. You may need to
+							log in again when needed.
+						</p>
+						<div class="row signout_btn">
+							<button
+								class="btn waves-effect waves-light modal-close"
+								id="signout-cancel"
+								type="submit"
+								name="action"
+							>
+								<span>No</span>
+							</button>
+							<button
+								class="btn waves-effect waves-light"
+								id="signout-ok"
 								type="submit"
 								name="action"
 							>
