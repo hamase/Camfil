@@ -16,8 +16,8 @@ main.menu {
 			font-family: "OpenSans";
 			color: $gray;
 		}
-		.row {
-			// margin-bottom: 0;
+		> .row {
+			margin-bottom: 0;
 			.col.s2 {
 				padding-left: 0;
 				nav {
@@ -149,6 +149,111 @@ main.menu {
 								right: 33px;
 								img {
 									width: 20px;
+								}
+							}
+						}
+					}
+				}
+				.setting {
+					h2 {
+						font-size: 20px;
+						font-family: "OpenSans-Bold";
+						color: $body_text;
+					}
+					.col.xl8 {
+						.billing_box {
+							margin: 2em auto 0;
+							.row {
+								div:first-child {
+									margin: 0;
+								}
+								div.col {
+									display: flex;
+								}
+								&.border {
+									border-top: 2px solid $med_gray;
+									width: 95%;
+									margin-left: 0px;
+									display: flex;
+									justify-content: flex-end;
+								}
+								.billing_box_inner {
+									position: relative;
+									&.billing_small {
+										width: 316px;
+										input {
+											width: 301px;
+										}
+									}
+									&.billing_icon {
+										width: 316px;
+										input {
+											width: 301px;
+										}
+									}
+									&.billing_large {
+										input {
+											width: 636px;
+										}
+									}
+									input {
+										border: 1px solid #b3b6b9;
+										height: 48px;
+										padding-left: 10px;
+										&::placeholder {
+											font-family: "OpenSans";
+											font-size: 14px;
+											color: #b3b6b9;
+										}
+									}
+									.country {
+										input {
+											width: 83px;
+										}
+									}
+									.phone {
+										position: relative;
+										input {
+											width: 185px;
+										}
+									}
+									label {
+										position: absolute;
+										top: 15px;
+										left: 8px;
+										color: gray;
+										font-family: "OpenSans";
+										font-size: 14px;
+										color: #b3b6b9;
+									}
+									.select-wrapper {
+										ul {
+											li {
+												margin: 0;
+												background-color: white;
+												box-shadow: none;
+											}
+										}
+									}
+									&.save {
+										button {
+											width: 313px;
+											height: 48px;
+											background: $blue;
+											border: none;
+											border-radius: 0;
+											margin-top: 2em;
+											span {
+												font-size: 16px;
+												font-family: "OpenSans-Bold";
+												color: white;
+												text-transform: none;
+											}
+											&:hover {
+												cursor: pointer;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -515,7 +620,7 @@ main.menu {
 											color: #545454;
 										}
 									}
-									.part_box {
+									.cart_part {
 										flex: 1;
 										span {
 											font-size: 12px;
@@ -559,7 +664,8 @@ main.menu {
 	.modal {
 		width: 412px;
 		margin-top: 10em;
-		.delete_box {
+		.delete_box,
+		.save_box {
 			a.modal-close {
 				float: right;
 				clear: both;
@@ -568,7 +674,8 @@ main.menu {
 					width: 17px;
 				}
 			}
-			.delete_box_inner {
+			.delete_box_inner,
+			.save_box_inner {
 				text-align: center;
 				margin-top: 2em;
 				h4 {
@@ -598,7 +705,8 @@ main.menu {
 					color: white;
 					margin-right: 1em;
 				}
-				button#delete-btn {
+				button#delete-btn,
+				button#save-btn {
 					width: 80px;
 					height: 40px;
 					background-color: white;
@@ -611,10 +719,145 @@ main.menu {
 	}
 }
 
+@media screen and (max-width: 467px) {
+	main.quote {
+		.cart_main {
+			.cart_box {
+				.row {
+					.cart_box_inner {
+						ul {
+							display: block;
+							overflow-x: auto;
+							white-space: nowrap;
+							.cart_name {
+								margin-left: 1em;
+							}
+						}
+						.cart_print_box {
+							.quote {
+								button {
+									width: auto !important;
+									height: auto !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main.menu {
+		.menu_main {
+			> .row {
+				.table_box {
+					.billing_box_inner {
+						.phone,
+						.country {
+							position: relative;
+							input {
+								width: auto !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	main.menu {
+		.menu_main {
+			> .row {
+				.table_box {
+					.billing_box {
+						div.col {
+							display: flex;
+							justify-content: center !important;
+							.billing_box_inner {
+								&.billing_small,
+								&.billing_icon {
+									width: auto !important;
+								}
+								input {
+									width: auto !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+	main.menu {
+		.menu_main {
+			.table_box {
+				.billing_box {
+					div.col {
+						display: flex;
+						justify-content: center !important;
+						.billing_box_inner {
+							&.billing_small,
+							&.billing_icon {
+								width: 91% !important;
+								input {
+									width: 93% !important;
+								}
+							}
+							&.billing_large {
+								width: 95% !important;
+								input {
+									width: 97% !important;
+								}
+							}
+							.country {
+								input {
+									width: 60px !important;
+								}
+							}
+							.phone {
+								position: relative;
+								input {
+									width: 135px !important;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	main.menu {
+		.menu_main {
+			> .row {
+				.table_box {
+					.billing_box {
+						.country {
+							margin-left: -10px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 992px) {
 	main.menu {
 		.menu_main {
-			.row {
+			> .row {
+				> div:first-child {
+					margin-bottom: 2em;
+				}
 				.col.s2 {
 					padding-left: 0;
 					nav {
@@ -627,7 +870,6 @@ main.menu {
 							}
 						}
 					}
-
 					.side_list_mobile {
 						display: flex;
 						justify-content: center;
@@ -737,36 +979,60 @@ main.menu {
 					}
 					.cart_box_inner {
 						position: relative;
-						height: auto !important;
+						.cart_print_box {
+							margin-top: 2em;
+						}
 						ul.wish_box {
 							li {
+								overflow-y: scroll;
 								label {
+									.check_items {
+										display: inline-flex !important;
+										padding: 1em 2em !important;
+										.cart_name,
+										.cart_part {
+											width: 20em;
+										}
+									}
 								}
 							}
-							// .cart_table {
-							//     .cart_price {
-							//         padding-right: 1em;
-							//     }
-							//     tr:last-child {
-							//         td {
-							//             margin-bottom: 4em;
-							//         }
-							//         td:nth-child(2) {
-							//             padding-bottom: 6em;
-							//         }
-							//         td:nth-child(3) {
-							//             padding-bottom: 4.5em;
-							//         }
-							//     }
-							// }
+						}
+					}
+					.setting {
+						> .col {
+							.billing_box {
+								.row.border {
+									border: 0 !important;
+									width: auto !important;
+									.save {
+										button {
+											width: auto !important;
+										}
+									}
+								}
+							}
 						}
 					}
 				}
 			}
 		}
+		.modal {
+			width: 90% !important;
+		}
 	}
 }
 
+@media screen and (max-width: 991px) {
+	main.menu {
+		.menu_main {
+			.row {
+				.cart_box_inner {
+					height: auto !important;
+				}
+			}
+		}
+	}
+}
 @media screen and (min-width: 992px) {
 	main.menu {
 		.menu_main {
@@ -778,6 +1044,49 @@ main.menu {
 							position: absolute;
 							bottom: 0px;
 							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1161px) {
+	main.menu {
+		.menu_main {
+			> .row {
+				.table_box {
+					.billing_box {
+						div.col {
+							display: flex;
+							justify-content: center !important;
+							.billing_box_inner {
+								&.billing_small,
+								&.billing_icon {
+									width: auto !important;
+									input {
+										width: auto !important;
+									}
+								}
+								&.billing_large {
+									width: 88% !important;
+									input {
+										width: 99% !important;
+									}
+								}
+								.country {
+									input {
+										width: 60px !important;
+									}
+								}
+								.phone {
+									position: relative;
+									input {
+										width: 158px !important;
+									}
+								}
+							}
 						}
 					}
 				}

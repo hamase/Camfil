@@ -53,6 +53,10 @@ $(document).ready(function () {
 		$(this).closest(".modal").modal("close");
 		$("#quote-ok").modal("open");
 	});
+	$("#save-changes").click(function () {
+		$("#save").modal("open");
+	});
+
 	// close just by close button, not click on body
 	$("#sign-up").modal({
 		dismissible: false,
@@ -91,6 +95,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#quote-ok").modal({
+		dismissible: false,
+	});
+	$("#save").modal({
 		dismissible: false,
 	});
 	$("select").formSelect();

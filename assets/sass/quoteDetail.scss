@@ -257,6 +257,12 @@ body {
 			.cart_box {
 				.row {
 					.cart_box_inner {
+						.scroll_table {
+							.table_footer {
+								padding: 1em 2em !important;
+								bottom: 12px !important;
+							}
+						}
 						table {
 							display: block;
 							overflow-x: auto;
@@ -280,22 +286,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 467px) {
-	main.quote {
-		.cart_main {
-			.cart_box {
-				.cart_box_inner {
-					.scroll_table {
-						.table_footer {
-							padding: 1em 2em !important;
-							bottom: 12px !important;
-						}
-					}
-				}
-			}
-		}
-	}
-}
 @media screen and (max-width: 600px) {
 	main.quote {
 		div.expire {

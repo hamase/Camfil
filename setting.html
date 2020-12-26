@@ -191,7 +191,7 @@
 												<div class="col s7"><span>My Quotes</span></div>
 											</a>
 										</div>
-										<div class="menu_box row active">
+										<div class="menu_box row">
 											<a href="#">
 												<div class="col s5">
 													<img src="assets/img/name-icon.png" alt="" />
@@ -207,7 +207,7 @@
 												<div class="col s7"><span>Address</span></div>
 											</a>
 										</div>
-										<div class="menu_box row">
+										<div class="menu_box row active">
 											<a href="#">
 												<div class="col s5">
 													<img src="assets/img/name-icon.png" alt="" />
@@ -266,7 +266,7 @@
 										<div class="col s7"><span>My Quotes</span></div>
 									</a>
 								</div>
-								<div class="menu_box row active">
+								<div class="menu_box row">
 									<a href="#">
 										<div class="col s5">
 											<img src="assets/img/name-icon.png" alt="" />
@@ -282,7 +282,7 @@
 										<div class="col s7"><span>Address</span></div>
 									</a>
 								</div>
-								<div class="menu_box row">
+								<div class="menu_box row active">
 									<a href="#">
 										<div class="col s5">
 											<img src="assets/img/name-icon.png" alt="" />
@@ -304,128 +304,98 @@
 						</div>
 					</div>
 					<div class="col s10 table_box">
-						<div class="row">
-							<div class="col s12 l4 xl6">
-								<h4>Wish list</h4>
-								<h6><span id="wish_num">2</span> products found</h6>
-							</div>
-						</div>
-						<div class="row">
-							<form action="">
-								<div class="col s12 l8">
-									<div class="cart_box_inner wishlist">
-										<ul class="wish_box">
-											<li>
-												<label>
-													<div class="check_items">
-														<input type="checkbox" />
-														<span></span>
-														<div class="cart_img">
-															<img src="assets/img/slide1.png" alt="" />
-														</div>
-														<div class="cart_name">
-															<p><a href="#">Parts of Liquid Drainer</a></p>
-															<p>Armestrang</p>
-														</div>
-														<div class="cart_part">
-															<span
-																>Part Number :
-																<span id="part-num">2315HLS</span></span
-															>
-														</div>
-														<div class="cart_delete">
-															<i class="delete_icon"
-																><img src="assets/img/bin.png" alt=""
-															/></i>
-														</div>
-													</div>
-												</label>
-											</li>
-											<li>
-												<label>
-													<div class="check_items">
-														<input type="checkbox" />
-														<span></span>
-														<div class="cart_img">
-															<img src="assets/img/slide1.png" alt="" />
-														</div>
-														<div class="cart_name">
-															<p><a href="#">Parts of Liquid Drainer</a></p>
-															<p>Armestrang</p>
-														</div>
-														<div class="cart_part">
-															<span
-																>Part Number :
-																<span id="part-num">2315HLS</span></span
-															>
-														</div>
-														<div class="cart_delete">
-															<i class="delete_icon"
-																><img src="assets/img/bin.png" alt=""
-															/></i>
-														</div>
-													</div>
-												</label>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col s12 l4">
-									<div class="cart_box_inner">
-										<div class="row">
-											<div class="title col s12 m6">
-												<h2>Wishlist Summary</h2>
+						<div class="row setting">
+							<h2>My Membership information</h2>
+							<div class="col s12 l10 xl8">
+								<div class="billing_box">
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="billing_box_inner billing_small">
+												<input type="text" placeholder="First Name" />
 											</div>
 										</div>
-										<ul class="cart_summary list">
-											<li>
-												<span>Part Number</span>
-												<span>2315HLS</span>
-											</li>
-											<li>
-												<span>Part Number</span>
-												<span>2315HLS</span>
-											</li>
-										</ul>
-										<div class="cart_print_box">
-											<div class="print">
-												<i><img src="assets/img/print.png" alt="" /></i>
-												<span>Print wishlist</span>
+										<div class="col s12 m6">
+											<div class="billing_box_inner billing_icon">
+												<input type="text" placeholder="Last Name" />
 											</div>
-											<div class="row">
-												<div class="quote col s12">
-													<button
-														class="btn waves-effect waves-light"
-														type="submit"
-														name="action"
-													>
-														<span>Add to Cart</span>
-														<img
-															src="assets/img/chevron_right_white.png"
-															alt=""
-														/>
-													</button>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="billing_box_inner billing_icon flag_box">
+												<div class="row">
+													<div class="col s12 m4">
+														<div class="country">
+															<label>Area Code</label>
+															<select required>
+																<option value="" disabled selected>
+																	Area Code
+																</option>
+																<option value="1">(+36)</option>
+																<option value="2">(+98)</option>
+																<option value="3">(+1)</option>
+															</select>
+														</div>
+													</div>
+
+													<div class="col s12 m8">
+														<div class="phone">
+															<input type="text" placeholder="Phone Number" />
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
+										<div class="col s12 m6">
+											<div class="billing_box_inner billing_icon">
+												<input type="text" placeholder="Company Name" />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12 m6">
+											<div class="billing_box_inner billing_small">
+												<input type="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="col s12 m6">
+											<div class="billing_box_inner billing_small">
+												<input type="password" placeholder="Password" />
+											</div>
+										</div>
+									</div>
+									<div class="row border">
+										<div class="billing_box_inner billing_small save">
+											<button
+												class="btn waves-effect waves-light"
+												type="submit"
+												name="action"
+												id="save-changes"
+											>
+												<span>Save Changes</span>
+											</button>
+										</div>
 									</div>
 								</div>
-							</form>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- confirm delete -->
-			<div id="delete" class="modal">
-				<div class="modal-content delete_box">
+			<!-- confirm save -->
+			<div id="save" class="modal">
+				<div class="modal-content save_box">
 					<a href="#!" class="modal-action modal-close"
 						><img src="assets/img/plus.png" alt=""
 					/></a>
-					<div class="delete_box_inner">
-						<h4>Sure to delete the item?</h4>
-						<p>Part Number : <span id="part-num">2315HLS</span></p>
-						<div class="row delete_btn">
+					<div class="save_box_inner">
+						<h4>Sure to sign out?</h4>
+						<p>
+							You will be immediately sign out of your account. You may need to
+							log in again when needed.
+						</p>
+						<div class="row save_btn">
 							<button
 								class="btn waves-effect waves-light modal-close"
 								id="cancel-btn"
@@ -436,7 +406,7 @@
 							</button>
 							<button
 								class="btn waves-effect waves-light"
-								id="delete-btn"
+								id="save-btn"
 								type="submit"
 								name="action"
 							>
