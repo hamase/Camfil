@@ -1093,6 +1093,9 @@ body {
 				width: 100%;
 				margin-bottom: 0 !important;
 				line-height: 20px;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 			li {
 				display: flex;
