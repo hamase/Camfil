@@ -305,6 +305,24 @@
 															</div>
 														</div>
 													</div>
+													<div class="row info_btn">
+														<button
+															class="btn waves-effect waves-light"
+															id="save-info"
+															type="button"
+															name="action"
+														>
+															<span>Save</span>
+														</button>
+														<button
+															class="btn waves-effect waves-light"
+															id="edit-info"
+															type="button"
+															name="action"
+														>
+															<span>Edit</span>
+														</button>
+													</div>
 												</div>
 											</div>
 										</li>
@@ -615,6 +633,137 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- confirm edit -->
+			<div id="edit" class="modal">
+				<div class="modal-content edit_box">
+					<a href="#!" class="modal-action modal-close"
+						><img src="assets/img/plus.png" alt=""
+					/></a>
+					<div class="edit_box_inner">
+						<form action="">
+							<div class="billing_box">
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<input type="text" placeholder="Address title" />
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_icon">
+											<input type="text" placeholder="Full Name" />
+											<i class="material-icons prefix"
+												><img src="assets/img/name-icon.png" alt=""
+											/></i>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_icon flag_box">
+											<div class="row">
+												<div class="col s12 m4">
+													<div class="country">
+														<label>Area Code</label>
+														<select required>
+															<option value="" disabled selected>
+																Area Code
+															</option>
+															<option value="1">(+36)</option>
+															<option value="2">(+98)</option>
+															<option value="3">(+1)</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="col s12 m8">
+													<div class="phone">
+														<input type="text" placeholder="Phone Number" />
+														<i class="material-icons prefix"
+															><img src="assets/img/phone-light.png" alt=""
+														/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_icon">
+											<input type="text" placeholder="Company Name" />
+											<i class="material-icons prefix"
+												><img src="assets/img/company.png" alt=""
+											/></i>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 address">
+										<div class="billing_box_inner billing_large">
+											<input type="text" placeholder="Address line 1" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 address">
+										<div class="billing_box_inner billing_large">
+											<input type="text" placeholder="Address line 2" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<select required>
+												<option value="" disabled selected>City</option>
+												<option value="1">(+36)</option>
+												<option value="2">(+98)</option>
+												<option value="3">(+1)</option>
+											</select>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<select required>
+												<option value="" disabled selected>Province</option>
+												<option value="1">(+36)</option>
+												<option value="2">(+98)</option>
+												<option value="3">(+1)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<select required>
+												<option value="" disabled selected>Country</option>
+												<option value="1">(+36)</option>
+												<option value="2">(+98)</option>
+												<option value="3">(+1)</option>
+											</select>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<input type="text" placeholder="Postcode" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row edit_btn">
+								<button
+									class="btn waves-effect waves-light"
+									id="edit-ok"
+									type="submit"
+									name="action"
+								>
+									<span>Save</span>
+								</button>
 							</div>
 						</form>
 					</div>

@@ -307,6 +307,35 @@ body {
 													}
 												}
 											}
+											.info_btn {
+												display: flex;
+												justify-content: center;
+												button {
+													box-shadow: none;
+													border-radius: 0;
+													span {
+														font-size: 14px;
+														font-family: "OpenSans-Bold";
+														text-transform: none;
+													}
+												}
+												button#save-info {
+													width: 100px;
+													height: 40px;
+													background-color: $blue;
+													color: white;
+													border: 1px solid $blue;
+													margin-left: 1em;
+												}
+												button#edit-info {
+													width: 100px;
+													height: 40px;
+													background-color: white;
+													color: $blue;
+													border: 1px solid $blue;
+													margin-left: 1em;
+												}
+											}
 										}
 										ul.payment_box {
 											display: flex;
@@ -561,6 +590,126 @@ body {
 				}
 			}
 		}
+		.modal {
+			width: 800px;
+			a.modal-close {
+				float: right;
+				clear: both;
+				img {
+					transform: rotate(225deg);
+					width: 17px;
+				}
+			}
+			.edit_box_inner {
+				.billing_box {
+					margin: 2em auto 0;
+					.row {
+						div:first-child {
+							margin: 0;
+						}
+						div.col:first-child {
+							display: flex;
+							justify-content: flex-end;
+						}
+						div.col:last-child {
+							display: flex;
+							justify-content: flex-start;
+						}
+						div.col.address {
+							display: flex;
+							justify-content: center;
+						}
+						.billing_box_inner {
+							position: relative;
+							&.billing_small {
+								width: 316px;
+								input {
+									width: 301px;
+								}
+							}
+							&.billing_icon {
+								width: 316px;
+								input {
+									width: 301px;
+								}
+							}
+							&.billing_large {
+								input {
+									width: 636px;
+								}
+							}
+							input {
+								border: 1px solid #b3b6b9;
+								height: 48px;
+								padding-left: 10px;
+								&::placeholder {
+									font-family: "OpenSans";
+									font-size: 14px;
+									color: #b3b6b9;
+								}
+							}
+							i {
+								position: absolute;
+								right: 10px;
+								top: 13px;
+								img {
+									width: 22px;
+								}
+							}
+							.country {
+								input {
+									width: 83px;
+								}
+							}
+							.phone {
+								position: relative;
+								input {
+									width: 185px;
+								}
+							}
+							label {
+								position: absolute;
+								top: 15px;
+								left: 8px;
+								color: gray;
+								font-family: "OpenSans";
+								font-size: 14px;
+								color: #b3b6b9;
+							}
+							.select-wrapper {
+								ul {
+									li {
+										margin: 0;
+										background-color: white;
+										box-shadow: none;
+									}
+								}
+							}
+						}
+					}
+				}
+				.edit_btn {
+					display: flex;
+					justify-content: center;
+					button {
+						box-shadow: none;
+						border-radius: 0;
+						span {
+							font-size: 14px;
+							font-family: "OpenSans-Bold";
+							text-transform: none;
+						}
+					}
+					button#edit-ok {
+						width: 301px;
+						height: 48px;
+						background-color: $blue;
+						color: white;
+						border: 1px solid $blue;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -608,8 +757,20 @@ body {
 				}
 			}
 		}
+		.modal {
+			.billing_box_inner {
+				.phone,
+				.country {
+					position: relative;
+					input {
+						width: auto !important;
+					}
+				}
+			}
+		}
 	}
 }
+
 @media screen and (max-width: 768px) {
 	main.order {
 		.process_order {
@@ -626,6 +787,23 @@ body {
 							input {
 								width: auto !important;
 							}
+						}
+					}
+				}
+			}
+		}
+		.modal {
+			.billing_box {
+				div.col {
+					display: flex;
+					justify-content: center !important;
+					.billing_box_inner {
+						&.billing_small,
+						&.billing_icon {
+							width: auto !important;
+						}
+						input {
+							width: auto !important;
 						}
 					}
 				}
@@ -666,6 +844,40 @@ body {
 								input {
 									width: 135px !important;
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.modal {
+			.billing_box {
+				div.col {
+					display: flex;
+					justify-content: center !important;
+					.billing_box_inner {
+						&.billing_small,
+						&.billing_icon {
+							width: 91% !important;
+							input {
+								width: 93% !important;
+							}
+						}
+						&.billing_large {
+							width: 95% !important;
+							input {
+								width: 97% !important;
+							}
+						}
+						.country {
+							input {
+								width: 60px !important;
+							}
+						}
+						.phone {
+							position: relative;
+							input {
+								width: 135px !important;
 							}
 						}
 					}
@@ -761,6 +973,9 @@ body {
 				}
 			}
 		}
+		.modal {
+			width: 90% !important;
+		}
 	}
 }
 
@@ -822,6 +1037,40 @@ body {
 										padding: 2rem !important;
 									}
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.modal {
+			.billing_box {
+				div.col {
+					display: flex;
+					justify-content: center !important;
+					.billing_box_inner {
+						&.billing_small,
+						&.billing_icon {
+							width: auto !important;
+							input {
+								width: auto !important;
+							}
+						}
+						&.billing_large {
+							width: 88% !important;
+							input {
+								width: 99% !important;
+							}
+						}
+						.country {
+							input {
+								width: 60px !important;
+							}
+						}
+						.phone {
+							position: relative;
+							input {
+								width: 158px !important;
 							}
 						}
 					}

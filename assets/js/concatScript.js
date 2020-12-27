@@ -60,6 +60,9 @@ $(document).ready(function () {
 		$(this).closest(".modal").modal("close");
 		$("#signout").modal("open");
 	});
+	$("#edit-info").click(function () {
+		$("#edit").modal("open");
+	});
 
 	// close just by close button, not click on body
 	$("#sign-up").modal({
@@ -107,6 +110,10 @@ $(document).ready(function () {
 	$("#signout").modal({
 		dismissible: false,
 	});
+	$("#edit").modal({
+		dismissible: false,
+	});
+
 	$("select").formSelect();
 
 	//copy clipboard
