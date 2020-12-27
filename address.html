@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<title>Camfil</title>
+
+		<link
+			rel="shortcut icon"
+			href="assets/img/favicon.png"
+			type="image/x-icon"
+		/>
+
+		<!-- import node module js -->
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="node_modules/materialize-css/dist/css/materialize.min.css"
+			media="screen,projection"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="assets/css/main.min.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="row">
+					<nav class="nav-extended header_box">
+						<div class="nav-wrapper">
+							<a href="#" class="brand-logo"
+								><img src="assets/img/logo-white.png" alt=""
+							/></a>
+							<a href="#" data-target="mobile-demo" class="sidenav-trigger"
+								><i class="material-icons">menu</i></a
+							>
+							<ul
+								id="nav-mobile"
+								class="right hide-on-med-and-down header_box_menu"
+							>
+								<li>
+									<form action="" class="searchBox">
+										<input
+											placeholder="Search by part number, brand or product"
+											id="search-input-header"
+											type="text"
+											class="validate"
+										/>
+										<button
+											class="btn waves-effect waves-light"
+											type="button"
+											id="search-btn"
+											name="action"
+										>
+											<img src="assets/img/search.png" alt="" />
+										</button>
+										<div class="collection_box header_search">
+											<ul class="collection">
+												<p class="results">
+													See All Results
+													<span id="search-num-header">(10)</span>
+												</p>
+											</ul>
+										</div>
+									</form>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><span>Account</span>
+										<img src="assets/img/user-white.png" alt=""
+									/></a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/bell-white.png" alt="" />
+										<span id="notifications" class="badge red">5</span>
+									</a>
+								</li>
+								<li>
+									<a class="waves-effect waves-light btn" href="#"
+										><img src="assets/img/shop-white.png" alt=""
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+
+					<ul class="sidenav" id="mobile-demo">
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Account</span>
+								<img src="assets/img/mobile/user.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Notifications</span>
+								<img src="assets/img/mobile/bell.png" alt="" />
+								<span id="notifications" class="badge red">5</span>
+							</a>
+						</li>
+						<li>
+							<a class="waves-effect waves-light btn" href="#"
+								><span>Shop</span> <img src="assets/img/mobile/shop.png" alt=""
+							/></a>
+						</li>
+						<li>
+							<form action="" class="searchBox">
+								<input
+									placeholder="Search by part number, brand or product"
+									id="search-input-mobile"
+									type="text"
+									class="validate"
+								/>
+								<button
+									class="btn waves-effect waves-light"
+									id="search-btn"
+									type="button"
+									name="action"
+								>
+									<img src="assets/img/search.png" alt="" />
+								</button>
+								<ul class="collection header_search"></ul>
+								<div class="collection_box header_search mobile">
+									<ul class="collection">
+										<p class="results">
+											See All Results
+											<span id="search-num-mobile">(10)</span>
+										</p>
+									</ul>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- main page -->
+		<main class="menu">
+			<div class="container-fluid menu_main">
+				<div class="row">
+					<div class="col s2">
+						<nav class="nav-extended">
+							<div class="nav-wrapper side_list">
+								<a href="#" data-target="side-nav" class="sidenav-trigger"
+									><i class="material-icons">more_vert</i></a
+								>
+								<div
+									id="nav-mobile"
+									class="right hide-on-med-and-down side_list_inner"
+								>
+									<div class="avatar">
+										<div class="row">
+											<div class="col s6">
+												<img src="assets/img/avatar.png" alt="" />
+											</div>
+											<div class="col s6">
+												<span id="username">Casper</span>
+											</div>
+										</div>
+									</div>
+									<div class="menu">
+										<div class="menu_box row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>My Account</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="./myOrders.html">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>My Orders</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="./myQuotes.html">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>My Quotes</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Wishlist</span></div>
+											</a>
+										</div>
+										<div class="menu_box row active">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Address</span></div>
+											</a>
+										</div>
+										<div class="menu_box row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Settings</span></div>
+											</a>
+										</div>
+									</div>
+									<div class="signout">
+										<div class="row">
+											<a href="#">
+												<div class="col s5">
+													<img src="assets/img/name-icon.png" alt="" />
+												</div>
+												<div class="col s7"><span>Sign out</span></div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</nav>
+
+						<div class="sidenav side_list_mobile" id="side-nav">
+							<div class="avatar">
+								<div class="row">
+									<div class="col s6">
+										<img src="assets/img/avatar.png" alt="" />
+									</div>
+									<div class="col s6">
+										<span id="username">Casper</span>
+									</div>
+								</div>
+							</div>
+							<div class="menu">
+								<div class="menu_box row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>My Account</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="./myOrders.html">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>My Orders</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="./myQuotes.html">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>My Quotes</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Wishlist</span></div>
+									</a>
+								</div>
+								<div class="menu_box row active">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Address</span></div>
+									</a>
+								</div>
+								<div class="menu_box row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Settings</span></div>
+									</a>
+								</div>
+							</div>
+							<div class="signout">
+								<div class="row">
+									<a href="#">
+										<div class="col s5">
+											<img src="assets/img/name-icon.png" alt="" />
+										</div>
+										<div class="col s7"><span>Sign out</span></div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col s10 table_box">
+						<div class="row">
+							<div class="col s12 l8">
+								<h4>My Address</h4>
+								<h6>Billing Address</h6>
+								<div class="row">
+									<div class="col s12 l8 xl6">
+										<!-- this div can be multiple -->
+										<div class="address_box">
+											<div class="card sticky-action">
+												<div class="card_title">
+													<p id="address-title">Address 1</p>
+												</div>
+												<div class="card_content">
+													<div class="address_content">
+														<p id="address-content">
+															CT2 7LN , 12 Stonebridge Road ,Kent, United
+															Kingdom
+														</p>
+													</div>
+													<div class="other_info">
+														<div>
+															<i
+																><img src="assets/img/phone-light.png" alt=""
+															/></i>
+															<span id="address-phone">+144 123 45 67</span>
+														</div>
+														<div>
+															<i><img src="assets/img/avatar.png" alt="" /></i>
+															<span id="address-name">Casper</span>
+														</div>
+														<div>
+															<i><img src="assets/img/company.png" alt="" /></i>
+															<span id="address-company">Croxco</span>
+														</div>
+													</div>
+												</div>
+												<div class="card_footer">
+													<button
+														id="edit-info"
+														type="button"
+														class="btn waves-effect waves-light"
+													>
+														<i><img src="assets/img/print.png" alt="" /></i
+														><span>Edit Address</span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- confirm edit -->
+			<div id="edit" class="modal">
+				<div class="modal-content edit_box">
+					<a href="#!" class="modal-action modal-close"
+						><img src="assets/img/plus.png" alt=""
+					/></a>
+					<div class="edit_box_inner">
+						<form action="">
+							<div class="billing_box">
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<input type="text" placeholder="Address title" />
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_icon">
+											<input type="text" placeholder="Full Name" />
+											<i class="material-icons prefix"
+												><img src="assets/img/name-icon.png" alt=""
+											/></i>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_icon flag_box">
+											<div class="row">
+												<div class="col s12 m4">
+													<div class="country">
+														<label>Area Code</label>
+														<select required>
+															<option value="" disabled selected>
+																Area Code
+															</option>
+															<option value="1">(+36)</option>
+															<option value="2">(+98)</option>
+															<option value="3">(+1)</option>
+														</select>
+													</div>
+												</div>
+
+												<div class="col s12 m8">
+													<div class="phone">
+														<input type="text" placeholder="Phone Number" />
+														<i class="material-icons prefix"
+															><img src="assets/img/phone-light.png" alt=""
+														/></i>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_icon">
+											<input type="text" placeholder="Company Name" />
+											<i class="material-icons prefix"
+												><img src="assets/img/company.png" alt=""
+											/></i>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 address">
+										<div class="billing_box_inner billing_large">
+											<input type="text" placeholder="Address line 1" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 address">
+										<div class="billing_box_inner billing_large">
+											<input type="text" placeholder="Address line 2" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<select required>
+												<option value="" disabled selected>City</option>
+												<option value="1">(+36)</option>
+												<option value="2">(+98)</option>
+												<option value="3">(+1)</option>
+											</select>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<select required>
+												<option value="" disabled selected>Province</option>
+												<option value="1">(+36)</option>
+												<option value="2">(+98)</option>
+												<option value="3">(+1)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<select required>
+												<option value="" disabled selected>Country</option>
+												<option value="1">(+36)</option>
+												<option value="2">(+98)</option>
+												<option value="3">(+1)</option>
+											</select>
+										</div>
+									</div>
+									<div class="col s12 m6">
+										<div class="billing_box_inner billing_small">
+											<input type="text" placeholder="Postcode" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row edit_btn">
+								<button
+									class="btn waves-effect waves-light"
+									id="edit-ok"
+									type="submit"
+									name="action"
+								>
+									<span>Save</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer class="footer_box">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col s12 offset-l1 l11 offset-xl1 xl10">
+						<div class="col s12 l2 xl2 logo">
+							<img src="assets/img/logo-blue.png" alt="" />
+							<p class="logo_desc">
+								We are your reliable source for <br />
+								spare parts, for production and <br />
+								maintenance.
+							</p>
+						</div>
+						<div class="col s12 l2 xl2 quick">
+							<ul>
+								<li><b>Quick links</b></li>
+								<li><a href="">Products</a></li>
+								<li><a href="">Ask a Question</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl2 know-us">
+							<ul>
+								<li><b>Get to know us</b></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Contact us</a></li>
+								<li><a href="">Terms & Conditions</a></li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 find_us">
+							<ul>
+								<li><b>Find us</b></li>
+								<li class="location">
+									<img src="assets/img/location.png" alt="" /><span
+										>Hungary<br />
+										1061 Budapest Anker <br />
+										Köz Anker Business <br />center 2-4
+									</span>
+								</li>
+								<li class="phone">
+									<img src="assets/img/phone.png" alt="" /><span
+										>+36 (1) 445 3638</span
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="col s12 l2 xl3 touch">
+							<ul>
+								<li><b>Get in touch</b></li>
+								<ul class="social_media">
+									<li>
+										<a href=""><img src="assets/img/linkedin.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/facebook.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/twitter.png" alt="" /></a>
+									</li>
+									<li>
+										<a href=""><img src="assets/img/instagram.png" alt="" /></a>
+									</li>
+								</ul>
+								<li>
+									<button class="feedback" id="feedback">
+										<span>Leave feedback</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2020 Camfil GROUP kft. All rights reserved.
+				</div>
+			</div>
+		</footer>
+
+		<!-- import node module js -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+		<script src="assets/js/all.min.js"></script>
+	</body>
+</html>

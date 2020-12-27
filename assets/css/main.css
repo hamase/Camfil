@@ -3933,87 +3933,6 @@ body main.order {
           font-size: 14px;
           font-family: "OpenSans";
           color: #3d3d3d; }
-  body main.order .modal {
-    width: 800px; }
-    body main.order .modal a.modal-close {
-      float: right;
-      clear: both; }
-      body main.order .modal a.modal-close img {
-        transform: rotate(225deg);
-        width: 17px; }
-    body main.order .modal .edit_box_inner .billing_box {
-      margin: 2em auto 0; }
-      body main.order .modal .edit_box_inner .billing_box .row div:first-child {
-        margin: 0; }
-      body main.order .modal .edit_box_inner .billing_box .row div.col:first-child {
-        display: flex;
-        justify-content: flex-end; }
-      body main.order .modal .edit_box_inner .billing_box .row div.col:last-child {
-        display: flex;
-        justify-content: flex-start; }
-      body main.order .modal .edit_box_inner .billing_box .row div.col.address {
-        display: flex;
-        justify-content: center; }
-      body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner {
-        position: relative; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_small {
-          width: 316px; }
-          body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_small input {
-            width: 301px; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_icon {
-          width: 316px; }
-          body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_icon input {
-            width: 301px; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_large input {
-          width: 636px; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner input {
-          border: 1px solid #b3b6b9;
-          height: 48px;
-          padding-left: 10px; }
-          body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner input::placeholder {
-            font-family: "OpenSans";
-            font-size: 14px;
-            color: #b3b6b9; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner i {
-          position: absolute;
-          right: 10px;
-          top: 13px; }
-          body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner i img {
-            width: 22px; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner .country input {
-          width: 83px; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner .phone {
-          position: relative; }
-          body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner .phone input {
-            width: 185px; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner label {
-          position: absolute;
-          top: 15px;
-          left: 8px;
-          color: gray;
-          font-family: "OpenSans";
-          font-size: 14px;
-          color: #b3b6b9; }
-        body main.order .modal .edit_box_inner .billing_box .row .billing_box_inner .select-wrapper ul li {
-          margin: 0;
-          background-color: white;
-          box-shadow: none; }
-    body main.order .modal .edit_box_inner .edit_btn {
-      display: flex;
-      justify-content: center; }
-      body main.order .modal .edit_box_inner .edit_btn button {
-        box-shadow: none;
-        border-radius: 0; }
-        body main.order .modal .edit_box_inner .edit_btn button span {
-          font-size: 14px;
-          font-family: "OpenSans-Bold";
-          text-transform: none; }
-      body main.order .modal .edit_box_inner .edit_btn button#edit-ok {
-        width: 301px;
-        height: 48px;
-        background-color: #0086e6;
-        color: white;
-        border: 1px solid #0086e6; }
 
 @media screen and (max-width: 467px) {
   main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
@@ -4032,12 +3951,6 @@ body main.order {
     position: relative; }
     main.order .collapsible-body .billing_box_inner .phone input,
     main.order .collapsible-body .billing_box_inner .country input {
-      width: auto !important; }
-  main.order .modal .billing_box_inner .phone,
-  main.order .modal .billing_box_inner .country {
-    position: relative; }
-    main.order .modal .billing_box_inner .phone input,
-    main.order .modal .billing_box_inner .country input {
       width: auto !important; } }
 @media screen and (max-width: 768px) {
   main.order .process_order .collapsible-body .billing_box div.col {
@@ -4046,13 +3959,6 @@ body main.order {
     main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_small, main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner.billing_icon {
       width: auto !important; }
     main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner input {
-      width: auto !important; }
-  main.order .modal .billing_box div.col {
-    display: flex;
-    justify-content: center !important; }
-    main.order .modal .billing_box div.col .billing_box_inner.billing_small, main.order .modal .billing_box div.col .billing_box_inner.billing_icon {
-      width: auto !important; }
-    main.order .modal .billing_box div.col .billing_box_inner input {
       width: auto !important; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   main.order .process_order .collapsible-body .billing_box div.col {
@@ -4071,23 +3977,6 @@ body main.order {
     main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner .phone {
       position: relative; }
       main.order .process_order .collapsible-body .billing_box div.col .billing_box_inner .phone input {
-        width: 135px !important; }
-  main.order .modal .billing_box div.col {
-    display: flex;
-    justify-content: center !important; }
-    main.order .modal .billing_box div.col .billing_box_inner.billing_small, main.order .modal .billing_box div.col .billing_box_inner.billing_icon {
-      width: 91% !important; }
-      main.order .modal .billing_box div.col .billing_box_inner.billing_small input, main.order .modal .billing_box div.col .billing_box_inner.billing_icon input {
-        width: 93% !important; }
-    main.order .modal .billing_box div.col .billing_box_inner.billing_large {
-      width: 95% !important; }
-      main.order .modal .billing_box div.col .billing_box_inner.billing_large input {
-        width: 97% !important; }
-    main.order .modal .billing_box div.col .billing_box_inner .country input {
-      width: 60px !important; }
-    main.order .modal .billing_box div.col .billing_box_inner .phone {
-      position: relative; }
-      main.order .modal .billing_box div.col .billing_box_inner .phone input {
         width: 135px !important; } }
 @media screen and (max-width: 992px) {
   main.order {
@@ -4130,9 +4019,7 @@ body main.order {
         position: relative !important;
         height: auto !important; }
     main.order .cart_main .cart_box .row .col:nth-child(2) .cart_box_inner {
-      margin-top: 2em; }
-    main.order .modal {
-      width: 90% !important; } }
+      margin-top: 2em; } }
 @media screen and (min-width: 993px) and (max-width: 1161px) {
   main.order .cart_main .cart_box .row .cart_box_inner .cart_print_box .quote button {
     height: auto !important; }
@@ -4157,24 +4044,7 @@ body main.order {
     width: 30% !important; }
   main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .paypal,
   main.order .cart_main .cart_box .row .cart_box_inner.order_process_box ul.collapsible .collapsible-body .debit {
-    padding: 2rem !important; }
-  main.order .modal .billing_box div.col {
-    display: flex;
-    justify-content: center !important; }
-    main.order .modal .billing_box div.col .billing_box_inner.billing_small, main.order .modal .billing_box div.col .billing_box_inner.billing_icon {
-      width: auto !important; }
-      main.order .modal .billing_box div.col .billing_box_inner.billing_small input, main.order .modal .billing_box div.col .billing_box_inner.billing_icon input {
-        width: auto !important; }
-    main.order .modal .billing_box div.col .billing_box_inner.billing_large {
-      width: 88% !important; }
-      main.order .modal .billing_box div.col .billing_box_inner.billing_large input {
-        width: 99% !important; }
-    main.order .modal .billing_box div.col .billing_box_inner .country input {
-      width: 60px !important; }
-    main.order .modal .billing_box div.col .billing_box_inner .phone {
-      position: relative; }
-      main.order .modal .billing_box div.col .billing_box_inner .phone input {
-        width: 158px !important; } }
+    padding: 2rem !important; } }
 @media screen and (min-width: 992px) {
   main.order .cart_main .cart_box .row .cart_box_inner {
     position: relative; }
@@ -4384,6 +4254,54 @@ main.menu {
               text-transform: none; }
             main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.save button:hover {
               cursor: pointer; }
+      main.menu .menu_main > .row .table_box .address_box {
+        margin-top: 2em; }
+        main.menu .menu_main > .row .table_box .address_box .card {
+          border: 2px solid #0086e6;
+          box-shadow: none; }
+          main.menu .menu_main > .row .table_box .address_box .card .card_title {
+            padding: 0.1em 3em;
+            border-bottom: 2px solid #e2e2e2;
+            font-size: 14px;
+            font-family: "OpenSans-Bold";
+            color: #161719; }
+          main.menu .menu_main > .row .table_box .address_box .card .card_content {
+            padding: 1em 3em; }
+            main.menu .menu_main > .row .table_box .address_box .card .card_content span {
+              font-size: 14px;
+              font-family: "OpenSans";
+              color: #161719; }
+            main.menu .menu_main > .row .table_box .address_box .card .card_content i img {
+              width: 20px;
+              height: 20px; }
+            main.menu .menu_main > .row .table_box .address_box .card .card_content .address_content {
+              margin-bottom: 3em; }
+            main.menu .menu_main > .row .table_box .address_box .card .card_content .other_info {
+              margin-bottom: 3em; }
+              main.menu .menu_main > .row .table_box .address_box .card .card_content .other_info > div {
+                margin-top: 0.4em; }
+                main.menu .menu_main > .row .table_box .address_box .card .card_content .other_info > div span {
+                  margin-left: 1em; }
+          main.menu .menu_main > .row .table_box .address_box .card .card_footer {
+            background-color: #f7f7f7;
+            padding: 1em;
+            display: flex;
+            justify-content: flex-end; }
+            main.menu .menu_main > .row .table_box .address_box .card .card_footer button {
+              background: rgba(0, 0, 0, 0);
+              box-shadow: none;
+              border: none;
+              display: flex;
+              align-items: center; }
+              main.menu .menu_main > .row .table_box .address_box .card .card_footer button i img {
+                width: 20px;
+                height: 20px; }
+              main.menu .menu_main > .row .table_box .address_box .card .card_footer button span {
+                font-size: 12px;
+                font-family: "OpenSans-Bold";
+                color: #0086e6;
+                text-transform: none;
+                margin-left: 1em; }
       main.menu .menu_main > .row .table_box .table_hover {
         border-collapse: separate;
         border-spacing: 0 1em;
@@ -4666,14 +4584,19 @@ main.menu {
     margin-top: 10em; }
     main.menu .modal#save {
       width: 500px; }
+    main.menu .modal#edit {
+      width: 800px;
+      margin-top: 7em; }
     main.menu .modal .delete_box a.modal-close,
     main.menu .modal .save_box a.modal-close,
-    main.menu .modal .signout_box a.modal-close {
+    main.menu .modal .signout_box a.modal-close,
+    main.menu .modal .edit_box a.modal-close {
       float: right;
       clear: both; }
       main.menu .modal .delete_box a.modal-close img,
       main.menu .modal .save_box a.modal-close img,
-      main.menu .modal .signout_box a.modal-close img {
+      main.menu .modal .signout_box a.modal-close img,
+      main.menu .modal .edit_box a.modal-close img {
         transform: rotate(225deg);
         width: 17px; }
     main.menu .modal .delete_box .delete_box_inner,
@@ -4684,7 +4607,10 @@ main.menu {
     main.menu .modal .save_box .signout_box_inner,
     main.menu .modal .signout_box .delete_box_inner,
     main.menu .modal .signout_box .save_box_inner,
-    main.menu .modal .signout_box .signout_box_inner {
+    main.menu .modal .signout_box .signout_box_inner,
+    main.menu .modal .edit_box .delete_box_inner,
+    main.menu .modal .edit_box .save_box_inner,
+    main.menu .modal .edit_box .signout_box_inner {
       text-align: center;
       margin-top: 2em; }
       main.menu .modal .delete_box .delete_box_inner h4,
@@ -4695,7 +4621,10 @@ main.menu {
       main.menu .modal .save_box .signout_box_inner h4,
       main.menu .modal .signout_box .delete_box_inner h4,
       main.menu .modal .signout_box .save_box_inner h4,
-      main.menu .modal .signout_box .signout_box_inner h4 {
+      main.menu .modal .signout_box .signout_box_inner h4,
+      main.menu .modal .edit_box .delete_box_inner h4,
+      main.menu .modal .edit_box .save_box_inner h4,
+      main.menu .modal .edit_box .signout_box_inner h4 {
         font-size: 24px;
         font-family: "OpenSans-Bold";
         color: #000000; }
@@ -4707,7 +4636,10 @@ main.menu {
       main.menu .modal .save_box .signout_box_inner p,
       main.menu .modal .signout_box .delete_box_inner p,
       main.menu .modal .signout_box .save_box_inner p,
-      main.menu .modal .signout_box .signout_box_inner p {
+      main.menu .modal .signout_box .signout_box_inner p,
+      main.menu .modal .edit_box .delete_box_inner p,
+      main.menu .modal .edit_box .save_box_inner p,
+      main.menu .modal .edit_box .signout_box_inner p {
         font-size: 16px;
         font-family: "OpenSans";
         color: #000000;
@@ -4720,7 +4652,10 @@ main.menu {
       main.menu .modal .save_box .signout_box_inner button,
       main.menu .modal .signout_box .delete_box_inner button,
       main.menu .modal .signout_box .save_box_inner button,
-      main.menu .modal .signout_box .signout_box_inner button {
+      main.menu .modal .signout_box .signout_box_inner button,
+      main.menu .modal .edit_box .delete_box_inner button,
+      main.menu .modal .edit_box .save_box_inner button,
+      main.menu .modal .edit_box .signout_box_inner button {
         box-shadow: none;
         border-radius: 0; }
         main.menu .modal .delete_box .delete_box_inner button span,
@@ -4731,7 +4666,10 @@ main.menu {
         main.menu .modal .save_box .signout_box_inner button span,
         main.menu .modal .signout_box .delete_box_inner button span,
         main.menu .modal .signout_box .save_box_inner button span,
-        main.menu .modal .signout_box .signout_box_inner button span {
+        main.menu .modal .signout_box .signout_box_inner button span,
+        main.menu .modal .edit_box .delete_box_inner button span,
+        main.menu .modal .edit_box .save_box_inner button span,
+        main.menu .modal .edit_box .signout_box_inner button span {
           font-size: 14px;
           font-family: "OpenSans-Bold";
           text-transform: none; }
@@ -4752,7 +4690,13 @@ main.menu {
       main.menu .modal .signout_box .save_box_inner button#cancel-btn,
       main.menu .modal .signout_box .save_box_inner button#signout-cancel,
       main.menu .modal .signout_box .signout_box_inner button#cancel-btn,
-      main.menu .modal .signout_box .signout_box_inner button#signout-cancel {
+      main.menu .modal .signout_box .signout_box_inner button#signout-cancel,
+      main.menu .modal .edit_box .delete_box_inner button#cancel-btn,
+      main.menu .modal .edit_box .delete_box_inner button#signout-cancel,
+      main.menu .modal .edit_box .save_box_inner button#cancel-btn,
+      main.menu .modal .edit_box .save_box_inner button#signout-cancel,
+      main.menu .modal .edit_box .signout_box_inner button#cancel-btn,
+      main.menu .modal .edit_box .signout_box_inner button#signout-cancel {
         width: 80px;
         height: 40px;
         background-color: #0086e6;
@@ -4784,7 +4728,16 @@ main.menu {
       main.menu .modal .signout_box .save_box_inner button#signout-ok,
       main.menu .modal .signout_box .signout_box_inner button#delete-btn,
       main.menu .modal .signout_box .signout_box_inner button#save-btn,
-      main.menu .modal .signout_box .signout_box_inner button#signout-ok {
+      main.menu .modal .signout_box .signout_box_inner button#signout-ok,
+      main.menu .modal .edit_box .delete_box_inner button#delete-btn,
+      main.menu .modal .edit_box .delete_box_inner button#save-btn,
+      main.menu .modal .edit_box .delete_box_inner button#signout-ok,
+      main.menu .modal .edit_box .save_box_inner button#delete-btn,
+      main.menu .modal .edit_box .save_box_inner button#save-btn,
+      main.menu .modal .edit_box .save_box_inner button#signout-ok,
+      main.menu .modal .edit_box .signout_box_inner button#delete-btn,
+      main.menu .modal .edit_box .signout_box_inner button#save-btn,
+      main.menu .modal .edit_box .signout_box_inner button#signout-ok {
         width: 80px;
         height: 40px;
         background-color: white;
@@ -4808,7 +4761,13 @@ main.menu {
       main.menu .modal .signout_box .save_box_inner button#save-ok,
       main.menu .modal .signout_box .save_box_inner button#save-cancel,
       main.menu .modal .signout_box .signout_box_inner button#save-ok,
-      main.menu .modal .signout_box .signout_box_inner button#save-cancel {
+      main.menu .modal .signout_box .signout_box_inner button#save-cancel,
+      main.menu .modal .edit_box .delete_box_inner button#save-ok,
+      main.menu .modal .edit_box .delete_box_inner button#save-cancel,
+      main.menu .modal .edit_box .save_box_inner button#save-ok,
+      main.menu .modal .edit_box .save_box_inner button#save-cancel,
+      main.menu .modal .edit_box .signout_box_inner button#save-ok,
+      main.menu .modal .edit_box .signout_box_inner button#save-cancel {
         width: 191px;
         height: 40px;
         margin-left: 1em; }
@@ -4820,7 +4779,10 @@ main.menu {
       main.menu .modal .save_box .signout_box_inner button#save-cancel,
       main.menu .modal .signout_box .delete_box_inner button#save-cancel,
       main.menu .modal .signout_box .save_box_inner button#save-cancel,
-      main.menu .modal .signout_box .signout_box_inner button#save-cancel {
+      main.menu .modal .signout_box .signout_box_inner button#save-cancel,
+      main.menu .modal .edit_box .delete_box_inner button#save-cancel,
+      main.menu .modal .edit_box .save_box_inner button#save-cancel,
+      main.menu .modal .edit_box .signout_box_inner button#save-cancel {
         background-color: white;
         color: #0086e6;
         border: 1px solid #0086e6; }
@@ -4832,7 +4794,83 @@ main.menu {
       main.menu .modal .save_box .signout_box_inner button#save-ok,
       main.menu .modal .signout_box .delete_box_inner button#save-ok,
       main.menu .modal .signout_box .save_box_inner button#save-ok,
-      main.menu .modal .signout_box .signout_box_inner button#save-ok {
+      main.menu .modal .signout_box .signout_box_inner button#save-ok,
+      main.menu .modal .edit_box .delete_box_inner button#save-ok,
+      main.menu .modal .edit_box .save_box_inner button#save-ok,
+      main.menu .modal .edit_box .signout_box_inner button#save-ok {
+        background-color: #0086e6;
+        color: white;
+        border: 1px solid #0086e6; }
+    main.menu .modal .edit_box_inner .billing_box {
+      margin: 2em auto 0; }
+      main.menu .modal .edit_box_inner .billing_box .row div:first-child {
+        margin: 0; }
+      main.menu .modal .edit_box_inner .billing_box .row div.col:first-child {
+        display: flex;
+        justify-content: flex-end; }
+      main.menu .modal .edit_box_inner .billing_box .row div.col:last-child {
+        display: flex;
+        justify-content: flex-start; }
+      main.menu .modal .edit_box_inner .billing_box .row div.col.address {
+        display: flex;
+        justify-content: center; }
+      main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner {
+        position: relative; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_small {
+          width: 316px; }
+          main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_small input {
+            width: 301px; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_icon {
+          width: 316px; }
+          main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_icon input {
+            width: 301px; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner.billing_large input {
+          width: 636px; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner input {
+          border: 1px solid #b3b6b9;
+          height: 48px;
+          padding-left: 10px; }
+          main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner input::placeholder {
+            font-family: "OpenSans";
+            font-size: 14px;
+            color: #b3b6b9; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner i {
+          position: absolute;
+          right: 10px;
+          top: 13px; }
+          main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner i img {
+            width: 22px; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner .country input {
+          width: 83px; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner .phone {
+          position: relative; }
+          main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner .phone input {
+            width: 185px; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner label {
+          position: absolute;
+          top: 15px;
+          left: 8px;
+          color: gray;
+          font-family: "OpenSans";
+          font-size: 14px;
+          color: #b3b6b9; }
+        main.menu .modal .edit_box_inner .billing_box .row .billing_box_inner .select-wrapper ul li {
+          margin: 0;
+          background-color: white;
+          box-shadow: none; }
+    main.menu .modal .edit_box_inner .edit_btn {
+      display: flex;
+      justify-content: center; }
+      main.menu .modal .edit_box_inner .edit_btn button {
+        box-shadow: none;
+        border-radius: 0; }
+        main.menu .modal .edit_box_inner .edit_btn button span {
+          font-size: 14px;
+          font-family: "OpenSans-Bold";
+          text-transform: none; }
+      main.menu .modal .edit_box_inner .edit_btn button#edit-ok {
+        width: 301px;
+        height: 48px;
         background-color: #0086e6;
         color: white;
         border: 1px solid #0086e6; }
@@ -4853,6 +4891,12 @@ main.menu {
     position: relative; }
     main.menu .menu_main > .row .table_box .billing_box_inner .phone input,
     main.menu .menu_main > .row .table_box .billing_box_inner .country input {
+      width: auto !important; }
+  main.menu .modal .billing_box_inner .phone,
+  main.menu .modal .billing_box_inner .country {
+    position: relative; }
+    main.menu .modal .billing_box_inner .phone input,
+    main.menu .modal .billing_box_inner .country input {
       width: auto !important; } }
 @media screen and (max-width: 768px) {
   main.menu .menu_main > .row .table_box .billing_box div.col {
@@ -4861,6 +4905,13 @@ main.menu {
     main.menu .menu_main > .row .table_box .billing_box div.col .billing_box_inner.billing_small, main.menu .menu_main > .row .table_box .billing_box div.col .billing_box_inner.billing_icon {
       width: auto !important; }
     main.menu .menu_main > .row .table_box .billing_box div.col .billing_box_inner input {
+      width: auto !important; }
+  main.menu .modal .billing_box div.col {
+    display: flex;
+    justify-content: center !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner.billing_small, main.menu .modal .billing_box div.col .billing_box_inner.billing_icon {
+      width: auto !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner input {
       width: auto !important; } }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   main.menu .menu_main .table_box .billing_box div.col {
@@ -4879,6 +4930,23 @@ main.menu {
     main.menu .menu_main .table_box .billing_box div.col .billing_box_inner .phone {
       position: relative; }
       main.menu .menu_main .table_box .billing_box div.col .billing_box_inner .phone input {
+        width: 135px !important; }
+  main.menu .modal .billing_box div.col {
+    display: flex;
+    justify-content: center !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner.billing_small, main.menu .modal .billing_box div.col .billing_box_inner.billing_icon {
+      width: 91% !important; }
+      main.menu .modal .billing_box div.col .billing_box_inner.billing_small input, main.menu .modal .billing_box div.col .billing_box_inner.billing_icon input {
+        width: 93% !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner.billing_large {
+      width: 95% !important; }
+      main.menu .modal .billing_box div.col .billing_box_inner.billing_large input {
+        width: 97% !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner .country input {
+      width: 60px !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner .phone {
+      position: relative; }
+      main.menu .modal .billing_box div.col .billing_box_inner .phone input {
         width: 135px !important; } }
 @media screen and (min-width: 768px) {
   main.menu .menu_main > .row .table_box .billing_box .country {
@@ -5025,6 +5093,23 @@ main.menu {
     main.menu .menu_main > .row .table_box .billing_box div.col .billing_box_inner .phone {
       position: relative; }
       main.menu .menu_main > .row .table_box .billing_box div.col .billing_box_inner .phone input {
+        width: 158px !important; }
+  main.menu .modal .billing_box div.col {
+    display: flex;
+    justify-content: center !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner.billing_small, main.menu .modal .billing_box div.col .billing_box_inner.billing_icon {
+      width: auto !important; }
+      main.menu .modal .billing_box div.col .billing_box_inner.billing_small input, main.menu .modal .billing_box div.col .billing_box_inner.billing_icon input {
+        width: auto !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner.billing_large {
+      width: 88% !important; }
+      main.menu .modal .billing_box div.col .billing_box_inner.billing_large input {
+        width: 99% !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner .country input {
+      width: 60px !important; }
+    main.menu .modal .billing_box div.col .billing_box_inner .phone {
+      position: relative; }
+      main.menu .modal .billing_box div.col .billing_box_inner .phone input {
         width: 158px !important; } }
 nav.header_box {
   background-color: #004377 !important; }
