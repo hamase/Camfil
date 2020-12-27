@@ -325,6 +325,117 @@ main.menu {
 						}
 					}
 				}
+				.account_box {
+					margin-top: 3em;
+					.messages_box,
+					.inbox_box {
+						.title {
+							border-bottom: 1px solid $light_gray;
+						}
+						ul.messages_box_inner,
+						ul.inbox_box_inner {
+							margin: 0;
+							overflow-y: scroll;
+							height: auto;
+							max-height: 225px;
+							li {
+								background-color: white;
+								&:hover {
+									cursor: pointer;
+								}
+								.check_items {
+									display: flex;
+									align-items: center;
+									border-bottom: 1px solid $light_gray;
+									.msg_img {
+										width: 64px;
+										height: 64px;
+										background-color: $med_gray;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										margin-left: 1.5em;
+										img {
+											width: 23px;
+											height: 16px;
+										}
+										&.circle {
+											border-radius: 50%;
+										}
+									}
+									.msg_name {
+										text-align: left;
+										flex: 1;
+										margin-left: 4em;
+										p:first-child {
+											font-size: 14px;
+											font-family: "OpenSans-Bold";
+											color: $heading;
+										}
+										p:nth-child(2) {
+											font-size: 12px;
+											font-family: "OpenSans";
+											color: #545454;
+										}
+										p:nth-child(3) {
+											font-size: 12px;
+											font-family: "OpenSans";
+											color: $blue;
+											i {
+												margin-right: 1em;
+												img {
+													width: 20px;
+												}
+											}
+										}
+									}
+									.msg_time {
+										flex: 1;
+										display: flex;
+										justify-content: center;
+										height: 85px;
+										align-items: flex-end;
+										span {
+											font-size: 12px;
+											font-family: "OpenSans";
+											color: $gray;
+										}
+										#msg-day {
+											margin-right: 1em;
+										}
+									}
+								}
+							}
+						}
+					}
+					.active_order,
+					.messages_box,
+					.inbox_box {
+						border: 1px solid $gray;
+						h2 {
+							font-size: 16px;
+							font-family: "OpenSans-Bold";
+							color: $heading;
+							margin: 2em auto 1em 1.5em;
+						}
+						h4 {
+							font-size: 12px;
+							font-family: "OpenSans";
+							color: $body_text;
+							margin: 1em auto 2em 2em;
+						}
+						.table_hover {
+							border-collapse: collapse;
+							border-spacing: 0;
+							margin-bottom: 0px !important;
+							tbody {
+								tr {
+									outline: none;
+								}
+							}
+						}
+					}
+				}
 				.table_hover {
 					border-collapse: separate;
 					border-spacing: 0 1em;
@@ -1234,6 +1345,16 @@ main.menu {
 							top: 0 !important;
 						}
 					}
+					.messages_box,
+					.inbox_box {
+						margin-bottom: 1.5em;
+						.check_items {
+							display: inline-flex !important;
+							.msg_name {
+								width: 20em;
+							}
+						}
+					}
 					.table_hover {
 						thead th,
 						tbody tr td {
@@ -1390,6 +1511,14 @@ main.menu {
 					}
 				}
 			}
+		}
+	}
+}
+
+@media screen and (min-height: 768px) and (max-height: 835px) {
+	main.menu {
+		nav {
+			height: 121vh !important;
 		}
 	}
 }

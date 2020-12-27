@@ -167,7 +167,7 @@
 										</div>
 									</div>
 									<div class="menu">
-										<div class="menu_box row">
+										<div class="menu_box row active">
 											<a href="#">
 												<div class="col s5">
 													<img src="assets/img/name-icon.png" alt="" />
@@ -199,7 +199,7 @@
 												<div class="col s7"><span>Wishlist</span></div>
 											</a>
 										</div>
-										<div class="menu_box row active">
+										<div class="menu_box row">
 											<a href="#">
 												<div class="col s5">
 													<img src="assets/img/name-icon.png" alt="" />
@@ -242,7 +242,7 @@
 								</div>
 							</div>
 							<div class="menu">
-								<div class="menu_box row">
+								<div class="menu_box row active">
 									<a href="#">
 										<div class="col s5">
 											<img src="assets/img/name-icon.png" alt="" />
@@ -274,7 +274,7 @@
 										<div class="col s7"><span>Wishlist</span></div>
 									</a>
 								</div>
-								<div class="menu_box row active">
+								<div class="menu_box row">
 									<a href="#">
 										<div class="col s5">
 											<img src="assets/img/name-icon.png" alt="" />
@@ -305,188 +305,240 @@
 					</div>
 					<div class="col s10 table_box">
 						<div class="row">
-							<div class="col s12 l8">
-								<h4>My Address</h4>
-								<h6>Billing Address</h6>
-								<div class="row">
-									<div class="col s12 l8 xl6">
-										<!-- this div can be multiple -->
-										<div class="address_box">
-											<div class="card sticky-action">
-												<div class="card_title">
-													<p id="address-title">Address 1</p>
+							<div class="col s12">
+								<h4>My Account</h4>
+								<h6>Hello <span id="username">Casper</span>!</h6>
+								<div class="account_box">
+									<div class="row">
+										<div class="col s12 l6">
+											<div class="messages_box">
+												<div class="title">
+													<h2>New Messages</h2>
+													<h4>
+														You've got <span id="new-msg">10</span> new messages
+													</h4>
 												</div>
-												<div class="card_content">
-													<div class="address_content">
-														<p id="address-content">
-															CT2 7LN , 12 Stonebridge Road ,Kent, United
-															Kingdom
-														</p>
-													</div>
-													<div class="other_info">
-														<div>
-															<i
-																><img src="assets/img/phone-light.png" alt=""
-															/></i>
-															<span id="address-phone">+144 123 45 67</span>
+												<ul class="messages_box_inner">
+													<li>
+														<div class="check_items">
+															<div class="msg_img">
+																<img src="assets/img/mail-light.png" alt="" />
+															</div>
+															<div class="msg_name">
+																<p>Your Order Is Placed!</p>
+																<p>Part Number #CG-12345</p>
+																<p>
+																	<i
+																		><img
+																			src="assets/img/shop-blue.png"
+																			alt="" /></i
+																	><span id="attach-num">2</span> Attachments
+																</p>
+															</div>
+															<div class="msg_time">
+																<span id="msg-day"
+																	>Today
+																	<span id="msg-time">08:45 PM</span></span
+																>
+															</div>
 														</div>
-														<div>
-															<i><img src="assets/img/avatar.png" alt="" /></i>
-															<span id="username">Casper</span>
+													</li>
+													<li>
+														<div class="check_items">
+															<div class="msg_img circle">
+																<img src="assets/img/mail-light.png" alt="" />
+															</div>
+															<div class="msg_name">
+																<p>Complete your last order</p>
+																<p>Part Number #CG-12345</p>
+																<p>
+																	<i
+																		><img
+																			src="assets/img/shop-blue.png"
+																			alt="" /></i
+																	><span id="attach-num">2</span> Attachments
+																</p>
+															</div>
+															<div class="msg_time">
+																<span id="msg-day"
+																	>Yesterday
+																	<span id="msg-time">08:45 PM</span></span
+																>
+															</div>
 														</div>
-														<div>
-															<i><img src="assets/img/company.png" alt="" /></i>
-															<span id="address-company">Croxco</span>
+													</li>
+													<li>
+														<div class="check_items">
+															<div class="msg_img">
+																<img src="assets/img/mail-light.png" alt="" />
+															</div>
+															<div class="msg_name">
+																<p>Your Order Is Placed!</p>
+																<p>Part Number #CG-12345</p>
+																<p>
+																	<i
+																		><img
+																			src="assets/img/shop-blue.png"
+																			alt="" /></i
+																	><span id="attach-num">2</span> Attachments
+																</p>
+															</div>
+															<div class="msg_time">
+																<span id="msg-day"
+																	>Today :
+																	<span id="msg-time">08:45 PM</span></span
+																>
+															</div>
 														</div>
-													</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col s12 l6">
+											<div class="inbox_box">
+												<div class="title">
+													<h2>Inbox</h2>
+													<h4><span id="new-msg">28</span> Messages</h4>
 												</div>
-												<div class="card_footer">
-													<button
-														id="edit-info"
-														type="button"
-														class="btn waves-effect waves-light"
-													>
-														<i><img src="assets/img/print.png" alt="" /></i
-														><span>Edit Address</span>
-													</button>
-												</div>
+												<ul class="inbox_box_inner">
+													<li>
+														<div class="check_items">
+															<div class="msg_img">
+																<img src="assets/img/mail-light.png" alt="" />
+															</div>
+															<div class="msg_name">
+																<p>Your Order Is Placed!</p>
+																<p>Part Number #CG-12345</p>
+																<p>
+																	<i
+																		><img
+																			src="assets/img/shop-blue.png"
+																			alt="" /></i
+																	><span id="attach-num">2</span> Attachments
+																</p>
+															</div>
+															<div class="msg_time">
+																<span id="msg-day"
+																	>Today
+																	<span id="msg-time">08:45 PM</span></span
+																>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="check_items">
+															<div class="msg_img circle">
+																<img src="assets/img/mail-light.png" alt="" />
+															</div>
+															<div class="msg_name">
+																<p>Complete your last order</p>
+																<p>Part Number #CG-12345</p>
+																<p>
+																	<i
+																		><img
+																			src="assets/img/shop-blue.png"
+																			alt="" /></i
+																	><span id="attach-num">2</span> Attachments
+																</p>
+															</div>
+															<div class="msg_time">
+																<span id="msg-day"
+																	>Yesterday
+																	<span id="msg-time">08:45 PM</span></span
+																>
+															</div>
+														</div>
+													</li>
+													<li>
+														<div class="check_items">
+															<div class="msg_img">
+																<img src="assets/img/mail-light.png" alt="" />
+															</div>
+															<div class="msg_name">
+																<p>Your Order Is Placed!</p>
+																<p>Part Number #CG-12345</p>
+																<p>
+																	<i
+																		><img
+																			src="assets/img/shop-blue.png"
+																			alt="" /></i
+																	><span id="attach-num">2</span> Attachments
+																</p>
+															</div>
+															<div class="msg_time">
+																<span id="msg-day"
+																	>Today :
+																	<span id="msg-time">08:45 PM</span></span
+																>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<div class="active_order">
+												<h2>Active Orders</h2>
+												<h4><span id="order_num">2</span> Orders</h4>
+												<table class="table_hover responsive-table">
+													<thead>
+														<tr>
+															<th scope="col">Order Number</th>
+															<th scope="col">Date</th>
+															<th scope="col">Billing Name</th>
+															<th scope="col">Total</th>
+															<th scope="col">Payment Status</th>
+															<th scope="col">Payment Method</th>
+															<th scope="col">View Details</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>#215212512</td>
+															<td>29 June 2020</td>
+															<td>Casper Panctilious</td>
+															<td>359.00 $</td>
+															<td class="icon active">
+																<i>
+																	<img src="assets/img/active.png" alt="" />
+																</i>
+																<span>Paid/ Waiting production</span>
+															</td>
+															<td>Master Card</td>
+															<td>
+																<button class="details">
+																	<span>Details</span>
+																</button>
+															</td>
+														</tr>
+														<tr>
+															<td>#215212512</td>
+															<td>29 June 2020</td>
+															<td>Casper Panctilious</td>
+															<td>359.00 $</td>
+															<td class="icon active">
+																<i>
+																	<img src="assets/img/active.png" alt="" />
+																</i>
+																<span>Paid/ Waiting production</span>
+															</td>
+															<td>Master Card</td>
+															<td>
+																<button class="details">
+																	<span>Details</span>
+																</button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- confirm edit -->
-			<div id="edit" class="modal">
-				<div class="modal-content edit_box">
-					<a href="#!" class="modal-action modal-close"
-						><img src="assets/img/plus.png" alt=""
-					/></a>
-					<div class="edit_box_inner">
-						<form action="">
-							<div class="billing_box">
-								<div class="row">
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_small">
-											<input type="text" placeholder="Address title" />
-										</div>
-									</div>
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_icon">
-											<input type="text" placeholder="Full Name" />
-											<i class="material-icons prefix"
-												><img src="assets/img/name-icon.png" alt=""
-											/></i>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_icon flag_box">
-											<div class="row">
-												<div class="col s12 m4">
-													<div class="country">
-														<label>Area Code</label>
-														<select required>
-															<option value="" disabled selected>
-																Area Code
-															</option>
-															<option value="1">(+36)</option>
-															<option value="2">(+98)</option>
-															<option value="3">(+1)</option>
-														</select>
-													</div>
-												</div>
-
-												<div class="col s12 m8">
-													<div class="phone">
-														<input type="text" placeholder="Phone Number" />
-														<i class="material-icons prefix"
-															><img src="assets/img/phone-light.png" alt=""
-														/></i>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_icon">
-											<input type="text" placeholder="Company Name" />
-											<i class="material-icons prefix"
-												><img src="assets/img/company.png" alt=""
-											/></i>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col s12 address">
-										<div class="billing_box_inner billing_large">
-											<input type="text" placeholder="Address line 1" />
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col s12 address">
-										<div class="billing_box_inner billing_large">
-											<input type="text" placeholder="Address line 2" />
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_small">
-											<select required>
-												<option value="" disabled selected>City</option>
-												<option value="1">(+36)</option>
-												<option value="2">(+98)</option>
-												<option value="3">(+1)</option>
-											</select>
-										</div>
-									</div>
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_small">
-											<select required>
-												<option value="" disabled selected>Province</option>
-												<option value="1">(+36)</option>
-												<option value="2">(+98)</option>
-												<option value="3">(+1)</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_small">
-											<select required>
-												<option value="" disabled selected>Country</option>
-												<option value="1">(+36)</option>
-												<option value="2">(+98)</option>
-												<option value="3">(+1)</option>
-											</select>
-										</div>
-									</div>
-									<div class="col s12 m6">
-										<div class="billing_box_inner billing_small">
-											<input type="text" placeholder="Postcode" />
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row edit_btn">
-								<button
-									class="btn waves-effect waves-light"
-									id="edit-ok"
-									type="submit"
-									name="action"
-								>
-									<span>Save</span>
-								</button>
-							</div>
-						</form>
 					</div>
 				</div>
 			</div>

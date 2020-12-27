@@ -4302,6 +4302,145 @@ main.menu {
                 color: #0086e6;
                 text-transform: none;
                 margin-left: 1em; }
+      main.menu .menu_main > .row .table_box .account_box {
+        margin-top: 3em; }
+        main.menu .menu_main > .row .table_box .account_box .messages_box .title,
+        main.menu .menu_main > .row .table_box .account_box .inbox_box .title {
+          border-bottom: 1px solid #ededed; }
+        main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner,
+        main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner,
+        main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner,
+        main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner {
+          margin: 0;
+          overflow-y: scroll;
+          height: auto;
+          max-height: 225px; }
+          main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li,
+          main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li,
+          main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li,
+          main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li {
+            background-color: white; }
+            main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li:hover,
+            main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li:hover,
+            main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li:hover,
+            main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li:hover {
+              cursor: pointer; }
+            main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items,
+            main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items,
+            main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items,
+            main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items {
+              display: flex;
+              align-items: center;
+              border-bottom: 1px solid #ededed; }
+              main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_img,
+              main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_img,
+              main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_img,
+              main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_img {
+                width: 64px;
+                height: 64px;
+                background-color: #e2e2e2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 1.5em; }
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_img img,
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_img img,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_img img,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_img img {
+                  width: 23px;
+                  height: 16px; }
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_img.circle,
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_img.circle,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_img.circle,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_img.circle {
+                  border-radius: 50%; }
+              main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_name,
+              main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_name,
+              main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_name,
+              main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_name {
+                text-align: left;
+                flex: 1;
+                margin-left: 4em; }
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_name p:first-child,
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_name p:first-child,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_name p:first-child,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_name p:first-child {
+                  font-size: 14px;
+                  font-family: "OpenSans-Bold";
+                  color: #161719; }
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_name p:nth-child(2),
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(2),
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_name p:nth-child(2),
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(2) {
+                  font-size: 12px;
+                  font-family: "OpenSans";
+                  color: #545454; }
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_name p:nth-child(3),
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(3),
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_name p:nth-child(3),
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(3) {
+                  font-size: 12px;
+                  font-family: "OpenSans";
+                  color: #0086e6; }
+                  main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_name p:nth-child(3) i,
+                  main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(3) i,
+                  main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_name p:nth-child(3) i,
+                  main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(3) i {
+                    margin-right: 1em; }
+                    main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_name p:nth-child(3) i img,
+                    main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(3) i img,
+                    main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_name p:nth-child(3) i img,
+                    main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_name p:nth-child(3) i img {
+                      width: 20px; }
+              main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_time,
+              main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_time,
+              main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_time,
+              main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_time {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                height: 85px;
+                align-items: flex-end; }
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_time span,
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_time span,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_time span,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_time span {
+                  font-size: 12px;
+                  font-family: "OpenSans";
+                  color: #7d7d7d; }
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.messages_box_inner li .check_items .msg_time #msg-day,
+                main.menu .menu_main > .row .table_box .account_box .messages_box ul.inbox_box_inner li .check_items .msg_time #msg-day,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.messages_box_inner li .check_items .msg_time #msg-day,
+                main.menu .menu_main > .row .table_box .account_box .inbox_box ul.inbox_box_inner li .check_items .msg_time #msg-day {
+                  margin-right: 1em; }
+        main.menu .menu_main > .row .table_box .account_box .active_order,
+        main.menu .menu_main > .row .table_box .account_box .messages_box,
+        main.menu .menu_main > .row .table_box .account_box .inbox_box {
+          border: 1px solid #7d7d7d; }
+          main.menu .menu_main > .row .table_box .account_box .active_order h2,
+          main.menu .menu_main > .row .table_box .account_box .messages_box h2,
+          main.menu .menu_main > .row .table_box .account_box .inbox_box h2 {
+            font-size: 16px;
+            font-family: "OpenSans-Bold";
+            color: #161719;
+            margin: 2em auto 1em 1.5em; }
+          main.menu .menu_main > .row .table_box .account_box .active_order h4,
+          main.menu .menu_main > .row .table_box .account_box .messages_box h4,
+          main.menu .menu_main > .row .table_box .account_box .inbox_box h4 {
+            font-size: 12px;
+            font-family: "OpenSans";
+            color: #3d3d3d;
+            margin: 1em auto 2em 2em; }
+          main.menu .menu_main > .row .table_box .account_box .active_order .table_hover,
+          main.menu .menu_main > .row .table_box .account_box .messages_box .table_hover,
+          main.menu .menu_main > .row .table_box .account_box .inbox_box .table_hover {
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-bottom: 0px !important; }
+            main.menu .menu_main > .row .table_box .account_box .active_order .table_hover tbody tr,
+            main.menu .menu_main > .row .table_box .account_box .messages_box .table_hover tbody tr,
+            main.menu .menu_main > .row .table_box .account_box .inbox_box .table_hover tbody tr {
+              outline: none; }
       main.menu .menu_main > .row .table_box .table_hover {
         border-collapse: separate;
         border-spacing: 0 1em;
@@ -5044,6 +5183,15 @@ main.menu {
     main.menu .menu_main > .row .table_box .order_box span.title {
       position: relative !important;
       top: 0 !important; }
+  main.menu .menu_main > .row .table_box .messages_box,
+  main.menu .menu_main > .row .table_box .inbox_box {
+    margin-bottom: 1.5em; }
+    main.menu .menu_main > .row .table_box .messages_box .check_items,
+    main.menu .menu_main > .row .table_box .inbox_box .check_items {
+      display: inline-flex !important; }
+      main.menu .menu_main > .row .table_box .messages_box .check_items .msg_name,
+      main.menu .menu_main > .row .table_box .inbox_box .check_items .msg_name {
+        width: 20em; }
   main.menu .menu_main > .row .table_box .table_hover thead th:first-child,
   main.menu .menu_main > .row .table_box .table_hover tbody tr td:first-child {
     padding-left: 0px !important; }
@@ -5111,6 +5259,9 @@ main.menu {
       position: relative; }
       main.menu .modal .billing_box div.col .billing_box_inner .phone input {
         width: 158px !important; } }
+@media screen and (min-height: 768px) and (max-height: 835px) {
+  main.menu nav {
+    height: 121vh !important; } }
 nav.header_box {
   background-color: #004377 !important; }
   nav.header_box ul {
