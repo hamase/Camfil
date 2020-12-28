@@ -63,6 +63,17 @@ $(document).ready(function () {
 	$("#edit-info").click(function () {
 		$("#edit").modal("open");
 	});
+	$("#notif-badge").click(function () {
+		$(".basket_box").css("display", "none");
+		$(".notif_box").css("display", "block");
+	});
+	$("#notif-basket").click(function () {
+		$(".notif_box").css("display", "none");
+		$(".basket_box").css("display", "block");
+	});
+	$("main").click(function () {
+		$(".notif_box, .basket_box").css("display", "none");
+	});
 
 	// close just by close button, not click on body
 	$("#sign-up").modal({

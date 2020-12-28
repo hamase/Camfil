@@ -53,15 +53,132 @@
 									/></a>
 								</li>
 								<li>
-									<a class="waves-effect waves-light btn" href="#"
+									<a
+										class="waves-effect waves-light btn"
+										href="#"
+										id="notif-badge"
 										><img src="assets/img/bell-blue.png" alt="" />
 										<span id="notifications" class="badge red">5</span>
 									</a>
+									<div class="notif_box">
+										<div class="title">
+											<h2>Notifications</h2>
+											<a href="#!" class="modal-action modal-close"
+												><img src="assets/img/plus.png" alt=""
+											/></a>
+										</div>
+										<ul class="notif_box_inner">
+											<li>
+												<div class="check_items">
+													<div class="notif_img">
+														<img src="assets/img/mail-light.png" alt="" />
+													</div>
+													<div class="notif_name">
+														<p>Your Order Is Placed!</p>
+														<p>Part Number #CG-12345</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="check_items">
+													<div class="notif_img circle">
+														<img src="assets/img/mail-light.png" alt="" />
+													</div>
+													<div class="notif_name">
+														<p>You have a new message!</p>
+														<p>Part Number #CG-12345</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="check_items">
+													<div class="notif_img">
+														<img src="assets/img/mail-light.png" alt="" />
+													</div>
+													<div class="notif_name">
+														<p>You have a new message!</p>
+														<p>Part Number #CG-12345</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<p class="results">
+											Show all notifications
+											<span id="show-all-notif">(10)</span>
+										</p>
+									</div>
 								</li>
 								<li>
-									<a class="waves-effect waves-light btn" href="#"
+									<a
+										class="waves-effect waves-light btn"
+										href="#"
+										id="notif-basket"
 										><img src="assets/img/shop-blue.png" alt=""
 									/></a>
+									<div class="basket_box">
+										<div class="title">
+											<h2>Cart</h2>
+											<a href="#!" class="modal-action modal-close"
+												><img src="assets/img/plus.png" alt=""
+											/></a>
+										</div>
+										<ul class="basket_box_inner">
+											<li>
+												<div class="check_items">
+													<div class="notif_img">
+														<img src="assets/img/mail-light.png" alt="" />
+													</div>
+													<div class="notif_name">
+														<p>Parts Of Liquid Drainer</p>
+														<p>Armestrang</p>
+														<p id="basket-pay">$</p>
+													</div>
+													<div class="notif_delete">
+														<i class="delete_icon"
+															><img src="assets/img/bin.png" alt=""
+														/></i>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="check_items">
+													<div class="notif_img">
+														<img src="assets/img/mail-light.png" alt="" />
+													</div>
+													<div class="notif_name">
+														<p>Parts Of Liquid Drainer</p>
+														<p>Armestrang</p>
+														<p id="basket-pay">$</p>
+													</div>
+													<div class="notif_delete">
+														<i class="delete_icon"
+															><img src="assets/img/bin.png" alt=""
+														/></i>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="check_items">
+													<div class="notif_img">
+														<img src="assets/img/mail-light.png" alt="" />
+													</div>
+													<div class="notif_name">
+														<p>Parts Of Liquid Drainer</p>
+														<p>Armestrang</p>
+														<p id="basket-pay">$</p>
+													</div>
+													<div class="notif_delete">
+														<i class="delete_icon"
+															><img src="assets/img/bin.png" alt=""
+														/></i>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<p class="go_cart">
+											<a href="">Go to Cart</a>
+										</p>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -478,10 +595,10 @@
 									</button>
 									<div class="collection_box">
 										<ul class="collection">
-                                            <p class="results">
-                                                See All Results <span id="search-num-home">(10)</span>
-                                            </p>
-                                        </ul>
+											<p class="results">
+												See All Results <span id="search-num-home">(10)</span>
+											</p>
+										</ul>
 									</div>
 								</form>
 							</div>
@@ -800,12 +917,13 @@
 											<span>Search</span>
 										</button>
 										<div class="collection_box">
-                                            <ul class="collection">
-                                                <p class="results">
-                                                    See All Results <span id="search-num-footer">(10)</span>
-                                                </p>
-                                            </ul>
-                                        </div>
+											<ul class="collection">
+												<p class="results">
+													See All Results
+													<span id="search-num-footer">(10)</span>
+												</p>
+											</ul>
+										</div>
 									</div>
 								</form>
 							</div>
