@@ -193,7 +193,7 @@
 							<h4>Register</h4>
 							<form action="" method="post">
 								<div class="row flex_box">
-									<div class="modal_inner">
+									<div class="col s12 m6 modal_inner">
 										<input
 											type="text"
 											class="col s12 l6"
@@ -204,7 +204,7 @@
 											><img src="assets/img/name-icon.png" alt=""
 										/></i>
 									</div>
-									<div class="modal_inner">
+									<div class="col s12 m6 modal_inner">
 										<input
 											type="text"
 											class="col s12 l6"
@@ -217,18 +217,739 @@
 									</div>
 								</div>
 								<div class="row flex_box">
-									<div class="modal_inner count-phone">
-										<div class="country">
-											<select required>
-												<option value="" disabled selected aria-required="true">
-													Choose your option
-												</option>
-												<option value="1">(+36)</option>
-												<option value="2">(+98)</option>
-												<option value="3">(+1)</option>
-											</select>
+									<div class="col s12 m6 modal_inner count-phone">
+										<div class="col s6 m4 country signup" id="flag-box">
+											<!-- flag button -->
+											<a
+												class="dropdown-trigger btn dropdownBtn"
+												href="#"
+												data-target="flags"
+												>Area Code
+												<img src="assets/img/chevron_left_gray.png" alt=""
+											/></a>
+
+											<!-- Dropdown flags -->
+											<ul class="f32 dropdown-content" id="flags">
+												<li class="flag af">
+													<span>Afghanistan</span><span>(93)</span>
+												</li>
+												<li class="flag al">
+													<span>Albania</span><span>(355)</span>
+												</li>
+												<li class="flag dz">
+													<span>Algeria</span><span>(213)</span>
+												</li>
+												<li class="flag as">
+													<span>American Samoa</span><span>(1)</span>
+												</li>
+												<li class="flag ad">
+													<span>Andorra</span><span>(376)</span>
+												</li>
+												<li class="flag ao">
+													<span>Angola</span><span>(244)</span>
+												</li>
+												<li class="flag ai">
+													<span>Anguilla</span><span>(1)</span>
+												</li>
+												<li class="flag ag">
+													<span>Antigua and Barbuda</span><span>(1)</span>
+												</li>
+												<li class="flag ar">
+													<span>Argentina</span><span>(54)</span>
+												</li>
+												<li class="flag am">
+													<span>Armenia</span><span>(374)</span>
+												</li>
+												<li class="flag aw">
+													<span>Aruba</span><span>(297)</span>
+												</li>
+												<li class="flag au">
+													<span>Australia</span><span>(61)</span>
+												</li>
+												<li class="flag at">
+													<span>Austria</span><span>(43)</span>
+												</li>
+												<li class="flag az">
+													<span>Azerbaijan</span><span>(994)</span>
+												</li>
+
+												<li class="flag bs">
+													<span>Bahamas</span><span>(1)</span>
+												</li>
+												<li class="flag bh">
+													<span>Bahrain</span><span>(973)</span>
+												</li>
+												<li class="flag bd">
+													<span>Bangladesh</span><span>(880)</span>
+												</li>
+												<li class="flag bb">
+													<span>Barbados</span><span>(1)</span>
+												</li>
+												<li class="flag by">
+													<span>Belarus</span><span>(375)</span>
+												</li>
+												<li class="flag be">
+													<span>Belgium</span><span>(32)</span>
+												</li>
+												<li class="flag bz">
+													<span>Belize</span><span>(501)</span>
+												</li>
+												<li class="flag bj">
+													<span>Benin</span><span>(229)</span>
+												</li>
+												<li class="flag bm">
+													<span>Bermuda</span><span>(1)</span>
+												</li>
+												<li class="flag bt">
+													<span>Bhutan</span><span>(975)</span>
+												</li>
+												<li class="flag bo">
+													<span>Bolivia</span><span>(591)</span>
+												</li>
+												<li class="flag ba">
+													<span>Bosnia and Herzegovina</span><span>(387)</span>
+												</li>
+												<li class="flag bw">
+													<span>Botswana</span><span>(267)</span>
+												</li>
+												<li class="flag br">
+													<span>Brazil</span><span>(55)</span>
+												</li>
+												<li class="flag bn">
+													<span>Brunei Darussalam</span><span>(673)</span>
+												</li>
+												<li class="flag bg">
+													<span>Bulgaria</span><span>(359)</span>
+												</li>
+												<li class="flag bf">
+													<span>Burkina Faso</span><span>(226)</span>
+												</li>
+												<li class="flag bi">
+													<span>Burundi</span><span>(257)</span>
+												</li>
+
+												<li class="flag kh">
+													<span>Cambodia</span><span>(855)</span>
+												</li>
+												<li class="flag cm">
+													<span>Cameroon</span><span>(237)</span>
+												</li>
+												<li class="flag ca">
+													<span>Canada</span><span>(1)</span>
+												</li>
+												<li class="flag cv">
+													<span>Cape Verde</span><span>(238)</span>
+												</li>
+												<li class="flag ky">
+													<span>Cayman Islands</span><span>(1)</span>
+												</li>
+												<li class="flag cf">
+													<span>Central African Republic</span
+													><span>(236)</span>
+												</li>
+												<li class="flag td">
+													<span>Chad</span><span>(235)</span>
+												</li>
+												<li class="flag cl">
+													<span>Chile</span><span>(56)</span>
+												</li>
+												<li class="flag cn">
+													<span>China</span><span>(86)</span>
+												</li>
+												<li class="flag cx island">
+													<span>Christmas Island</span><span>(61)</span>
+												</li>
+												<li class="flag cc island">
+													<span>Cocos [Keeling] Islands</span><span>(61)</span>
+												</li>
+												<li class="flag co">
+													<span>Colombia</span><span>(57)</span>
+												</li>
+												<li class="flag km">
+													<span>Comoros</span><span>(269)</span>
+												</li>
+												<li class="flag cg">
+													<span>Congo - Brazzaville</span><span>(242)</span>
+												</li>
+												<li class="flag cd">
+													<span>Congo - Kinshasa</span><span>(243)</span>
+												</li>
+												<li class="flag ck island">
+													<span>Cook Islands</span><span>(682)</span>
+												</li>
+												<li class="flag cr">
+													<span>Costa Rica</span><span>(506)</span>
+												</li>
+												<li class="flag ci">
+													<span>Côte d’Ivoire</span><span>(225)</span>
+												</li>
+												<li class="flag hr">
+													<span>Croatia</span><span>(385)</span>
+												</li>
+												<li class="flag cu">
+													<span>Cuba</span><span>(53)</span>
+												</li>
+												<li class="flag cy">
+													<span>Cyprus</span><span>(357)</span>
+												</li>
+												<li class="flag cz">
+													<span>Czech Republic</span><span>(420)</span>
+												</li>
+
+												<li class="flag dk">
+													<span>Denmark</span><span>(45)</span>
+												</li>
+												<li class="flag dj">
+													<span>Djibouti</span><span>(253)</span>
+												</li>
+												<li class="flag dm">
+													<span>Dominica</span><span>(1)</span>
+												</li>
+												<li class="flag do">
+													<span>Dominican Republic</span><span>(1)</span>
+												</li>
+
+												<li class="flag ec">
+													<span>Ecuador</span><span>(593)</span>
+												</li>
+												<li class="flag eg">
+													<span>Egypt</span><span>(20)</span>
+												</li>
+												<li class="flag sv">
+													<span>El Salvador</span><span>(503)</span>
+												</li>
+												<li class="flag gq">
+													<span>Equatorial Guinea</span><span>(240)</span>
+												</li>
+												<li class="flag er">
+													<span>Eritrea</span><span>(291)</span>
+												</li>
+												<li class="flag ee">
+													<span>Estonia</span><span>(372)</span>
+												</li>
+												<li class="flag et">
+													<span>Ethiopia</span><span>(251)</span>
+												</li>
+
+												<li class="flag fk island">
+													<span>Falkland Islands</span><span>(500)</span>
+												</li>
+												<li class="flag fo island">
+													<span>Faroe Islands</span><span>(298)</span>
+												</li>
+												<li class="flag fj">
+													<span>Fiji</span><span>(679)</span>
+												</li>
+												<li class="flag fi">
+													<span>Finland</span><span>(358)</span>
+												</li>
+												<li class="flag fr">
+													<span>France</span><span>(33)</span>
+												</li>
+												<li class="flag gf">
+													<span>French Guiana</span><span>(594)</span>
+												</li>
+												<li class="flag pf">
+													<span>French Polynesia</span><span>(689)</span>
+												</li>
+
+												<li class="flag ga">
+													<span>Gabon</span><span>(241)</span>
+												</li>
+												<li class="flag gm">
+													<span>Gambia</span><span>(220)</span>
+												</li>
+												<li class="flag ge">
+													<span>Georgia</span><span>(995)</span>
+												</li>
+												<li class="flag de">
+													<span>Germany</span><span>(49)</span>
+												</li>
+												<li class="flag gh">
+													<span>Ghana</span><span>(233)</span>
+												</li>
+												<li class="flag gi">
+													<span>Gibraltar</span><span>(350)</span>
+												</li>
+												<li class="flag gr">
+													<span>Greece</span><span>(30)</span>
+												</li>
+												<li class="flag gl">
+													<span>Greenland</span><span>(299)</span>
+												</li>
+												<li class="flag gd">
+													<span>Grenada</span><span>(1)</span>
+												</li>
+												<li class="flag gp">
+													<span>Guadeloupe</span><span>(590)</span>
+												</li>
+												<li class="flag gu">
+													<span>Guam</span><span>(1)</span>
+												</li>
+												<li class="flag gt">
+													<span>Guatemala</span><span>(502)</span>
+												</li>
+												<li class="flag gn">
+													<span>Guinea</span><span>(224)</span>
+												</li>
+												<li class="flag gw">
+													<span>Guinea-Bissau</span><span>(245)</span>
+												</li>
+												<li class="flag gy">
+													<span>Guyana</span><span>(592)</span>
+												</li>
+
+												<li class="flag ht">
+													<span>Haiti</span><span>(509)</span>
+												</li>
+												<li class="flag hn">
+													<span>Honduras</span><span>(504)</span>
+												</li>
+												<li class="flag hk">
+													<span>Hong Kong SAR China</span><span>(852)</span>
+												</li>
+												<li class="flag hu">
+													<span>Hungary</span><span>(36)</span>
+												</li>
+
+												<li class="flag is">
+													<span>Iceland</span><span>(354)</span>
+												</li>
+												<li class="flag in">
+													<span>India</span><span>(91)</span>
+												</li>
+												<li class="flag id">
+													<span>Indonesia</span><span>(62)</span>
+												</li>
+												<li class="flag ir">
+													<span>Iran</span><span>(98)</span>
+												</li>
+												<li class="flag iq">
+													<span>Iraq</span><span>(964)</span>
+												</li>
+												<li class="flag ie">
+													<span>Ireland</span><span>(353)</span>
+												</li>
+												<li class="flag il">
+													<span>Israel</span><span>(972)</span>
+												</li>
+												<li class="flag it">
+													<span>Italy</span><span>(39)</span>
+												</li>
+
+												<li class="flag jm">
+													<span>Jamaica</span><span>(1)</span>
+												</li>
+												<li class="flag jp">
+													<span>Japan</span><span>(81)</span>
+												</li>
+												<li class="flag jo">
+													<span>Jordan</span><span>(962)</span>
+												</li>
+
+												<li class="flag kz">
+													<span>Kazakhstan</span><span>(7)</span>
+												</li>
+												<li class="flag ke">
+													<span>Kenya</span><span>(254)</span>
+												</li>
+												<li class="flag ki">
+													<span>Kiribati</span><span>(686)</span>
+												</li>
+												<li class="flag kp">
+													<span>North Korea</span><span>(850)</span>
+												</li>
+												<li class="flag kr">
+													<span>South Korea</span><span>(82)</span>
+												</li>
+												<li class="flag kw">
+													<span>Kuwait</span><span>(965)</span>
+												</li>
+												<li class="flag kg">
+													<span>Kyrgyzstan</span><span>(996)</span>
+												</li>
+
+												<li class="flag la">
+													<span>Laos</span><span>(856)</span>
+												</li>
+												<li class="flag lv">
+													<span>Latvia</span><span>(371)</span>
+												</li>
+												<li class="flag lb">
+													<span>Lebanon</span><span>(961)</span>
+												</li>
+												<li class="flag ls">
+													<span>Lesotho</span><span>(266)</span>
+												</li>
+												<li class="flag lr">
+													<span>Liberia</span><span>(231)</span>
+												</li>
+												<li class="flag ly">
+													<span>Libya</span><span>(218)</span>
+												</li>
+												<li class="flag li">
+													<span>Liechtenstein</span><span>(423)</span>
+												</li>
+												<li class="flag lt">
+													<span>Lithuania</span><span>(370)</span>
+												</li>
+												<li class="flag lu">
+													<span>Luxembourg</span><span>(352)</span>
+												</li>
+
+												<li class="flag mo">
+													<span>Macau SAR China</span><span>(853)</span>
+												</li>
+												<li class="flag mk">
+													<span>Macedonia</span><span>(389)</span>
+												</li>
+												<li class="flag mg">
+													<span>Madagascar</span><span>(261)</span>
+												</li>
+												<li class="flag mw">
+													<span>Malawi</span><span>(265)</span>
+												</li>
+												<li class="flag my">
+													<span>Malaysia</span><span>(60)</span>
+												</li>
+												<li class="flag mv">
+													<span>Maldives</span><span>(960)</span>
+												</li>
+												<li class="flag ml">
+													<span>Mali</span><span>(223)</span>
+												</li>
+												<li class="flag mt">
+													<span>Malta</span><span>(356)</span>
+												</li>
+												<li class="flag mh">
+													<span>Marshall Islands</span><span>(692)</span>
+												</li>
+												<li class="flag mq island">
+													<span>Martinique</span><span>(596)</span>
+												</li>
+												<li class="flag mr">
+													<span>Mauritania</span><span>(222)</span>
+												</li>
+												<li class="flag mu">
+													<span>Mauritius</span><span>(230)</span>
+												</li>
+												<li class="flag yt island">
+													<span>Mayotte (FR)</span><span>(262)</span>
+												</li>
+												<li class="flag mx">
+													<span>Mexico</span><span>(52)</span>
+												</li>
+												<li class="flag fm">
+													<span>Micronesia</span><span>(691)</span>
+												</li>
+												<li class="flag md">
+													<span>Moldova</span><span>(373)</span>
+												</li>
+												<li class="flag mc">
+													<span>Monaco</span><span>(377)</span>
+												</li>
+												<li class="flag mn">
+													<span>Mongolia</span><span>(976)</span>
+												</li>
+												<li class="flag me">
+													<span>Montenegro</span><span>(382)</span>
+												</li>
+												<li class="flag ms">
+													<span>Montserrat</span><span>(1)</span>
+												</li>
+												<li class="flag ma">
+													<span>Morocco</span><span>(212)</span>
+												</li>
+												<li class="flag mz">
+													<span>Mozambique</span><span>(258)</span>
+												</li>
+												<li class="flag mm">
+													<span>Myanmar [Burma]</span><span>(95)</span>
+												</li>
+
+												<li class="flag na">
+													<span>Namibia</span><span>(264)</span>
+												</li>
+												<li class="flag nr">
+													<span>Nauru</span><span>(674)</span>
+												</li>
+												<li class="flag np">
+													<span>Nepal</span><span>(977)</span>
+												</li>
+												<li class="flag nl">
+													<span>Netherlands</span><span>(31)</span>
+												</li>
+												<li class="flag an deprecated">
+													<span>Netherlands Antilles</span><span>(599)</span>
+												</li>
+												<li class="flag nc">
+													<span>New Caledonia</span><span>(687)</span>
+												</li>
+												<li class="flag nz">
+													<span>New Zealand</span><span>(64)</span>
+												</li>
+												<li class="flag ni">
+													<span>Nicaragua</span><span>(505)</span>
+												</li>
+												<li class="flag ne">
+													<span>Niger</span><span>(227)</span>
+												</li>
+												<li class="flag ng">
+													<span>Nigeria</span><span>(234)</span>
+												</li>
+												<li class="flag nu">
+													<span>Niue</span><span>(683)</span>
+												</li>
+												<li class="flag nf island">
+													<span>Norfolk Island</span><span>(672)</span>
+												</li>
+												<li class="flag mp island">
+													<span>Northern Mariana Islands</span><span>(1)</span>
+												</li>
+												<li class="flag no">
+													<span>Norway</span><span>(47)</span>
+												</li>
+
+												<li class="flag om">
+													<span>Oman</span><span>(968)</span>
+												</li>
+
+												<li class="flag pk">
+													<span>Pakistan</span><span>(92)</span>
+												</li>
+												<li class="flag pw">
+													<span>Palau</span><span>(680)</span>
+												</li>
+												<li class="flag ps">
+													<span>Palestinian Territories</span><span>(970)</span>
+												</li>
+												<li class="flag pa">
+													<span>Panama</span><span>(507)</span>
+												</li>
+												<li class="flag pg">
+													<span>Papua New Guinea</span><span>(675)</span>
+												</li>
+												<li class="flag py">
+													<span>Paraguay</span><span>(595)</span>
+												</li>
+												<li class="flag pe">
+													<span>Peru</span><span>(51)</span>
+												</li>
+												<li class="flag ph">
+													<span>Philippines</span><span>(63)</span>
+												</li>
+												<li class="flag pn island">
+													<span>Pitcairn Islands</span><span>(870)</span>
+												</li>
+												<li class="flag pl">
+													<span>Poland</span><span>(48)</span>
+												</li>
+												<li class="flag pt">
+													<span>Portugal</span><span>(351)</span>
+												</li>
+												<li class="flag pr">
+													<span>Puerto Rico</span><span>(1)</span>
+												</li>
+
+												<li class="flag qa">
+													<span>Qatar</span><span>(974)</span>
+												</li>
+
+												<li class="flag ro">
+													<span>Romania</span><span>(40)</span>
+												</li>
+												<li class="flag ru">
+													<span>Russia</span><span>(7)</span>
+												</li>
+												<li class="flag rw">
+													<span>Rwanda</span><span>(250)</span>
+												</li>
+
+												<li class="flag sh island">
+													<span>Saint Helena (GB)</span><span>(290)</span>
+												</li>
+												<li class="flag kn">
+													<span>Saint Kitts and Nevis</span><span>(1)</span>
+												</li>
+												<li class="flag lc">
+													<span>Saint Lucia</span><span>(1)</span>
+												</li>
+												<li class="flag pm island">
+													<span>Saint Pierre and Miquelon</span
+													><span>(508)</span>
+												</li>
+												<li class="flag vc">
+													<span>Saint Vincent and the Grenadines</span
+													><span>(1)</span>
+												</li>
+												<li class="flag ws">
+													<span>Samoa</span><span>(685)</span>
+												</li>
+												<li class="flag sm">
+													<span>San Marino</span><span>(378)</span>
+												</li>
+												<li class="flag st">
+													<span>São Tomé and Príncipe</span><span>(239)</span>
+												</li>
+												<li class="flag sa">
+													<span>Saudi Arabia</span><span>(966)</span>
+												</li>
+												<li class="flag sn">
+													<span>Senegal</span><span>(221)</span>
+												</li>
+												<li class="flag rs">
+													<span>Serbia</span><span>(381)</span>
+												</li>
+												<li class="flag sc">
+													<span>Seychelles</span><span>(248)</span>
+												</li>
+												<li class="flag sl">
+													<span>Sierra Leone</span><span>(232)</span>
+												</li>
+												<li class="flag sg">
+													<span>Singapore</span><span>(65)</span>
+												</li>
+												<li class="flag sk">
+													<span>Slovakia</span><span>(421)</span>
+												</li>
+												<li class="flag si">
+													<span>Slovenia</span><span>(386)</span>
+												</li>
+												<li class="flag sb">
+													<span>Solomon Islands</span><span>(677)</span>
+												</li>
+												<li class="flag so">
+													<span>Somalia</span><span>(252)</span>
+												</li>
+												<li class="flag za">
+													<span>South Africa</span><span>(27)</span>
+												</li>
+												<li class="flag es">
+													<span>Spain</span><span>(34)</span>
+												</li>
+												<li class="flag lk">
+													<span>Sri Lanka</span><span>(94)</span>
+												</li>
+												<li class="flag sd">
+													<span>Sudan</span><span>(249)</span>
+												</li>
+												<li class="flag sr">
+													<span>Suriname</span><span>(597)</span>
+												</li>
+												<li class="flag sj island">
+													<span>Svalbard and Jan Mayen</span><span>(47)</span>
+												</li>
+												<li class="flag sz">
+													<span>Swaziland</span><span>(268)</span>
+												</li>
+												<li class="flag se">
+													<span>Sweden</span><span>(46)</span>
+												</li>
+												<li class="flag ch">
+													<span>Switzerland</span><span>(41)</span>
+												</li>
+												<li class="flag sy">
+													<span>Syria</span><span>(963)</span>
+												</li>
+
+												<li class="flag tw">
+													<span>Taiwan</span><span>(886)</span>
+												</li>
+												<li class="flag tj">
+													<span>Tajikistan</span><span>(992)</span>
+												</li>
+												<li class="flag tz">
+													<span>Tanzania</span><span>(255)</span>
+												</li>
+												<li class="flag th">
+													<span>Thailand</span><span>(66)</span>
+												</li>
+												<li class="flag tl">
+													<span>Timor-Leste</span><span>(670)</span>
+												</li>
+												<li class="flag tg">
+													<span>Togo</span><span>(228)</span>
+												</li>
+												<li class="flag tk island">
+													<span>Tokelau</span><span>(690)</span>
+												</li>
+												<li class="flag to">
+													<span>Tonga</span><span>(676)</span>
+												</li>
+												<li class="flag tt">
+													<span>Trinidad and Tobago</span><span>(1)</span>
+												</li>
+												<li class="flag tn">
+													<span>Tunisia</span><span>(216)</span>
+												</li>
+												<li class="flag tr">
+													<span>Turkey</span><span>(90)</span>
+												</li>
+												<li class="flag tm">
+													<span>Turkmenistan</span><span>(993)</span>
+												</li>
+												<li class="flag tc island">
+													<span>Turks and Caicos Islands</span><span>(1)</span>
+												</li>
+												<li class="flag tv">
+													<span>Tuvalu</span><span>(688)</span>
+												</li>
+
+												<li class="flag ug">
+													<span>Uganda</span><span>(265)</span>
+												</li>
+												<li class="flag ua">
+													<span>Ukraine</span><span>(380)</span>
+												</li>
+												<li class="flag ae">
+													<span>United Arab Emirates</span><span>(971)</span>
+												</li>
+												<li class="flag gb">
+													<span>United Kingdom</span><span>(44)</span>
+												</li>
+												<li class="flag us">
+													<span>United States</span><span>(1)</span>
+												</li>
+												<li class="flag uy">
+													<span>Uruguay</span><span>(598)</span>
+												</li>
+												<li class="flag uz">
+													<span>Uzbekistan</span><span>(998)</span>
+												</li>
+
+												<li class="flag vu">
+													<span>Vanuatu</span><span>(678)</span>
+												</li>
+												<li class="flag ve">
+													<span>Venezuela</span><span>(58)</span>
+												</li>
+												<li class="flag vn">
+													<span>Vietnam</span><span>(84)</span>
+												</li>
+												<li class="flag vg island">
+													<span>British Virgin Islands</span><span>(1)</span>
+												</li>
+												<li class="flag vi island">
+													<span>U.S. Virgin Islands</span><span>(1)</span>
+												</li>
+
+												<li class="flag wf island">
+													<span>Wallis and Futuna</span><span>(681)</span>
+												</li>
+
+												<li class="flag ye">
+													<span>Yemen</span><span>(967)</span>
+												</li>
+
+												<li class="flag zm">
+													<span>Zambia</span><span>(260)</span>
+												</li>
+												<li class="flag zw">
+													<span>Zimbabwe</span><span>(263)</span>
+												</li>
+											</ul>
 										</div>
-										<div class="phone">
+										<div class="col s6 m8 phone">
 											<input
 												id="phone-number"
 												type="tel"
@@ -241,7 +962,7 @@
 											/></i>
 										</div>
 									</div>
-									<div class="modal_inner">
+									<div class="col s12 m6 modal_inner">
 										<input
 											type="text"
 											class="col s12 l6"
@@ -254,7 +975,7 @@
 									</div>
 								</div>
 								<div class="row flex_box">
-									<div class="modal_inner">
+									<div class="col s12 m6 modal_inner">
 										<input
 											id="email"
 											type="email"
@@ -266,7 +987,7 @@
 											><img src="assets/img/mail-light.png" alt=""
 										/></i>
 									</div>
-									<div class="modal_inner">
+									<div class="col s12 m6 modal_inner">
 										<input
 											id="password-login"
 											type="password"
