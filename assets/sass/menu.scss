@@ -286,6 +286,13 @@ main.menu {
 							}
 							.address_content {
 								margin-bottom: 3em;
+								p {
+									overflow: hidden;
+									width: 350px;
+									display: -webkit-box;
+									-webkit-line-clamp: 2;
+									-webkit-box-orient: vertical;
+								}
 							}
 							.other_info {
 								margin-bottom: 3em;
