@@ -142,7 +142,7 @@ body header {
     position: absolute;
     background: white;
     padding: 5px;
-    width: 20%;
+    width: 22%;
     text-align: left;
     margin-left: -60px;
     border-radius: 0px;
@@ -167,7 +167,11 @@ body header {
       body header .notif_box .title a.modal-close,
       body header .basket_box .title a.modal-close {
         float: right;
-        clear: both; }
+        clear: both;
+        padding: 0; }
+        body header .notif_box .title a.modal-close:hover,
+        body header .basket_box .title a.modal-close:hover {
+          background-color: rgba(0, 0, 0, 0); }
         body header .notif_box .title a.modal-close img,
         body header .basket_box .title a.modal-close img {
           transform: rotate(225deg);
@@ -216,7 +220,7 @@ body header {
       margin: 0 !important;
       overflow-y: scroll;
       height: auto;
-      max-height: 225px; }
+      max-height: 280px; }
       body header .notif_box ul.notif_box_inner li,
       body header .notif_box ul.basket_box_inner li,
       body header .basket_box ul.notif_box_inner li,

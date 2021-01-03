@@ -71,6 +71,9 @@ $(document).ready(function () {
 		$(".notif_box").css("display", "none");
 		$(".basket_box").css("display", "block");
 	});
+	$(".all_notif a.modal-close").click(function () {
+		$(".all_notif").css("display", "none");
+	});
 	$("main").click(function () {
 		$(".notif_box, .basket_box").css("display", "none");
 	});
