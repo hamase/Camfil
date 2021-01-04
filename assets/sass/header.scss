@@ -292,6 +292,12 @@ body {
 							}
 						}
 					}
+					&:nth-child(2) {
+						margin-left: 0px !important;
+					}
+					&:nth-child(4) {
+						margin-right: 0px !important;
+					}
 				}
 			}
 		}

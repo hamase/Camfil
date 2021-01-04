@@ -295,6 +295,16 @@ body header {
           body header .basket_box ul.basket_box_inner li .check_items .notif_delete i img {
             width: 13px;
             height: 13px; }
+        body header .notif_box ul.notif_box_inner li:nth-child(2),
+        body header .notif_box ul.basket_box_inner li:nth-child(2),
+        body header .basket_box ul.notif_box_inner li:nth-child(2),
+        body header .basket_box ul.basket_box_inner li:nth-child(2) {
+          margin-left: 0px !important; }
+        body header .notif_box ul.notif_box_inner li:nth-child(4),
+        body header .notif_box ul.basket_box_inner li:nth-child(4),
+        body header .basket_box ul.notif_box_inner li:nth-child(4),
+        body header .basket_box ul.basket_box_inner li:nth-child(4) {
+          margin-right: 0px !important; }
 
 @media screen and (max-width: 992px) {
   body .header_box > div {
