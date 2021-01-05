@@ -2667,10 +2667,15 @@ body main {
         color: #0086e6; }
     body main .product_main .product_box .row .product_box_inner .product_img {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%;
+      height: 412px;
+      align-items: center; }
       body main .product_main .product_box .row .product_box_inner .product_img img {
-        width: 412px;
-        height: 412px; }
+        width: 100%;
+        height: auto;
+        max-width: 50%;
+        max-height: 100%; }
     body main .product_main .product_box .row .product_box_inner ul.img_option {
       display: flex;
       justify-content: center;
@@ -4275,6 +4280,25 @@ main.menu {
     main.menu .menu_main > .row .table_box {
       margin: 4em auto 0 2em;
       width: 80%; }
+      main.menu .menu_main > .row .table_box .refresh_box {
+        display: flex;
+        justify-content: flex-end; }
+        main.menu .menu_main > .row .table_box .refresh_box button.refresh {
+          width: 44px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #0086e6;
+          border: 1px solid #0086e6;
+          border-radius: 0;
+          box-shadow: none; }
+          main.menu .menu_main > .row .table_box .refresh_box button.refresh:hover {
+            cursor: pointer; }
+          main.menu .menu_main > .row .table_box .refresh_box button.refresh i img {
+            width: 20px;
+            height: 15px;
+            filter: brightness(0) invert(1); }
       main.menu .menu_main > .row .table_box .search_box,
       main.menu .menu_main > .row .table_box .order_box {
         display: flex;
@@ -4305,6 +4329,9 @@ main.menu {
           main.menu .menu_main > .row .table_box .search_box div .search_btn,
           main.menu .menu_main > .row .table_box .order_box div .search_btn {
             border: none; }
+            main.menu .menu_main > .row .table_box .search_box div .search_btn:hover,
+            main.menu .menu_main > .row .table_box .order_box div .search_btn:hover {
+              cursor: pointer; }
             main.menu .menu_main > .row .table_box .search_box div .search_btn i,
             main.menu .menu_main > .row .table_box .order_box div .search_btn i {
               position: absolute;
@@ -5306,6 +5333,11 @@ main.menu {
         main.menu .menu_main > .row .col.s2 .side_list_mobile .signout > div img {
           width: 23px;
           height: 23px; }
+  main.menu .menu_main > .row .table_box .refresh_box {
+    display: flex;
+    justify-content: flex-start; }
+    main.menu .menu_main > .row .table_box .refresh_box button.refresh {
+      margin-bottom: 2em; }
   main.menu .menu_main > .row .table_box .search_box,
   main.menu .menu_main > .row .table_box .order_box {
     display: flex;
