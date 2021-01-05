@@ -63,6 +63,9 @@ $(document).ready(function () {
 	$("#edit-info").click(function () {
 		$("#edit").modal("open");
 	});
+	$("#checkout-btn").click(function () {
+		$("#checkout-box").modal("open");
+	});
 	$("#notif-badge").click(function () {
 		$(".basket_box").css("display", "none");
 		$(".notif_box").css("display", "block");
@@ -125,6 +128,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#edit").modal({
+		dismissible: false,
+	});
+	$("#checkout-box").modal({
 		dismissible: false,
 	});
 

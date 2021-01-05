@@ -521,26 +521,6 @@
 									</ul>
 								</div>
 							</div>
-
-							<!-- when click checkout button, show "process_done" class name (by default it is hidden) -->
-							<div class="col s12 l8 process_done">
-								<div class="cart_box_inner order_process_box_done">
-									<h4>Your order has been received.</h4>
-									<div class="process_content">
-										<div class="tick_img">
-											<img src="assets/img/tick.png" alt="" />
-										</div>
-										<p>Thank you for your order!</p>
-									</div>
-									<div class="process_footer">
-										<p>
-											A Confirmation email will be sent to you shortly on
-											user@croxco.com. If has not arrived within two minutes
-											please check your spam folder.
-										</p>
-									</div>
-								</div>
-							</div>
 							<div class="col s12 l4">
 								<div class="cart_box_inner">
 									<div class="row">
@@ -581,7 +561,8 @@
 											<div class="quote gray_btn col s12">
 												<button
 													class="btn waves-effect waves-light"
-													type="submit"
+													type="button"
+													id="checkout-btn"
 													name="action"
 												>
 													<span>Next: Check out</span>
@@ -593,6 +574,39 @@
 								</div>
 							</div>
 						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- confirm sign up -->
+			<div id="checkout-box" class="modal modal-fixed-footer">
+				<div class="modal-content checkout_ok">
+					<a href="#!" class="modal-action modal-close"
+						><img src="assets/img/plus.png" alt=""
+					/></a>
+					<h4>Your order has been received.</h4>
+					<div class="process_content">
+						<div class="tick_img">
+							<img src="assets/img/tick.png" alt="" />
+						</div>
+						<p>Thank you for your order!</p>
+					</div>
+					<div class="checkout_btn">
+						<button
+							class="btn waves-effect waves-light modal-close"
+							id="checkout-done"
+							type="submit"
+							name="action"
+						>
+							<span>Done</span>
+						</button>
+					</div>
+					<div class="modal-footer process_footer">
+						<p>
+							A Confirmation email will be sent to you shortly on
+							user@croxco.com. If has not arrived within two minutes please
+							check your spam folder.
+						</p>
 					</div>
 				</div>
 			</div>
