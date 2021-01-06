@@ -1545,67 +1545,71 @@ body {
 }
 
 @media screen and (min-width: 993px) {
-	.modal {
-		&#sign-up {
-			height: 580px !important;
-			.register_box {
+	body {
+		main.home {
+			.modal {
+				&#sign-up {
+					height: 580px !important;
+					.register_box {
+						.row {
+							&.flex_box {
+								display: flex;
+								justify-content: center;
+							}
+							.country {
+								input {
+									width: 120px;
+									margin-right: 7px;
+								}
+							}
+							.phone {
+								input {
+									width: 191px;
+								}
+								i {
+									right: 17px;
+								}
+							}
+						}
+					}
+				}
+				&#login {
+					.login_btn {
+						button {
+							width: 313px !important;
+						}
+					}
+				}
+				&#forget,
+				&#reset-pass {
+					.forget_btn {
+						button {
+							width: 313px !important;
+						}
+					}
+				}
 				.row {
-					&.flex_box {
-						display: flex;
-						justify-content: center;
-					}
-					.country {
-						input {
-							width: 120px;
-							margin-right: 7px;
+					.modal_inner {
+						.phone {
+							input {
+								margin-left: 0;
+							}
 						}
-					}
-					.phone {
-						input {
-							width: 191px;
-						}
-						i {
-							right: 17px;
+						.country {
+							.select-wrapper {
+								.caret {
+									right: 7px !important;
+								}
+							}
 						}
 					}
 				}
 			}
-		}
-		&#login {
-			.login_btn {
-				button {
-					width: 313px !important;
-				}
+			.carousel {
+				height: 37em !important;
+				margin-top: 9em;
 			}
 		}
-		&#forget,
-		&#reset-pass {
-			.forget_btn {
-				button {
-					width: 313px !important;
-				}
-			}
-		}
-		.row {
-			.modal_inner {
-				.phone {
-					input {
-						margin-left: 0;
-					}
-				}
-				.country {
-					.select-wrapper {
-						.caret {
-							right: 7px !important;
-						}
-					}
-				}
-			}
-		}
-	}
-	.carousel {
-		height: 37em !important;
-		margin-top: 9em;
 	}
 }
 

@@ -1688,28 +1688,27 @@ body .modal#shop-add {
       body main .last_search_box .end_search_box > div.col > div div.search input {
         width: auto; } }
 @media screen and (min-width: 993px) {
-  .modal#sign-up {
+  body main.home .modal#sign-up {
     height: 580px !important; }
-    .modal#sign-up .register_box .row.flex_box {
+    body main.home .modal#sign-up .register_box .row.flex_box {
       display: flex;
       justify-content: center; }
-    .modal#sign-up .register_box .row .country input {
+    body main.home .modal#sign-up .register_box .row .country input {
       width: 120px;
       margin-right: 7px; }
-    .modal#sign-up .register_box .row .phone input {
+    body main.home .modal#sign-up .register_box .row .phone input {
       width: 191px; }
-    .modal#sign-up .register_box .row .phone i {
+    body main.home .modal#sign-up .register_box .row .phone i {
       right: 17px; }
-  .modal#login .login_btn button {
+  body main.home .modal#login .login_btn button {
     width: 313px !important; }
-  .modal#forget .forget_btn button, .modal#reset-pass .forget_btn button {
+  body main.home .modal#forget .forget_btn button, body main.home .modal#reset-pass .forget_btn button {
     width: 313px !important; }
-  .modal .row .modal_inner .phone input {
+  body main.home .modal .row .modal_inner .phone input {
     margin-left: 0; }
-  .modal .row .modal_inner .country .select-wrapper .caret {
+  body main.home .modal .row .modal_inner .country .select-wrapper .caret {
     right: 7px !important; }
-
-  .carousel {
+  body main.home .carousel {
     height: 37em !important;
     margin-top: 9em; } }
 @media screen and (max-width: 1360px) {
@@ -2775,11 +2774,23 @@ body main {
         height: 244px;
         border: 1px solid black;
         padding: 3em 1em;
-        margin: 0 1em; }
+        margin: 0 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body main .product_main .product_box .row .product .carousel-item .product_slide .product_slide_img {
+          width: 140px;
+          height: 110px; }
+          body main .product_main .product_box .row .product .carousel-item .product_slide .product_slide_img img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%; }
         body main .product_main .product_box .row .product .carousel-item .product_slide p {
           font-size: 14px;
           font-family: "OpenSans";
-          color: #161719; }
+          color: #161719;
+          margin-top: 3em; }
     body main .product_main .product_box .modal {
       width: 412px;
       margin-top: 10em; }
