@@ -1,7 +1,7 @@
 body {
 	main.quote {
 		background-color: $light_white;
-		height: 100vh;
+		height: auto;
 		.cart_main {
 			margin: 2em;
 			.cart_box {
@@ -36,7 +36,7 @@ body {
 					.cart_box_inner {
 						background-color: white;
 						box-shadow: 4px 4px 15px #cccccc;
-						height: 60vh;
+						height: auto;
 						div.title {
 							padding: 1em 2em 0;
 						}
@@ -222,6 +222,17 @@ body {
 											}
 										}
 									}
+									tr:last-child {
+										td {
+											margin-bottom: 4em;
+										}
+										td:nth-child(2) {
+											padding-bottom: 6em;
+										}
+										td:nth-child(3) {
+											padding-bottom: 4.5em;
+										}
+									}
 								}
 							}
 							.table_footer {
@@ -321,17 +332,6 @@ body {
 								.cart_price {
 									padding-right: 1em;
 								}
-								tr:last-child {
-									td {
-										margin-bottom: 4em;
-									}
-									td:nth-child(2) {
-										padding-bottom: 6em;
-									}
-									td:nth-child(3) {
-										padding-bottom: 4.5em;
-									}
-								}
 							}
 						}
 					}
@@ -351,13 +351,16 @@ body {
 		.cart_main {
 			.cart_box {
 				.row {
+					.col.l4 {
+						.cart_box_inner {
+							padding-bottom: 1em;
+							.cart_print_box {
+								width: 100%;
+							}
+						}
+					}
 					.cart_box_inner {
 						position: relative;
-						.cart_print_box {
-							position: absolute;
-							bottom: 0px;
-							width: 100%;
-						}
 					}
 				}
 			}
