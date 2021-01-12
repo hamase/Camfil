@@ -4471,7 +4471,7 @@ main.menu {
               margin-bottom: 3em; }
               main.menu .menu_main > .row .table_box .address_box .card .card_content .address_content p {
                 overflow: hidden;
-                width: 350px;
+                width: 80%;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical; }
