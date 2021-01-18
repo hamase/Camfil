@@ -19,15 +19,15 @@
 		}
 	}
 	ul#flags {
+		width: 100% !important;
 		li {
 			background-size: 13%;
 			background-repeat: no-repeat;
-			display: flex;
+			display: table-row;
 			justify-content: center;
 			background-position: center left;
 			margin-left: 1em;
 			width: 90%;
-			display: ruby;
 			padding: 0.4em 4em;
 			font-size: 13px;
 			&:hover {
@@ -36,7 +36,7 @@
 			span {
 				display: inline;
 				color: $heading;
-				padding: 0px 16px;
+				padding: 0px 3em;
 			}
 			span:nth-child(2) {
 				display: none;
@@ -1537,7 +1537,7 @@
 		}
 		ul {
 			li {
-				display: inline list-item !important;
+				// display: inline list-item !important;
 				box-shadow: none !important;
 			}
 		}
@@ -1551,11 +1551,11 @@
 				width: 264px;
 				margin-bottom: 0.6em;
 			}
-			ul {
-				li {
-					display: ruby !important;
-				}
-			}
+			// ul {
+			// 	li {
+			// 		display: ruby !important;
+			// 	}
+			// }
 		}
 		&.signup {
 			a {

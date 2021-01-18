@@ -1688,27 +1688,27 @@ body .modal#shop-add {
       body main .last_search_box .end_search_box > div.col > div div.search input {
         width: auto; } }
 @media screen and (min-width: 993px) {
-  body main.home .modal#sign-up {
+  body .home .modal#sign-up {
     height: 580px !important; }
-    body main.home .modal#sign-up .register_box .row.flex_box {
+    body .home .modal#sign-up .register_box .row.flex_box {
       display: flex;
       justify-content: center; }
-    body main.home .modal#sign-up .register_box .row .country input {
-      width: 120px;
-      margin-right: 7px; }
-    body main.home .modal#sign-up .register_box .row .phone input {
-      width: 191px; }
-    body main.home .modal#sign-up .register_box .row .phone i {
-      right: 17px; }
-  body main.home .modal#login .login_btn button {
+      body .home .modal#sign-up .register_box .row.flex_box .country input {
+        width: 120px;
+        margin-right: 7px; }
+      body .home .modal#sign-up .register_box .row.flex_box .phone input {
+        width: 191px !important; }
+      body .home .modal#sign-up .register_box .row.flex_box .phone i {
+        right: 17px; }
+  body .home .modal#login .login_btn button {
     width: 313px !important; }
-  body main.home .modal#forget .forget_btn button, body main.home .modal#reset-pass .forget_btn button {
+  body .home .modal#forget .forget_btn button, body .home .modal#reset-pass .forget_btn button {
     width: 313px !important; }
-  body main.home .modal .row .modal_inner .phone input {
+  body .home .modal .row .modal_inner .phone input {
     margin-left: 0; }
-  body main.home .modal .row .modal_inner .country .select-wrapper .caret {
+  body .home .modal .row .modal_inner .country .select-wrapper .caret {
     right: 7px !important; }
-  body main.home .carousel {
+  body .home .carousel {
     height: 37em !important;
     margin-top: 9em; } }
 @media screen and (max-width: 1360px) {
@@ -4318,7 +4318,7 @@ main.menu {
     main.menu .menu_main > .row .table_box {
       margin: 4em auto 0 2em;
       width: 80%;
-      height: 130vh; }
+      height: auto; }
       main.menu .menu_main > .row .table_box .refresh_box {
         display: flex;
         justify-content: flex-end; }
@@ -4383,45 +4383,45 @@ main.menu {
         font-size: 20px;
         font-family: "OpenSans-Bold";
         color: #3d3d3d; }
-      main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box {
+      main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box {
         margin: 2em auto 0; }
-        main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row div:first-child {
+        main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row div:first-child {
           margin: 0; }
-        main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row div.col {
+        main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row div.col {
           display: flex; }
-        main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row.border {
+        main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row.border {
           border-top: 2px solid #e2e2e2;
           width: 95%;
           margin-left: 0px;
           display: flex;
           justify-content: flex-end; }
-        main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner {
+        main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner {
           position: relative; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.billing_small {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.billing_small {
             width: 316px; }
-            main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.billing_small input {
+            main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.billing_small input {
               width: 301px; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.billing_icon {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.billing_icon {
             width: 316px; }
-            main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.billing_icon input {
+            main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.billing_icon input {
               width: 301px; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.billing_large input {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.billing_large input {
             width: 636px; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner input {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner input {
             border: 1px solid #b3b6b9;
             height: 48px;
             padding-left: 10px; }
-            main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner input::placeholder {
+            main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner input::placeholder {
               font-family: "OpenSans";
               font-size: 14px;
               color: #b3b6b9; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner .country input {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner .country input {
             width: 83px; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner .phone {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner .phone {
             position: relative; }
-            main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner .phone input {
+            main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner .phone input {
               width: 185px; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner label {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner label {
             position: absolute;
             top: 15px;
             left: 8px;
@@ -4429,23 +4429,23 @@ main.menu {
             font-family: "OpenSans";
             font-size: 14px;
             color: #b3b6b9; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner .select-wrapper ul li {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner .select-wrapper ul li {
             margin: 0;
             background-color: white;
             box-shadow: none; }
-          main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.save button {
+          main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.save button {
             width: 313px;
             height: 48px;
             background: #0086e6;
             border: none;
             border-radius: 0;
             margin-top: 2em; }
-            main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.save button span {
+            main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.save button span {
               font-size: 16px;
               font-family: "OpenSans-Bold";
               color: white;
               text-transform: none; }
-            main.menu .menu_main > .row .table_box .setting .col.xl8 .billing_box .row .billing_box_inner.save button:hover {
+            main.menu .menu_main > .row .table_box .setting .setting_inner .billing_box .row .billing_box_inner.save button:hover {
               cursor: pointer; }
       main.menu .menu_main > .row .table_box .address_box {
         margin-top: 2em; }
@@ -5313,8 +5313,7 @@ main.menu {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      width: 240px;
-      margin-top: 3em; }
+      width: 240px; }
       main.menu .menu_main > .row .col.s2 .side_list_mobile .avatar,
       main.menu .menu_main > .row .col.s2 .side_list_mobile .menu,
       main.menu .menu_main > .row .col.s2 .side_list_mobile .signout {
@@ -5472,9 +5471,6 @@ main.menu {
       position: relative; }
       main.menu .modal .billing_box div.col .billing_box_inner .phone input {
         width: 158px !important; } }
-@media screen and (max-height: 970px) {
-  main.menu .menu_main > .row .table_box {
-    height: 170vh !important; } }
 #flag-box a.dropdownBtn {
   background-size: 16%;
   background-repeat: no-repeat;
@@ -5492,555 +5488,553 @@ main.menu {
   #flag-box a.dropdownBtn img {
     transform: rotate(270deg);
     width: 10px; }
-#flag-box ul#flags li {
-  background-size: 13%;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  background-position: center left;
-  margin-left: 1em;
-  width: 90%;
-  display: ruby;
-  padding: 0.4em 4em;
-  font-size: 13px; }
-  #flag-box ul#flags li:hover {
-    background-color: rgba(0, 0, 0, 0) !important; }
-  #flag-box ul#flags li span {
-    display: inline;
-    color: #161719;
-    padding: 0px 16px; }
-  #flag-box ul#flags li span:nth-child(2) {
-    display: none; }
-  #flag-box ul#flags li.flag {
-    background: url(../img/flags32.png) no-repeat; }
-  #flag-box ul#flags li._African_Union {
-    background-position: 0 -32px; }
-  #flag-box ul#flags li._Arab_League {
-    background-position: 0 -64px; }
-  #flag-box ul#flags li._ASEAN {
-    background-position: 0 -96px; }
-  #flag-box ul#flags li._CARICOM {
-    background-position: 0 -128px; }
-  #flag-box ul#flags li._CIS {
-    background-position: 0 -160px; }
-  #flag-box ul#flags li._Commonwealth {
-    background-position: 0 -192px; }
-  #flag-box ul#flags li._England {
-    background-position: 0 -224px; }
-  #flag-box ul#flags li._European_Union {
-    background-position: 0 -256px; }
-  #flag-box ul#flags li._Islamic_Conference {
-    background-position: 0 -288px; }
-  #flag-box ul#flags li._Kosovo {
-    background-position: 0 -320px; }
-  #flag-box ul#flags li._NATO {
-    background-position: 0 -352px; }
-  #flag-box ul#flags li._Northern_Cyprus {
-    background-position: 0 -384px; }
-  #flag-box ul#flags li._Northern_Ireland {
-    background-position: 0 -416px; }
-  #flag-box ul#flags li._Olimpic_Movement {
-    background-position: 0 -448px; }
-  #flag-box ul#flags li._OPEC {
-    background-position: 0 -480px; }
-  #flag-box ul#flags li._Red_Cross {
-    background-position: 0 -512px; }
-  #flag-box ul#flags li._Scotland {
-    background-position: 0 -544px; }
-  #flag-box ul#flags li._Somaliland {
-    background-position: 0 -576px; }
-  #flag-box ul#flags li._Tibet {
-    background-position: 0 -608px; }
-  #flag-box ul#flags li._United_Nations {
-    background-position: 0 -640px; }
-  #flag-box ul#flags li._Wales {
-    background-position: 0 -672px; }
-  #flag-box ul#flags li.eu {
-    background-position: 0 -256px; }
-  #flag-box ul#flags li.ad, #flag-box ul#flags li.and {
-    background-position: 0 -704px; }
-  #flag-box ul#flags li.ae, #flag-box ul#flags li.are {
-    background-position: 0 -736px; }
-  #flag-box ul#flags li.af, #flag-box ul#flags li.afg {
-    background-position: 0 -768px; }
-  #flag-box ul#flags li.ag, #flag-box ul#flags li.atg {
-    background-position: 0 -800px; }
-  #flag-box ul#flags li.ai, #flag-box ul#flags li.aia {
-    background-position: 0 -832px; }
-  #flag-box ul#flags li.al, #flag-box ul#flags li.alb {
-    background-position: 0 -864px; }
-  #flag-box ul#flags li.am, #flag-box ul#flags li.arm {
-    background-position: 0 -896px; }
-  #flag-box ul#flags li.ao, #flag-box ul#flags li.ago {
-    background-position: 0 -928px; }
-  #flag-box ul#flags li.aq, #flag-box ul#flags li.ata {
-    background-position: 0 -960px; }
-  #flag-box ul#flags li.ar, #flag-box ul#flags li.arg {
-    background-position: 0 -992px; }
-  #flag-box ul#flags li.as, #flag-box ul#flags li.asm {
-    background-position: 0 -1024px; }
-  #flag-box ul#flags li.at, #flag-box ul#flags li.aut {
-    background-position: 0 -1056px; }
-  #flag-box ul#flags li.au, #flag-box ul#flags li.aus {
-    background-position: 0 -1088px; }
-  #flag-box ul#flags li.aw, #flag-box ul#flags li.abw {
-    background-position: 0 -1120px; }
-  #flag-box ul#flags li.ax, #flag-box ul#flags li.ala {
-    background-position: 0 -1152px; }
-  #flag-box ul#flags li.az, #flag-box ul#flags li.aze {
-    background-position: 0 -1184px; }
-  #flag-box ul#flags li.ba, #flag-box ul#flags li.bih {
-    background-position: 0 -1216px; }
-  #flag-box ul#flags li.bb, #flag-box ul#flags li.brb {
-    background-position: 0 -1248px; }
-  #flag-box ul#flags li.bd, #flag-box ul#flags li.bgd {
-    background-position: 0 -1280px; }
-  #flag-box ul#flags li.be, #flag-box ul#flags li.bel {
-    background-position: 0 -1312px; }
-  #flag-box ul#flags li.bf, #flag-box ul#flags li.bfa {
-    background-position: 0 -1344px; }
-  #flag-box ul#flags li.bg, #flag-box ul#flags li.bgr {
-    background-position: 0 -1376px; }
-  #flag-box ul#flags li.bh, #flag-box ul#flags li.bhr {
-    background-position: 0 -1408px; }
-  #flag-box ul#flags li.bi, #flag-box ul#flags li.bdi {
-    background-position: 0 -1440px; }
-  #flag-box ul#flags li.bj, #flag-box ul#flags li.ben {
-    background-position: 0 -1472px; }
-  #flag-box ul#flags li.bm, #flag-box ul#flags li.bmu {
-    background-position: 0 -1504px; }
-  #flag-box ul#flags li.bn, #flag-box ul#flags li.brn {
-    background-position: 0 -1536px; }
-  #flag-box ul#flags li.bo, #flag-box ul#flags li.bol {
-    background-position: 0 -1568px; }
-  #flag-box ul#flags li.br, #flag-box ul#flags li.bra {
-    background-position: 0 -1600px; }
-  #flag-box ul#flags li.bs, #flag-box ul#flags li.bhs {
-    background-position: 0 -1632px; }
-  #flag-box ul#flags li.bt, #flag-box ul#flags li.btn {
-    background-position: 0 -1664px; }
-  #flag-box ul#flags li.bw, #flag-box ul#flags li.bwa {
-    background-position: 0 -1696px; }
-  #flag-box ul#flags li.by, #flag-box ul#flags li.blr {
-    background-position: 0 -1728px; }
-  #flag-box ul#flags li.bz, #flag-box ul#flags li.blz {
-    background-position: 0 -1760px; }
-  #flag-box ul#flags li.ca, #flag-box ul#flags li.can {
-    background-position: 0 -1792px; }
-  #flag-box ul#flags li.cd, #flag-box ul#flags li.cod {
-    background-position: 0 -1824px; }
-  #flag-box ul#flags li.cf, #flag-box ul#flags li.rca {
-    background-position: 0 -1856px; }
-  #flag-box ul#flags li.cg, #flag-box ul#flags li.cog {
-    background-position: 0 -1888px; }
-  #flag-box ul#flags li.ch, #flag-box ul#flags li.che {
-    background-position: 0 -1920px; }
-  #flag-box ul#flags li.ci, #flag-box ul#flags li.civ {
-    background-position: 0 -1952px; }
-  #flag-box ul#flags li.ck, #flag-box ul#flags li.cok {
-    background-position: 0 -1984px; }
-  #flag-box ul#flags li.cl, #flag-box ul#flags li.chl {
-    background-position: 0 -2016px; }
-  #flag-box ul#flags li.cm, #flag-box ul#flags li.cmr {
-    background-position: 0 -2048px; }
-  #flag-box ul#flags li.cn, #flag-box ul#flags li.chn {
-    background-position: 0 -2080px; }
-  #flag-box ul#flags li.co, #flag-box ul#flags li.col {
-    background-position: 0 -2112px; }
-  #flag-box ul#flags li.cr, #flag-box ul#flags li.cri {
-    background-position: 0 -2144px; }
-  #flag-box ul#flags li.cu, #flag-box ul#flags li.cub {
-    background-position: 0 -2176px; }
-  #flag-box ul#flags li.cv, #flag-box ul#flags li.cpv {
-    background-position: 0 -2208px; }
-  #flag-box ul#flags li.cy, #flag-box ul#flags li.cyp {
-    background-position: 0 -2240px; }
-  #flag-box ul#flags li.cz, #flag-box ul#flags li.cze {
-    background-position: 0 -2272px; }
-  #flag-box ul#flags li.de, #flag-box ul#flags li.deu {
-    background-position: 0 -2304px; }
-  #flag-box ul#flags li.dj, #flag-box ul#flags li.dji {
-    background-position: 0 -2336px; }
-  #flag-box ul#flags li.dk, #flag-box ul#flags li.dnk {
-    background-position: 0 -2368px; }
-  #flag-box ul#flags li.dm, #flag-box ul#flags li.dma {
-    background-position: 0 -2400px; }
-  #flag-box ul#flags li.do, #flag-box ul#flags li.dom {
-    background-position: 0 -2432px; }
-  #flag-box ul#flags li.dz, #flag-box ul#flags li.dza {
-    background-position: 0 -2464px; }
-  #flag-box ul#flags li.ec, #flag-box ul#flags li.ecu {
-    background-position: 0 -2496px; }
-  #flag-box ul#flags li.ee, #flag-box ul#flags li.est {
-    background-position: 0 -2528px; }
-  #flag-box ul#flags li.eg, #flag-box ul#flags li.egy {
-    background-position: 0 -2560px; }
-  #flag-box ul#flags li.eh, #flag-box ul#flags li.esh {
-    background-position: 0 -2592px; }
-  #flag-box ul#flags li.er, #flag-box ul#flags li.eri {
-    background-position: 0 -2624px; }
-  #flag-box ul#flags li.es, #flag-box ul#flags li.esp {
-    background-position: 0 -2656px; }
-  #flag-box ul#flags li.et, #flag-box ul#flags li.eth {
-    background-position: 0 -2688px; }
-  #flag-box ul#flags li.fi, #flag-box ul#flags li.fin {
-    background-position: 0 -2720px; }
-  #flag-box ul#flags li.fj, #flag-box ul#flags li.fji {
-    background-position: 0 -2752px; }
-  #flag-box ul#flags li.fm, #flag-box ul#flags li.fsm {
-    background-position: 0 -2784px; }
-  #flag-box ul#flags li.fo, #flag-box ul#flags li.fro {
-    background-position: 0 -2816px; }
-  #flag-box ul#flags li.fr, #flag-box ul#flags li.fra {
-    background-position: 0 -2848px; }
-  #flag-box ul#flags li.bl, #flag-box ul#flags li.blm {
-    background-position: 0 -2848px; }
-  #flag-box ul#flags li.cp, #flag-box ul#flags li.cpt {
-    background-position: 0 -2848px; }
-  #flag-box ul#flags li.mf, #flag-box ul#flags li.maf {
-    background-position: 0 -2848px; }
-  #flag-box ul#flags li.yt, #flag-box ul#flags li.myt {
-    background-position: 0 -2848px; }
-  #flag-box ul#flags li.ga, #flag-box ul#flags li.gab {
-    background-position: 0 -2880px; }
-  #flag-box ul#flags li.gb, #flag-box ul#flags li.gbr {
-    background-position: 0 -2912px; }
-  #flag-box ul#flags li.sh, #flag-box ul#flags li.shn {
-    background-position: 0 -2912px; }
-  #flag-box ul#flags li.gd, #flag-box ul#flags li.grd {
-    background-position: 0 -2944px; }
-  #flag-box ul#flags li.ge, #flag-box ul#flags li.geo {
-    background-position: 0 -2976px; }
-  #flag-box ul#flags li.gg, #flag-box ul#flags li.ggy {
-    background-position: 0 -3008px; }
-  #flag-box ul#flags li.gh, #flag-box ul#flags li.gha {
-    background-position: 0 -3040px; }
-  #flag-box ul#flags li.gi, #flag-box ul#flags li.gib {
-    background-position: 0 -3072px; }
-  #flag-box ul#flags li.gl, #flag-box ul#flags li.grl {
-    background-position: 0 -3104px; }
-  #flag-box ul#flags li.gm, #flag-box ul#flags li.gmb {
-    background-position: 0 -3136px; }
-  #flag-box ul#flags li.gn, #flag-box ul#flags li.gin {
-    background-position: 0 -3168px; }
-  #flag-box ul#flags li.gp, #flag-box ul#flags li.glp {
-    background-position: 0 -3200px; }
-  #flag-box ul#flags li.gq, #flag-box ul#flags li.gnq {
-    background-position: 0 -3232px; }
-  #flag-box ul#flags li.gr, #flag-box ul#flags li.grc {
-    background-position: 0 -3264px; }
-  #flag-box ul#flags li.gt, #flag-box ul#flags li.gtm {
-    background-position: 0 -3296px; }
-  #flag-box ul#flags li.gu, #flag-box ul#flags li.gum {
-    background-position: 0 -3328px; }
-  #flag-box ul#flags li.gw, #flag-box ul#flags li.gnb {
-    background-position: 0 -3360px; }
-  #flag-box ul#flags li.gy, #flag-box ul#flags li.guy {
-    background-position: 0 -3392px; }
-  #flag-box ul#flags li.hk, #flag-box ul#flags li.hkg {
-    background-position: 0 -3424px; }
-  #flag-box ul#flags li.hn, #flag-box ul#flags li.hnd {
-    background-position: 0 -3456px; }
-  #flag-box ul#flags li.hr, #flag-box ul#flags li.hrv {
-    background-position: 0 -3488px; }
-  #flag-box ul#flags li.ht, #flag-box ul#flags li.hti {
-    background-position: 0 -3520px; }
-  #flag-box ul#flags li.hu, #flag-box ul#flags li.hun {
-    background-position: 0 -3552px; }
-  #flag-box ul#flags li.id, #flag-box ul#flags li.idn {
-    background-position: 0 -3584px; }
-  #flag-box ul#flags li.mc, #flag-box ul#flags li.mco {
-    background-position: 0 -3584px; }
-  #flag-box ul#flags li.ie {
-    background-position: 0 -3616px; }
-  #flag-box ul#flags li.il, #flag-box ul#flags li.isr {
-    background-position: 0 -3648px; }
-  #flag-box ul#flags li.im, #flag-box ul#flags li.imn {
-    background-position: 0 -3680px; }
-  #flag-box ul#flags li.in, #flag-box ul#flags li.ind {
-    background-position: 0 -3712px; }
-  #flag-box ul#flags li.iq, #flag-box ul#flags li.irq {
-    background-position: 0 -3744px; }
-  #flag-box ul#flags li.ir, #flag-box ul#flags li.irn {
-    background-position: 0 -3776px; }
-  #flag-box ul#flags li.is, #flag-box ul#flags li.isl {
-    background-position: 0 -3808px; }
-  #flag-box ul#flags li.it, #flag-box ul#flags li.ita {
-    background-position: 0 -3840px; }
-  #flag-box ul#flags li.je, #flag-box ul#flags li.jey {
-    background-position: 0 -3872px; }
-  #flag-box ul#flags li.jm, #flag-box ul#flags li.jam {
-    background-position: 0 -3904px; }
-  #flag-box ul#flags li.jo, #flag-box ul#flags li.jor {
-    background-position: 0 -3936px; }
-  #flag-box ul#flags li.jp, #flag-box ul#flags li.jpn {
-    background-position: 0 -3968px; }
-  #flag-box ul#flags li.ke, #flag-box ul#flags li.ken {
-    background-position: 0 -4000px; }
-  #flag-box ul#flags li.kg, #flag-box ul#flags li.kgz {
-    background-position: 0 -4032px; }
-  #flag-box ul#flags li.kh, #flag-box ul#flags li.khm {
-    background-position: 0 -4064px; }
-  #flag-box ul#flags li.ki, #flag-box ul#flags li.kir {
-    background-position: 0 -4096px; }
-  #flag-box ul#flags li.km, #flag-box ul#flags li.com {
-    background-position: 0 -4128px; }
-  #flag-box ul#flags li.kn, #flag-box ul#flags li.kna {
-    background-position: 0 -4160px; }
-  #flag-box ul#flags li.kp, #flag-box ul#flags li.prk {
-    background-position: 0 -4192px; }
-  #flag-box ul#flags li.kr, #flag-box ul#flags li.kor {
-    background-position: 0 -4224px; }
-  #flag-box ul#flags li.kw, #flag-box ul#flags li.kwt {
-    background-position: 0 -4256px; }
-  #flag-box ul#flags li.ky, #flag-box ul#flags li.cym {
-    background-position: 0 -4288px; }
-  #flag-box ul#flags li.kz, #flag-box ul#flags li.kaz {
-    background-position: 0 -4320px; }
-  #flag-box ul#flags li.la, #flag-box ul#flags li.lao {
-    background-position: 0 -4352px; }
-  #flag-box ul#flags li.lb, #flag-box ul#flags li.lbn {
-    background-position: 0 -4384px; }
-  #flag-box ul#flags li.lc, #flag-box ul#flags li.lca {
-    background-position: 0 -4416px; }
-  #flag-box ul#flags li.li, #flag-box ul#flags li.lie {
-    background-position: 0 -4448px; }
-  #flag-box ul#flags li.lk, #flag-box ul#flags li.lka {
-    background-position: 0 -4480px; }
-  #flag-box ul#flags li.lr, #flag-box ul#flags li.lbr {
-    background-position: 0 -4512px; }
-  #flag-box ul#flags li.ls, #flag-box ul#flags li.lso {
-    background-position: 0 -4544px; }
-  #flag-box ul#flags li.lt, #flag-box ul#flags li.ltu {
-    background-position: 0 -4576px; }
-  #flag-box ul#flags li.lu, #flag-box ul#flags li.lux {
-    background-position: 0 -4608px; }
-  #flag-box ul#flags li.lv, #flag-box ul#flags li.lva {
-    background-position: 0 -4640px; }
-  #flag-box ul#flags li.ly, #flag-box ul#flags li.lby {
-    background-position: 0 -4672px; }
-  #flag-box ul#flags li.ma, #flag-box ul#flags li.mar {
-    background-position: 0 -4704px; }
-  #flag-box ul#flags li.md, #flag-box ul#flags li.mda {
-    background-position: 0 -4736px; }
-  #flag-box ul#flags li.me, #flag-box ul#flags li.mne {
-    background-position: 0 -4768px; }
-  #flag-box ul#flags li.mg, #flag-box ul#flags li.mdg {
-    background-position: 0 -4800px; }
-  #flag-box ul#flags li.mh, #flag-box ul#flags li.mhl {
-    background-position: 0 -4832px; }
-  #flag-box ul#flags li.mk, #flag-box ul#flags li.mkd {
-    background-position: 0 -4864px; }
-  #flag-box ul#flags li.ml, #flag-box ul#flags li.mli {
-    background-position: 0 -4896px; }
-  #flag-box ul#flags li.mm, #flag-box ul#flags li.mmr {
-    background-position: 0 -4928px; }
-  #flag-box ul#flags li.mn, #flag-box ul#flags li.mng {
-    background-position: 0 -4960px; }
-  #flag-box ul#flags li.mo, #flag-box ul#flags li.mac {
-    background-position: 0 -4992px; }
-  #flag-box ul#flags li.mq, #flag-box ul#flags li.mtq {
-    background-position: 0 -5024px; }
-  #flag-box ul#flags li.mr, #flag-box ul#flags li.mrt {
-    background-position: 0 -5056px; }
-  #flag-box ul#flags li.ms, #flag-box ul#flags li.msr {
-    background-position: 0 -5088px; }
-  #flag-box ul#flags li.mt, #flag-box ul#flags li.mlt {
-    background-position: 0 -5120px; }
-  #flag-box ul#flags li.mu, #flag-box ul#flags li.mus {
-    background-position: 0 -5152px; }
-  #flag-box ul#flags li.mv, #flag-box ul#flags li.mdv {
-    background-position: 0 -5184px; }
-  #flag-box ul#flags li.mw, #flag-box ul#flags li.mwi {
-    background-position: 0 -5216px; }
-  #flag-box ul#flags li.mx, #flag-box ul#flags li.mex {
-    background-position: 0 -5248px; }
-  #flag-box ul#flags li.my, #flag-box ul#flags li.mys {
-    background-position: 0 -5280px; }
-  #flag-box ul#flags li.mz, #flag-box ul#flags li.moz {
-    background-position: 0 -5312px; }
-  #flag-box ul#flags li.na, #flag-box ul#flags li.nam {
-    background-position: 0 -5344px; }
-  #flag-box ul#flags li.nc, #flag-box ul#flags li.ncl {
-    background-position: 0 -5376px; }
-  #flag-box ul#flags li.ne, #flag-box ul#flags li.ner {
-    background-position: 0 -5408px; }
-  #flag-box ul#flags li.ng, #flag-box ul#flags li.nga {
-    background-position: 0 -5440px; }
-  #flag-box ul#flags li.ni, #flag-box ul#flags li.nic {
-    background-position: 0 -5472px; }
-  #flag-box ul#flags li.nl, #flag-box ul#flags li.nld {
-    background-position: 0 -5504px; }
-  #flag-box ul#flags li.bq, #flag-box ul#flags li.bes {
-    background-position: 0 -5504px; }
-  #flag-box ul#flags li.no, #flag-box ul#flags li.nor {
-    background-position: 0 -5536px; }
-  #flag-box ul#flags li.bv, #flag-box ul#flags li.bvt {
-    background-position: 0 -5536px; }
-  #flag-box ul#flags li.nq, #flag-box ul#flags li.atn {
-    background-position: 0 -5536px; }
-  #flag-box ul#flags li.sj, #flag-box ul#flags li.sjm {
-    background-position: 0 -5536px; }
-  #flag-box ul#flags li.np, #flag-box ul#flags li.npl {
-    background-position: 0 -5568px; }
-  #flag-box ul#flags li.nr, #flag-box ul#flags li.nru {
-    background-position: 0 -5600px; }
-  #flag-box ul#flags li.nz, #flag-box ul#flags li.nzl {
-    background-position: 0 -5632px; }
-  #flag-box ul#flags li.om, #flag-box ul#flags li.omn {
-    background-position: 0 -5664px; }
-  #flag-box ul#flags li.pa, #flag-box ul#flags li.pan {
-    background-position: 0 -5696px; }
-  #flag-box ul#flags li.pe, #flag-box ul#flags li.per {
-    background-position: 0 -5728px; }
-  #flag-box ul#flags li.pf, #flag-box ul#flags li.pyf {
-    background-position: 0 -5760px; }
-  #flag-box ul#flags li.pg, #flag-box ul#flags li.png {
-    background-position: 0 -5792px; }
-  #flag-box ul#flags li.ph, #flag-box ul#flags li.phl {
-    background-position: 0 -5824px; }
-  #flag-box ul#flags li.pk, #flag-box ul#flags li.pak {
-    background-position: 0 -5856px; }
-  #flag-box ul#flags li.pl, #flag-box ul#flags li.pol {
-    background-position: 0 -5888px; }
-  #flag-box ul#flags li.pr, #flag-box ul#flags li.pri {
-    background-position: 0 -5920px; }
-  #flag-box ul#flags li.ps, #flag-box ul#flags li.pse {
-    background-position: 0 -5952px; }
-  #flag-box ul#flags li.pt, #flag-box ul#flags li.prt {
-    background-position: 0 -5984px; }
-  #flag-box ul#flags li.pw, #flag-box ul#flags li.plw {
-    background-position: 0 -6016px; }
-  #flag-box ul#flags li.py, #flag-box ul#flags li.pry {
-    background-position: 0 -6048px; }
-  #flag-box ul#flags li.qa, #flag-box ul#flags li.qat {
-    background-position: 0 -6080px; }
-  #flag-box ul#flags li.re, #flag-box ul#flags li.reu {
-    background-position: 0 -6112px; }
-  #flag-box ul#flags li.ro, #flag-box ul#flags li.rou {
-    background-position: 0 -6144px; }
-  #flag-box ul#flags li.rs, #flag-box ul#flags li.srb {
-    background-position: 0 -6176px; }
-  #flag-box ul#flags li.ru, #flag-box ul#flags li.rus {
-    background-position: 0 -6208px; }
-  #flag-box ul#flags li.rw, #flag-box ul#flags li.rwa {
-    background-position: 0 -6240px; }
-  #flag-box ul#flags li.sa, #flag-box ul#flags li.sau {
-    background-position: 0 -6272px; }
-  #flag-box ul#flags li.sb, #flag-box ul#flags li.slb {
-    background-position: 0 -6304px; }
-  #flag-box ul#flags li.sc, #flag-box ul#flags li.syc {
-    background-position: 0 -6336px; }
-  #flag-box ul#flags li.sd, #flag-box ul#flags li.sdn {
-    background-position: 0 -6368px; }
-  #flag-box ul#flags li.se, #flag-box ul#flags li.swe {
-    background-position: 0 -6400px; }
-  #flag-box ul#flags li.sg, #flag-box ul#flags li.sgp {
-    background-position: 0 -6432px; }
-  #flag-box ul#flags li.si, #flag-box ul#flags li.svn {
-    background-position: 0 -6464px; }
-  #flag-box ul#flags li.sk, #flag-box ul#flags li.svk {
-    background-position: 0 -6496px; }
-  #flag-box ul#flags li.sl, #flag-box ul#flags li.sle {
-    background-position: 0 -6528px; }
-  #flag-box ul#flags li.sm, #flag-box ul#flags li.smr {
-    background-position: 0 -6560px; }
-  #flag-box ul#flags li.sn, #flag-box ul#flags li.sen {
-    background-position: 0 -6592px; }
-  #flag-box ul#flags li.so, #flag-box ul#flags li.som {
-    background-position: 0 -6624px; }
-  #flag-box ul#flags li.sr, #flag-box ul#flags li.sur {
-    background-position: 0 -6656px; }
-  #flag-box ul#flags li.st, #flag-box ul#flags li.stp {
-    background-position: 0 -6688px; }
-  #flag-box ul#flags li.sv, #flag-box ul#flags li.slv {
-    background-position: 0 -6720px; }
-  #flag-box ul#flags li.sy, #flag-box ul#flags li.syr {
-    background-position: 0 -6752px; }
-  #flag-box ul#flags li.sz, #flag-box ul#flags li.swz {
-    background-position: 0 -6784px; }
-  #flag-box ul#flags li.tc, #flag-box ul#flags li.tca {
-    background-position: 0 -6816px; }
-  #flag-box ul#flags li.td, #flag-box ul#flags li.tcd {
-    background-position: 0 -6848px; }
-  #flag-box ul#flags li.tg, #flag-box ul#flags li.tgo {
-    background-position: 0 -6880px; }
-  #flag-box ul#flags li.th, #flag-box ul#flags li.tha {
-    background-position: 0 -6912px; }
-  #flag-box ul#flags li.tj, #flag-box ul#flags li.tjk {
-    background-position: 0 -6944px; }
-  #flag-box ul#flags li.tl, #flag-box ul#flags li.tls {
-    background-position: 0 -6976px; }
-  #flag-box ul#flags li.tm, #flag-box ul#flags li.tkm {
-    background-position: 0 -7008px; }
-  #flag-box ul#flags li.tn, #flag-box ul#flags li.tun {
-    background-position: 0 -7040px; }
-  #flag-box ul#flags li.to, #flag-box ul#flags li.ton {
-    background-position: 0 -7072px; }
-  #flag-box ul#flags li.tr, #flag-box ul#flags li.tur {
-    background-position: 0 -7104px; }
-  #flag-box ul#flags li.tt, #flag-box ul#flags li.tto {
-    background-position: 0 -7136px; }
-  #flag-box ul#flags li.tv, #flag-box ul#flags li.tuv {
-    background-position: 0 -7168px; }
-  #flag-box ul#flags li.tw, #flag-box ul#flags li.twn {
-    background-position: 0 -7200px; }
-  #flag-box ul#flags li.tz, #flag-box ul#flags li.tza {
-    background-position: 0 -7232px; }
-  #flag-box ul#flags li.ua, #flag-box ul#flags li.ukr {
-    background-position: 0 -7264px; }
-  #flag-box ul#flags li.ug, #flag-box ul#flags li.uga {
-    background-position: 0 -7296px; }
-  #flag-box ul#flags li.us, #flag-box ul#flags li.usa {
-    background-position: 0 -7328px; }
-  #flag-box ul#flags li.uy, #flag-box ul#flags li.ury {
-    background-position: 0 -7360px; }
-  #flag-box ul#flags li.uz, #flag-box ul#flags li.uzb {
-    background-position: 0 -7392px; }
-  #flag-box ul#flags li.va, #flag-box ul#flags li.vat {
-    background-position: 0 -7424px; }
-  #flag-box ul#flags li.vc, #flag-box ul#flags li.vct {
-    background-position: 0 -7456px; }
-  #flag-box ul#flags li.ve, #flag-box ul#flags li.ven {
-    background-position: 0 -7488px; }
-  #flag-box ul#flags li.vg, #flag-box ul#flags li.vgb {
-    background-position: 0 -7520px; }
-  #flag-box ul#flags li.vi, #flag-box ul#flags li.vir {
-    background-position: 0 -7552px; }
-  #flag-box ul#flags li.vn, #flag-box ul#flags li.vnm {
-    background-position: 0 -7584px; }
-  #flag-box ul#flags li.vu, #flag-box ul#flags li.vut {
-    background-position: 0 -7616px; }
-  #flag-box ul#flags li.ws, #flag-box ul#flags li.wsm {
-    background-position: 0 -7648px; }
-  #flag-box ul#flags li.ye, #flag-box ul#flags li.yem {
-    background-position: 0 -7680px; }
-  #flag-box ul#flags li.za, #flag-box ul#flags li.zaf {
-    background-position: 0 -7712px; }
-  #flag-box ul#flags li.zm, #flag-box ul#flags li.zmb {
-    background-position: 0 -7744px; }
-  #flag-box ul#flags li.zw, #flag-box ul#flags li.zwe {
-    background-position: 0 -7776px; }
-  #flag-box ul#flags li.sx, #flag-box ul#flags li.sxm {
-    background-position: 0 -7808px; }
-  #flag-box ul#flags li.cw, #flag-box ul#flags li.cuw {
-    background-position: 0 -7840px; }
-  #flag-box ul#flags li.ss, #flag-box ul#flags li.ssd {
-    background-position: 0 -7872px; }
-  #flag-box ul#flags li.nu, #flag-box ul#flags li.niu {
-    background-position: 0 -7904px; }
+#flag-box ul#flags {
+  width: 100% !important; }
+  #flag-box ul#flags li {
+    background-size: 13%;
+    background-repeat: no-repeat;
+    display: table-row;
+    justify-content: center;
+    background-position: center left;
+    margin-left: 1em;
+    width: 90%;
+    padding: 0.4em 4em;
+    font-size: 13px; }
+    #flag-box ul#flags li:hover {
+      background-color: rgba(0, 0, 0, 0) !important; }
+    #flag-box ul#flags li span {
+      display: inline;
+      color: #161719;
+      padding: 0px 3em; }
+    #flag-box ul#flags li span:nth-child(2) {
+      display: none; }
+    #flag-box ul#flags li.flag {
+      background: url(../img/flags32.png) no-repeat; }
+    #flag-box ul#flags li._African_Union {
+      background-position: 0 -32px; }
+    #flag-box ul#flags li._Arab_League {
+      background-position: 0 -64px; }
+    #flag-box ul#flags li._ASEAN {
+      background-position: 0 -96px; }
+    #flag-box ul#flags li._CARICOM {
+      background-position: 0 -128px; }
+    #flag-box ul#flags li._CIS {
+      background-position: 0 -160px; }
+    #flag-box ul#flags li._Commonwealth {
+      background-position: 0 -192px; }
+    #flag-box ul#flags li._England {
+      background-position: 0 -224px; }
+    #flag-box ul#flags li._European_Union {
+      background-position: 0 -256px; }
+    #flag-box ul#flags li._Islamic_Conference {
+      background-position: 0 -288px; }
+    #flag-box ul#flags li._Kosovo {
+      background-position: 0 -320px; }
+    #flag-box ul#flags li._NATO {
+      background-position: 0 -352px; }
+    #flag-box ul#flags li._Northern_Cyprus {
+      background-position: 0 -384px; }
+    #flag-box ul#flags li._Northern_Ireland {
+      background-position: 0 -416px; }
+    #flag-box ul#flags li._Olimpic_Movement {
+      background-position: 0 -448px; }
+    #flag-box ul#flags li._OPEC {
+      background-position: 0 -480px; }
+    #flag-box ul#flags li._Red_Cross {
+      background-position: 0 -512px; }
+    #flag-box ul#flags li._Scotland {
+      background-position: 0 -544px; }
+    #flag-box ul#flags li._Somaliland {
+      background-position: 0 -576px; }
+    #flag-box ul#flags li._Tibet {
+      background-position: 0 -608px; }
+    #flag-box ul#flags li._United_Nations {
+      background-position: 0 -640px; }
+    #flag-box ul#flags li._Wales {
+      background-position: 0 -672px; }
+    #flag-box ul#flags li.eu {
+      background-position: 0 -256px; }
+    #flag-box ul#flags li.ad, #flag-box ul#flags li.and {
+      background-position: 0 -704px; }
+    #flag-box ul#flags li.ae, #flag-box ul#flags li.are {
+      background-position: 0 -736px; }
+    #flag-box ul#flags li.af, #flag-box ul#flags li.afg {
+      background-position: 0 -768px; }
+    #flag-box ul#flags li.ag, #flag-box ul#flags li.atg {
+      background-position: 0 -800px; }
+    #flag-box ul#flags li.ai, #flag-box ul#flags li.aia {
+      background-position: 0 -832px; }
+    #flag-box ul#flags li.al, #flag-box ul#flags li.alb {
+      background-position: 0 -864px; }
+    #flag-box ul#flags li.am, #flag-box ul#flags li.arm {
+      background-position: 0 -896px; }
+    #flag-box ul#flags li.ao, #flag-box ul#flags li.ago {
+      background-position: 0 -928px; }
+    #flag-box ul#flags li.aq, #flag-box ul#flags li.ata {
+      background-position: 0 -960px; }
+    #flag-box ul#flags li.ar, #flag-box ul#flags li.arg {
+      background-position: 0 -992px; }
+    #flag-box ul#flags li.as, #flag-box ul#flags li.asm {
+      background-position: 0 -1024px; }
+    #flag-box ul#flags li.at, #flag-box ul#flags li.aut {
+      background-position: 0 -1056px; }
+    #flag-box ul#flags li.au, #flag-box ul#flags li.aus {
+      background-position: 0 -1088px; }
+    #flag-box ul#flags li.aw, #flag-box ul#flags li.abw {
+      background-position: 0 -1120px; }
+    #flag-box ul#flags li.ax, #flag-box ul#flags li.ala {
+      background-position: 0 -1152px; }
+    #flag-box ul#flags li.az, #flag-box ul#flags li.aze {
+      background-position: 0 -1184px; }
+    #flag-box ul#flags li.ba, #flag-box ul#flags li.bih {
+      background-position: 0 -1216px; }
+    #flag-box ul#flags li.bb, #flag-box ul#flags li.brb {
+      background-position: 0 -1248px; }
+    #flag-box ul#flags li.bd, #flag-box ul#flags li.bgd {
+      background-position: 0 -1280px; }
+    #flag-box ul#flags li.be, #flag-box ul#flags li.bel {
+      background-position: 0 -1312px; }
+    #flag-box ul#flags li.bf, #flag-box ul#flags li.bfa {
+      background-position: 0 -1344px; }
+    #flag-box ul#flags li.bg, #flag-box ul#flags li.bgr {
+      background-position: 0 -1376px; }
+    #flag-box ul#flags li.bh, #flag-box ul#flags li.bhr {
+      background-position: 0 -1408px; }
+    #flag-box ul#flags li.bi, #flag-box ul#flags li.bdi {
+      background-position: 0 -1440px; }
+    #flag-box ul#flags li.bj, #flag-box ul#flags li.ben {
+      background-position: 0 -1472px; }
+    #flag-box ul#flags li.bm, #flag-box ul#flags li.bmu {
+      background-position: 0 -1504px; }
+    #flag-box ul#flags li.bn, #flag-box ul#flags li.brn {
+      background-position: 0 -1536px; }
+    #flag-box ul#flags li.bo, #flag-box ul#flags li.bol {
+      background-position: 0 -1568px; }
+    #flag-box ul#flags li.br, #flag-box ul#flags li.bra {
+      background-position: 0 -1600px; }
+    #flag-box ul#flags li.bs, #flag-box ul#flags li.bhs {
+      background-position: 0 -1632px; }
+    #flag-box ul#flags li.bt, #flag-box ul#flags li.btn {
+      background-position: 0 -1664px; }
+    #flag-box ul#flags li.bw, #flag-box ul#flags li.bwa {
+      background-position: 0 -1696px; }
+    #flag-box ul#flags li.by, #flag-box ul#flags li.blr {
+      background-position: 0 -1728px; }
+    #flag-box ul#flags li.bz, #flag-box ul#flags li.blz {
+      background-position: 0 -1760px; }
+    #flag-box ul#flags li.ca, #flag-box ul#flags li.can {
+      background-position: 0 -1792px; }
+    #flag-box ul#flags li.cd, #flag-box ul#flags li.cod {
+      background-position: 0 -1824px; }
+    #flag-box ul#flags li.cf, #flag-box ul#flags li.rca {
+      background-position: 0 -1856px; }
+    #flag-box ul#flags li.cg, #flag-box ul#flags li.cog {
+      background-position: 0 -1888px; }
+    #flag-box ul#flags li.ch, #flag-box ul#flags li.che {
+      background-position: 0 -1920px; }
+    #flag-box ul#flags li.ci, #flag-box ul#flags li.civ {
+      background-position: 0 -1952px; }
+    #flag-box ul#flags li.ck, #flag-box ul#flags li.cok {
+      background-position: 0 -1984px; }
+    #flag-box ul#flags li.cl, #flag-box ul#flags li.chl {
+      background-position: 0 -2016px; }
+    #flag-box ul#flags li.cm, #flag-box ul#flags li.cmr {
+      background-position: 0 -2048px; }
+    #flag-box ul#flags li.cn, #flag-box ul#flags li.chn {
+      background-position: 0 -2080px; }
+    #flag-box ul#flags li.co, #flag-box ul#flags li.col {
+      background-position: 0 -2112px; }
+    #flag-box ul#flags li.cr, #flag-box ul#flags li.cri {
+      background-position: 0 -2144px; }
+    #flag-box ul#flags li.cu, #flag-box ul#flags li.cub {
+      background-position: 0 -2176px; }
+    #flag-box ul#flags li.cv, #flag-box ul#flags li.cpv {
+      background-position: 0 -2208px; }
+    #flag-box ul#flags li.cy, #flag-box ul#flags li.cyp {
+      background-position: 0 -2240px; }
+    #flag-box ul#flags li.cz, #flag-box ul#flags li.cze {
+      background-position: 0 -2272px; }
+    #flag-box ul#flags li.de, #flag-box ul#flags li.deu {
+      background-position: 0 -2304px; }
+    #flag-box ul#flags li.dj, #flag-box ul#flags li.dji {
+      background-position: 0 -2336px; }
+    #flag-box ul#flags li.dk, #flag-box ul#flags li.dnk {
+      background-position: 0 -2368px; }
+    #flag-box ul#flags li.dm, #flag-box ul#flags li.dma {
+      background-position: 0 -2400px; }
+    #flag-box ul#flags li.do, #flag-box ul#flags li.dom {
+      background-position: 0 -2432px; }
+    #flag-box ul#flags li.dz, #flag-box ul#flags li.dza {
+      background-position: 0 -2464px; }
+    #flag-box ul#flags li.ec, #flag-box ul#flags li.ecu {
+      background-position: 0 -2496px; }
+    #flag-box ul#flags li.ee, #flag-box ul#flags li.est {
+      background-position: 0 -2528px; }
+    #flag-box ul#flags li.eg, #flag-box ul#flags li.egy {
+      background-position: 0 -2560px; }
+    #flag-box ul#flags li.eh, #flag-box ul#flags li.esh {
+      background-position: 0 -2592px; }
+    #flag-box ul#flags li.er, #flag-box ul#flags li.eri {
+      background-position: 0 -2624px; }
+    #flag-box ul#flags li.es, #flag-box ul#flags li.esp {
+      background-position: 0 -2656px; }
+    #flag-box ul#flags li.et, #flag-box ul#flags li.eth {
+      background-position: 0 -2688px; }
+    #flag-box ul#flags li.fi, #flag-box ul#flags li.fin {
+      background-position: 0 -2720px; }
+    #flag-box ul#flags li.fj, #flag-box ul#flags li.fji {
+      background-position: 0 -2752px; }
+    #flag-box ul#flags li.fm, #flag-box ul#flags li.fsm {
+      background-position: 0 -2784px; }
+    #flag-box ul#flags li.fo, #flag-box ul#flags li.fro {
+      background-position: 0 -2816px; }
+    #flag-box ul#flags li.fr, #flag-box ul#flags li.fra {
+      background-position: 0 -2848px; }
+    #flag-box ul#flags li.bl, #flag-box ul#flags li.blm {
+      background-position: 0 -2848px; }
+    #flag-box ul#flags li.cp, #flag-box ul#flags li.cpt {
+      background-position: 0 -2848px; }
+    #flag-box ul#flags li.mf, #flag-box ul#flags li.maf {
+      background-position: 0 -2848px; }
+    #flag-box ul#flags li.yt, #flag-box ul#flags li.myt {
+      background-position: 0 -2848px; }
+    #flag-box ul#flags li.ga, #flag-box ul#flags li.gab {
+      background-position: 0 -2880px; }
+    #flag-box ul#flags li.gb, #flag-box ul#flags li.gbr {
+      background-position: 0 -2912px; }
+    #flag-box ul#flags li.sh, #flag-box ul#flags li.shn {
+      background-position: 0 -2912px; }
+    #flag-box ul#flags li.gd, #flag-box ul#flags li.grd {
+      background-position: 0 -2944px; }
+    #flag-box ul#flags li.ge, #flag-box ul#flags li.geo {
+      background-position: 0 -2976px; }
+    #flag-box ul#flags li.gg, #flag-box ul#flags li.ggy {
+      background-position: 0 -3008px; }
+    #flag-box ul#flags li.gh, #flag-box ul#flags li.gha {
+      background-position: 0 -3040px; }
+    #flag-box ul#flags li.gi, #flag-box ul#flags li.gib {
+      background-position: 0 -3072px; }
+    #flag-box ul#flags li.gl, #flag-box ul#flags li.grl {
+      background-position: 0 -3104px; }
+    #flag-box ul#flags li.gm, #flag-box ul#flags li.gmb {
+      background-position: 0 -3136px; }
+    #flag-box ul#flags li.gn, #flag-box ul#flags li.gin {
+      background-position: 0 -3168px; }
+    #flag-box ul#flags li.gp, #flag-box ul#flags li.glp {
+      background-position: 0 -3200px; }
+    #flag-box ul#flags li.gq, #flag-box ul#flags li.gnq {
+      background-position: 0 -3232px; }
+    #flag-box ul#flags li.gr, #flag-box ul#flags li.grc {
+      background-position: 0 -3264px; }
+    #flag-box ul#flags li.gt, #flag-box ul#flags li.gtm {
+      background-position: 0 -3296px; }
+    #flag-box ul#flags li.gu, #flag-box ul#flags li.gum {
+      background-position: 0 -3328px; }
+    #flag-box ul#flags li.gw, #flag-box ul#flags li.gnb {
+      background-position: 0 -3360px; }
+    #flag-box ul#flags li.gy, #flag-box ul#flags li.guy {
+      background-position: 0 -3392px; }
+    #flag-box ul#flags li.hk, #flag-box ul#flags li.hkg {
+      background-position: 0 -3424px; }
+    #flag-box ul#flags li.hn, #flag-box ul#flags li.hnd {
+      background-position: 0 -3456px; }
+    #flag-box ul#flags li.hr, #flag-box ul#flags li.hrv {
+      background-position: 0 -3488px; }
+    #flag-box ul#flags li.ht, #flag-box ul#flags li.hti {
+      background-position: 0 -3520px; }
+    #flag-box ul#flags li.hu, #flag-box ul#flags li.hun {
+      background-position: 0 -3552px; }
+    #flag-box ul#flags li.id, #flag-box ul#flags li.idn {
+      background-position: 0 -3584px; }
+    #flag-box ul#flags li.mc, #flag-box ul#flags li.mco {
+      background-position: 0 -3584px; }
+    #flag-box ul#flags li.ie {
+      background-position: 0 -3616px; }
+    #flag-box ul#flags li.il, #flag-box ul#flags li.isr {
+      background-position: 0 -3648px; }
+    #flag-box ul#flags li.im, #flag-box ul#flags li.imn {
+      background-position: 0 -3680px; }
+    #flag-box ul#flags li.in, #flag-box ul#flags li.ind {
+      background-position: 0 -3712px; }
+    #flag-box ul#flags li.iq, #flag-box ul#flags li.irq {
+      background-position: 0 -3744px; }
+    #flag-box ul#flags li.ir, #flag-box ul#flags li.irn {
+      background-position: 0 -3776px; }
+    #flag-box ul#flags li.is, #flag-box ul#flags li.isl {
+      background-position: 0 -3808px; }
+    #flag-box ul#flags li.it, #flag-box ul#flags li.ita {
+      background-position: 0 -3840px; }
+    #flag-box ul#flags li.je, #flag-box ul#flags li.jey {
+      background-position: 0 -3872px; }
+    #flag-box ul#flags li.jm, #flag-box ul#flags li.jam {
+      background-position: 0 -3904px; }
+    #flag-box ul#flags li.jo, #flag-box ul#flags li.jor {
+      background-position: 0 -3936px; }
+    #flag-box ul#flags li.jp, #flag-box ul#flags li.jpn {
+      background-position: 0 -3968px; }
+    #flag-box ul#flags li.ke, #flag-box ul#flags li.ken {
+      background-position: 0 -4000px; }
+    #flag-box ul#flags li.kg, #flag-box ul#flags li.kgz {
+      background-position: 0 -4032px; }
+    #flag-box ul#flags li.kh, #flag-box ul#flags li.khm {
+      background-position: 0 -4064px; }
+    #flag-box ul#flags li.ki, #flag-box ul#flags li.kir {
+      background-position: 0 -4096px; }
+    #flag-box ul#flags li.km, #flag-box ul#flags li.com {
+      background-position: 0 -4128px; }
+    #flag-box ul#flags li.kn, #flag-box ul#flags li.kna {
+      background-position: 0 -4160px; }
+    #flag-box ul#flags li.kp, #flag-box ul#flags li.prk {
+      background-position: 0 -4192px; }
+    #flag-box ul#flags li.kr, #flag-box ul#flags li.kor {
+      background-position: 0 -4224px; }
+    #flag-box ul#flags li.kw, #flag-box ul#flags li.kwt {
+      background-position: 0 -4256px; }
+    #flag-box ul#flags li.ky, #flag-box ul#flags li.cym {
+      background-position: 0 -4288px; }
+    #flag-box ul#flags li.kz, #flag-box ul#flags li.kaz {
+      background-position: 0 -4320px; }
+    #flag-box ul#flags li.la, #flag-box ul#flags li.lao {
+      background-position: 0 -4352px; }
+    #flag-box ul#flags li.lb, #flag-box ul#flags li.lbn {
+      background-position: 0 -4384px; }
+    #flag-box ul#flags li.lc, #flag-box ul#flags li.lca {
+      background-position: 0 -4416px; }
+    #flag-box ul#flags li.li, #flag-box ul#flags li.lie {
+      background-position: 0 -4448px; }
+    #flag-box ul#flags li.lk, #flag-box ul#flags li.lka {
+      background-position: 0 -4480px; }
+    #flag-box ul#flags li.lr, #flag-box ul#flags li.lbr {
+      background-position: 0 -4512px; }
+    #flag-box ul#flags li.ls, #flag-box ul#flags li.lso {
+      background-position: 0 -4544px; }
+    #flag-box ul#flags li.lt, #flag-box ul#flags li.ltu {
+      background-position: 0 -4576px; }
+    #flag-box ul#flags li.lu, #flag-box ul#flags li.lux {
+      background-position: 0 -4608px; }
+    #flag-box ul#flags li.lv, #flag-box ul#flags li.lva {
+      background-position: 0 -4640px; }
+    #flag-box ul#flags li.ly, #flag-box ul#flags li.lby {
+      background-position: 0 -4672px; }
+    #flag-box ul#flags li.ma, #flag-box ul#flags li.mar {
+      background-position: 0 -4704px; }
+    #flag-box ul#flags li.md, #flag-box ul#flags li.mda {
+      background-position: 0 -4736px; }
+    #flag-box ul#flags li.me, #flag-box ul#flags li.mne {
+      background-position: 0 -4768px; }
+    #flag-box ul#flags li.mg, #flag-box ul#flags li.mdg {
+      background-position: 0 -4800px; }
+    #flag-box ul#flags li.mh, #flag-box ul#flags li.mhl {
+      background-position: 0 -4832px; }
+    #flag-box ul#flags li.mk, #flag-box ul#flags li.mkd {
+      background-position: 0 -4864px; }
+    #flag-box ul#flags li.ml, #flag-box ul#flags li.mli {
+      background-position: 0 -4896px; }
+    #flag-box ul#flags li.mm, #flag-box ul#flags li.mmr {
+      background-position: 0 -4928px; }
+    #flag-box ul#flags li.mn, #flag-box ul#flags li.mng {
+      background-position: 0 -4960px; }
+    #flag-box ul#flags li.mo, #flag-box ul#flags li.mac {
+      background-position: 0 -4992px; }
+    #flag-box ul#flags li.mq, #flag-box ul#flags li.mtq {
+      background-position: 0 -5024px; }
+    #flag-box ul#flags li.mr, #flag-box ul#flags li.mrt {
+      background-position: 0 -5056px; }
+    #flag-box ul#flags li.ms, #flag-box ul#flags li.msr {
+      background-position: 0 -5088px; }
+    #flag-box ul#flags li.mt, #flag-box ul#flags li.mlt {
+      background-position: 0 -5120px; }
+    #flag-box ul#flags li.mu, #flag-box ul#flags li.mus {
+      background-position: 0 -5152px; }
+    #flag-box ul#flags li.mv, #flag-box ul#flags li.mdv {
+      background-position: 0 -5184px; }
+    #flag-box ul#flags li.mw, #flag-box ul#flags li.mwi {
+      background-position: 0 -5216px; }
+    #flag-box ul#flags li.mx, #flag-box ul#flags li.mex {
+      background-position: 0 -5248px; }
+    #flag-box ul#flags li.my, #flag-box ul#flags li.mys {
+      background-position: 0 -5280px; }
+    #flag-box ul#flags li.mz, #flag-box ul#flags li.moz {
+      background-position: 0 -5312px; }
+    #flag-box ul#flags li.na, #flag-box ul#flags li.nam {
+      background-position: 0 -5344px; }
+    #flag-box ul#flags li.nc, #flag-box ul#flags li.ncl {
+      background-position: 0 -5376px; }
+    #flag-box ul#flags li.ne, #flag-box ul#flags li.ner {
+      background-position: 0 -5408px; }
+    #flag-box ul#flags li.ng, #flag-box ul#flags li.nga {
+      background-position: 0 -5440px; }
+    #flag-box ul#flags li.ni, #flag-box ul#flags li.nic {
+      background-position: 0 -5472px; }
+    #flag-box ul#flags li.nl, #flag-box ul#flags li.nld {
+      background-position: 0 -5504px; }
+    #flag-box ul#flags li.bq, #flag-box ul#flags li.bes {
+      background-position: 0 -5504px; }
+    #flag-box ul#flags li.no, #flag-box ul#flags li.nor {
+      background-position: 0 -5536px; }
+    #flag-box ul#flags li.bv, #flag-box ul#flags li.bvt {
+      background-position: 0 -5536px; }
+    #flag-box ul#flags li.nq, #flag-box ul#flags li.atn {
+      background-position: 0 -5536px; }
+    #flag-box ul#flags li.sj, #flag-box ul#flags li.sjm {
+      background-position: 0 -5536px; }
+    #flag-box ul#flags li.np, #flag-box ul#flags li.npl {
+      background-position: 0 -5568px; }
+    #flag-box ul#flags li.nr, #flag-box ul#flags li.nru {
+      background-position: 0 -5600px; }
+    #flag-box ul#flags li.nz, #flag-box ul#flags li.nzl {
+      background-position: 0 -5632px; }
+    #flag-box ul#flags li.om, #flag-box ul#flags li.omn {
+      background-position: 0 -5664px; }
+    #flag-box ul#flags li.pa, #flag-box ul#flags li.pan {
+      background-position: 0 -5696px; }
+    #flag-box ul#flags li.pe, #flag-box ul#flags li.per {
+      background-position: 0 -5728px; }
+    #flag-box ul#flags li.pf, #flag-box ul#flags li.pyf {
+      background-position: 0 -5760px; }
+    #flag-box ul#flags li.pg, #flag-box ul#flags li.png {
+      background-position: 0 -5792px; }
+    #flag-box ul#flags li.ph, #flag-box ul#flags li.phl {
+      background-position: 0 -5824px; }
+    #flag-box ul#flags li.pk, #flag-box ul#flags li.pak {
+      background-position: 0 -5856px; }
+    #flag-box ul#flags li.pl, #flag-box ul#flags li.pol {
+      background-position: 0 -5888px; }
+    #flag-box ul#flags li.pr, #flag-box ul#flags li.pri {
+      background-position: 0 -5920px; }
+    #flag-box ul#flags li.ps, #flag-box ul#flags li.pse {
+      background-position: 0 -5952px; }
+    #flag-box ul#flags li.pt, #flag-box ul#flags li.prt {
+      background-position: 0 -5984px; }
+    #flag-box ul#flags li.pw, #flag-box ul#flags li.plw {
+      background-position: 0 -6016px; }
+    #flag-box ul#flags li.py, #flag-box ul#flags li.pry {
+      background-position: 0 -6048px; }
+    #flag-box ul#flags li.qa, #flag-box ul#flags li.qat {
+      background-position: 0 -6080px; }
+    #flag-box ul#flags li.re, #flag-box ul#flags li.reu {
+      background-position: 0 -6112px; }
+    #flag-box ul#flags li.ro, #flag-box ul#flags li.rou {
+      background-position: 0 -6144px; }
+    #flag-box ul#flags li.rs, #flag-box ul#flags li.srb {
+      background-position: 0 -6176px; }
+    #flag-box ul#flags li.ru, #flag-box ul#flags li.rus {
+      background-position: 0 -6208px; }
+    #flag-box ul#flags li.rw, #flag-box ul#flags li.rwa {
+      background-position: 0 -6240px; }
+    #flag-box ul#flags li.sa, #flag-box ul#flags li.sau {
+      background-position: 0 -6272px; }
+    #flag-box ul#flags li.sb, #flag-box ul#flags li.slb {
+      background-position: 0 -6304px; }
+    #flag-box ul#flags li.sc, #flag-box ul#flags li.syc {
+      background-position: 0 -6336px; }
+    #flag-box ul#flags li.sd, #flag-box ul#flags li.sdn {
+      background-position: 0 -6368px; }
+    #flag-box ul#flags li.se, #flag-box ul#flags li.swe {
+      background-position: 0 -6400px; }
+    #flag-box ul#flags li.sg, #flag-box ul#flags li.sgp {
+      background-position: 0 -6432px; }
+    #flag-box ul#flags li.si, #flag-box ul#flags li.svn {
+      background-position: 0 -6464px; }
+    #flag-box ul#flags li.sk, #flag-box ul#flags li.svk {
+      background-position: 0 -6496px; }
+    #flag-box ul#flags li.sl, #flag-box ul#flags li.sle {
+      background-position: 0 -6528px; }
+    #flag-box ul#flags li.sm, #flag-box ul#flags li.smr {
+      background-position: 0 -6560px; }
+    #flag-box ul#flags li.sn, #flag-box ul#flags li.sen {
+      background-position: 0 -6592px; }
+    #flag-box ul#flags li.so, #flag-box ul#flags li.som {
+      background-position: 0 -6624px; }
+    #flag-box ul#flags li.sr, #flag-box ul#flags li.sur {
+      background-position: 0 -6656px; }
+    #flag-box ul#flags li.st, #flag-box ul#flags li.stp {
+      background-position: 0 -6688px; }
+    #flag-box ul#flags li.sv, #flag-box ul#flags li.slv {
+      background-position: 0 -6720px; }
+    #flag-box ul#flags li.sy, #flag-box ul#flags li.syr {
+      background-position: 0 -6752px; }
+    #flag-box ul#flags li.sz, #flag-box ul#flags li.swz {
+      background-position: 0 -6784px; }
+    #flag-box ul#flags li.tc, #flag-box ul#flags li.tca {
+      background-position: 0 -6816px; }
+    #flag-box ul#flags li.td, #flag-box ul#flags li.tcd {
+      background-position: 0 -6848px; }
+    #flag-box ul#flags li.tg, #flag-box ul#flags li.tgo {
+      background-position: 0 -6880px; }
+    #flag-box ul#flags li.th, #flag-box ul#flags li.tha {
+      background-position: 0 -6912px; }
+    #flag-box ul#flags li.tj, #flag-box ul#flags li.tjk {
+      background-position: 0 -6944px; }
+    #flag-box ul#flags li.tl, #flag-box ul#flags li.tls {
+      background-position: 0 -6976px; }
+    #flag-box ul#flags li.tm, #flag-box ul#flags li.tkm {
+      background-position: 0 -7008px; }
+    #flag-box ul#flags li.tn, #flag-box ul#flags li.tun {
+      background-position: 0 -7040px; }
+    #flag-box ul#flags li.to, #flag-box ul#flags li.ton {
+      background-position: 0 -7072px; }
+    #flag-box ul#flags li.tr, #flag-box ul#flags li.tur {
+      background-position: 0 -7104px; }
+    #flag-box ul#flags li.tt, #flag-box ul#flags li.tto {
+      background-position: 0 -7136px; }
+    #flag-box ul#flags li.tv, #flag-box ul#flags li.tuv {
+      background-position: 0 -7168px; }
+    #flag-box ul#flags li.tw, #flag-box ul#flags li.twn {
+      background-position: 0 -7200px; }
+    #flag-box ul#flags li.tz, #flag-box ul#flags li.tza {
+      background-position: 0 -7232px; }
+    #flag-box ul#flags li.ua, #flag-box ul#flags li.ukr {
+      background-position: 0 -7264px; }
+    #flag-box ul#flags li.ug, #flag-box ul#flags li.uga {
+      background-position: 0 -7296px; }
+    #flag-box ul#flags li.us, #flag-box ul#flags li.usa {
+      background-position: 0 -7328px; }
+    #flag-box ul#flags li.uy, #flag-box ul#flags li.ury {
+      background-position: 0 -7360px; }
+    #flag-box ul#flags li.uz, #flag-box ul#flags li.uzb {
+      background-position: 0 -7392px; }
+    #flag-box ul#flags li.va, #flag-box ul#flags li.vat {
+      background-position: 0 -7424px; }
+    #flag-box ul#flags li.vc, #flag-box ul#flags li.vct {
+      background-position: 0 -7456px; }
+    #flag-box ul#flags li.ve, #flag-box ul#flags li.ven {
+      background-position: 0 -7488px; }
+    #flag-box ul#flags li.vg, #flag-box ul#flags li.vgb {
+      background-position: 0 -7520px; }
+    #flag-box ul#flags li.vi, #flag-box ul#flags li.vir {
+      background-position: 0 -7552px; }
+    #flag-box ul#flags li.vn, #flag-box ul#flags li.vnm {
+      background-position: 0 -7584px; }
+    #flag-box ul#flags li.vu, #flag-box ul#flags li.vut {
+      background-position: 0 -7616px; }
+    #flag-box ul#flags li.ws, #flag-box ul#flags li.wsm {
+      background-position: 0 -7648px; }
+    #flag-box ul#flags li.ye, #flag-box ul#flags li.yem {
+      background-position: 0 -7680px; }
+    #flag-box ul#flags li.za, #flag-box ul#flags li.zaf {
+      background-position: 0 -7712px; }
+    #flag-box ul#flags li.zm, #flag-box ul#flags li.zmb {
+      background-position: 0 -7744px; }
+    #flag-box ul#flags li.zw, #flag-box ul#flags li.zwe {
+      background-position: 0 -7776px; }
+    #flag-box ul#flags li.sx, #flag-box ul#flags li.sxm {
+      background-position: 0 -7808px; }
+    #flag-box ul#flags li.cw, #flag-box ul#flags li.cuw {
+      background-position: 0 -7840px; }
+    #flag-box ul#flags li.ss, #flag-box ul#flags li.ssd {
+      background-position: 0 -7872px; }
+    #flag-box ul#flags li.nu, #flag-box ul#flags li.niu {
+      background-position: 0 -7904px; }
 #flag-box.country a {
   width: 92px; }
 #flag-box.country ul li {
-  display: inline list-item !important;
   box-shadow: none !important; }
 
 @media screen and (max-width: 600px) {
   #flag-box.country a {
     width: 264px;
     margin-bottom: 0.6em; }
-  #flag-box.country ul li {
-    display: ruby !important; }
   #flag-box.signup a {
     width: auto !important; } }
 nav.header_box {
