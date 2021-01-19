@@ -37,7 +37,7 @@ body {
 					.cart_box_inner {
 						background-color: white;
 						box-shadow: 4px 4px 15px #cccccc;
-						height: 60vh;
+						height: auto;
 						div.title {
 							padding: 1em 2em 0;
 						}
@@ -727,13 +727,26 @@ body {
 		.cart_main {
 			.cart_box {
 				.row {
+					.col.l4 {
+						.cart_box_inner {
+							position: sticky;
+							top: 1em;
+							height: 10px;
+							background-color: rgba(0, 0, 0, 0);
+							box-shadow: none;
+							.box {
+								padding-bottom: 1em;
+								background-color: white;
+								box-shadow: 4px 4px 15px #cccccc;
+								height: auto;
+								.cart_print_box {
+									width: 100%;
+								}
+							}
+						}
+					}
 					.cart_box_inner {
 						position: relative;
-						.cart_print_box {
-							position: absolute;
-							bottom: 0px;
-							width: 100%;
-						}
 					}
 				}
 			}
