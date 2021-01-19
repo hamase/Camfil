@@ -173,6 +173,108 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Send Question -->
+			<div id="request-box" class="modal modal-fixed-footer">
+				<div class="modal-content question_box">
+					<a href="#!" class="modal-action modal-close"
+						><img src="assets/img/plus.png" alt=""
+					/></a>
+					<div class="question_box_inner">
+						<h4>Fill in the form for your inquired product</h4>
+						<form action="" method="post">
+							<div class="row flex_box">
+								<div class="modal_inner">
+									<div class="col s12 l6">
+										<input
+											type="text"
+											class=""
+											placeholder="Part number"
+											required
+										/>
+									</div>
+								</div>
+								<div class="modal_inner switch">
+									<div class="col s12">
+										<input
+											id="personal"
+											name="account_type"
+											type="radio"
+											checked
+										/>
+										<label for="personal">Personal</label>
+										<input id="company" name="account_type" type="radio" />
+										<label for="company">Company</label>
+									</div>
+								</div>
+							</div>
+							<div class="row flex_box">
+								<div class="modal_inner">
+									<div class="col s12 l6">
+										<input
+											type="text"
+											class=""
+											placeholder="Full Name"
+											required
+										/>
+										<i class="material-icons prefix name"
+											><img src="assets/img/name-icon.png" alt=""
+										/></i>
+									</div>
+								</div>
+								<div class="modal_inner">
+									<div class="col s12 l6">
+										<input
+											id="email"
+											type="email"
+											class="validate"
+											placeholder="Email"
+											required
+										/>
+										<i class="material-icons prefix email"
+											><img src="assets/img/mail-light.png" alt=""
+										/></i>
+									</div>
+								</div>
+							</div>
+							<div class="row flex_box">
+								<div class="modal_inner col s12">
+									<div class="">
+										<textarea
+											id="message"
+											class="materialize-textarea"
+											placeholder="Why did you have this experience?"
+											required
+										></textarea>
+										<i class="material-icons prefix textarea"
+											><img src="assets/img/pencil.png" alt=""
+										/></i>
+									</div>
+								</div>
+							</div>
+							<div class="row checkbox">
+								<label>
+									<input type="checkbox" required />
+									<span>I accept the <u>Terms and conditions</u></span>
+								</label>
+							</div>
+							<div class="row question_btn">
+								<button
+									class="btn waves-effect waves-light"
+									id="question-submit"
+									type="submit"
+									name="action"
+								>
+									<span>Submit</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<span>You may receive emails regarding this submission.</span>
+				</div>
+			</div>
 		</main>
 
 		<!-- footer -->

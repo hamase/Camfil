@@ -80,6 +80,9 @@ $(document).ready(function () {
 	$("main").click(function () {
 		$(".notif_box, .basket_box").css("display", "none");
 	});
+	$("#send-req").click(function () {
+		$("#request-box").modal("open");
+	});
 
 	// close just by close button, not click on body
 	$("#sign-up").modal({
@@ -131,6 +134,9 @@ $(document).ready(function () {
 		dismissible: false,
 	});
 	$("#checkout-box").modal({
+		dismissible: false,
+	});
+	$("#request-box").modal({
 		dismissible: false,
 	});
 
