@@ -152,6 +152,13 @@ $(document).ready(function () {
 		$temp.remove();
 		$(this).find("span").html("Link copied");
 	});
+
+	// unset sticky menu height
+	var maxHeight = document.querySelector(".box").offsetHeight;
+	if (maxHeight > 600) {
+		console.log(maxHeight);
+		$(".col.l4 .cart_box_inner").css("position", "unset");
+	}
 });
 
 $(document).ready(function () {
