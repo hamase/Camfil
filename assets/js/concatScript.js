@@ -237,12 +237,13 @@ $(document).ready(function () {
 		}
 	}
 
-	$("#repassword-reset").keyup(function () {
+	$(".newPass").keyup(function () {
+		// $(".newPass").on("keyup", function (e) {
 		if ($("#password-reset").val() == $("#repassword-reset").val()) {
-			$("#repassword-reset").css("background-color", "#33e13336");
-			$("#password-reset").css("background-color", "#33e13336");
-		} else $("#repassword-reset").css("background-color", "#f269696b");
-		$("#password-reset").css("background-color", "#f269696b");
+			$(".newPass").css("background-color", "#33e13336");
+			// $("#password-reset").css("background-color", "#33e13336");
+		} else $(".newPass").css("background-color", "#f269696b");
+		// $("#password-reset").css("background-color", "#f269696b");
 	});
 });
 
