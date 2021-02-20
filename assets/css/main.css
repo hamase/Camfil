@@ -608,7 +608,8 @@ body main.error_box {
             width: auto;
             display: flex; }
             body main.error_box .modal#request-box .flex_box .modal_inner i img {
-              width: 0.8em; }
+              width: 0.8em;
+              height: 0.8em; }
           body main.error_box .modal#request-box .flex_box .modal_inner i.email,
           body main.error_box .modal#request-box .flex_box .modal_inner i.name {
             right: 30px; }
@@ -912,7 +913,8 @@ body header {
             display: flex;
             right: 40px; }
             body header .modal#reset-pass .reset_box .row .modal_inner i img {
-              width: 0.8em; }
+              width: 0.8em;
+              height: 0.8em; }
         body header .modal#reset-pass .reset_box .row .modal_inner:first-child input {
           margin: 0 auto 10px auto; }
       body header .modal#reset-pass .reset_box h4 {
@@ -1038,7 +1040,8 @@ body header {
       width: auto;
       display: flex; }
       body header .modal .row .modal_inner i img {
-        width: 0.8em; }
+        width: 0.8em;
+        height: 0.8em; }
     body header .modal .row .modal_inner i.email,
     body header .modal .row .modal_inner i.password {
       top: 18px; }
@@ -1568,7 +1571,8 @@ body #feedback-box {
       width: auto;
       display: flex; }
       body #feedback-box .feedback_box .modal_inner i img {
-        width: 0.8em; }
+        width: 0.8em;
+        height: 0.8em; }
   body #feedback-box .feedback_box .feedback_btn {
     text-align: center; }
     body #feedback-box .feedback_box .feedback_btn button {
@@ -3072,7 +3076,8 @@ body main {
               width: auto;
               display: flex; }
               body main .product_main .product_box .modal#question-box .flex_box .modal_inner i img {
-                width: 0.8em; }
+                width: 0.8em;
+                height: 0.8em; }
             body main .product_main .product_box .modal#question-box .flex_box .modal_inner i.email,
             body main .product_main .product_box .modal#question-box .flex_box .modal_inner i.name {
               right: 30px; }
